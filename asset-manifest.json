@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Faraj-Sheet/static/css/main.073c9b0a.css",
+    "main.js": "/Faraj-Sheet/static/js/main.16c6e079.js",
+    "static/js/787.a89dd79f.chunk.js": "/Faraj-Sheet/static/js/787.a89dd79f.chunk.js",
+    "static/media/logo.svg": "/Faraj-Sheet/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Faraj-Sheet/index.html",
+    "main.073c9b0a.css.map": "/Faraj-Sheet/static/css/main.073c9b0a.css.map",
+    "main.16c6e079.js.map": "/Faraj-Sheet/static/js/main.16c6e079.js.map",
+    "787.a89dd79f.chunk.js.map": "/Faraj-Sheet/static/js/787.a89dd79f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.16c6e079.js"
+  ]
+}
