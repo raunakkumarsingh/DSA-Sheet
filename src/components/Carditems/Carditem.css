@@ -18,7 +18,6 @@
     transition: transform 1s;
 }
 .btn:hover {
-  
     background-color: #06E3E2;
     color: #121D28;
 }
