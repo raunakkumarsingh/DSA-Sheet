@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+.navbar {
+    background-color: #0E1C25;
+    color: #06E3E2;
+    font-weight: bold;
+}
+.navbar-brand {
+    color: #5BC6E6;
+    font-family: 'Rubik', sans-serif;
+}
+.nav-link .active{
+    color: #06E3E2;
+}
+.nav-link {
+    color: #34BCD4;
+}
+.form-control {
+    background-color: #0E1C25;
+}
+a * {
+    color: #DC3803;
+}
