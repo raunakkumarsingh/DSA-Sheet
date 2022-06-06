@@ -3,7 +3,7 @@ import React from 'react'
 function Carditem(props) {
    
   return (
-    <div className="card "  id='cards' style={{width: "20rem"}}>
+    <div className="card my-2 mx-1"  id='cards' style={{width: "18rem"}}>
     <div className="card-body">
       <h5 className="card-title">{props.title}</h5>
       <p className="card-text">Total Question - {props.TotalQuestion} </p>
