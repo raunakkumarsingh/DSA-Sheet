@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.card {
+    background-color: #070611;
+    margin: 5rem;
+    border-radius: 2rem;
+    padding: 1rem;
+  box-shadow: #14E294;
+  transition: transform 0.8s;
+}
+
+.btn {
+    background-color:  #05ef63;
+    color: #121D28;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border-color: #05ef63;
+    transition: transform 1s;
+}
+.btn:hover {
+    background-color: #06E3E2;
+    color: #121D28;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(40, 216, 232, 0.922) 0px 14px 28px, rgba(59, 248, 188, 0.996) 0px 10px 10px;
+ }
+.card-title {
+    color: #06E3E2;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.card-text {
+    color: white;
+    font-weight: bold;  
+    font-family: 'Roboto', sans-serif; 
+}
