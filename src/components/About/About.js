@@ -1,10 +1,10 @@
 import React from 'react'
 import './About.css'
 
-export default function About() {
+export default function About(props) {
   return (
     <>
-    <div className="heading">Faraj DSA Sheet</div>
+    <div className={`heading-${props.mode}`}>Faraj DSA Sheet</div>
     </>
   )
 }

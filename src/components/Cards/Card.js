@@ -1,3 +1,4 @@
+import { background } from '@chakra-ui/react';
 import React from 'react'
 import Carditem from '../Carditems/Carditem'
 import './Card.css'
@@ -72,16 +73,7 @@ let data=[{
   "MediumQuestion":26,
   "hardQuestion":5
 },
-{
-  "source":{
-    "id": 1
-  },
-  "Title": "Tree",
-  "Totalquestion": 43,
-  "EasyQuestion":12,
-  "MediumQuestion":26,
-  "hardQuestion":5
-},
+
 {
   "source":{
     "id": 1
@@ -213,14 +205,18 @@ let data=[{
   "hardQuestion":5
 }
 ];
+
 // let parsedData=await data.json();
-function Card() {
+function Card(props) {
+  document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
+  console.log(props.mode);
   return (
+    
     <div className='container my-3 d-flex justify-content-between'>
     <div className='row'>
         {  data.map((element)=>{
       return<div className='col-lg-4 col-md-6 col sm-12' key={element.Title}>
-        <Carditem title={element.Title} TotalQuestion={element.Totalquestion} EasyQuestion={element.EasyQuestion} MediumQuestion={element.MediumQuestion} hardQuestion={element.hardQuestion}/>
+        <Carditem title={element.Title} mode={props.mode} TotalQuestion={element.Totalquestion} EasyQuestion={element.EasyQuestion} MediumQuestion={element.MediumQuestion} hardQuestion={element.hardQuestion}/>
       </div>
         })
         }

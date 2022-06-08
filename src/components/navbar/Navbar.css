@@ -4,6 +4,12 @@
     color: #06E3E2;
     font-weight: bold;
 }
+.navbar-light {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
 .navbar-brand {
     color: #5BC6E6;
     font-family: 'Rubik', sans-serif;

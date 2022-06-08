@@ -1,8 +1,8 @@
 import React from 'react'
 import './Navbar.css'
-export default function Navbar() {
+export default function Navbar(props) {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className={`navbar-${props.mode} navbar-expand-lg`}>
     <div className="d-flex container-fluid">
       <a className="navbar-brand" href="#">Raunak554 🤖</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
