@@ -1,9 +1,14 @@
 import React from 'react'
+import Table from '../Tableitems/Tableitem';
 import './Carditem.css'
 
+
+
+// import {Link} from "react-router-dom";
 function Carditem(props) {
   console.log(props.mode);
   return (
+  
     <div className={`card-${props.mode} my-2 mx-1`}  id='cards' style={{width: "18rem"}}>
     <div className="card-body">
       <h5 className={`card-${props.mode}-title`}>{props.title}</h5>
@@ -12,8 +17,7 @@ function Carditem(props) {
       <p className={`card-${props.mode}-text`}>Medium Question - {props.MediumQuestion} </p>
       <p className={`card-${props.mode}-text`}>Hard Question - {props.hardQuestion} </p>
       <div className='d-flex justify-content-end'>
-      <a href="#" className="btn-light btn-primary ">GO</a>
-     
+      <a href={`${props.title}`} className="btn-light btn-primary ">GO</a>
       </div>
     </div>
   </div>

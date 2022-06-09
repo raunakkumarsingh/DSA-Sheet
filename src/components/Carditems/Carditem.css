@@ -51,7 +51,7 @@
 }
 
 .btn-light {
-    background-color:  #0700d7;
+    background-color:  #0cf679;
     height: 1.8rem;
     width: 4rem;
     display: flex;
@@ -62,6 +62,7 @@
     font-weight: bold;
     border-color: #000000;
     transition: transform 1s;
+    text-decoration: none;
 }
 .btn-light:hover {
     /* background-color: #06E3E2; */
@@ -71,10 +72,10 @@
 }
 .card-light:hover {
     transform: scale(1.05);
-    box-shadow: rgba(40, 216, 232, 0.922) 0px 14px 28px, rgba(59, 248, 188, 0.996) 0px 10px 10px;
- }
+    box-shadow: rgb(234, 222, 11) 0px 10px 20px, rgb(241, 254, 3) 0px 6px 6px;
+}
 .card-light-title {
-    color: #ffffff;
+    color: #f8f80a;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 .card-light-text {
@@ -82,4 +83,3 @@
     font-weight: bold;  
     font-family: 'Roboto', sans-serif; 
 }
-
