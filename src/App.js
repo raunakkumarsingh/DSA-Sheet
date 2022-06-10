@@ -3,7 +3,6 @@ import Navbar from './components/navbar/Navbar';
 import Card from './components/Cards/Card';
 import Mode from './components/Mode/Mode';
 import About from './components/About/About';
-import {BrowserRouter as Router,Route,Routes,Link} from "react-router-dom";
 import { useState } from 'react';
 import Table from './components/Table/Table';
 
@@ -137,10 +136,6 @@ const changeMode=()=>{
       <Navbar mode={mode}/>
       <Mode mode={mode} changeMode={changeMode}/>
       <Card mode={mode}/>
-      {/* <Routes>
-       <Route exact path='/Array' element={<Table title="Array"/>}/>
-       </Routes> */}
-
     </>
   );
 }

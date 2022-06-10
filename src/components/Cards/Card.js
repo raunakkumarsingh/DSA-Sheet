@@ -1,5 +1,6 @@
 import { background } from '@chakra-ui/react';
 import React from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Carditem from '../Carditems/Carditem'
 import Table from '../Table/Table';
@@ -172,7 +173,7 @@ let data=[{
   "source":{
     "id": 1
   },
-  "Title": "Sliding Window",
+  "Title": "String",
   "Totalquestion": 43,
   "EasyQuestion":12,
   "MediumQuestion":26,
@@ -210,16 +211,25 @@ let data=[{
 }
 ]; 
 
+
 const onClick=()=>{
   {    
-    <Table/>
+ 
   }
- };
+};
 
 // let parsedData=await data.json();
 function Card(props) {
-  document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
+  const [state,setState]=useState("Array");
+
+  const onClick=()=>{
+       
+        //  setState();
+    
+         console.log(state);
+  };
   console.log(props.mode);
+  document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   return (
     <Router>
 
@@ -231,7 +241,7 @@ function Card(props) {
         {  data.map((element)=>{
           return<div className='col-lg-4 col-md-6 col sm-12' key={element.Title}>
             <Routes>
-         <Route exact path='/' element={<Carditem title={element.Title} mode={props.mode} TotalQuestion={element.Totalquestion} EasyQuestion={element.EasyQuestion} MediumQuestion={element.MediumQuestion} hardQuestion={element.hardQuestion}/>}/>
+         <Route exact path='/Faraj-Sheet' element={<Carditem title={element.Title} mode={props.mode} TotalQuestion={element.Totalquestion} EasyQuestion={element.EasyQuestion} MediumQuestion={element.MediumQuestion} hardQuestion={element.hardQuestion}/>}/>
             </Routes>
 
         
@@ -243,7 +253,7 @@ function Card(props) {
        
     </div>
     <Routes>
-       <Route exact path='/Array' element={<Table mode={props.mode} title="Array"/>}/>
+       <Route exact path={`/${state}`} element={<Table mode={props.mode} onClick={onclick} title={state} /> }/>
        </Routes>
       </Router>
   )
