@@ -3,140 +3,55 @@ import Navbar from './components/navbar/Navbar';
 import Card from './components/Cards/Card';
 import Mode from './components/Mode/Mode';
 import About from './components/About/About';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 import Table from './components/Table/Table';
 
-let question=[{
-  "id": 1,
-  "Title": "Array",
-  "Type": "Easy",
-  "Url":"https://leetcode.com/problems/two-sum/",
-  "Editorial": " https://www.youtube.com/watch?v=o2WOhGSfx_8"
-},
-{
-  "id": 2,
-  "Title": "Arrays",
-  "Type": "Easy",
-  "Url":"https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
-  "Editorial": "https://www.youtube.com/watch?v=o2WOhGSfx_8"
-},
-{
-  "id": 3,
-  "Title": "Array",
-  "Type": "Easy",
-  "Url":"https://leetcode.com/problems/merge-sorted-array/",
-  "Editorial": "https://www.youtube.com/watch?v=XIWykOHE1SE"
-},
-{
-  "id": 4,
-  "Title": "Array",
-  "Type": "Easy",
-  "Url":"https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
-  "Editorial": "https://www.youtube.com/watch?v=mgzcjQ1x9Mw"
-},
-{
-  "id": 5,
-  "Title": "Array",
-  "Type": "Easy",
-  "Url":"https://leetcode.com/problems/find-pivot-index/",
-  "Editorial": "https://leetcode.com/problems/find-pivot-index/discuss/411318/Java%3A-beats100-1ms-easy-understanding-solution"
-},
-{
-  "id": 6,
-  "Title": "Array",
-  "Type": "Easy",
-  "Url":"https://leetcode.com/problems/majority-element/",
-  "Editorial": "https://www.youtube.com/watch?v=MyFe2W2nIEE&list=PLKZaSt2df1gxtem7J8QqY8m2bHliz8mPt"
-},
-{
-  "id": 7,
-  "Title": "Array",
-  "Type": "medium",
-  "Url":"https://leetcode.com/problems/merge-intervals/",
-  "Editorial": " "
-},
-{
-  "id": 8,
-  "Title": "Array",
-  "Type": "Easy",
-  "Url":"https://leetcode.com/problems/3sum/",
-  "Editorial": ""
-},
-{
-  "id": 9,
-  "Title": "Array",
-  "Type": "medium",
-  "Url":"https://leetcode.com/problems/subarray-sum-equals-k/",
-  "Editorial": " "
-},
-{
-  "id": 10,
-  "Title": "Array",
-  "Type": "Medium",
-  "Url":"https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/",
-  "Editorial": "https://www.youtube.com/watch?v=UG1C-otvF2U"
-},
-{
-  "id": 11,
-  "Title": "Array",
-  "Type": "Hard",
-  "Url":"https://leetcode.com/problems/first-missing-positive/",
-  "Editorial": " "
-},
-{
-  "id": 12,
-  "Title": "Array",
-  "Type": "hard",
-  "Url":"https://leetcode.com/problems/divisor-game//",
-  "Editorial": " "
-},
-{
-  "id": 13,
-  "Title": "Array",
-  "Type": "hard",
-  "Url":"https://leetcode.com/problems/climbing-stairs",
-  "Editorial": " "
-},
-{
-  "id": 13,
-  "Title": "Array",
-  "Type": "hard",
-  "Url":"https://leetcode.com/problems/climbing-stairs",
-  "Editorial": " "
-},
-{
-  "id": 13,
-  "Title": "Array",
-  "Type": "hard",
-  "Url":"https://leetcode.com/problems/climbing-stairs",
-  "Editorial": " "
-}
-]
-
-
-let filterArray = () => {
-  const fordArray = question.filter( (auto) => auto.Title.includes("Array"));
-  // const fordAutos = autoData.filter( (auto) => auto.title.includes("Ford"));
-}
-
-
+ 
 
 function App() {
   
-const [mode,setMode]=useState("dark")
+  const [mode,setMode]=useState("dark");
+  const [titl,setTitle]=useState("Array");
+
+  // setTitle(tit);
+ 
+  
 
 const changeMode=()=>{
   if(mode==="dark")
-  setMode("light");
-  else if(mode==="light")
-  setMode("dark");
+  setMode('light');
+  else if(mode==='light')
+  setMode('dark');
 }
-  return (
-    <>
+return (
+  <Router>
       <Navbar mode={mode}/>
       <Mode mode={mode} changeMode={changeMode}/>
-      <Card mode={mode}/>
-    </>
+      
+      <Routes>
+    <Route exact path='/' element={<Card key="0" mode={mode} />}/>
+    <Route exact path='/Faraj-Sheet' element={<Card key="0" mode={mode} />}/>
+    <Route exact path="/Array" element={<Table key="1" mode={mode} title="Array"/>}/>
+    <Route exact path="/Segment%20Tree" element={<Table key="2" mode={mode} title="Segment Tree"/>}/>
+    <Route exact path="/Math" element={<Table key="3" mode={mode} title="Math"/>}/>
+    <Route exact path="/DFS" element={<Table key="4" mode={mode} title="DFS"/>}/>
+    <Route exact path="/Dynamic%20Programing" element={<Table key="5" mode={mode} title="Dynamic Programing" />}/>
+    <Route exact path="/BackTracking" element={<Table key="6" mode={mode} title="BackTracking" />}/>
+    <Route exact path="/Hash%20Table" element={<Table key="7" mode={mode} title="Hash Table" />}/>
+    <Route exact path="/Binary%20Search" element={<Table key="8" mode={mode} title="Binary Search"/>}/>
+    <Route exact path="/Two%20Pointer" element={<Table key="9" mode={mode} title="Two Pointer" />}/>
+    <Route exact path="/Stack" element={<Table key="10" mode={mode} title="Stack"/>}/>
+    <Route exact path="/Design" element={<Table key="11" mode={mode} title="Design"/>}/>
+    <Route exact path="/data" element={<Table key="12" mode={mode} title="Data"/>}/>
+    <Route exact path="/Bit%20Manipulation" element={<Table key="13" mode={mode} title="Bit Manipulation"/>}/>
+    <Route exact path="/Linklist" element={<Table key="14" mode={mode} title="Linklist"/>}/>
+    <Route exact path="/Heap" element={<Table key="15" mode={mode} title="Heap"/>}/>
+    <Route exact path="/String" element={<Table key="16" mode={mode} title="String"/>}/>
+    <Route exact path="/Tree" element={<Table key="17" mode={mode} title="Tree"/>}/>
+    <Route exact path="/Trie" element={<Table key="18" mode={mode} title="Trie"/>}/>
+    </Routes>
+    </Router>
   );
 }
 

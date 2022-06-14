@@ -1,4 +1,4 @@
-{
+[{
     "id": 1,
     "Title": "Array",
     "Type": "Easy",
@@ -102,4 +102,4 @@
     "Type": "hard",
     "Url":"https://leetcode.com/problems/climbing-stairs",
     "Editorial": " "
-  },
+  }]
