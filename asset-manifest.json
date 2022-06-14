@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Faraj-Sheet/static/css/main.4fd97642.css",
-    "main.js": "/Faraj-Sheet/static/js/main.faa09c83.js",
+    "main.css": "/Faraj-Sheet/static/css/main.b64cbba1.css",
+    "main.js": "/Faraj-Sheet/static/js/main.5775430b.js",
     "static/js/787.a89dd79f.chunk.js": "/Faraj-Sheet/static/js/787.a89dd79f.chunk.js",
     "index.html": "/Faraj-Sheet/index.html",
-    "main.4fd97642.css.map": "/Faraj-Sheet/static/css/main.4fd97642.css.map",
-    "main.faa09c83.js.map": "/Faraj-Sheet/static/js/main.faa09c83.js.map",
+    "main.b64cbba1.css.map": "/Faraj-Sheet/static/css/main.b64cbba1.css.map",
+    "main.5775430b.js.map": "/Faraj-Sheet/static/js/main.5775430b.js.map",
     "787.a89dd79f.chunk.js.map": "/Faraj-Sheet/static/js/787.a89dd79f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fd97642.css",
-    "static/js/main.faa09c83.js"
+    "static/css/main.b64cbba1.css",
+    "static/js/main.5775430b.js"
   ]
 }
