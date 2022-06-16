@@ -1,9 +1,5 @@
-import { background } from '@chakra-ui/react';
 import React from 'react';
-import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Carditem from '../Carditems/Carditem'
-import Table from '../Table/Table';
 import data from '../data.json';
 
 

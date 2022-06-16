@@ -20,9 +20,9 @@ function App() {
 
 const changeMode=()=>{
   if(mode==="dark")
-  setMode('light');
-  else if(mode==='light')
-  setMode('dark');
+  setMode("light");
+  else if(mode==="light")
+  setMode("dark");
 }
 return (
   <Router>
