@@ -1,27 +1,65 @@
 import React from 'react'
 import Tableitem from '../Tableitems/Tableitem';
 import './Table.css'
+import Searchbar from '../Tableitems/Searchbar';
 import data from  '../data.json'
+import { useState } from "react";
 
 
 
 
+  
 export default function Table(props) {
+
+  const [searchTerm,setSearchTerm] = useState('');
   document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   console.log(props.title);
   let parseddata =data.filter((auto)=> auto.Title.includes(props.title));
   console.log(parseddata);
+  let lparsed=parseddata;
+
+  // const SearchBar = (props) => {
+    // const handleChange = (e) => {
+    //   // props.onSearch(e.target.value);
+    //   lparsed =lparsed.filter((auto)=>auto.Title.includes(props.title));
+    //   lparsed= data.filter((val)=>{
+    //     if(searchTerm === ""){
+    //       return val
+    //     }
+    //     else if(val.Url.toLowerCase().includes(searchTerm.toLocaleLowerCase())){
+    //       return val;
+    //     }
+    //   });
+
+    // };
+  // }
+  
+  // const search=(searchTerm)=>{
+    // data.filter((auto)=>auto.Title.includes(props.title));
+    // lparsed= data.filter((val)=>{
+    //   if(searchTerm == ""){
+    //     return val
+    //   }
+    //   else if(val.Url.includes(searchTerm)){
+    //     return val;
+    //   }
+    // });
+  
   // console.log(parseddata[0].EasyQuestion);
   return (
     <>
      <h1 className={`tableheading-${props.mode} `}>{props.title}</h1>
-    
-     {parseddata.map((element) => {
+     <div className='d-flex justify-content-center'>  <div class="input-group input-group-lg d-flex justify-content-center" >
+    <span class="input-group-text" id="inputGroup-sizing-lg">Search</span>
+    <input type="text" class="form-control" onChange={e=>setSearchTerm(e.target.value)} aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
+  </div></div>
+     
+     {lparsed.map((element) => {
    
        if(element.EasyQuestion && element.MediumQuestion && element.hardQuestion)
-       return <><Tableitem mode={props.mode} type="Easy"  title={props.title}/>
-        <Tableitem mode={props.mode} type="Medium" title={props.title} />
-        <Tableitem mode={props.mode} type="Hard" title={props.title} />
+       return <><Tableitem searc={searchTerm} mode={props.mode} type="Easy"  title={props.title}/>
+        <Tableitem searc={searchTerm} mode={props.mode} type="Medium" title={props.title} />
+        <Tableitem searc={searchTerm} mode={props.mode} type="Hard" title={props.title} />
         </>
       else if(!element.EasyQuestion && element.MediumQuestion && element.hardQuestion)
        return <>

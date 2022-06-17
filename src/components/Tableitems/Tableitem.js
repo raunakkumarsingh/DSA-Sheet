@@ -6,7 +6,7 @@ import quest from '../question.json'
   
   export default function Table(props) {
       document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
-      let que=quest.filter((auto)=>auto.Title.includes(props.title) && auto.Type.includes(props.type) );
+      let que=quest.filter((auto)=>auto.Title.includes(props.title) && auto.Type.includes(props.type) && auto.Url.includes(props.searc));
       return (
     <>
     <div className={`table-${props.mode} `}>
