@@ -1,5 +1,6 @@
 const express=require('express')
 const User=require('../Models/usermodel')
+const Activity = require('../Models/activitymodel')
 const router=express.Router()
 var jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
@@ -7,10 +8,8 @@ const {body, validationResult}=require('express-validator')
 
 const secureKey="#R4UN4K#J4SM1N#"
 
-
-
     router.post('/createuser',[
-        body("name","Enter Valid Email").isLength({min:5}),
+        body("name","Enter Valid Name").isLength({min:5}),
         body("email","Enter valid Email").isEmail(),
         body("password","Enter minimum 5 character").isLength({min:5})
 
@@ -37,6 +36,15 @@ const secureKey="#R4UN4K#J4SM1N#"
                 email:req.body.email,
                 password:secpass
             })
+            let activity = await Activity.findOne({email:req.body.email})
+            if(activity){
+                return res.status(400).json({error:"Already have an account With this Email Procced to Login"})
+            }
+            activity = await Activity.create({
+                email: req.body.email,
+                questions: [5],
+                user:user.id,
+            })
             //    console.error(errors.message)
             res.json({success:"Message Sent Success"})
 
@@ -57,16 +65,12 @@ const secureKey="#R4UN4K#J4SM1N#"
            const {email,password}=req.body;
 
            try {
-           
-        
+
             if(!errors.isEmpty){
                return res.status(400).json({error:errors.array()})
             }
 
             let user = await User.findOne({email:email})
-
-
-            
 
             if(!user){
               return  res.status(400).json({error:"invalid  Credential"})
@@ -93,7 +97,6 @@ const secureKey="#R4UN4K#J4SM1N#"
            }
 
     })
-
 
 
     module.exports = router;

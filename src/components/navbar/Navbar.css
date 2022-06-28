@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-.navbar {
-    background-color: #0E1C25;
+.navbar-dark {
+    background-color: rgb(14, 28, 37);
     color: #06E3E2;
     font-weight: bold;
 }

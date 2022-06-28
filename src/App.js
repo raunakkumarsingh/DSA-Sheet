@@ -6,6 +6,8 @@ import About from './components/About/About';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 import Table from './components/Table/Table';
+import Login from './components/Login/Login';
+import { Heading } from '@chakra-ui/react';
 
  
 
@@ -27,6 +29,7 @@ const changeMode=()=>{
 return (
   <Router>
       <Navbar mode={mode}/>
+      <Heading  mode={mode}/>
       <Mode mode={mode} changeMode={changeMode}/>
       
       <Routes>
@@ -50,7 +53,9 @@ return (
     <Route exact path="/String" element={<Table key="16" mode={mode} title="String"/>}/>
     <Route exact path="/Tree" element={<Table key="17" mode={mode} title="Tree"/>}/>
     <Route exact path="/Trie" element={<Table key="18" mode={mode} title="Trie"/>}/>
+        <Route exact path="/login" element={<Login mode={mode}/>}/>
     </Routes>
+      
     </Router>
   );
 }

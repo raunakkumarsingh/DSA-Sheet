@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(cors())
 
 app.use('/api/auth',require('./Routes/auth'))
-// app.use('/api/data',require('./Routes/data'))
+app.use('/api/data',require('./Routes/data'))
 
 app.get('/',(req,res)=>{
    console.log("hello World");
