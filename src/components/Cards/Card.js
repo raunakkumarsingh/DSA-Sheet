@@ -1,6 +1,7 @@
 import React from 'react';
 import Carditem from '../Carditems/Carditem'
 import data from '../data.json';
+import { useNavigate } from 'react-router';
 
 
 import './Card.css' 
@@ -12,6 +13,15 @@ import './Card.css'
 
 // let parsedData=await data.json();
 function Card(props) {
+  let history=useNavigate();
+
+ const loginControl=()=>{
+  console.log("hello");
+  if(!localStorage.getItem('token')){
+    history('/login')
+
+  }
+ }
  
   console.log(props.mode);
   document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
@@ -26,7 +36,7 @@ function Card(props) {
         {  data.map((element)=>{
           return<div className='col-lg-4 col-md-6 col sm-12' key={element.Title}>
           
-         <Carditem title={element.Title} mode={props.mode} Dtitle={props.changeState} TotalQuestion={element.Totalquestion} EasyQuestion={element.EasyQuestion} MediumQuestion={element.MediumQuestion} hardQuestion={element.hardQuestion}/>
+         <Carditem title={element.Title} mode={props.mode} loginControl={loginControl} Dtitle={props.changeState} TotalQuestion={element.Totalquestion} EasyQuestion={element.EasyQuestion} MediumQuestion={element.MediumQuestion} hardQuestion={element.hardQuestion}/>
         
 
         

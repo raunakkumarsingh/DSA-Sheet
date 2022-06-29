@@ -8,6 +8,7 @@ import { useState } from 'react';
 import Table from './components/Table/Table';
 import Login from './components/Login/Login';
 import { Heading } from '@chakra-ui/react';
+import Signup from './components/Signup/Signup';
 
  
 
@@ -54,6 +55,7 @@ return (
     <Route exact path="/Tree" element={<Table key="17" mode={mode} title="Tree"/>}/>
     <Route exact path="/Trie" element={<Table key="18" mode={mode} title="Trie"/>}/>
         <Route exact path="/login" element={<Login mode={mode}/>}/>
+        <Route exact path="/signup" element={<Signup mode={mode}/>}/>
     </Routes>
       
     </Router>

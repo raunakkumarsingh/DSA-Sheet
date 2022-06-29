@@ -1,7 +1,15 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import './Navbar.css'
+import { useNavigate } from 'react-router';
 export default function Navbar(props) {
+   let history=useNavigate();
+  const handleLogout=()=>{
+    localStorage.removeItem('token');
+    history("/login");
+   }
+
+
   return (
     <nav className={`navbar-${props.mode} navbar-expand-lg`}>
     <div className="d-flex container-fluid">
@@ -21,12 +29,14 @@ export default function Navbar(props) {
       <div className="d-flex justify-content-center" >
       <Link className="navbar-brand" to="#">Streak 🔥</Link>
       </div>
-        <form className=" d-flex">
+    {!localStorage.getItem('token')  ?  <form className=" d-flex">
         
         <Link className="btn btn-outline-success mx-2" to="/login" type="submit">Login</Link>
         <Link className="btn btn-outline-success mx-2" to="/signup" type="submit">Signup</Link>
+  
 
-  </form>
+  </form>:<button onClick={handleLogout} className='btn btn-outline-success' to="/login" type='submit'>logout</button>
+}
       </div>
     </div>
   </nav>

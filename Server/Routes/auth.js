@@ -22,6 +22,7 @@ const secureKey="#R4UN4K#J4SM1N#"
               return res.status(400).json({error:errors.array()});
             }
          
+            let success=false;
             let user= await User.findOne({email:req.body.email})
                console.log(user);
             if(user){
@@ -38,6 +39,7 @@ const secureKey="#R4UN4K#J4SM1N#"
             })
             let activity = await Activity.findOne({email:req.body.email})
             if(activity){
+                success=false;
                 return res.status(400).json({error:"Already have an account With this Email Procced to Login"})
             }
             activity = await Activity.create({
@@ -45,8 +47,17 @@ const secureKey="#R4UN4K#J4SM1N#"
                 questions: [5],
                 user:user.id,
             })
+         const  data={
+            user:{
+                id:user.id
+            }
+           }
+
+           const token= jwt.sign(data, secureKey);
+
+           success=true;
             //    console.error(errors.message)
-            res.json({success:"Message Sent Success"})
+            res.json({success,token})
 
         } catch (error) {
             console.error(error.message);
@@ -56,7 +67,7 @@ const secureKey="#R4UN4K#J4SM1N#"
     }),
 
 
-    router.get('/login',[
+    router.post('/login',[
         body("Email","Enter correct email").isEmail(),
         body("password","Enter Correct Password").isLength({min:5})
     ],async(req, res)=>{
@@ -66,16 +77,18 @@ const secureKey="#R4UN4K#J4SM1N#"
 
            try {
 
+               let success=false;
             if(!errors.isEmpty){
+                success=false;
                return res.status(400).json({error:errors.array()})
             }
-
             let user = await User.findOne({email:email})
+            console.log(user.password);
 
             if(!user){
+                success=false;
               return  res.status(400).json({error:"invalid  Credential"})
             }
-            console.log(user.password);
            const checkpass=bcrypt.compareSync(password, user.password); // true
 
           const data={
@@ -86,9 +99,11 @@ const secureKey="#R4UN4K#J4SM1N#"
         }
        const token= jwt.sign(data, secureKey);
            if(!checkpass){
+            success=false;
             return  res.status(400).json({error:"invalid  Credential"})
           }
-               res.json({success:"Login Success",token})
+          success=true;
+               res.json({success,token})
              
             
            } catch (error) {
