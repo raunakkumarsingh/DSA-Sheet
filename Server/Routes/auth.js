@@ -14,7 +14,7 @@ const secureKey="#R4UN4K#J4SM1N#"
         body("password","Enter minimum 5 character").isLength({min:5})
 
     ], async(req,res)=>{
-        
+         
         const errors= validationResult(req);
 
         try {

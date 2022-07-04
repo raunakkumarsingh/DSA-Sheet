@@ -10,7 +10,7 @@ import Login from './components/Login/Login';
 import { Heading } from '@chakra-ui/react';
 import Signup from './components/Signup/Signup';
 
- 
+  
 
 function App() {
   
