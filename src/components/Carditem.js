@@ -1,7 +1,7 @@
 import React from 'react'
 import './Carditem.css'
 import Table from '../Table/Table';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 // import {Link} from "react-router-dom";
@@ -16,7 +16,7 @@ function Carditem(props) {
       <p className={`card-${props.mode}-text`}>Medium Question - {props.MediumQuestion} </p>
       <p className={`card-${props.mode}-text`}>Hard Question - {props.hardQuestion} </p>
       <div className='d-flex justify-content-end'>
-      <a href={`${props.title}`}  onClick={props.loginControl} className="btn-light btn-primary ">GO</a>
+      <Link to={`${props.title}`}  onClick={props.loginControl} className="btn-light btn-primary ">GO</Link>
       </div>
     </div>
   </div>

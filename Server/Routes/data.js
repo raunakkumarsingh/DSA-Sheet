@@ -75,7 +75,7 @@ router.get('/getdata',fetchuser, async (req,res)=>{
 
     try{
     const user = await Activity.findOne({user:req.user.id});
-    res.json({email:user.email,questions:user.questions});
+    res.json(user);
 
     }
     catch(error){

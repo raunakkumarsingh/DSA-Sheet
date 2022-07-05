@@ -1,3 +1,11 @@
 th{
     text-decoration-color: black;
 }
+
+.donebox:checked {
+  background-color: blue;
+}
+input:checked{
+    background-color: blue;
+
+}

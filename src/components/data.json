@@ -142,16 +142,6 @@
     "source":{
       "id": 1
     },
-    "Title": "Graph",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
-  },
-  {
-    "source":{
-      "id": 1
-    },
     "Title": "Bit Manipulation",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -183,16 +173,6 @@
       "id": 1
     },
     "Title": "Sliding Window",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
-  },
-  {
-    "source":{
-      "id": 1
-    },
-    "Title": "Tree",
     "Totalquestion": 43,
     "EasyQuestion":12,
     "MediumQuestion":26,

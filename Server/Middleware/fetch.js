@@ -8,6 +8,7 @@ const fetchuser=(req,res,next)=>{
 
         if(!token){
             res.status(401).json({error:"Authenticate using a valid Token"})
+            res.redirect('/login')
         }
 
         try {

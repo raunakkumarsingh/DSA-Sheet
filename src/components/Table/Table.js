@@ -3,13 +3,32 @@ import Tableitem from '../Tableitems/Tableitem';
 import './Table.css'
 import Searchbar from '../Tableitems/Searchbar';
 import data from  '../data.json'
-import { useState } from "react";
+import { useContext,useEffect, useState } from "react";
+import dataContext from '../../context/datacontext';
+import { useNavigate } from 'react-router';
+
 
 
 
 
   
 export default function Table(props) {
+  const context=useContext(dataContext);
+  const {ques,getData}=context;
+
+  useEffect(()=>{
+    // if(localStorage.getItem('token')){
+      getData();
+      
+      // }
+    },[])
+    console.log(ques);
+
+
+  let history=useNavigate();
+  if(!localStorage.getItem('token')){
+    history('/login')
+  }
 
   const [searchTerm,setSearchTerm] = useState('');
   document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
@@ -88,10 +107,6 @@ export default function Table(props) {
       else if(!element.EasyQuestion && !element.MediumQuestion && !element.hardQuestion)
        return <>
         </>
-   
-
-     
-  
        
           })}
     

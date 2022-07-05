@@ -103,6 +103,8 @@ const secureKey="#R4UN4K#J4SM1N#"
             return  res.status(400).json({error:"invalid  Credential"})
           }
           success=true;
+        //   res.cookie('token', token, { httpOnly: true });
+        //   res.cookie()
                res.json({success,token})
              
             

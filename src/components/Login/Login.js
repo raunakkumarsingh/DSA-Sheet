@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import './Login.css'
 import { useNavigate } from 'react-router';
+// import { useCookies } from 'react-cookie';
 
 
 function Login() {
@@ -28,13 +29,15 @@ function Login() {
     const json= await response.json();
     console.log(json);
     if(json.success){
-      localStorage.setItem('token',json.success);
+      localStorage.setItem('token',json.token);
       history('/')
     }
+
+   
        
   }
   return (
-    // <div className="container " id="log" style={{border: "2px solid black",height:"100%"}}>
+    <div className="container " id="log" style={{height:"100%"}}>
     <div className="card d-flex justify-content-center aling-item-center">
   <div className="card-body">
   <form onSubmit={handleSubmit}>
@@ -55,7 +58,7 @@ function Login() {
 </form>
   </div>
 </div>
-// </div>
+ </div>
   )
 }
 

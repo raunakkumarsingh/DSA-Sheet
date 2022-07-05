@@ -31,7 +31,7 @@ function Signup() {
       }
 
   return (
-    // <div className="container " id="log" style={{border: "2px solid black",height:"100%"}}>
+    <div className="container " id="log" style={{height:"100%"}}>
     <div className="card d-flex justify-content-center aling-item-center">
   <div className="card-body">
   <form  onSubmit={handleSubmit}>
@@ -56,7 +56,7 @@ function Signup() {
 </form>
   </div>
 </div>
-// </div>
+</div>
   )
 }
 
