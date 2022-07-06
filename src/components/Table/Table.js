@@ -21,7 +21,7 @@ export default function Table(props) {
       getData();
       
       // }
-    },[])
+    },[]);
     console.log(ques);
 
 
@@ -76,33 +76,33 @@ export default function Table(props) {
      {lparsed.map((element) => {
    
        if(element.EasyQuestion && element.MediumQuestion && element.hardQuestion)
-       return <><Tableitem searc={searchTerm} mode={props.mode} type="Easy"  title={props.title}/>
-        <Tableitem searc={searchTerm} mode={props.mode} type="Medium" title={props.title} />
-        <Tableitem searc={searchTerm} mode={props.mode} type="Hard" title={props.title} />
+       return <><Tableitem searc={searchTerm} mode={props.mode} type="Easy"  title={props.title} />
+        <Tableitem searc={searchTerm} mode={props.mode} type="Medium" title={props.title}  />
+        <Tableitem searc={searchTerm} mode={props.mode} type="Hard" title={props.title}  />
         </>
       else if(!element.EasyQuestion && element.MediumQuestion && element.hardQuestion)
        return <>
-        <Tableitem mode={props.mode} type="Medium" title={props.title} />
-        <Tableitem mode={props.mode} type="Hard" title={props.title} />
+        <Tableitem mode={props.mode} type="Medium" title={props.title}  />
+        <Tableitem mode={props.mode} type="Hard" title={props.title}  />
         </>
       else if(element.EasyQuestion && !element.MediumQuestion && element.hardQuestion)
-       return <><Tableitem mode={props.mode} type="Easy"  title={props.title}/>
-        <Tableitem mode={props.mode} type="Hard" title={props.title} />
+       return <><Tableitem mode={props.mode} type="Easy"  title={props.title} />
+        <Tableitem mode={props.mode} type="Hard" title={props.title}  />
         </>
       else if(element.EasyQuestion && element.MediumQuestion && !element.hardQuestion)
-       return <><Tableitem mode={props.mode} type="Easy"  title={props.title}/>
-        <Tableitem mode={props.mode} type="Medium" title={props.title} />
+       return <><Tableitem mode={props.mode} type="Easy"  title={props.title} />
+        <Tableitem mode={props.mode} type="Medium" title={props.title}  />
         </>
       else if(element.EasyQuestion && !element.MediumQuestion && !element.hardQuestion)
-       return <><Tableitem mode={props.mode} type="Easy"  title={props.title}/>
+       return <><Tableitem mode={props.mode} type="Easy"  title={props.title} />
         </>
       else if(!element.EasyQuestion && element.MediumQuestion && !element.hardQuestion)
        return <>
-        <Tableitem mode={props.mode} type="Medium" title={props.title} />
+        <Tableitem mode={props.mode} type="Medium" title={props.title}  />
         </>
       else if(!element.EasyQuestion && !element.MediumQuestion && element.hardQuestion)
        return <>
-        <Tableitem mode={props.mode} type="Hard" title={props.title} />
+        <Tableitem mode={props.mode} type="Hard" title={props.title}  />
         </>
       else if(!element.EasyQuestion && !element.MediumQuestion && !element.hardQuestion)
        return <>

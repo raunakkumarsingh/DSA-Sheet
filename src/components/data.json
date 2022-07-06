@@ -1,7 +1,5 @@
 [{
-    "source":{
-      "id": 1
-    },
+    "id": 1,
     "Title": "Array",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -9,19 +7,15 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 2,
     "Title": "String",
     "Totalquestion": 43,
     "EasyQuestion": 0,
-    "MediumQuestion":26,
+    "MediumQuestion":0,
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 3,
     "Title": "Math",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -29,9 +23,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 4,
     "Title": "Dynamic Programing",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -39,9 +31,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 5,
     "Title": "DFS",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -49,9 +39,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 6,
     "Title": "BackTracking",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -59,9 +47,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 7,
     "Title": "Hash Table",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -69,9 +55,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 8,
     "Title": "Tree",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -79,9 +63,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 9,
     "Title": "Binary Search",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -89,9 +71,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 10,
     "Title": "BFS",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -99,9 +79,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 11,
     "Title": "Two Pointer",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -109,9 +87,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 12,
     "Title": "Stack",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -119,9 +95,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 13,
     "Title": "Design",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -129,9 +103,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 14,
     "Title": "Graph",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -139,9 +111,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 15,
     "Title": "Bit Manipulation",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -149,9 +119,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 16,
     "Title": "Linklist",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -159,9 +127,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 17,
     "Title": "Heap",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -169,9 +135,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 18,
     "Title": "Sliding Window",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -179,9 +143,7 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 19,
     "Title": "Trie",
     "Totalquestion": 43,
     "EasyQuestion":12,
@@ -189,12 +151,10 @@
     "hardQuestion":5
   },
   {
-    "source":{
-      "id": 1
-    },
+    "id": 20,
     "Title": "Segment Tree",
     "Totalquestion": 43,
-    "EasyQuestion":12,
+    "EasyQuestion":1,
     "MediumQuestion":26,
-    "hardQuestion":5
+    "hardQuestion":0
   }]

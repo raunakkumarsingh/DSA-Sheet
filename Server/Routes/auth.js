@@ -44,7 +44,7 @@ const secureKey="#R4UN4K#J4SM1N#"
             }
             activity = await Activity.create({
                 email: req.body.email,
-                questions: [5],
+                questions: [0],
                 user:user.id,
             })
          const  data={

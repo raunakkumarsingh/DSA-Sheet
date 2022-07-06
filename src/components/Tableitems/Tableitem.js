@@ -24,7 +24,7 @@ import quest from '../question.json'
   </thead>
   <tbody>
      { que.map((element)=>{
-          return <Tabledata  QID={element.id} question={element.Url} />
+          return <Tabledata  QID={element.id} key={element.id} question={element.Url} />
       })
       
     }

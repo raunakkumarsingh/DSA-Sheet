@@ -9,10 +9,10 @@ const DataState=(props)=> {
     
     const note=[]
     const [notes,setNotes]=useState(note)
-    const [ques,setQues]=useState([3,4])
-    const [quesArray,setArray]=useState([3,4])
+    const [ques,setQues]=useState([0])
+    const [quesArray,setArray]=useState([0])
     // const checkbox=async()=>{
-    const host="http://localhost:5000";
+    // const host="http://localhost:5000";
     
     const getNotes=async()=>{
         const response=await fetch('http://localhost:5000',{
@@ -33,7 +33,7 @@ const DataState=(props)=> {
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
-                'auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiYTgyOGE2ZmUxZjQyOTNmZGJjNTdkIn0sImlhdCI6MTY1NjM5NjY0OH0.pfqW9Ujvsk0DaRCTYElmlqH8FMtK1OQa4I9JEAUPK-c'
+                'auth-token': localStorage.getItem('token')
             },
             body: JSON.stringify({email,questions})
         })
@@ -47,7 +47,7 @@ const DataState=(props)=> {
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
-                'auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiYTgyOGE2ZmUxZjQyOTNmZGJjNTdkIn0sImlhdCI6MTY1NjM5NjY0OH0.pfqW9Ujvsk0DaRCTYElmlqH8FMtK1OQa4I9JEAUPK-c'
+                'auth-token': localStorage.getItem('token')
             },
             body: JSON.stringify()
         })
@@ -62,11 +62,11 @@ const DataState=(props)=> {
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',
-                'auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiYTgyOGE2ZmUxZjQyOTNmZGJjNTdkIn0sImlhdCI6MTY1NjM5NjY0OH0.pfqW9Ujvsk0DaRCTYElmlqH8FMtK1OQa4I9JEAUPK-c'
+                'auth-token': localStorage.getItem('token')
             },
             body: JSON.stringify({email,questions})
         })
-        const json =await response.json()
+        // const json =await response.json()
         // setNotes(json);
     }
 
