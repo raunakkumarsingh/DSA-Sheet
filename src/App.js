@@ -11,10 +11,14 @@ import { Heading } from '@chakra-ui/react';
 import Signup from './components/Signup/Signup';
 import { useNavigate } from 'react-router-dom';
 import NoteState from './context/DataState'
+import Alert from './components/Alert/Alert';
+
 
   
 
 function App() {
+
+
   
   const [mode,setMode]=useState("dark");
   const [titl,setTitle]=useState("Array");
@@ -29,17 +33,19 @@ function App() {
  
 
 const changeMode=()=>{
-  if(mode==="dark")
-  setMode("light");
-  else if(mode==="light")
+  if(mode==="dark"){
+    setMode("light");
+  }
+  else if(mode==="light"){
   setMode("dark");
+  }
 }
 return (
   <NoteState>
 
   <Router>
       <Navbar mode={mode}/>
-      <Heading  mode={mode}/>
+      <Alert mode={mode}/>
       <Mode mode={mode} changeMode={changeMode}/>
       
       <Routes>

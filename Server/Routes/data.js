@@ -76,7 +76,6 @@ router.get('/getdata',fetchuser, async (req,res)=>{
     try{
     const user = await Activity.findOne({user:req.user.id});
     res.json(user);
-
     }
     catch(error){
         res.status(400).json({error:"Error in fetching Data"})

@@ -9,152 +9,152 @@
   {
     "id": 2,
     "Title": "String",
-    "Totalquestion": 43,
-    "EasyQuestion": 0,
-    "MediumQuestion":0,
-    "hardQuestion":5
+    "Totalquestion": 22,
+    "EasyQuestion": 5,
+    "MediumQuestion":10,
+    "hardQuestion":7
   },
   {
     "id": 3,
     "Title": "Math",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 20,
+    "EasyQuestion":9,
+    "MediumQuestion":7,
+    "hardQuestion":4
   },
   {
     "id": 4,
     "Title": "Dynamic Programing",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 35,
+    "EasyQuestion":4,
+    "MediumQuestion":16,
+    "hardQuestion":15
   },
   {
     "id": 5,
     "Title": "DFS",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 17,
+    "EasyQuestion":0,
+    "MediumQuestion":9,
+    "hardQuestion":8
   },
   {
     "id": 6,
     "Title": "BackTracking",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 10,
+    "EasyQuestion":0,
+    "MediumQuestion":6,
+    "hardQuestion":4
   },
   {
     "id": 7,
     "Title": "Hash Table",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 4,
+    "EasyQuestion":2,
+    "MediumQuestion":2,
+    "hardQuestion":0
   },
   {
     "id": 8,
     "Title": "Tree",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 41,
+    "EasyQuestion":16,
+    "MediumQuestion":18,
+    "hardQuestion":7
   },
   {
     "id": 9,
     "Title": "Binary Search",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
+    "Totalquestion": 18,
+    "EasyQuestion":4,
+    "MediumQuestion":9,
     "hardQuestion":5
   },
   {
     "id": 10,
     "Title": "BFS",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 9,
+    "EasyQuestion":0,
+    "MediumQuestion":5,
+    "hardQuestion":4
   },
   {
     "id": 11,
     "Title": "Two Pointer",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 5,
+    "EasyQuestion":0,
+    "MediumQuestion":3,
+    "hardQuestion":2
   },
   {
     "id": 12,
     "Title": "Stack",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 12,
+    "EasyQuestion":5,
+    "MediumQuestion":7,
+    "hardQuestion":0
   },
   {
     "id": 13,
     "Title": "Design",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 7,
+    "EasyQuestion":0,
+    "MediumQuestion":4,
+    "hardQuestion":3
   },
   {
     "id": 14,
     "Title": "Graph",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 16,
+    "EasyQuestion":2,
+    "MediumQuestion":14,
+    "hardQuestion":0
   },
   {
     "id": 15,
     "Title": "Bit Manipulation",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 1,
+    "EasyQuestion":0,
+    "MediumQuestion":1,
+    "hardQuestion":0
   },
   {
     "id": 16,
     "Title": "Linklist",
-    "Totalquestion": 43,
+    "Totalquestion": 27,
     "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "MediumQuestion":13,
+    "hardQuestion":2
   },
   {
     "id": 17,
     "Title": "Heap",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 17,
+    "EasyQuestion":0,
+    "MediumQuestion":8,
+    "hardQuestion":9
   },
   {
     "id": 18,
     "Title": "Sliding Window",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 2,
+    "EasyQuestion":0,
+    "MediumQuestion":2,
+    "hardQuestion":0
   },
   {
     "id": 19,
     "Title": "Trie",
-    "Totalquestion": 43,
-    "EasyQuestion":12,
-    "MediumQuestion":26,
-    "hardQuestion":5
+    "Totalquestion": 1,
+    "EasyQuestion":0,
+    "MediumQuestion":1,
+    "hardQuestion":0
   },
   {
     "id": 20,
     "Title": "Segment Tree",
-    "Totalquestion": 43,
-    "EasyQuestion":1,
-    "MediumQuestion":26,
+    "Totalquestion": 1,
+    "EasyQuestion":0,
+    "MediumQuestion":1,
     "hardQuestion":0
   }]

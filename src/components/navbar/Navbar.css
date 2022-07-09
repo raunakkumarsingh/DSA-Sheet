@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 .navbar-dark {
     background-color: rgb(14, 28, 37);
     color: #06E3E2;
@@ -10,15 +12,36 @@
     font-weight: bold;
 }
 
-.navbar-brand {
+.navbar-brand-dark {
+    margin: 1rem;
     color: #5BC6E6;
     font-family: 'Rubik', sans-serif;
+    text-decoration: none;
 }
-.nav-link .active{
-    color: #06E3E2;
+
+.navbar-brand-light {
+    margin: 1rem;
+    color: #000000;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
 }
-.nav-link {
+
+.nav-link-dark:hover {
+    color: red;
+}
+.nav-link-light:hover {
+    color: red;
+}
+.nav-link-dark {
     color: #34BCD4;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+.nav-link-light {
+    color: #000000;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+
 }
 .form-control {
     background-color: #0E1C25;

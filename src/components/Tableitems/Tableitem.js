@@ -15,7 +15,7 @@ import quest from '../question.json'
         <div className={`questionlinks-${props.mode}`}>
         <table className="table ">
   <thead >
-    <tr>
+    <tr className={`headings-${props.mode} `}>
       <th scope="col">#</th>
       <th scope="col">Q-ID</th>
       <th scope="col">Questions</th>
@@ -24,9 +24,8 @@ import quest from '../question.json'
   </thead>
   <tbody>
      { que.map((element)=>{
-          return <Tabledata  QID={element.id} key={element.id} question={element.Url} />
+          return <Tabledata  mode={props.mode} QID={element.id} key={element.id} question={element.Name} Url={element.Url}/>
       })
-      
     }
   </tbody>
 </table>

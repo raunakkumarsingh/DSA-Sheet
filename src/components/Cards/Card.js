@@ -19,16 +19,17 @@ function Card(props) {
 
   let history=useNavigate();
 
- const loginControl=(e)=>{
-  e.preventDefault()
-  console.log("hello");
+
+ const loginControl=async(e)=>{
+  // e.preventDefault()
+
   if(!localStorage.getItem('token')){
-    history('/login')
+        history('/login')
 
   }
  }
  
-  console.log(props.mode);
+  // console.log(props.mode);
   document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   return (
 

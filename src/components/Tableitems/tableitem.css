@@ -3,6 +3,12 @@
     color: #05ef63;
     margin-left: 4rem;
 }
+.headings-dark {
+    color: #05ef63;
+}
+.headings-light {
+    color: #070611;
+}
 .table-light {
     background-color: white;
 }

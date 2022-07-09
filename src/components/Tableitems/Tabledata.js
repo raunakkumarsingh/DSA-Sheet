@@ -13,7 +13,7 @@ const [color,setColor]=useState("#0E1C25")
 const ref=useRef(null);
 
   const context=useContext(dataContext);
-  const {ques,quesArray,updateData,deleteData}=context;
+  const {ques,quesArray,updateData,deleteData,showAlert}=context;
   
   // console.log(ques.questions);
   // console.log(notes);
@@ -29,84 +29,47 @@ const ref=useRef(null);
   useEffect(()=>{
     setIsChecked(check);
   },[check])
-  
-  
-  
-    
-  
-  
-  
-  
-  // useEffect(()=>{
-    //   // if(localStorage.getItem('token')){
-      //     getData();
-      
-      //     // }
-      //   })
-      // let i=0;
-      // if(check){
-        //    setState("true")
-        // }
-        
-        //   if(quesArray.includes(props.QID)){
-          //     setState("true")
-          //  } 
-          
-          
-          
+ 
           const onClickCheckbox= (e)=>{
             e.preventDefault();
             if(quesArray.includes(props.QID))
             
             updateData(ques._id,ques.email,props.QID)
           }
-          
-          // if(check){
-            //   setColor("green")
-            // }
             
             const toggle= async(e)=>{
              
               if(isChecked){
-                setColor("#0E1C25")
-                
-                // check=false;
+                if(props.mode == "dark")
+                setColor("blue")
+
+                else{
+                  setColor("red")
+                }
+
                 deleteData(ques._id,ques.email,props.QID)
+                showAlert("success","question deselect succesfully")
                 setIsChecked(false);
               }
               else if(!isChecked)  {
                 
                 setColor("green")
-                // check=true;
+                
                 updateData(ques._id,ques.email,props.QID)
+                showAlert("success","question Completed succesfully")
                 setIsChecked(true);
       }
       
     }
-    // if(isChecked || check){
-    //   setIsChecked(false);
-    // }
-    
-    //  const tog=()=>{
-    //          if(color=="#0E1C25"){
-    //           setIsChecked(true);
-    //          }
-    //          else{
-    //           setIsChecked(false);
-    //          }
-    //  }
-    // console.log(check)
-    // console.log(isChecked)
-    // console.log(props.QID);
+  
     
     
     return (
       <>
-    <tr  style={{backgroundColor: isChecked?"green":"#0E1C25"}} >
+    <tr  style={{backgroundColor: isChecked?"#05ef63":"black"}} >
       <th scope="row"><input className="donebox" name={props.QID} onChange={toggle}    type="checkbox"  checked={isChecked}></input></th>
-      <th >{props.QID}</th>
-      <th><Link  to={props.question}>{props.question}</Link></th>
-      
+      <th  className="questionname" style={{ color: isChecked?"black":"#D5D2DD"}}>{props.QID}</th>
+      <th><a target="_blank" href={props.Url}  className="questionname" style={{ color: isChecked?"black":"#D5D2DD"}}>{props.question}</a></th>
     </tr>
     </>
   )

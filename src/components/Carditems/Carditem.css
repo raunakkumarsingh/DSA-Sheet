@@ -10,7 +10,7 @@
 }
 
 .btn-dark {
-    background-color:  #05ef63;
+    background-color:  blue;
     color: #121D28;
     width: 6rem;
     display: flex;
@@ -42,7 +42,9 @@
 
 
 .card-light {
-    background-color: #0E1C25;
+    border-color: #070611;
+    background-color: #c4eef5;
+    color: #070611;
     margin: 5rem;
     border-radius: 2rem;
     padding: 1rem;
@@ -51,7 +53,7 @@
 }
 
 .btn-light {
-    background-color:  #0cf679;
+    background-color:  #4dbce4;
     height: 1.8rem;
     width: 4rem;
     display: flex;
@@ -72,14 +74,15 @@
 }
 .card-light:hover {
     transform: scale(1.05);
-    box-shadow: rgb(234, 222, 11) 0px 10px 20px, rgb(241, 254, 3) 0px 6px 6px;
+    box-shadow: rgb(11, 234, 182) 0px 10px 20px, rgb(3, 254, 183) 0px 6px 6px;
 }
 .card-light-title {
-    color: #f8f80a;
+    color: blue;
+    font-weight: bold;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 .card-light-text {
-    color: rgb(248, 248, 248);
+    color: #070611;
     font-weight: bold;  
     font-family: 'Roboto', sans-serif; 
 }

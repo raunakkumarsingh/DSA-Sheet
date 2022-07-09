@@ -1,11 +1,15 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState,useContext } from 'react';
 import './Login.css'
 import { useNavigate } from 'react-router';
+import dataContext from '../../context/datacontext';
 // import { useCookies } from 'react-cookie';
 
 
-function Login() {
+function Login(props) {
+  
+  const context=useContext(dataContext);
+  const {getData,showAlert}=context;
 
   let history=useNavigate();
   const[credentials,setCredentials]=useState({lemail:"",lpassword:""})
@@ -23,27 +27,35 @@ function Login() {
                 'Content-Type':'application/json'
             },
        body: JSON.stringify({email:credentials.lemail,password:credentials.lpassword})
-    })
-  
-
-    const json= await response.json();
-    console.log(json);
-    if(json.success){
-      localStorage.setItem('token',json.token);
-      history('/')
+      })
+      
+      
+      const json= await response.json();
+      console.log(json);
+      if(json.success){
+        localStorage.setItem('token',json.token);
+        getData();
+        showAlert("success","Signup Successfull")
+        history('/')
+      }
+      else{
+        showAlert("danger",json.error)
+        
     }
 
    
        
   }
+  document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   return (
     <div className="container " id="log" style={{height:"100%"}}>
-    <div className="card d-flex justify-content-center aling-item-center">
+    <div className="loginpage">
+    <div className={`logincard-${props.mode} d-flex justify-content-center aling-item-center`}>
   <div className="card-body">
   <form onSubmit={handleSubmit}>
   <div className="mb-3">
     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-    <input type="email" className="form-control" name="lemail" onChange={onChange} id="exampleInputEmail1" aria-describedby="emailHelp"/>
+    <input type="email" className={`form-control`} name="lemail" onChange={onChange} id="exampleInputEmail1" aria-describedby="emailHelp"/>
     <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div className="mb-3">
@@ -54,10 +66,11 @@ function Login() {
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" className="btn btn-primary">Submit</button>
+  <button type="submit" className="btn btn-primary">Login</button>
 </form>
   </div>
 </div>
+ </div>
  </div>
   )
 }

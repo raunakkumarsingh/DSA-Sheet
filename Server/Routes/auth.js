@@ -38,11 +38,12 @@ const secureKey="#R4UN4K#J4SM1N#"
                 password:secpass
             })
             let activity = await Activity.findOne({email:req.body.email})
-            if(activity){
-                success=false;
-                return res.status(400).json({error:"Already have an account With this Email Procced to Login"})
-            }
+            // if(activity){
+            //     success=false;
+            //     return res.status(400).json({error:"Already have an account With this Email Procced to Login"})
+            // }
             activity = await Activity.create({
+                name: req.body.name,
                 email: req.body.email,
                 questions: [0],
                 user:user.id,

@@ -16,7 +16,7 @@ function Carditem(props) {
       <p className={`card-${props.mode}-text`}>Medium Question - {props.MediumQuestion} </p>
       <p className={`card-${props.mode}-text`}>Hard Question - {props.hardQuestion} </p>
       <div className='d-flex justify-content-end'>
-      <Link to={`${props.title}`}   className="btn-light btn-primary ">GO</Link>
+      <Link to={`${props.title}`}  onClick={props.loginControl} className="btn-light btn-primary ">GO</Link>
       </div>
     </div>
   </div>
