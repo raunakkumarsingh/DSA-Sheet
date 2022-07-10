@@ -35,6 +35,9 @@ const DataState=(props)=> {
                 type:type,
                 msg:msg
             })
+            setTimeout(()=>{
+                setAlert(null)
+    },3200)
     }
     const updateData=async(id,email,questions)=>{
         const response=await fetch(`http://localhost:5000/api/data/updatedata/${id}`,{

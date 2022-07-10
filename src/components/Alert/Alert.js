@@ -7,13 +7,22 @@ function Alert() {
     const context=useContext(dataContext);
     const {alert}=context;
 
-    anime({
+    var animation = anime({
         targets: '.animealert',
-        targets: '.duration-demo .el',
-  translateX: 250,
-  duration: 3000,
-  loop: true
+        translateX: 270,
+        direction: 'alternate',
+        loop: true,
+        easing: 'easeInOutQuad',
+        autoplay: true
       });
+      
+      function loop(t) {
+        animation.tick(t);
+        // customRAF = requestAnimationFrame(loop);
+      }
+      
+      requestAnimationFrame(loop);
+    // easing: 'spring(1, 80, 10, 0)'
 console.log(alert)
 
     const capitalize = (word)=>{
