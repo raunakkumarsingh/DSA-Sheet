@@ -48,7 +48,7 @@ const ref=useRef(null);
                 }
 
                 deleteData(ques._id,ques.email,props.QID)
-                showAlert("success","question deselect succesfully")
+                showAlert("deselect","Question Deselected 👾")
                 setIsChecked(false);
               }
               else if(!isChecked)  {
@@ -56,21 +56,22 @@ const ref=useRef(null);
                 setColor("green")
                 
                 updateData(ques._id,ques.email,props.QID)
-                showAlert("success","question Completed succesfully")
+                showAlert("success","Question Completed Succesfully 🎉🎊")
                 setIsChecked(true);
       }
       
     }
+    console.log(props.mode)
+    console.log(isChecked)
   
-    
-    
     return (
       <>
-    <tr  style={{backgroundColor: isChecked?"#05ef63":"black"}} >
+    <tr className={`table-${props.mode}-${isChecked}`}  >
       <th scope="row"><input className="donebox" name={props.QID} onChange={toggle}    type="checkbox"  checked={isChecked}></input></th>
-      <th  className="questionname" style={{ color: isChecked?"black":"#D5D2DD"}}>{props.QID}</th>
-      <th><a target="_blank" href={props.Url}  className="questionname" style={{ color: isChecked?"black":"#D5D2DD"}}>{props.question}</a></th>
+      <th  className={`questionname data-${props.mode}-${isChecked}`} >{props.QID}</th>
+      <th><a target="_blank" href={props.Url}  className={`questionname data-${props.mode}-${isChecked}`} >{props.question}</a></th>
     </tr>
     </>
   )
 }
+// style={{backgroundColor: isChecked?"#05ef63":"black"}} 

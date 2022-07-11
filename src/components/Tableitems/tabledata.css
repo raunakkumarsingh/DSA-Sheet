@@ -1,7 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
 th{
     text-decoration-color: black;
 }
+
 .questionname {
   color: white;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+/* style={{backgroundColor: isChecked && props.mode=="dark"?"#05ef63":"black"}} */
+.table-dark-true{
+  background-color: #05ef63;
+}
+.table-dark-false{
+  background-color: black;
+  
+}
+.table-light-true{
+  background-color: #05ef63;
+}
+.table-light-false{
+  background-color: white;
+
+}
+.data-dark-true{
+  color: black;
+}
+.data-dark-false{
+  color: #D5D2DD;
+  
+}
+.data-light-true{
+  color: black;
+}
+.data-light-false{
+  color: #0e0c13;
+
 }

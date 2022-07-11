@@ -45,7 +45,10 @@ return (
 
   <Router>
       <Navbar mode={mode}/>
+      <div className='alert' style={{height: '10px'}}>
+
       <Alert mode={mode}/>
+      </div>
       <Mode mode={mode} changeMode={changeMode}/>
       
       <Routes>

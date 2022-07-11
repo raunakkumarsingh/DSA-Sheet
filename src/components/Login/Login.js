@@ -35,7 +35,7 @@ function Login(props) {
       if(json.success){
         localStorage.setItem('token',json.token);
         getData();
-        showAlert("success","Signup Successfull")
+        showAlert("success","Login Successfull 🥳🎉")
         history('/')
       }
       else{

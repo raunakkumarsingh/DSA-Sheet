@@ -10,7 +10,7 @@ function Signup(props) {
   const {showAlert}=context;
  
     let history=useNavigate();
-      const[credentials,setCredentials]=useState({name:"",email:"",password:""});
+      const[credentials,setCredentials]=useState({name:"",email:"",password:"",cpassword:""});
       
       const onChange=(e)=>{
         setCredentials({...credentials,[e.target.name]:e.target.value})
@@ -18,6 +18,12 @@ function Signup(props) {
 
       const handleSubmit=async(e)=>{
         e.preventDefault();
+        if(credentials.password!=credentials.cpassword){
+          showAlert("danger","Confirm Password & Entered Password should be same")
+          console.log(credentials.cpassword);
+        //  console.log(credentials.password);
+        }
+        else{
         const response = await fetch("http://localhost:5000/api/auth/createuser",{
             method:'POST',
             headers:{
@@ -32,14 +38,12 @@ function Signup(props) {
         
         if(json.success){
           history('/login');
-          showAlert("success","Signup Successfull")
-          
+          showAlert("success","Signup Successfull 🥳🎉")
         }
         else{
           showAlert("danger",json.error[0].msg || json.error)
-
         }
-        
+      }
       }
       document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   return (
@@ -58,7 +62,7 @@ function Signup(props) {
     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
     <input type="password" className="form-control"  name='password' onChange={onChange} id="exampleInputPassword1"/>
     <label htmlFor="exampleInputPassword1" className="form-label">Confirm Password</label>
-    <input type="password" className="form-control" name='cpassword' id="exampleInputPassword2"/>
+    <input type="password" className="form-control" name='cpassword' id="exampleInputPassword2"  onChange={onChange}/>
   </div>
   <div className="mb-3 form-check">
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>

@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-.questions {
-    color: #05ef63;
-    margin-left: 4rem;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.input-group{
+    z-index: -1;
 }
 .table-light {
     background-color: white;
+    border-radius: 3rem;
 }
 .table-dark {
     background-color: #0E1C25;
+    border-radius: 3rem;
 }
 .tableheading-dark {
     color: aqua;
     font-size: 3rem;
     text-align: center;
     margin: 2rem;
-    font-family: 'Anton', sans-serif;
+   font-family: 'Permanent Marker', cursive;
 }
 .tableheading-light {
     color: 1;
@@ -22,7 +25,7 @@
     font-size: 3rem;
     text-align: center;
     margin: 2rem;
-    font-family: 'Anton', sans-serif;
+   font-family: 'Permanent Marker', cursive;
 }
 .questionlinks {
     margin-left: 6rem;
@@ -37,7 +40,6 @@
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-    
 }
 .donebox {
     text-align: right;
@@ -56,10 +58,12 @@ tr,th {
     color: white;
 }
 .difficulty-dark {
-    color: #05ef63;
+    margin-top: 2.7rem;
+    color: aqua;
     margin-left: 7rem;
 }
 .difficulty-light {
+    margin-top: 2.7rem;
     color: #070611;
     margin-left: 7rem;
 }

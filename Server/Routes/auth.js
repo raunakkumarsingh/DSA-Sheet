@@ -24,7 +24,7 @@ const secureKey="#R4UN4K#J4SM1N#"
          
             let success=false;
             let user= await User.findOne({email:req.body.email})
-               console.log(user);
+            //    console.log(user);
             if(user){
                 return res.status(400).json({error:"Already have an account With this Email Procced to Login"})
             }

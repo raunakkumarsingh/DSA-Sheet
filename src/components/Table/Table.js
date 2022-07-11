@@ -72,12 +72,12 @@ export default  function Table(props) {
   // console.log(parseddata[0].EasyQuestion);
   return (
     <>
-     <h1 className={`tableheading-${props.mode} `}>{props.title}</h1>
-     <div className='d-flex justify-content-center'>  <div className="input-group input-group-lg d-flex justify-content-center" >
+     <h1 className={`tableheading-${props.mode} Mt-5`}>{props.title}</h1>
+     <div className='d-flex  justify-content-center' >  <div className="input-group input-group-lg d-flex justify-content-center" >
     <span className="input-group-text" id="inputGroup-sizing-lg">Search</span>
-    <input type="text" className="form-control" onChange={e=>setSearchTerm(e.target.value)} aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
+    <input   type="text" className="form-control" onChange={e=>setSearchTerm(e.target.value)} aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
   </div></div>
-     
+  <div >
      {lparsed.map((element,i) => {
 
        if(element.EasyQuestion && element.MediumQuestion && element.hardQuestion)
@@ -114,7 +114,7 @@ export default  function Table(props) {
         </>
        
           })}
-    
+    </div>
     </>
   )
 }
