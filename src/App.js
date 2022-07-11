@@ -55,7 +55,7 @@ return (
     <Route exact path="/Segment%20Tree" element={<Table key="2" mode={mode} title="Segment Tree"/>}/>
     <Route exact path="/Math" element={<Table key="3" mode={mode} title="Math"/>}/>
     <Route exact path="/DFS" element={<Table key="4" mode={mode} title="DFS"/>}/>
-    <Route exact path="/Dynamic%20Programing" element={<Table key="5" mode={mode} title="Dynamic Programing" />}/>
+    <Route exact path="/Dynamic%20Programming" element={<Table key="5" mode={mode} title="Dynamic Programming" />}/>
     <Route exact path="/BackTracking" element={<Table key="6" mode={mode} title="BackTracking" />}/>
     <Route exact path="/Hash%20Table" element={<Table key="7" mode={mode} title="Hash Table" />}/>
     <Route exact path="/Binary%20Search" element={<Table key="8" mode={mode} title="Binary Search"/>}/>
@@ -64,11 +64,14 @@ return (
     <Route exact path="/Design" element={<Table key="11" mode={mode} title="Design"/>}/>
     <Route exact path="/data" element={<Table key="12" mode={mode} title="Data"/>}/>
     <Route exact path="/Bit%20Manipulation" element={<Table key="13" mode={mode} title="Bit Manipulation"/>}/>
-    <Route exact path="/Linklist" element={<Table key="14" mode={mode} title="Linklist"/>}/>
+    <Route exact path="/Linked%20List" element={<Table key="14" mode={mode} title="Linked List"/>}/>
     <Route exact path="/Heap" element={<Table key="15" mode={mode} title="Heap"/>}/>
     <Route exact path="/String" element={<Table key="16" mode={mode} title="String"/>}/>
     <Route exact path="/Tree" element={<Table key="17" mode={mode} title="Tree"/>}/>
     <Route exact path="/Trie" element={<Table key="18" mode={mode} title="Trie"/>}/>
+    <Route exact path="/BFS" element={<Table key="19" mode={mode} title="BFS"/>}/>
+    <Route exact path="/Graph" element={<Table key="20" mode={mode} title="Graph"/>}/>
+    <Route exact path="/Sliding%20Window" element={<Table key="20" mode={mode} title="Sliding Window"/>}/>
         <Route exact path="/login" element={<Login mode={mode}/>}/>
         <Route exact path="/signup" element={<Signup mode={mode}/>}/>
     </Routes>

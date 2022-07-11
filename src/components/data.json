@@ -24,7 +24,7 @@
   },
   {
     "id": 4,
-    "Title": "Dynamic Programing",
+    "Title": "Dynamic Programming",
     "Totalquestion": 35,
     "EasyQuestion":4,
     "MediumQuestion":16,
@@ -120,7 +120,7 @@
   },
   {
     "id": 16,
-    "Title": "Linklist",
+    "Title": "Linked List",
     "Totalquestion": 27,
     "EasyQuestion":12,
     "MediumQuestion":13,
@@ -137,9 +137,9 @@
   {
     "id": 18,
     "Title": "Sliding Window",
-    "Totalquestion": 2,
+    "Totalquestion": 4,
     "EasyQuestion":0,
-    "MediumQuestion":2,
+    "MediumQuestion":4,
     "hardQuestion":0
   },
   {

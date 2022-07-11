@@ -1346,14 +1346,14 @@
 {
   "id": 195,
   "Title": "Hash Table",
-  "Type": "Easy",
+  "Type": "Medium",
   "Name": "Top K Frequent Elements",
   "Url": "https://leetcode.com/problems/top-k-frequent-elements/"
 },
 {
   "id": 196,
   "Title": "Hash Table",
-  "Type": "Easy",
+  "Type": "Medium",
   "Name": "Design Twitter",
   "Url": "https://leetcode.com/problems/design-twitter/"
 },
@@ -1570,83 +1570,83 @@
 {
   "id": 227,
   "Title": "Two Pointer",
-  "Type": "Medium",
+  "Type": "Hard",
   "Name": "Maximum Number of Visible Points",
   "Url": "https://leetcode.com/problems/maximum-number-of-visible-points/"
 },
 {
   "id": 228,
   "Title": "Two Pointer",
-  "Type": "Medium",
+  "Type": "Hard",
   "Name": "Subarrays with K Different Integers",
   "Url": "https://leetcode.com/problems/subarrays-with-k-different-integers/"
 },
 {
   "id": 229,
-  "Title": "Backtracking",
+  "Title": "BackTracking",
   "Type": "Medium",
   "Name": "Palindrome Partitioning",
   "Url": "https://leetcode.com/problems/palindrome-partitioning/"
 },
 {
   "id": 230,
-  "Title": "Backtracking",
+  "Title": "BackTracking",
   "Type": "Medium",
   "Name": "Combination Sum-3",
   "Url": "https://leetcode.com/problems/combination-sum-ii/"
 },
 {
   "id": 231,
-  "Title": "Backtracking",
+  "Title": "BackTracking",
   "Type": "Medium",
   "Name": "Combinations",
   "Url": "https://leetcode.com/problems/combinations/"
 },
 {
   "id": 232,
-  "Title": "Backtracking",
+  "Title": "BackTracking",
   "Type": "Medium",
   "Name": "Permutations-2",
   "Url": "https://leetcode.com/problems/permutations-ii/"
 },
 {
   "id": 233,
-  "Title": "Backtracking",
+  "Title": "BackTracking",
   "Type": "Medium",
   "Name": "Subsets-2",
   "Url": "https://leetcode.com/problems/subsets-ii/"
 },
 {
   "id": 234,
-  "Title": "Backtracking",
+  "Title": "BackTracking",
   "Type": "Medium",
   "Name": "Beautiful Arrangement",
   "Url": "https://leetcode.com/problems/beautiful-arrangement/"
 },
 {
   "id": 235,
-  "Title": "Backtracking",
+  "Title": "BackTracking",
   "Type": "Hard",
   "Name": "Subsets",
   "Url": "https://leetcode.com/problems/subsets/"
 },
 {
   "id": 236,
-  "Title": "Backtracking",
+  "Title": "BackTracking",
   "Type": "Hard",
   "Name": "Sudoku Solver",
   "Url": "https://leetcode.com/problems/sudoku-solver/"
 },
 {
   "id": 237,
-  "Title": "Backtracking",
+  "Title": "BackTracking",
   "Type": "Hard",
   "Name": "N-Queens",
   "Url": "https://leetcode.com/problems/n-queens/"
 },
 {
   "id": 238,
-  "Title": "Backtracking",
+  "Title": "BackTracking",
   "Type": "Hard",
   "Name": "Unique Paths-3",
   "Url": "https://leetcode.com/problems/unique-paths-iii/"
@@ -1766,21 +1766,21 @@
 {
   "id": 255,
   "Title": "Design",
-  "Type": "Medium",
+  "Type": "Hard",
   "Name": "Tweet Counts per Frequency",
   "Url": "https://leetcode.com/problems/tweet-counts-per-frequency/"
 },
 {
   "id": 256,
   "Title": "Design",
-  "Type": "Medium",
+  "Type": "Hard",
   "Name": "All One Data Structure",
   "Url": "https://leetcode.com/problems/all-oone-data-structure/"
 },
 {
   "id": 257,
   "Title": "Design",
-  "Type": "Medium",
+  "Type": "Hard",
   "Name": "Design Browser History",
   "Url": "https://leetcode.com/problems/design-browser-history/"
 },
@@ -1899,7 +1899,7 @@
 {
   "id": 274,
   "Title": "Bit Manipulation",
-  "Type": "Easy",
+  "Type": "Medium",
   "Name": "How to use Bit Manipulation",
   "Url": "https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently"
 },
@@ -2243,14 +2243,14 @@
 {
   "id": 323,
   "Title": "Trie",
-  "Type": "Easy",
+  "Type": "Medium",
   "Name": "Learn Trie",
   "Url": "https://leetcode.com/explore/learn/card/trie/"
 },
 {
   "id": 324,
   "Title": "Segment Tree",
-  "Type": "Easy",
+  "Type": "Medium",
   "Name": "Recursive Approach to Segment Trees Range Sum Queries(Lazy Propagation)",
   "Url": "https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/"
 }]

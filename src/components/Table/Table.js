@@ -87,27 +87,27 @@ export default  function Table(props) {
         </>
       else if(!element.EasyQuestion && element.MediumQuestion && element.hardQuestion)
        return <>
-        <Tableitem mode={props.mode} type="Medium" title={props.title}   />
-        <Tableitem mode={props.mode} type="Hard" title={props.title}   />
+        <Tableitem mode={props.mode} type="Medium" title={props.title} searc={searchTerm}  />
+        <Tableitem mode={props.mode} type="Hard" title={props.title} searc={searchTerm}  />
         </>
       else if(element.EasyQuestion && !element.MediumQuestion && element.hardQuestion)
-       return <><Tableitem mode={props.mode} type="Easy"  title={props.title}  />
-        <Tableitem mode={props.mode} type="Hard" title={props.title}   />
+       return <><Tableitem mode={props.mode} type="Easy"  title={props.title} searc={searchTerm} />
+        <Tableitem mode={props.mode} type="Hard" title={props.title} searc={searchTerm}  />
         </>
       else if(element.EasyQuestion && element.MediumQuestion && !element.hardQuestion)
-       return <><Tableitem mode={props.mode} type="Easy"  title={props.title}  />
-        <Tableitem mode={props.mode} type="Medium" title={props.title}   />
+       return <><Tableitem mode={props.mode} type="Easy"  title={props.title} searc={searchTerm} />
+        <Tableitem mode={props.mode} type="Medium" title={props.title} searc={searchTerm}  />
         </>
       else if(element.EasyQuestion && !element.MediumQuestion && !element.hardQuestion)
-       return <><Tableitem mode={props.mode} type="Easy"  title={props.title}  />
+       return <><Tableitem mode={props.mode} type="Easy"  title={props.title} searc={searchTerm} />
         </>
       else if(!element.EasyQuestion && element.MediumQuestion && !element.hardQuestion)
        return <>
-        <Tableitem mode={props.mode} type="Medium" title={props.title}   />
+        <Tableitem mode={props.mode} type="Medium" title={props.title} searc={searchTerm}  />
         </>
       else if(!element.EasyQuestion && !element.MediumQuestion && element.hardQuestion)
        return <>
-        <Tableitem mode={props.mode} type="Hard" title={props.title}   />
+        <Tableitem mode={props.mode} type="Hard" title={props.title} searc={searchTerm}  />
         </>
       else if(!element.EasyQuestion && !element.MediumQuestion && !element.hardQuestion)
        return <>
