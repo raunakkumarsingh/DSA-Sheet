@@ -61,8 +61,8 @@ const ref=useRef(null);
       }
       
     }
-    console.log(props.mode)
-    console.log(isChecked)
+    // console.log(props.mode)
+    // console.log(isChecked)
   
     return (
       <>

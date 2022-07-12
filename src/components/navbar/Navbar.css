@@ -5,6 +5,12 @@
     display: flex ;
     position: sticky;
     top:0px;
+
+}
+.navbar-toggler{
+    display: flex;
+    justify-content: flex-end;
+
 }
 .navbar-dark {
     background-color: rgb(14, 28, 37);
@@ -56,3 +62,19 @@
 a * {
     color: #DC3803;
 }
+
+
+.navbar {
+    padding: 0 16px;
+  }
+  
+ 
+  
+  @media (max-width: 768px) {
+    
+    .navbar {
+      padding: 8px 16px;
+      
+      
+    }
+  }

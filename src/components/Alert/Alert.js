@@ -11,7 +11,7 @@ function Alert() {
       
 
     // easing: 'spring(1, 80, 10, 0)'
-console.log(alert)
+// console.log(alert)
 
     const capitalize = (word)=>{
         const lower = word.toLowerCase();

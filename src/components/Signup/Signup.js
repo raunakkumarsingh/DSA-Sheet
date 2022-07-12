@@ -20,7 +20,7 @@ function Signup(props) {
         e.preventDefault();
         if(credentials.password!=credentials.cpassword){
           showAlert("danger","Confirm Password & Entered Password should be same")
-          console.log(credentials.cpassword);
+          // console.log(credentials.cpassword);
         //  console.log(credentials.password);
         }
         else{
@@ -34,7 +34,7 @@ function Signup(props) {
         });
 
         const json=await response.json();
-        console.log(json);
+        // console.log(json);
         
         if(json.success){
           history('/login');
@@ -47,7 +47,7 @@ function Signup(props) {
       }
       document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   return (
-    <div className="container " id="log" style={{height:"100%"}}>
+    <div className="container col-sm-12" id="log" style={{height:"100%"}}>
     <div className={`signupcard-${props.mode} d-flex justify-content-center aling-item-center`}>
   <div className="card-body">
   <form  onSubmit={handleSubmit}>

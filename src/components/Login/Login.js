@@ -31,7 +31,7 @@ function Login(props) {
       
       
       const json= await response.json();
-      console.log(json);
+      // console.log(json);
       if(json.success){
         localStorage.setItem('token',json.token);
         getData();
@@ -49,7 +49,7 @@ function Login(props) {
   document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   return (
     <div className="container " id="log" style={{height:"100%"}}>
-    <div className="loginpage">
+ 
     <div className={`logincard-${props.mode} d-flex justify-content-center aling-item-center`}>
   <div className="card-body">
   <form onSubmit={handleSubmit}>
@@ -69,7 +69,7 @@ function Login(props) {
   <button type="submit" className="btn btn-primary">Login</button>
 </form>
   </div>
-</div>
+
  </div>
  </div>
   )

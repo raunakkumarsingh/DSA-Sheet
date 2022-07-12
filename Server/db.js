@@ -4,7 +4,7 @@ require('dotenv').config()
 
 
 // const mongo_URI=process.env.mongo_URI_Atlas
-const mongo_URI="mongodb+srv://root:toor@cluster0.vh2d3os.mongodb.net/Farajsheet"
+const mongo_URI="mongodb+srv://root:toor@cluster0.vh2d3os.mongodb.net/Faraj"
 
    console.log(process.env.mongo_URI_Atlas)
 const connectToMongo=()=>{

@@ -37,7 +37,7 @@ function Card(props) {
       
     <div className='row'>
         {  data.map((element)=>{
-          return<div className='col-lg-4 col-md-6 col sm-12' key={element.Title}>
+          return<div className='col-lg-4 col-md-6 col sm-12 d-flex justify-content-center' key={element.Title}>
           <DataState>
          <Carditem title={element.Title} mode={props.mode} loginControl={loginControl}  TotalQuestion={element.Totalquestion} EasyQuestion={element.EasyQuestion} MediumQuestion={element.MediumQuestion} hardQuestion={element.hardQuestion}/>
           </DataState>

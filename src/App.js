@@ -53,7 +53,7 @@ return (
       
       <Routes>
     <Route exact path='/' element={<Card key="0" mode={mode} />}/>
-    <Route exact path='/Faraj-Sheet' element={<Card key="0" mode={mode} />}/>
+    {/* <Route exact path='/Faraj-Sheet' element={<Card key="0" mode={mode} />}/> */}
     <Route exact path="/Array" element={<Table key="1" mode={mode} title="Array"/>}/>
     <Route exact path="/Segment%20Tree" element={<Table key="2" mode={mode} title="Segment Tree"/>}/>
     <Route exact path="/Math" element={<Table key="3" mode={mode} title="Math"/>}/>

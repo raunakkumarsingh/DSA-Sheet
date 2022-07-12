@@ -72,7 +72,7 @@ const DataState=(props)=> {
         setName(json.name);
     }
    
-
+    // http://localhost:5000/
     
         // console.log(1);
     }
