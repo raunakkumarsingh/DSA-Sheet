@@ -4,7 +4,7 @@ import './Table.css'
 import Searchbar from '../Tableitems/Searchbar';
 import data from  '../data.json'
 import { useContext,useEffect, useState } from "react";
-import dataContext from '../../context/datacontext';
+import dataContext from '../../../context/DataState';
 import { useNavigate } from 'react-router';
 
 
@@ -26,7 +26,7 @@ export default  function Table(props) {
 
   useEffect(()=>{
       getData();
-    },[localStorage.getItem('token')]);
+    },["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJjZDllNmQwOWU3ZWYzMGM0ZjY5Y2RkIn0sImlhdCI6MTY1NzY4NjUyN30.EdZFRC0Oe7wzRXNIZ5FbLWViAebmsnmULwP7No5p9Cw"]);
     // console.log(ques);
 
 // Remove all warninng from the Console 
@@ -34,11 +34,11 @@ export default  function Table(props) {
 
   const [searchTerm,setSearchTerm] = useState('');
   document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
-  // console.log(props.title);
-  // console.log(data);
+  console.log(props.title);
+  console.log(data);
   let parseddata = data.filter((auto)=> auto.Title.includes(props.title));
-  // console.log(parseddata);
-  // console.log(props.title);
+  console.log(parseddata);
+  console.log(props.title);
   let lparsed=parseddata;
   
 

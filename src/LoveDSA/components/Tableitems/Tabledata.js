@@ -1,6 +1,6 @@
 import React, { useContext, useEffect,useRef,useState } from 'react'
 import './tabledata.css'
-import dataContext from '../../context/datacontext';
+import dataContext from '../../../context/DataState';
 import { Link } from "react-router-dom";
 // import { responsiveFontSizes } from '@mui/material';
 

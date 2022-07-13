@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.input-group{
+    z-index: -1;
+}
+.table-light {
+    background-color: white;
+    border-radius: 3rem;
+}
+.table-dark {
+    background-color: #0E1C25;
+    border-radius: 3rem;
+}
+.tableheading-dark {
+    color: aqua;
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem;
+   font-family: 'Permanent Marker', cursive;
+}
+.tableheading-light {
+    color: 1;
+    background-color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem;
+   font-family: 'Permanent Marker', cursive;
+}
+.questionlinks {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 3rem;
+    background-color: #070611;
+    padding: 1rem;
+}
+.questions {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.donebox {
+    text-align: right;
+    height: 1rem;
+    width: 1rem;
+}
+
+tr,th {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.rows-light {
+    color: white;
+}
+.rows-dark {
+    color: white;
+}
+.difficulty-dark {
+    margin-top: 2.7rem;
+    color: aqua;
+    margin-left: 7rem;
+}
+.difficulty-light {
+    margin-top: 2.7rem;
+    color: #070611;
+    margin-left: 7rem;
+}
+@media only screen and (max-width: 720px) {
+    .questionlinks {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .questions {
+        font-size: 1.2rem;
+        margin-left: 0rem;
+    }
+    .tableheading-dark {
+        font-size: 2.5rem;
+    }
+    .tableheading-light {
+        font-size: 2.5rem;
+    }
+    tr,th {
+        padding: 0.2rem;
+        font-size: 1.3rem;
+    }
+  }

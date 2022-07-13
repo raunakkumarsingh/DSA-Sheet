@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@media only screen and (min-width: 720px) {
+.signupcard-dark {
+    background-color: #070611;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    color: #14c0e2;
+  box-shadow: hsl(157, 84%, 48%);
+  width: 30rem;
+  transition: transform 0.8s;
+  font-weight: bold;
+  font-family: 'Kdam Thmor Pro', sans-serif; 
+  box-shadow: rgba(40, 216, 232, 0.922) 0px 14px 28px, rgba(59, 248, 188, 0.996) 0px 10px 10px;
+}
+.signupcard-light {
+    border-color: #070611;
+    background-color: #c4eef5;
+    color: black;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 30rem;
+  box-shadow: #14E294;
+  transition: transform 0.8s;
+  font-weight: bold;
+  box-shadow: rgba(40, 216, 232, 0.922) 0px 14px 28px, rgba(59, 248, 188, 0.996) 0px 10px 10px;
+
+}
+}
+@media only screen and (min-width: 600px) {
+.signupcard-dark {
+    background-color: #070611;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    color: #14c0e2;
+  box-shadow: hsl(157, 84%, 48%);
+  width: 30rem;
+  transition: transform 0.8s;
+  font-weight: bold;
+  font-family: 'Kdam Thmor Pro', sans-serif; 
+  box-shadow: rgba(40, 216, 232, 0.922) 0px 14px 28px, rgba(59, 248, 188, 0.996) 0px 10px 10px;
+}
+.signupcard-light {
+    border-color: #070611;
+    background-color: #c4eef5;
+    color: black;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 30rem;
+  box-shadow: #14E294;
+  transition: transform 0.8s;
+  font-weight: bold;
+  box-shadow: rgba(40, 216, 232, 0.922) 0px 14px 28px, rgba(59, 248, 188, 0.996) 0px 10px 10px;
+
+}
+}
+@media only screen and (max-width: 600px) {
+.signupcard-dark {
+    background-color: #070611;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    color: #14c0e2;
+  box-shadow: hsl(157, 84%, 48%);
+  width: 30rem;
+  transition: transform 0.8s;
+  font-weight: bold;
+  font-family: 'Kdam Thmor Pro', sans-serif; 
+  box-shadow: rgba(40, 216, 232, 0.922) 0px 14px 28px, rgba(59, 248, 188, 0.996) 0px 10px 10px;
+}
+.signupcard-light {
+    border-color: #070611;
+    background-color: #c4eef5;
+    color: black;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 30rem;
+  box-shadow: #14E294;
+  transition: transform 0.8s;
+  font-weight: bold;
+  box-shadow: rgba(40, 216, 232, 0.922) 0px 14px 28px, rgba(59, 248, 188, 0.996) 0px 10px 10px;
+
+}
+}
+.form-label {
+    margin-top: 0.5rem;
+    font-size: 1.33rem;
+}
+.card:hover {
+    box-shadow: #14E294;
+    transition: transform 3s;
+}
+.container{
+    display:flex;
+    justify-content: center;
+}
+.btn {
+    background-color:  #05ef63;
+    color: #121D28;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border-color: #05ef63;
+    transition: transform 1s;
+}
+.btn:hover {
+    /* background-color: #06E3E2; */
+    background-color:  #05ef63;
+    width: 8rem;
+    transition: 1s;
+    color: #121D28;
+    border-color: #05ef63;
+}
+.form-control {
+    background-color: white;
+    color: black;
+}
+.form-text {
+    color: grey;
+}
+#log{
+    height:100% !important;
+}

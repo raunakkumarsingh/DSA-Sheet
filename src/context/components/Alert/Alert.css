@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+.alert {
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+strong {
+    font-weight: bold;
+}
+.alert-deselect {
+    background-color: #0424D9;
+    color: white;
+}
+.alert-success {
+    background-color: #3dee8a;
+    color: #085F63;
+}
+.alert-danger {
+    color: white;
+    background-color: #F50F32;
+    font-weight: bold;
+
+}

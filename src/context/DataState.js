@@ -61,13 +61,13 @@ const DataState=(props)=> {
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
+                'auth-token': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJjZDllNmQwOWU3ZWYzMGM0ZjY5Y2RkIn0sImlhdCI6MTY1NzY4NjUyN30.EdZFRC0Oe7wzRXNIZ5FbLWViAebmsnmULwP7No5p9Cw"
             },
             body: JSON.stringify()
         })
         const json =await response.json()
-        // console.log(json.question);
-        setQues(json);
+        console.log(json);
+        setQues(json.questions);
         setArray(json.questions);
         setName(json.name);
     }
