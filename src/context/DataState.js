@@ -15,10 +15,10 @@ const DataState=(props)=> {
     const [quesArray,setArray]=useState([0])
     const [username,setName] = useState(" ")
     // const checkbox=async()=>{
-    // const host="http://localhost:5000";
+    // const host="https://floating-ocean-72177.herokuapp.com";
     
     const getNotes=async()=>{
-        const response=await fetch('http://localhost:5000',{
+        const response=await fetch('https://floating-ocean-72177.herokuapp.com',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -40,7 +40,7 @@ const DataState=(props)=> {
     },3200)
     }
     const updateData=async(id,email,questions)=>{
-        const response=await fetch(`http://localhost:5000/api/data/updatedata/${id}`,{
+        const response=await fetch(`https://floating-ocean-72177.herokuapp.com/api/data/updatedata/${id}`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
@@ -57,7 +57,7 @@ const DataState=(props)=> {
        
            }
            else{
-        const response=await fetch('http://localhost:5000/api/data/getdata',{
+        const response=await fetch('https://floating-ocean-72177.herokuapp.com/api/data/getdata',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -72,12 +72,12 @@ const DataState=(props)=> {
         setName(json.name);
     }
    
-    // http://localhost:5000/
+    // https://floating-ocean-72177.herokuapp.com/
     
         // console.log(1);
     }
     const deleteData=async(id,email,questions)=>{
-        const response=await fetch(`http://localhost:5000/api/data/deletedata/${id}`,{
+        const response=await fetch(`https://floating-ocean-72177.herokuapp.com/api/data/deletedata/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',
