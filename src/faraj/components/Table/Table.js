@@ -4,7 +4,7 @@ import './Table.css'
 import Searchbar from '../Tableitems/Searchbar';
 import data from  '../data.json'
 import { useContext,useEffect, useState } from "react";
-import dataContext from '../../../context/DataState';
+import dataContext from '../../../context/datacontext';
 import { useNavigate } from 'react-router';
 
 
@@ -26,8 +26,8 @@ export default  function Table(props) {
 
   useEffect(()=>{
       getData();
-    },["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJjZDllNmQwOWU3ZWYzMGM0ZjY5Y2RkIn0sImlhdCI6MTY1NzY4NjUyN30.EdZFRC0Oe7wzRXNIZ5FbLWViAebmsnmULwP7No5p9Cw"]);
-    // console.log(ques);
+    },[localStorage.getItem('token')]);
+    console.log(ques);
 
 // Remove all warninng from the Console 
     console.log = console.warn = console.error = () => {};

@@ -9,7 +9,7 @@ import quest from '../question.json'
       // console.log(props.title)
       // console.log(props.type)
       // console.log(props.searc)
-      let que=quest.filter((auto)=>auto.Title.includes(props.title) && auto.Type.includes(props.type) && auto.Url.includes(props.searc));
+      let que=quest.filter((auto)=>auto.Title.includes(props.title) && auto.Url.includes(props.searc));
 
       return (
     <>
