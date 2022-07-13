@@ -13,6 +13,8 @@ import DataState from '../../../context/DataState';
 
 // let parsedData=await data.json();
 function Card(props) {
+
+  console.log("hello")
   
   
 
@@ -37,9 +39,9 @@ function Card(props) {
       
     <div className='row'>
         {  data.map((element)=>{
-          return<div className='col-lg-4 col-md-6 col sm-12 d-flex justify-content-center' key={element.Title}>
+          return<div className='col-lg-4 col-md-6 col sm-12 d-flex justify-content-center' key={element.Day}>
           <DataState>
-         <Carditem title={element.Title} mode={props.mode} loginControl={loginControl}  TotalQuestion={element.Totalquestion} EasyQuestion={element.EasyQuestion} MediumQuestion={element.MediumQuestion} hardQuestion={element.hardQuestion}/>
+         <Carditem days={element.Day} mode={props.mode} loginControl={loginControl}  Question={element.questions} />
           </DataState>
         
 

@@ -1,0 +1,714 @@
+[
+    {
+        "id": 1,
+        "Title": "Set Matrix Zeroes",
+        "Day": "1",
+        "Solution": "https://www.youtube.com/watch?v=M65xBewcqcI&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=7",
+        "Url": "https://leetcode.com/problems/set-matrix-zeroes/"
+    },
+    {
+        "id": 2,
+        "Title": "Pascal's Triangle",
+        "Day": "1",
+        "Solution": "https://www.youtube.com/watch?v=6FLvhQjZqvM&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=8",
+        "Url": "https://leetcode.com/problems/pascals-triangle/"
+    },
+    {
+        "id": 3,
+        "Title": "Next Permutation",
+        "Day": "1",
+        "Solution": "https://www.youtube.com/watch?v=LuLCLgMElus&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=9",
+        "Url": "https://leetcode.com/problems/next-permutation/"
+    },
+    {
+        "id": 4,
+        "Title": "Kadane's Algorithm",
+        "Day": "1",
+        "Solution": "https://www.youtube.com/watch?v=w_KEocd__20&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=5",
+        "Url": "https://leetcode.com/problems/maximum-subarray/"
+    },
+    {
+        "id": 5,
+        "Title": "Sort an array of 0s 1s 2s",
+        "Day": "1",
+        "Solution": "https://www.youtube.com/watch?v=oaVa-9wmpns&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2",
+        "Url": "https://leetcode.com/problems/sort-colors/"
+    },
+    {
+        "id": 6,
+        "Title": "Stock Buy and Sell",
+        "Day": "1",
+        "Solution": "https://www.youtube.com/watch?v=eMSfBgbiEjk&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=11",
+        "Url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    }, {
+        "id": 7,
+        "Title": "Rotate Matrix",
+        "Day": "2",
+        "Solution": "https://www.youtube.com/watch?v=Y72QeX0Efxw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=12",
+        "Url": "https://leetcode.com/problems/rotate-image/"
+    },
+    {
+        "id": 8,
+        "Title": "Merge Overlapping Subintervals",
+        "Day": "2",
+        "Solution": "https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6",
+        "Url": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+        "id": 9,
+        "Title": "Merge two sorted Arrays without extra space",
+        "Day": "2",
+        "Solution": "https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4",
+        "Url": "https://leetcode.com/problems/merge-sorted-array/"
+    },
+    {
+        "id": 10,
+        "Title": "Find the duplicate in an array of N+1 integers.",
+        "Day": "2",
+        "Solution": "https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=1",
+        "Url": "https://leetcode.com/problems/find-the-duplicate-number/"
+    },
+    {
+        "id": 11,
+        "Title": "Repeat and Missing Number",
+        "Day": "2",
+        "Solution": "https://www.youtube.com/watch?v=5nMGY4VUoRY&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=3",
+        "Url": "https://www.interviewbit.com/problems/repeat-and-missing-number-array/"
+    },
+    {
+        "id": 12,
+        "Title": "Inversion of Array (Pre-req: Merge Sort)",
+        "Day": "2",
+        "Solution": "https://www.youtube.com/watch?v=kQ1mJlwW-c0",
+        "Url": "https://www.codingninjas.com/codestudio/problems/count-inversions_615"
+    },
+    {
+        "id": 13,
+        "Title": "Search in a 2D Matrix ",
+        "Day": "3",
+        "Solution": "https://www.youtube.com/watch?v=ZYpYur0znng&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=14",
+        "Url": "https://leetcode.com/problems/search-a-2d-matrix/"
+    },
+    {
+        "id": 14,
+        "Title": "Pow(X,n)",
+        "Day": "3",
+        "Solution": "https://www.youtube.com/watch?v=l0YC3876qxg&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=15",
+        "Url": "https://leetcode.com/problems/powx-n/"
+    },
+    {
+        "id": 15,
+        "Title": "Majority Element (>N/2 times)",
+        "Day": "3",
+        "Solution": "https://www.youtube.com/watch?v=AoX3BPWNnoE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=16",
+        "Url": "https://leetcode.com/problems/majority-element/"
+    },
+    {
+        "id": 16,
+        "Title": "Majority Element (>N/3 times)",
+        "Day": "3",
+        "Solution": "https://www.youtube.com/watch?v=yDbkQd9t2ig&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=17",
+        "Url": "https://leetcode.com/problems/majority-element-ii/"
+    },
+    {
+        "id": 17,
+        "Title": "Grid Unique Paths",
+        "Day": "3",
+        "Solution": "https://www.youtube.com/watch?v=t_f0nwwdg5o&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=18",
+        "Url": "https://leetcode.com/problems/unique-paths/"
+    },
+    {
+        "id": 18,
+        "Title": "Reverse Pairs",
+        "Day": "3",
+        "Solution": "https://www.youtube.com/watch?v=S6rsAlj_iB4&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=19",
+        "Url": "https://leetcode.com/problems/reverse-pairs/"
+    }, {
+        "id": 19,
+        "Title": "2 Sum",
+        "Day": "4",
+        "Solution": "https://www.youtube.com/watch?v=dRUpbt8vHpo&list=PLgUwDviBIf0rVwua0kKYlsS_ik_1lyVK_&index=2",
+        "Url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+        "id": 20,
+        "Title": "4 Sum",
+        "Day": "4",
+        "Solution": "https://www.youtube.com/watch?v=4ggF3tXIAp0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=21",
+        "Url": "https://leetcode.com/problems/4sum/"
+    },
+    {
+        "id": 21,
+        "Title": "Longest Consecutive Sum",
+        "Day": "4",
+        "Solution": "https://www.youtube.com/watch?v=qgizvmgeyUM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=22",
+        "Url": "https://leetcode.com/problems/longest-consecutive-sequence/"
+    },
+    {
+        "id": 22,
+        "Title": "Largest Subarray with 0 Sum",
+        "Day": "4",
+        "Solution": "https://www.youtube.com/watch?v=xmguZ6GbatA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=23",
+        "Url": "https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1"
+    },
+    {
+        "id": 23,
+        "Title": "Count number of subarrays with given XOR K",
+        "Day": "4",
+        "Solution": "https://www.youtube.com/watch?v=lO9R5CaGRPY&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=25",
+        "Url": "https://www.interviewbit.com/problems/subarray-with-given-xor/"
+    },
+    {
+        "id": 24,
+        "Title": "Longest Substring without repeat",
+        "Day": "4",
+        "Solution": "https://www.youtube.com/watch?v=qtVh-XEpsJo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=26",
+        "Url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+    },
+    {
+        "id": 25,
+        "Title": "Reverse a LinkedList",
+        "Day": "5",
+        "Solution": "https://www.youtube.com/watch?v=iRtLEoL-r-g&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=27",
+        "Url": "https://leetcode.com/problems/reverse-linked-list/"
+    },
+    {
+        "id": 26,
+        "Title": "Find the middle of LinkedList",
+        "Day": "5",
+        "Solution": "https://www.youtube.com/watch?v=sGdwSH8RK-o&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=28",
+        "Url": "https://leetcode.com/problems/middle-of-the-linked-list/"
+    },
+    {
+        "id": 27,
+        "Title": "Merge Two Sorted LinkedList (use mergeSort)",
+        "Day": "5",
+        "Solution": "https://www.youtube.com/watch?v=Xb4slcp1U38&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=29",
+        "Url": "https://leetcode.com/problems/merge-two-sorted-lists/"
+    },
+    {
+        "id": 28,
+        "Title": "Remove N-th node from back of LinkedList",
+        "Day": "5",
+        "Solution": "https://www.youtube.com/watch?v=Lhu3MsXZy-Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=30",
+        "Url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+    },
+    {
+        "id": 29,
+        "Title": "Add two numbers as LinkedList",
+        "Day": "5",
+        "Solution": "https://www.youtube.com/watch?v=LBVsXSMOIk4&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=32",
+        "Url": "https://leetcode.com/problems/add-two-numbers/"
+    },
+    {
+        "id": 30,
+        "Title": "Delete a given Node when a node is given. (0(1) solution)",
+        "Day": "5",
+        "Solution": "https://www.youtube.com/watch?v=icnp4FJdZ_c&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=31",
+        "Url": "https://leetcode.com/problems/delete-node-in-a-linked-list/"
+    }, {
+        "id": 31,
+        "Title": "Find intersection point of a LinkedList",
+        "Day": "6",
+        "Solution": "https://www.youtube.com/watch?v=u4FWXfgS8jw&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=33",
+        "Url": "https://leetcode.com/problems/intersection-of-two-linked-lists/"
+    },
+    {
+        "id": 32,
+        "Title": "Detect a cycle in Linked List",
+        "Day": "6",
+        "Solution": "https://www.youtube.com/watch?v=354J83hX7RI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=34",
+        "Url": "https://leetcode.com/problems/linked-list-cycle/"
+    },
+    {
+        "id": 33,
+        "Title": "Reverse a LinkedList in groups of size k.",
+        "Day": "6",
+        "Solution": "https://www.youtube.com/watch?v=Of0HPkk3JgI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=34",
+        "Url": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+    },
+    {
+        "id": 34,
+        "Title": "Check if a LinkedList is palindrome or not.",
+        "Day": "6",
+        "Solution": "https://www.youtube.com/watch?v=-DtNInqFUXs&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=36",
+        "Url": "https://leetcode.com/problems/palindrome-linked-list/"
+    },
+    {
+        "id": 35,
+        "Title": "Find the starting point of the Loop of LinkedList",
+        "Day": "6",
+        "Solution": "https://www.youtube.com/watch?v=QfbOhn0WZ88&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=37",
+        "Url": "https://leetcode.com/problems/linked-list-cycle-ii/"
+    },
+    {
+        "id": 36,
+        "Title": "Flattening of a LinkedList",
+        "Day": "6",
+        "Solution": "https://www.youtube.com/watch?v=ysytSSXpAI0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=38",
+        "Url": "https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1"
+    },
+    {
+        "id": 37,
+        "Title": "Rotate a LinkedList",
+        "Day": "6",
+        "Solution": "https://www.youtube.com/watch?v=9VPm6nEbVPA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=39",
+        "Url": "https://leetcode.com/problems/rotate-list/description/"
+    },
+    {
+        "id": 38,
+        "Title": "Clone a Linked List with random and next pointer",
+        "Day": "7",
+        "Solution": "https://www.youtube.com/watch?v=VNf6VynfpdM",
+        "Url": "https://leetcode.com/problems/copy-list-with-random-pointer/"
+    },
+    {
+        "id": 39,
+        "Title": "3 sum",
+        "Day": "7",
+        "Solution": "https://www.youtube.com/watch?v=onLoX6Nhvmg&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=41",
+        "Url": "https://leetcode.com/problems/3sum/"
+    },
+    {
+        "id": 40,
+        "Title": "Trapping rainwater",
+        "Day": "7",
+        "Solution": "https://www.youtube.com/watch?v=m18Hntz4go8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=42",
+         "Url": "https://leetcode.com/problems/trapping-rain-water/"
+    },
+    {
+        "id": 41,
+        "Title": "Remove Duplicates from a Sorted array",
+        "Day": "7",
+        "Solution": "https://www.youtube.com/watch?v=Fm_p9lJ4Z_8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=43",
+        "Url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+    },
+    {
+        "id": 42,
+        "Title": "Max consecutive ones",
+        "Day": "7",
+        "Solution": "https://www.youtube.com/watch?v=Mo33MjjMlyA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=44",
+        "Url": "https://leetcode.com/problems/max-consecutive-ones/"
+    }, {
+        "id": 43,
+        "Title": "N meeting in one room",
+        "Day": "8",
+        "Solution": "https://www.youtube.com/watch?v=II6ziNnub1Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=45",
+        "Url": "https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1"
+    },
+    {
+        "id": 44,
+        "Title": "Minimum number of platforms required for a railway",
+        "Day": "8",
+        "Solution": "https://www.youtube.com/watch?v=dxVcMDI7vyI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=46",
+        "Url": "https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#"
+    },
+    {
+        "id": 45,
+        "Title": "Job Sequencing Problem",
+        "Day": "8",
+        "Solution": "https://www.youtube.com/watch?v=LjPx4wQaRIs&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=47",
+        "Url": "https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1#"
+    },
+    {
+        "id": 46,
+        "Title": "Fractional Knapsack Problem",
+        "Day": "8",
+        "Solution": "https://www.youtube.com/watch?v=F_DDzYnxO14&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=49",
+        "Url": "https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1"
+    },
+    {
+        "id": 47,
+        "Title": "Greedy algorithm to find minimum number of coins",
+        "Day": "8",
+        "Solution": "https://www.youtube.com/watch?v=mVg9CfJvayM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=48",
+        "Url": "https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/"
+    },
+    {
+        "id": 48,
+        "Title": "Activity Selection (it is the same as N meeting in one room)",
+        "Day": "8",
+        "Solution": "https://www.youtube.com/watch?v=II6ziNnub1Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=45",
+        "Url": "https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1"
+    },
+    {
+        "id": 49,
+        "Title": "Subset Sums",
+        "Day": "9",
+        "Solution": "https://www.youtube.com/watch?v=rYkfBRtMJr8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=52",
+        "Url": "https://practice.geeksforgeeks.org/problems/subset-sums2234/1"
+    },
+    {
+        "id": 50,
+        "Title": "Subset-II",
+        "Day": "9",
+        "Solution": "https://www.youtube.com/watch?v=RIn3gOkbhQE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=53",
+        "Url": "https://leetcode.com/problems/subsets-ii/"
+    },
+    {
+        "id": 51,
+        "Title": "Combination Sum-1",
+        "Day": "9",
+        "Solution": "https://www.youtube.com/watch?v=OyZFFqQtu98&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=49",
+        "Url": "https://leetcode.com/problems/combination-sum/"
+    },
+    {
+        "id": 52,
+        "Title": "Combination Sum-2",
+        "Day": "9",
+        "Solution": "https://www.youtube.com/watch?v=G1fRTGRxXU8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=50",
+        "Url": "https://leetcode.com/problems/combination-sum-ii/"
+    },
+    {
+        "id": 53,
+        "Title": "Palindrome Partitioning",
+        "Day": "9",
+        "Solution": "https://www.youtube.com/watch?v=WBgsABoClE0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=51",
+        "Url": "https://leetcode.com/problems/palindrome-partitioning/"
+    },
+    {
+        "id": 54,
+        "Title": "K-th Permutation Sequence",
+        "Day": "9",
+        "Solution": "https://www.youtube.com/watch?v=wT7gcXLYoao&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=55",
+        "Url": "https://leetcode.com/problems/permutation-sequence/"
+    }, {
+        "id": 55,
+        "Title": "Print all permutations of a String/Array",
+        "Day": "10",
+        "Solution": "https://www.youtube.com/watch?v=f2ic2Rsc9pU&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=52",
+        "Url": "https://leetcode.com/problems/permutations/"
+    },
+    {
+        "id": 56,
+        "Title": "N queens Problem",
+        "Day": "10",
+        "Solution": "https://www.youtube.com/watch?v=i05Ju7AftcM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=57",
+        "Url": "https://leetcode.com/problems/n-queens/"
+    },
+    {
+        "id": 57,
+        "Title": "Sudoku Solver",
+        "Day": "10",
+        "Solution": "https://www.youtube.com/watch?v=FWAIf_EVUKE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=58",
+        "Url": "https://leetcode.com/problems/sudoku-solver/"
+    },
+    {
+        "id": 58,
+        "Title": "M coloring Problem",
+        "Day": "10",
+        "Solution": "https://www.youtube.com/watch?v=wuVwUK25Rfc&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=59",
+        "Url": "https://practice.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1#"
+    },
+    {
+        "id": 59,
+        "Title": "Rat in a Maze",
+        "Day": "10",
+        "Solution": "https://www.youtube.com/watch?v=bLGZhJlt4y0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=60",
+        "Url": "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1"
+    },
+    {
+        "id": 60,
+        "Title": "The N-th root of an integer",
+        "Day": "11",
+    "Solution": "https://www.youtube.com/watch?v=WjpswYrS2nY&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=62",
+        "Url": "#"
+    },
+    {
+        "id": 61,
+        "Title": "Matrix Median",
+        "Day": "11",
+        "Solution": "https://www.youtube.com/watch?v=63fPPOdIr2c&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=62",
+        "Url": "https://www.interviewbit.com/problems/matrix-median/"
+    },
+    {
+        "id": 62,
+        "Title": "Find the element that appears once in a sorted array, and the rest element appears twice (Binary search)",
+        "Day": "11",
+        "Solution": "https://www.youtube.com/watch?v=PzszoiY5XMQ&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=64",
+        "Url": "https://leetcode.com/problems/single-element-in-a-sorted-array/"
+    },
+    {
+        "id": 63,
+        "Title": "Search element in a sorted and rotated array/ find pivot where it is rotated",
+        "Day": "11",
+        "Solution": "https://www.youtube.com/watch?v=r3pMQ8-Ad5s&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=64",
+        "Url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+    },
+    {
+        "id": 64,
+        "Title": "Median of 2 sorted arrays",
+        "Day": "11",
+        "Solution": "https://www.youtube.com/watch?v=NTop3VTjmxk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=65",
+        "Url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+    },
+    {
+        "id": 65,
+        "Title": "K-th element of two sorted arrays",
+        "Day": "11",
+        "Solution": "https://www.youtube.com/watch?v=nv7F4PiLUzo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=66",
+        "Url": "https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1"
+    }, {
+        "id": 66,
+        "Title": "Allocate Minimum Number of Pages",
+        "Day": "11",
+        "Solution": "https://www.youtube.com/watch?v=gYmWHvRHu-s&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=69",
+        "Url": "https://www.interviewbit.com/problems/allocate-books/"
+    },
+    {
+        "id": 67,
+        "Title": "Aggressive Cows",
+        "Day": "11",
+        "Solution": "https://www.youtube.com/watch?v=wSOfYesTBRk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=70",
+        "Url": "https://www.spoj.com/problems/AGGRCOW/"
+    },
+    {
+        "id": 68,
+        "Title": "Implement Trie (Prefix Tree)",
+        "Day": "12",
+        "Solution": "https://www.youtube.com/watch?v=dBGUmUQhjaM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp",
+        "Url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+    },
+    {
+        "id": 69,
+        "Title": "Implement Trie - 2 (Prefix Tree)",
+        "Day": "12",
+        "Solution": "https://www.youtube.com/watch?v=K5pcpkEMCN0&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=2",
+        "Url": "https://bit.ly/3qwT4OL"
+    },
+    {
+        "id": 70,
+        "Title": "Longest String with All Prefixes",
+        "Day": "12",
+        "Solution": "https://www.youtube.com/watch?v=AWnBa91lThI&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=3",
+        "Url": "https://bit.ly/3n3kedU"
+    },
+    {
+        "id": 71,
+        "Title": "Number of Distinct Substrings in a String",
+        "Day": "12",
+        "Solution": "https://www.youtube.com/watch?v=RV0QeTyHZxo&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=4",
+        "Url": "https://bit.ly/3ocRQW0"
+    },
+    {
+        "id": 72,
+        "Title": "Power Set (V.Imp)",
+        "Day": "12",
+        "Solution": "https://www.youtube.com/watch?v=b7AYbpM5YrE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=67",
+        "Url": "https://practice.geeksforgeeks.org/problems/power-set4302/1#"
+    },
+    {
+        "id": 73,
+        "Title": "Maximum XOR of two numbers in an array",
+        "Day": "12",
+        "Solution": "https://www.youtube.com/watch?v=EIhAwfHubE8&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=6",
+        "Url": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/"
+    },
+    {
+        "id": 74,
+        "Title": "Maximum XOR With an Element From Array",
+        "Day": "12",
+        "Solution": "https://www.youtube.com/watch?v=Q8LhG9Pi5KM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=7",
+        "Url": "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/"
+    },
+    {
+        "id": 75,
+        "Title": "Implement Stack Using Arrays",
+        "Day": "13",
+        "Solution": "https://www.youtube.com/watch?v=GYptUgnIM_I&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=68",
+        "Url": "#"
+    },
+    {
+        "id": 76,
+        "Title": "Implement Queue Using Arrays",
+        "Day": "13",
+        "Solution": "https://www.youtube.com/watch?v=M6GnoUDpqEE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=72",
+        "Url": "#"
+    },
+    {
+        "id": 77,
+        "Title": "Implement Stack using Queue (using single queue)",
+        "Day": "13",
+        "Solution": "https://www.youtube.com/watch?v=jDZQKzEtbYQ&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=74",
+        "Url": "https://leetcode.com/problems/implement-stack-using-queues/"
+    }, {
+        "id": 78,
+        "Title": "Implement Queue using Stack (0(1) amortized method)",
+        "Day": "13",
+        "Solution": "https://www.youtube.com/watch?v=3Et9MrMc02A&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=75",
+        "Url": "https://leetcode.com/problems/implement-queue-using-stacks/"
+    },
+    {
+        "id": 79,
+        "Title": "Check for Balanced Parentheses",
+        "Day": "13",
+        "Solution": "https://www.youtube.com/watch?v=wkDfsKijrZ8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=74",
+        "Url": "https://leetcode.com/problems/valid-parentheses/"
+    },
+    {
+        "id": 80,
+        "Title": "Next Greater Element",
+        "Day": "13",
+        "Solution": "https://www.youtube.com/watch?v=Du881K7Jtk8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=75",
+        "Url": "https://leetcode.com/problems/next-greater-element-i/"
+    },
+    {
+        "id": 81,
+        "Title": "Sort a Stack",
+        "Day": "13",
+        "Solution": "#",
+        "Url": "#"
+    },
+    {
+        "id": 82,
+        "Title": "Next Smaller Element",
+        "Day": "14",
+        "Solution": "#",
+        "Url": "https://www.interviewbit.com/problems/nearest-smaller-element/"
+    },
+    {
+        "id": 83,
+        "Title": "LRU Cache(IMP)",
+        "Day": "14",
+    "Solution": "https://www.youtube.com/watch?v=xDEuM5qa0zg&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=77",
+        "Url": "https://leetcode.com/problems/lru-cache/"
+    },
+    {
+        "id": 84,
+        "Title": "LFU Cache",
+        "Day": "14",
+        "Solution": "https://www.youtube.com/watch?v=0PSB9y8ehbk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=79",
+        "Url": "https://leetcode.com/problems/lfu-cache/"
+    },
+    {
+        "id": 85,
+        "Title": "Largest Rectangle in a Histogram",
+        "Day": "14",
+        "Solution": "https://www.youtube.com/watch?v=X0X6G-eWgQ8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=81",
+        "Url": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+    },
+    {
+        "id": 86,
+        "Title": "Sliding Window Maximum",
+        "Day": "14",
+        "Solution": "https://www.youtube.com/watch?v=CZQGRp93K4k&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=83",
+        "Url": "https://leetcode.com/problems/sliding-window-maximum/"
+    },
+    {
+        "id": 87,
+        "Title": "Implement Min Stack",
+        "Day": "14",
+        "Solution": "https://takeuforward.org/data-structure/implement-min-stack-o2n-and-on-space-complexity/?amp=1",
+        "Url": "https://leetcode.com/problems/min-stack/"
+    },
+    {
+        "id": 88,
+        "Title": "Rotten Orange (Using BFS)",
+        "Day": "14",
+        "Solution": "https://takeuforward.org/data-structure/rotten-oranges-min-time-to-rot-all-oranges-bfs/?amp=1",
+        "Url": "https://leetcode.com/problems/rotting-oranges/"
+    }, {
+        "id": 89,
+        "Title": "Stock Span Problem",
+        "Day": "14",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/online-stock-span/"
+    },
+    {
+        "id": 90,
+        "Title": "Find the maximum of minimums of every window size",
+        "Day": "14",
+        "Solution": "#",
+        "Url": "#"
+    },
+    {
+        "id": 91,
+        "Title": "The Celebrity Problem",
+        "Day": "14",
+        "Solution": "#",
+        "Url": "https://leetcode.com/accounts/login/?next=/problems/find-the-celebrity/"
+    },
+    {
+        "id": 92,
+        "Title": "Reverse Words in a String",
+        "Day": "15",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/reverse-words-in-a-string/"
+    },
+    {
+        "id": 93,
+        "Title": "Longest Palindrome in a String",
+        "Day": "15",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/longest-palindromic-substring/"
+    },
+    {
+        "id": 94,
+        "Title": "Roman Number to Integer and vice versa",
+        "Day": "15",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/roman-to-integer/"
+    },
+    {
+        "id": 95,
+        "Title": "Implement ATOI/STRSTR",
+        "Day": "15",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/string-to-integer-atoi/"
+    },
+    {
+        "id": 96,
+        "Title": "Longest Common Prefix",
+        "Day": "15",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/longest-common-prefix/"
+    },
+    {
+        "id": 97,
+        "Title": "Rabin Karp",
+        "Day": "15",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/repeated-string-match/discuss/416144/Rabin-Karp-algorithm-C%2B%2B-implementation"
+    },
+    {
+        "id": 98,
+        "Title": "Z-Function",
+        "Day": "16",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/implement-strstr/"
+    },
+    {
+        "id": 99,
+        "Title": "KMP algo / LPS(pi) array",
+        "Day": "16",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/implement-strstr/"
+    },
+    {
+        "id": 100,
+        "Title": "Minimum characters needed to be inserted in the beginning to make it palindromic",
+        "Day": "16",
+        "Solution": "#",
+        "Url": "https://www.interviewbit.com/problems/minimum-characters-required-to-make-a-string-palindromic/"
+    }, {
+        "id": 101,
+        "Title": "Check for Anagrams",
+        "Day": "16",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/valid-anagram/"
+    },
+    {
+        "id": 102,
+        "Title": "Count and Say",
+        "Day": "16",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/count-and-say/"
+    },
+    {
+        "id": 103,
+        "Title": "Compare Version Numbers",
+        "Day": "16",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/compare-version-numbers/"
+    }
+]

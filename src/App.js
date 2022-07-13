@@ -16,8 +16,8 @@ import Tablef from './faraj/components/Table/Table';
 import Cardl from './LoveDSA/components/Cards/Card';
 import Tablel from './LoveDSA/components/Table/Table';
 //Striver SHEET Import
-import Cards from './LoveDSA/components/Cards/Card';
-import Tables from './LoveDSA/components/Table/Table';
+import Cards from './Strivers/components/Cards/Card';
+import Tables from './Strivers/components/Table/Table';
 //Normal react import
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
@@ -112,37 +112,37 @@ return (
 
           //Routes for Striver
            {/* <Route exact path="" element={<Table key="" mode={mode} title=""/>}/> */}
-    <Route exact path='/450DSA' element={<Cards key="37" mode={mode} />}/>
-    <Route exact path="/striver/day1" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day2" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day3" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day4" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day5" element={<Tables key="" mode={mode} title="" />}/>
-    <Route exact path="/striver/day6" element={<Tables key="" mode={mode} title="" />}/>
-    <Route exact path="/striver/day7" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day8" element={<Tables key="" mode={mode} title="" />}/>
-    <Route exact path="/striver/day9" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day10" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day11" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day12" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day13" element={<Tables key="" mode={mode} title="" />}/>
-    <Route exact path="/striver/day14" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day15" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day16" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day17" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day18" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day19" element={<Tables key="" mode={mode} title="" />}/>
-    <Route exact path="/striver/day20" element={<Tables key="" mode={mode} title="" />}/>
-    <Route exact path="/striver/day21" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day22" element={<Tables key="" mode={mode} title="" />}/>
-    <Route exact path="/striver/day23" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day24" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day25" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day26" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day27" element={<Tables key="" mode={mode} title="" />}/>
-    <Route exact path="/striver/day28" element={<Tables key="" mode={mode} title=""/>}/>
-    <Route exact path="/striver/day29" element={<Tables key="" mode={mode} title="" />}/>
-    <Route exact path="/striver/day30" element={<Tables key="" mode={mode} title=""/>}/>
+    <Route exact path='/striver' element={<Cards key="0" mode={mode} />}/>
+    <Route exact path="/striver/day1" element={<Tables key="" mode={mode} title="1"/>}/>
+    <Route exact path="/striver/day2" element={<Tables key="" mode={mode} title="2"/>}/>
+    <Route exact path="/striver/day3" element={<Tables key="" mode={mode} title="3"/>}/>
+    <Route exact path="/striver/day4" element={<Tables key="" mode={mode} title="4"/>}/>
+    <Route exact path="/striver/day5" element={<Tables key="" mode={mode} title="5" />}/>
+    <Route exact path="/striver/day6" element={<Tables key="" mode={mode} title="6" />}/>
+    <Route exact path="/striver/day7" element={<Tables key="" mode={mode} title="7"/>}/>
+    <Route exact path="/striver/day8" element={<Tables key="" mode={mode} title="8" />}/>
+    <Route exact path="/striver/day9" element={<Tables key="" mode={mode} title="9"/>}/>
+    <Route exact path="/striver/day10" element={<Tables key="" mode={mode} title="10"/>}/>
+    <Route exact path="/striver/day11" element={<Tables key="" mode={mode} title="11"/>}/>
+    <Route exact path="/striver/day12" element={<Tables key="" mode={mode} title="12"/>}/>
+    <Route exact path="/striver/day13" element={<Tables key="" mode={mode} title="13" />}/>
+    <Route exact path="/striver/day14" element={<Tables key="" mode={mode} title="14"/>}/>
+    <Route exact path="/striver/day15" element={<Tables key="" mode={mode} title="15"/>}/>
+    <Route exact path="/striver/day16" element={<Tables key="" mode={mode} title="16"/>}/>
+    <Route exact path="/striver/day17" element={<Tables key="" mode={mode} title="17"/>}/>
+    <Route exact path="/striver/day18" element={<Tables key="" mode={mode} title="18"/>}/>
+    <Route exact path="/striver/day19" element={<Tables key="" mode={mode} title="19" />}/>
+    <Route exact path="/striver/day20" element={<Tables key="" mode={mode} title="20" />}/>
+    <Route exact path="/striver/day21" element={<Tables key="" mode={mode} title="21"/>}/>
+    <Route exact path="/striver/day22" element={<Tables key="" mode={mode} title="22" />}/>
+    <Route exact path="/striver/day23" element={<Tables key="" mode={mode} title="23"/>}/>
+    <Route exact path="/striver/day24" element={<Tables key="" mode={mode} title="24"/>}/>
+    <Route exact path="/striver/day25" element={<Tables key="" mode={mode} title="25"/>}/>
+    <Route exact path="/striver/day26" element={<Tables key="" mode={mode} title="26"/>}/>
+    <Route exact path="/striver/day27" element={<Tables key="" mode={mode} title="27" />}/>
+    <Route exact path="/striver/day28" element={<Tables key="" mode={mode} title="28"/>}/>
+    <Route exact path="/striver/day29" element={<Tables key="" mode={mode} title="29" />}/>
+    <Route exact path="/striver/day30" element={<Tables key="" mode={mode} title="30"/>}/>
 
 
 
