@@ -31,7 +31,7 @@ export default function Navbar(props) {
            {username} 🤖
             </Link></p>
           </li>
-          <li className='home'><Link to="/">Home</Link></li>
+          <li className='home nav-link'><Link to="/">Home</Link></li>
         </ul>
       {/* <div className="d-flex justify-content-center" > */}
       {/* <Link className="navbar-brand" to="#">Streak 🔥</Link> */}
