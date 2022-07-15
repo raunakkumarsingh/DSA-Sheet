@@ -3,8 +3,10 @@
     bottom: 7px;
     right:7px;
 }
+
 .modebutton {
     width: 3.7rem;
     border-radius: 10rem;
     padding: 0.7rem;
+    z-index: 100;
 }

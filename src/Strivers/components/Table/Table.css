@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-.input-group{
-    z-index: -1;
-}
+
 .table-light {
     background-color: white;
     border-radius: 3rem;

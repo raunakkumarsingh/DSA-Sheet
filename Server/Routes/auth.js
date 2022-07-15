@@ -1,6 +1,8 @@
 const express=require('express')
 const User=require('../Models/usermodel')
-const Activity = require('../Models/activitymodel')
+const ActivityDSA = require('../Models/activityModelDSA')
+const ActivityFaraj = require('../Models/activityModelSFaraj')
+const ActivityStriver = require('../Models/activityModelStriver')
 const router=express.Router()
 var jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
@@ -37,15 +39,44 @@ const secureKey="#R4UN4K#J4SM1N#"
                 email:req.body.email,
                 password:secpass
             })
-            let activity = await Activity.findOne({email:req.body.email})
+            // let activityDSA = await ActivityDSA.findOne({email:req.body.email})
+            // let activityLove = await ActivityFaraj.findOne({email:req.body.email})
+            // let activityStriver = await ActivityStriver.findOne({email:req.body.email})
             // if(activity){
             //     success=false;
             //     return res.status(400).json({error:"Already have an account With this Email Procced to Login"})
             // }
-            activity = await Activity.create({
+            activityD = await ActivityDSA.create({
                 name: req.body.name,
                 email: req.body.email,
-                questions: [0],
+                love: [0],
+                Array:0,
+                Matrix:0,
+                String:0,
+                Search:0,
+                Linked:0,
+                Binary:0,
+                BST:0,
+                Greedy:0,
+                Backtracking:0,
+                Stacks:0,
+                Heap:0,
+                Graph:0,
+                Trie:0,
+                Dynamic:0,
+                Bit:0,
+                user:user.id,
+            })
+            activityL = await ActivityFaraj.create({
+                name: req.body.name,
+                email: req.body.email,
+                faraj: [0],
+                user:user.id,
+            })
+            activityS = await ActivityStriver.create({
+                name: req.body.name,
+                email: req.body.email,
+                striver: [0],
                 user:user.id,
             })
          const  data={

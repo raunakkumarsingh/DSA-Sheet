@@ -16,7 +16,7 @@
     width: 6rem;
     display: flex;
     justify-content: center;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     font-weight: bold;
     border-color: #05ef63;
     transition: transform 1s;
@@ -47,7 +47,7 @@
     background-color: #c4eef5;
     color: #070611;
     margin: 5rem;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     padding: 1rem;
   box-shadow: #14E294;
   transition: transform 0.8s;

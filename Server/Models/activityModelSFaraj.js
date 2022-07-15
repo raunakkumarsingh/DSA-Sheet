@@ -14,6 +14,7 @@ const activitySchema = new Schema({
     type: String,
     required: true
    },
-   questions: [{type: Number}]
+   
+   faraj: [{type: Number}]
 })
-module.exports = mongoose.model('Activity',activitySchema)
+module.exports = mongoose.model('ActivityFaraj',activitySchema)

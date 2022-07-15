@@ -8,7 +8,8 @@ li {
     display: flex ;
     position: sticky;
     top:0px;
-    padding: 0.8;
+    padding-top: 0.8rem;
+    z-index: 100;
 }
 .navbar-toggler{
     display: flex;
@@ -25,9 +26,12 @@ li {
     color: #000000;
     font-weight: bold;
 }
+.Home{
+    display: none;
+}
 
 .navbar-brand-dark {
-    margin: 1rem;
+    /* margin: 1rem; */
     color: #5BC6E6;
     font-family: 'Rubik', sans-serif;
     text-decoration: none;

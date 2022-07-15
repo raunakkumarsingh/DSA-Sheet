@@ -1,18 +1,22 @@
 const express = require('express')
 const User=require('../Models/usermodel')
-const Activity = require('../Models/activitymodel')
+const ActivityDSA = require('../Models/activityModelDSA')
+const ActivityFaraj = require('../Models/activityModelSFaraj')
+const ActivityStriver = require('../Models/activityModelStriver')
 const fetchuser = require('../Middleware/fetch')
-const { findByIdAndUpdate } = require('../Models/activitymodel')
+const { findByIdAndUpdateDSA } = require('../Models/activityModelDSA')
+const { findByIdAndUpdateFaraj } = require('../Models/activityModelSFaraj')
+const { findByIdAndUpdateStriver } = require('../Models/activityModelStriver')
 const router = express.Router()
 
-// add question to array
-router.post('/updatedata/:id',fetchuser, async (req,res) => {
+// add question to  FARAJ array
+router.post('/updatedata/faraj/:id',fetchuser, async (req,res) => {
 try{
     let user = await User.findOne({email:req.body.email})
     if(!user){
         return res.status(400).json({error:"No such user with this email ID exists."});
     }
-    let activity = await Activity.findById(req.params.id);
+    let activity = await ActivityFaraj.findById(req.params.id);
         //    console.log(activity)
     if(!activity){
      return   res.status(401).send({error:"Data not found"})
@@ -22,10 +26,104 @@ try{
     }
 
     // activity = await Activity.findByIdAndUpdate(req.params.id,{$set:{question: req.body.question}},{new:true})
-   activity= await Activity.updateOne({_id:req.params.id},
-        {$push: 
-            {questions:req.body.questions}
-        });
+   activity= await ActivityFaraj.updateOne({_id:req.params.id},
+    {$push: 
+        {faraj:req.body.questions}
+    });
+
+    res.json(activity)
+
+    // res.json({success:"Question Done !"});
+}
+catch(error){
+    console.error(error.message);
+    res.status(400).json({error:"Not signed up"})
+}
+})
+// add question to Striver array
+router.post('/updatedata/striver/:id',fetchuser, async (req,res) => {
+try{
+    let user = await User.findOne({email:req.body.email})
+    if(!user){
+        return res.status(400).json({error:"No such user with this email ID exists."});
+    }
+    let activity = await ActivityStriver.findById(req.params.id);
+        //    console.log(activity)
+    if(!activity){
+     return   res.status(401).send({error:"Data not found"})
+    }
+    if(activity.user.toString() !== req.user.id ){
+     return   res.status(401).send({error:"Not Allowed"})
+    }
+
+    // activity = await Activity.findByIdAndUpdate(req.params.id,{$set:{question: req.body.question}},{new:true})
+   activity= await ActivityStriver.updateOne({_id:req.params.id},
+    {$push: 
+        {striver:req.body.questions}
+    });
+
+    res.json(activity)
+
+    // res.json({success:"Question Done !"});
+}
+catch(error){
+    console.error(error.message);
+    res.status(400).json({error:"Not signed up"})
+}
+})
+router.post('/updatedata/striver/:id',fetchuser, async (req,res) => {
+try{
+    let user = await User.findOne({email:req.body.email})
+    if(!user){
+        return res.status(400).json({error:"No such user with this email ID exists."});
+    }
+    let activity = await ActivityStriver.findById(req.params.id);
+        //    console.log(activity)
+    if(!activity){
+     return   res.status(401).send({error:"Data not found"})
+    }
+    if(activity.user.toString() !== req.user.id ){
+     return   res.status(401).send({error:"Not Allowed"})
+    }
+
+    // activity = await Activity.findByIdAndUpdate(req.params.id,{$set:{question: req.body.question}},{new:true})
+   activity= await ActivityStriver.updateOne({_id:req.params.id},
+    {$push: 
+        {striver:req.body.questions}
+    });
+
+    res.json(activity)
+
+    // res.json({success:"Question Done !"});
+}
+catch(error){
+    console.error(error.message);
+    res.status(400).json({error:"Not signed up"})
+}
+})
+// add data in Love DSA
+router.post('/updatedata/dsa/:id',fetchuser, async (req,res) => {
+try{
+    let user = await User.findOne({email:req.body.email})
+    if(!user){
+        return res.status(400).json({error:"No such user with this email ID exists."});
+    }
+    let activity = await ActivityDSA.findById(req.params.id);
+        //    console.log(activity)
+    if(!activity){
+     return   res.status(401).send({error:"Data not found"})
+    }
+    if(activity.user.toString() !== req.user.id ){
+     return   res.status(401).send({error:"Not Allowed"})
+    }
+
+    // activity = await Activity.findByIdAndUpdate(req.params.id,{$set:{question: req.body.question}},{new:true})
+   activity= await ActivityDSA.updateOne({_id:req.params.id},
+    {$push: 
+        {love:req.body.questions}
+    },
+    {}
+    );
 
     res.json(activity)
 

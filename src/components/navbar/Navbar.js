@@ -20,17 +20,18 @@ export default function Navbar(props) {
   return (
     <nav className={`navbar-${props.mode} navbar-expand-lg nav  `}  >
     <div className="d-flex container-fluid">
-      <p className={`navbar-brand-${props.mode}`}>{username}🤖</p>
+    
       {/* <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button> */}
       <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
           <li className="nav-item">
-            <Link className={`nav-link-${props.mode}`} aria-current="page" to="/">
-          🏠
-            </Link>
+          <p className={`navbar-brand-${props.mode}` } href="/"> <Link className={`nav-link-${props.mode}`} aria-current="page" to="/">
+           {username} 🤖
+            </Link></p>
           </li>
+          <li className='home'><Link to="/">Home</Link></li>
         </ul>
       {/* <div className="d-flex justify-content-center" > */}
       {/* <Link className="navbar-brand" to="#">Streak 🔥</Link> */}

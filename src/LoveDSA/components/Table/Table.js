@@ -22,10 +22,10 @@ export default  function Table(props) {
 
   },[])
   const context=useContext(dataContext);
-  const {ques,getData,showAlert}=context;
+  const {ques,getDataDSA,showAlert}=context;
 
   useEffect(()=>{
-      getData();
+      getDataDSA();
     },[localStorage.getItem('token')]);
     // console.log(ques);
 

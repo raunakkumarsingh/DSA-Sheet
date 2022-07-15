@@ -7,7 +7,7 @@
     background-color: #070611;
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-top: 4.5rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 2rem;
     padding: 2rem;
@@ -26,7 +26,7 @@
     font-family: 'Kdam Thmor Pro', sans-serif; 
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-top: 4.5rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 2rem;
     padding: 2rem;
@@ -42,7 +42,7 @@
     background-color: #070611;
     margin-left: 3rem;
     margin-right: 3rem;
-    margin-top: 4.5rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 2rem;
     padding: 2rem;
@@ -61,7 +61,7 @@
     font-family: 'Kdam Thmor Pro', sans-serif; 
     margin-left: 3rem;
     margin-right: 3rem;
-    margin-top: 4.5rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 2rem;
     padding: 2rem;
@@ -76,8 +76,8 @@
 .logincard-dark {
     background-color: #070611;
     margin-left: 1rem;
-    margin-right: 0.9rem;
-    margin-top: 4.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 2rem;
     padding: 2rem;
@@ -95,8 +95,8 @@
     color: black;
     font-family: 'Kdam Thmor Pro', sans-serif; 
     margin-left: 1rem;
-    margin-right: 0.9rem;
-    margin-top: 4.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 2rem;
     padding: 2rem;

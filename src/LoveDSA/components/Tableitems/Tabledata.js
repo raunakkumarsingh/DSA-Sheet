@@ -13,7 +13,7 @@ const [color,setColor]=useState("#0E1C25")
 const ref=useRef(null);
 
   const context=useContext(dataContext);
-  const {ques,quesArray,updateData,deleteData,showAlert}=context;
+  const {ques,quesArray,updateDataDSA,deleteDataDSA,showAlert}=context;
   
   // console.log(ques.questions);
   // console.log(notes);
@@ -23,7 +23,7 @@ const ref=useRef(null);
   let check = quesArray.includes(props.QID);
   // var exists = ques.some(o => o.questions === props.QID);
   // console.log(check);
-  
+  // let value=ques.props.Title;
   
   
   useEffect(()=>{
@@ -33,8 +33,8 @@ const ref=useRef(null);
           const onClickCheckbox= (e)=>{
             e.preventDefault();
             if(quesArray.includes(props.QID))
-            
-            updateData(ques._id,ques.email,props.QID)
+              //  value=value+1;
+            updateDataDSA(ques._id,ques.email,props.QID)
           }
             
             const toggle= async(e)=>{
@@ -46,16 +46,16 @@ const ref=useRef(null);
                 else{
                   setColor("red")
                 }
-
-                deleteData(ques._id,ques.email,props.QID)
+                    // value=value-1;
+                deleteDataDSA(ques._id,ques.email,props.QID)
                 showAlert("deselect","Question Deselected 👾")
                 setIsChecked(false);
               }
               else if(!isChecked)  {
                 
                 setColor("green")
-                
-                updateData(ques._id,ques.email,props.QID)
+                // value=value+1;
+                updateDataDSA(ques._id,ques.email,props.QID)
                 showAlert("success","Question Completed Succesfully 🎉🎊")
                 setIsChecked(true);
       }

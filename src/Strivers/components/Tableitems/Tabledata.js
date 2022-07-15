@@ -13,7 +13,7 @@ const [color,setColor]=useState("#0E1C25")
 const ref=useRef(null);
 
   const context=useContext(dataContext);
-  const {ques,quesArray,updateData,deleteData,showAlert}=context;
+  const {ques,quesArray,updateDataStriver,deleteDataStriver,showAlert}=context;
   
   // console.log(ques.questions);
   // console.log(notes);
@@ -34,7 +34,7 @@ const ref=useRef(null);
             e.preventDefault();
             if(quesArray.includes(props.QID))
             
-            updateData(ques._id,ques.email,props.QID)
+            updateDataStriver(ques._id,ques.email,props.QID)
           }
             
             const toggle= async(e)=>{
@@ -47,7 +47,7 @@ const ref=useRef(null);
                   setColor("red")
                 }
 
-                deleteData(ques._id,ques.email,props.QID)
+                deleteDataStriver(ques._id,ques.email,props.QID)
                 showAlert("deselect","Question Deselected 👾")
                 setIsChecked(false);
               }
@@ -55,7 +55,7 @@ const ref=useRef(null);
                 
                 setColor("green")
                 
-                updateData(ques._id,ques.email,props.QID)
+                updateDataStriver(ques._id,ques.email,props.QID)
                 showAlert("success","Question Completed Succesfully 🎉🎊")
                 setIsChecked(true);
       }
@@ -70,6 +70,7 @@ const ref=useRef(null);
       <th scope="row"><input className="donebox" name={props.QID} onChange={toggle}    type="checkbox"  checked={isChecked}></input></th>
       <th  className={`questionname data-${props.mode}-${isChecked}`} >{props.QID}</th>
       <th><a target="_blank" href={props.Url}  className={`questionname data-${props.mode}-${isChecked}`} >{props.question}</a></th>
+      <th><a target="_blank" href={props.Solution}  className={`questionname data-${props.mode}-${isChecked}`} >Solution</a></th>
     </tr>
     </>
   )

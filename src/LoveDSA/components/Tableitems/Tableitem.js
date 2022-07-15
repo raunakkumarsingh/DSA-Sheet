@@ -28,7 +28,7 @@ import quest from '../question.json'
   </thead>
   <tbody>
      { que.map((element)=>{
-          return <Tabledata  mode={props.mode} QID={element.id} key={element.id} question={element.Name} Url={element.Url}/>
+          return <Tabledata  mode={props.mode} QID={element.id} key={element.id} question={element.Name} Title={element.Title} Url={element.Url}/>
       })
     }
   </tbody>

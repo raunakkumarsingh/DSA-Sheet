@@ -10,7 +10,7 @@ function Carditem(props) {
   return (
     <div className={`card-${props.mode} my-2 mx-1`}  id='cards' style={{width: "18rem"}}>
     <div className="card-body">
-      <h5 className={`card-${props.mode}-title`}>Days-{props.days}</h5>
+      <h5 className={`card-${props.mode}-title`}>Day-{props.days}</h5>
       <p className={`card-${props.mode}-text`}>TotalQuestion-{props.Question} </p>
       <div className='d-flex justify-content-end'>
       <Link to={`/striver/day${props.days}`}  onClick={props.loginControl} className="btn-light btn-primary ">GO</Link>
