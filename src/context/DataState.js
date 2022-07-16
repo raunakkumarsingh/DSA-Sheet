@@ -69,7 +69,7 @@ const DataState=(props)=> {
             body: JSON.stringify()
         })
         const json =await response.json()
-//         console.log(localStorage.getItem('token'));
+        console.log(localStorage.getItem('token'));
         setQues(json);
         setArray(json.faraj);
         setName(json.name);
@@ -100,7 +100,7 @@ const DataState=(props)=> {
         })
         const json =await response.json()
         setNotes(json);
-//         console.log(value)
+        console.log(value)
     }
 //get data
     const getDataDSA=async()=>{
@@ -117,7 +117,7 @@ const DataState=(props)=> {
             body: JSON.stringify()
         })
         const json =await response.json()
-//         console.log(localStorage.getItem('token'));
+        console.log(localStorage.getItem('token'));
         setQues(json);
         setArray(json.love);
         setName(json.name);
@@ -164,7 +164,7 @@ const DataState=(props)=> {
             body: JSON.stringify()
         })
         const json =await response.json()
-//         console.log(localStorage.getItem('token'));
+        console.log(localStorage.getItem('token'));
         setQues(json);
         setArray(json.striver);
         setName(json.name);

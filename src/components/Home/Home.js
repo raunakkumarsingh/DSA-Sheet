@@ -7,17 +7,7 @@ function Home(props) {
   return (
   
  <div className='container1 d-flex  justify-content-around justify-content-center align-item-center row' >
-  <div className={`card-${props.mode} my-2 mx-1 col-lg-4 col-md-10 col-sm-12 card` }  id='cards' style={{width: "18rem"}}>
-    <div className="card-body">
-      <h5 className={`card-${props.mode}-title`}>Faraz Sheet</h5>
-      <p className={`cardcontent-${props.mode}`} style={{marginBottom: "4rem"}}>
-      Here is a collection of problems from Mohammad Fraz sheet using which people have cracked their dream jobs. These questions are commonly asked in product-based companies like Amazon, Microsoft, Google, etc
-      </p>
-      <div className='d-flex justify-content-end'>
-      <Link to="/faraj"  className="btn-light btn-primary ">GO</Link>
-      </div>
-    </div>
-  </div>
+
   <div className={`card-${props.mode} my-2 mx-1 col-lg-4 col-md-10  col-sm-12 card`}  id='cards' style={{width: "18rem"}}>
     <div className="card-body">
       <h5 className={`card-${props.mode}-title`}>450 DSA (Love Babbar)</h5>
@@ -41,7 +31,18 @@ function Home(props) {
       </div>
     </div>
   </div>
- 
+  <div className={`card-${props.mode} my-2 mx-1 col-lg-4 col-md-10 col-sm-12 card` }  id='cards' style={{width: "18rem"}}>
+    <div className="card-body">
+      <h5 className={`card-${props.mode}-title`}>Faraz Sheet</h5>
+      <p className={`cardcontent-${props.mode}`} style={{marginBottom: "4rem"}}>
+      Here is a collection of problems from Mohammad Faraz sheet using which people have cracked their dream jobs. These questions are commonly asked in product-based companies like Amazon, Microsoft, Google, etc
+      </p>
+      <div className='d-flex justify-content-end'>
+      <Link to="/faraj"  className="btn-light btn-primary ">GO</Link>
+      </div>
+    </div>
+  </div>
+  
  </div>
   )
 }

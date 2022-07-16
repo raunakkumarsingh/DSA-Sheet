@@ -70,7 +70,7 @@ const ref=useRef(null);
       <th scope="row"><input className="donebox" name={props.QID} onChange={toggle}    type="checkbox"  checked={isChecked}></input></th>
       <th  className={`questionname data-${props.mode}-${isChecked}`} >{props.QID}</th>
       <th><a target="_blank" href={props.Url}  className={`questionname data-${props.mode}-${isChecked}`} >{props.question}</a></th>
-      <th><a target="_blank" href={props.Solution}  className={`questionname data-${props.mode}-${isChecked}`} >Solution</a></th>
+      <th><a target="_blank" href={props.Solution}  className={`questionname data-${props.mode}-${isChecked}`} >{props.Solution=="#" ? "":"Solution"}</a></th>
     </tr>
     </>
   )

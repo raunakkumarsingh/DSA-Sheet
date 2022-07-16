@@ -710,5 +710,572 @@
         "Day": "16",
         "Solution": "#",
         "Url": "https://leetcode.com/problems/compare-version-numbers/"
+    },
+    {
+        "id": 104,
+        "Title": "Inorder Traversal",
+        "Day": "17",
+        "Solution": "https://www.youtube.com/watch?v=Z_NEgBgbRVI&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=7",
+        "Url": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+    },
+    {
+        "id": 105,
+        "Title": "Preorder Traversal",
+        "Day": "17",
+        "Solution": "https://www.youtube.com/watch?v=80Zug6D1_r4&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=38",
+        "Url": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+    },
+    {
+        "id": 106,
+        "Title": "Postorder Traversal",
+        "Day": "17",
+        "Solution": "https://takeuforward.org/data-structure/post-order-traversal-of-binary-tree/?amp=1",
+        "Url": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+    },
+    {
+        "id": 107,
+        "Title": "LeftView Of Binary Tree",
+        "Day": "17",
+        "Solution": "https://www.youtube.com/watch?v=KV4mRzTjlAk&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=25",
+        "Url": "https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1"
+    },
+    {
+        "id": 108,
+        "Title": "Bottom View of Binary Tree",
+        "Day": "17",
+        "Solution": "https://www.youtube.com/watch?v=0FtVY6I4pB8&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=24",
+        "Url": "https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1"
+    },
+    {
+        "id": 109,
+        "Title": "Top View of Binary Tree",
+        "Day": "17",
+        "Solution": "https://www.youtube.com/watch?v=Et9OCDNvJ78&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=23",
+        "Url": "https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1"
+    },
+    {
+        "id": 110,
+        "Title": "Preorder inorder postorder in a single traversal",
+        "Day": "17",
+        "Solution": "https://takeuforward.org/data-structure/preorder-inorder-postorder-traversals-in-one-traversal/?amp=1",
+        "Url": "#"
+    },
+    {
+        "id": 111,
+        "Title": "Vertical order traversal",
+        "Day": "17",
+        "Solution": "https://takeuforward.org/data-structure/vertical-order-traversal-of-binary-tree/?amp=1",
+        "Url": "#"
+    },
+    {
+        "id": 112,
+        "Title": "Level order Traversal / Level order traversal in spiral form",
+        "Day": "18",
+        "Solution": "https://takeuforward.org/data-structure/level-order-traversal-of-a-binary-tree/?amp=1",
+        "Url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+    },
+    {
+        "id": 113,
+        "Title": "Height of a Binary Tree",
+        "Day": "18",
+        "Solution": "https://takeuforward.org/data-structure/maximum-depth-of-a-binary-tree/?amp=1",
+        "Url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+    },
+    {
+        "id": 114,
+        "Title": "Diameter of Binary Tree",
+        "Day": "18",
+        "Solution": "https://takeuforward.org/data-structure/calculate-the-diameter-of-a-binary-tree/?amp=1",
+        "Url": "https://leetcode.com/problems/diameter-of-binary-tree/"
+    },
+    {
+        "id": 115,
+        "Title": "Check if the Binary tree is height-balanced or not",
+        "Day": "18",
+        "Solution": "https://takeuforward.org/data-structure/check-if-the-binary-tree-is-balanced-binary-tree/?amp=1",
+        "Url": "https://leetcode.com/problems/balanced-binary-tree/"
+    },
+    {
+        "id": 116,
+        "Title": "LCA in Binary Tree",
+        "Day": "18",
+        "Solution": "https://takeuforward.org/data-structure/lowest-common-ancestor-for-two-given-nodes/?amp=1",
+        "Url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+    },
+    {
+        "id": 117,
+        "Title": "Check if two trees are identical or not",
+        "Day": "18",
+        "Solution": "https://takeuforward.org/data-structure/check-if-two-trees-are-identical/?amp=1",
+        "Url": "https://leetcode.com/problems/same-tree/"
+    },
+    {
+        "id": 118,
+        "Title": "Zig Zag Traversal of Binary Tree",
+        "Day": "18",
+        "Solution": "https://takeuforward.org/data-structure/zig-zag-traversal-of-binary-tree/?amp=1",
+        "Url": "#"
+    },
+    {
+        "id": 119,
+        "Title": "Boundary Traversal of Binary Tree",
+        "Day": "18",
+        "Solution": "https://takeuforward.org/data-structure/boundary-traversal-of-a-binary-tree/?amp=1",
+        "Url": "#"
+    },
+    {
+        "id": 120,
+        "Title": "Maximum path sum",
+        "Day": "19",
+        "Solution": "https://takeuforward.org/data-structure/maximum-sum-path-in-binary-tree/?amp=1",
+        "Url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/"
+    },
+    {
+        "id": 121,
+        "Title": "Construct Binary Tree from inorder and preorder",
+        "Day": "19",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/"
+    },
+    {
+        "id": 122,
+        "Title": "Construct Binary Tree from Inorder and Postorder",
+        "Day": "19",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/"
+    },
+    {
+        "id": 123,
+        "Title": "Symmetric Binary Tree",
+        "Day": "19",
+        "Solution": "https://takeuforward.org/data-structure/check-for-symmetrical-binary-tree/?amp=1",
+        "Url": "https://leetcode.com/problems/symmetric-tree/"
+    },
+    {
+        "id": 124,
+        "Title": "Flatten Binary Tree to LinkedList",
+        "Day": "19",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/"
+    },
+    {
+        "id": 125,
+        "Title": "Check if Binary Tree is the mirror of itself or not",
+        "Day": "19",
+        "Solution": "#",
+        "Url": "https://practice.geeksforgeeks.org/problems/mirror-tree/1"
+    },
+    {
+        "id": 126,
+        "Title": "Populate Next Right pointers of Tree",
+        "Day": "20",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/"
+    },
+    {
+        "id": 127,
+        "Title": "Search given Key in BST",
+        "Day": "20",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/search-in-a-binary-search-tree/"
+    },
+    {
+        "id": 128,
+        "Title": "Construct BST from given keys",
+        "Day": "20",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/"
+    },
+    {
+        "id": 129,
+        "Title": "Check is a BT is BST or not",
+        "Day": "20",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/validate-binary-search-tree/"
+    },
+    {
+        "id": 130,
+        "Title": "Find LCA of two nodes in BST",
+        "Day": "20",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+    },
+    {
+        "id": 131,
+        "Title": "Find the inorder predecessor/successor of a given Key in BST.",
+        "Day": "20",
+        "Solution": "#",
+        "Url": "https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1"
+    },
+    {
+        "id": 132,
+        "Title": "Floor in a BST",
+        "Day": "21",
+        "Solution": "https://www.youtube.com/watch?v=xm_W1ub-K-w&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=43",
+        "Url": "#"
+    },
+    {
+        "id": 133,
+        "Title": "Ceil in a BST",
+        "Day": "21",
+        "Solution": "https://www.youtube.com/watch?v=KSsk8AhdOZA&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=42",
+        "Url": "#"
+    },
+    {
+        "id": 134,
+        "Title": "Find K-th smallest element in BST",
+        "Day": "21",
+        "Solution": "https://takeuforward.org/data-structure/kth-largest-smallest-element-in-binary-search-tree/?amp=1",
+        "Url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+    },
+    {
+        "id": 135,
+        "Title": "Find K-th largest element in BST",
+        "Day": "21",
+        "Solution": "https://takeuforward.org/data-structure/kth-largest-smallest-element-in-binary-search-tree/?amp=1",
+        "Url": "https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1"
+    },
+    {
+        "id": 136,
+        "Title": "Find a pair with a given sum in BST",
+        "Day": "21",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/"
+    },
+    {
+        "id": 137,
+        "Title": "BST iterator",
+        "Day": "21",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/binary-search-tree-iterator/"
+    },
+    {
+        "id": 138,
+        "Title": "Size of the largest BST in a Binary Tree",
+        "Day": "21",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/"
+    },
+    {
+        "id": 139,
+        "Title": "Serialize and deserialize Binary Tree",
+        "Day": "21",
+        "Solution": "https://www.youtube.com/watch?v=-YbXySKJsX8&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=37",
+        "Url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+    },
+    {
+        "id": 140,
+        "Title": "Binary Tree to Double Linked List",
+        "Day": "22",
+        "Solution": "https://www.youtube.com/watch?v=sWf7k1x9XR4&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=39",
+        "Url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/"
+    },
+    {
+        "id": 141,
+        "Title": "Find median in a stream of running integers.",
+        "Day": "22",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/find-median-from-data-stream/"
+    },
+    {
+        "id": 142,
+        "Title": "K-th largest element in a Stream",
+        "Day": "22",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+    },
+    {
+        "id": 143,
+        "Title": "Distinct numbers in Window",
+        "Day": "22",
+        "Solution": "#",
+        "Url": "https://www.interviewbit.com/problems/distinct-numbers-in-window/"
+    },
+    {
+        "id": 144,
+        "Title": "K-th largest element in an unsorted array.",
+        "Day": "22",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+    },
+    {
+        "id": 145,
+        "Title": "Flood-fill Algorithm",
+        "Day": "22",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/flood-fill/"
+    },
+    {
+        "id": 146,
+        "Title": "Clone a Graph",
+        "Day": "23",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/clone-graph/"
+    },
+    {
+        "id": 147,
+        "Title": "DFS",
+        "Day": "23",
+        "Solution": "https://www.youtube.com/watch?v=uDWljP2PGmU&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=7",
+        "Url": "https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1"
+    },
+    {
+        "id": 148,
+        "Title": "BFS",
+        "Day": "23",
+        "Solution": "https://www.youtube.com/watch?v=UeE67iCK2lQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=6",
+        "Url": "https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1"
+    },
+    {
+        "id": 149,
+        "Title": "Detect A cycle in Undirected Graph using BFS",
+        "Day": "23",
+        "Solution": "https://www.youtube.com/watch?v=A8ko93TyOns&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=8",
+        "Url": "https://leetcode.com/problems/course-schedule/"
+    },
+    {
+        "id": 150,
+        "Title": "Detect A cycle in Undirected Graph using DFS",
+        "Day": "23",
+        "Solution": "https://www.youtube.com/watch?v=Y9NFqI6Pzd4&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=9",
+        "Url": "https://leetcode.com/problems/course-schedule/"
+    },
+    {
+        "id": 151,
+        "Title": "Detect A cycle in a Directed Graph using DFS",
+        "Day": "23",
+        "Solution": "https://www.youtube.com/watch?v=uzVUw90ZFIg&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=12",
+        "Url": "https://leetcode.com/problems/course-schedule/"
+    },
+    {
+        "id": 152,
+        "Title": "Detect A cycle in a Directed Graph using BFS",
+        "Day": "23",
+        "Solution": "https://www.youtube.com/watch?v=V6GxfKDyLBM&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=15",
+        "Url": "https://leetcode.com/problems/course-schedule/"
+    },
+    {
+        "id": 153,
+        "Title": "Topological Sort",
+        "Day": "23",
+        "Solution": "https://www.youtube.com/watch?v=Yh6EFazXipA&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=13",
+        "Url": "https://practice.geeksforgeeks.org/problems/topological-sort/1"
+    },
+    {
+        "id": 154,
+        "Title": "Number of islands (Do in Grid and Graph both)",
+        "Day": "23",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/number-of-islands/"
+    },
+    {
+        "id": 155,
+        "Title": "Bipartite Check using BFS",
+        "Day": "23",
+        "Solution": "https://www.youtube.com/watch?v=nbgaEu-pvkU&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=10",
+        "Url": "https://leetcode.com/problems/is-graph-bipartite/"
+    },
+    {
+        "id": 156,
+        "Title": "Bipartite Check using DFS",
+        "Day": "23",
+        "Solution": "https://www.youtube.com/watch?v=uC884ske2uQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=11",
+        "Url": "https://leetcode.com/problems/is-graph-bipartite/"
+    },
+    {
+        "id": 157,
+        "Title": "Strongly Connected Component(using KosaRaju's algo)",
+        "Day": "24",
+        "Solution": "https://www.youtube.com/watch?v=V8qIqJxCioo&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=27",
+        "Url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/discuss/766485/kosaraju-algorithm-on"
+    },
+    {
+        "id": 158,
+        "Title": "Dijkstra's Algorithm",
+        "Day": "24",
+        "Solution": "https://www.youtube.com/watch?v=jbhuqIASjoM&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=18",
+        "Url": "https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1"
+    },
+    {
+        "id": 159,
+        "Title": "Bellman-Ford Algorithm",
+        "Day": "24",
+        "Solution": "https://www.youtube.com/watch?v=75yC1vbS8S8&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=28",
+        "Url": "https://practice.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/0/?fbclid=IwAR2_lL0T84DnciLyzMTQuVTMBOi82nTWNLuXjUgahnrtBgkphKiYk6xcyJU"
+    },
+    {
+        "id": 160,
+        "Title": "Floyd Warshall Algorithm",
+        "Day": "24",
+        "Solution": "#",
+        "Url": "https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1"
+    },
+    {
+        "id": 161,
+        "Title": "MST using Prim's Algo",
+        "Day": "24",
+        "Solution": "https://www.youtube.com/watch?v=HnD676J56ak&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=20",
+        "Url": "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1"
+    },
+    {
+        "id": 162,
+        "Title": "MST using Kruskal's Algo",
+        "Day": "24",
+        "Solution": "https://www.youtube.com/watch?v=1KRmCzBl_mQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=24",
+        "Url": "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1"
+    },
+    {
+        "id": 163,
+        "Title": "Max Product Subarray",
+        "Day": "25",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/maximum-product-subarray/"
+    },
+    {
+        "id": 164,
+        "Title": "Longest Increasing Subsequence",
+        "Day": "25",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+    },
+    {
+        "id": 165,
+        "Title": "Longest Common Subsequence",
+        "Day": "25",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/longest-common-subsequence/"
+    },
+    {
+        "id": 166,
+        "Title": "0-1 Knapsack",
+        "Day": "25",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/ones-and-zeroes/"
+    },
+    {
+        "id": 167,
+        "Title": "Edit Distance",
+        "Day": "25",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/edit-distance/"
+    },
+    {
+        "id": 168,
+        "Title": "Maximum sum increasing subsequence",
+        "Day": "25",
+        "Solution": "#",
+        "Url": "https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence4749/1"
+    },
+    {
+        "id": 169,
+        "Title": "Matrix Chain Multiplication",
+        "Day": "25",
+        "Solution": "#",
+        "Url": "https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1"
+    },
+    {
+        "id": 170,
+        "Title": "Maximum sum path in the matrix, (count paths and similar type do, also backtrack to find the maximum path)",
+        "Day": "26",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/minimum-path-sum/"
+    },
+    {
+        "id": 171,
+        "Title": "Coin Change",
+        "Day": "26",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/coin-change/"
+    },
+    {
+        "id": 172,
+        "Title": "Subset Sum",
+        "Day": "26",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/partition-equal-subset-sum/"
+    },
+    {
+        "id": 173,
+        "Title": "Rod Cutting",
+        "Day": "26",
+        "Solution": "#",
+        "Url": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/"
+    },
+    {
+        "id": 174,
+        "Title": "Egg Dropping",
+        "Day": "26",
+        "Solution": "#",
+        "Url": "https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1"
+    },
+    {
+        "id": 175,
+        "Title": "Word Break",
+        "Day": "26",
+        "Solution": "#",
+        "Url": "https://practice.geeksforgeeks.org/problems/word-break1352/1"
+    },
+    {
+        "id": 176,
+        "Title": "Palindrome Partitioning (MCM Variation) ",
+        "Day": "26",
+        "Solution": "#",
+        "Url": "https://practice.geeksforgeeks.org/problems/palindromic-patitioning4845/1"
+    },
+    {
+        "id": 177,
+        "Title": "Maximum Profit in Job Scheduling",
+        "Day": "26",
+        "Solution": "#",
+        "Url": "https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1"
+    },
+    {
+        "id": 178,
+        "Title": "Revise OS notes that you would have made during your sem",
+        "Day": "27",
+        "Solution": "#",
+        "Url": "#"
+    },
+    {
+        "id": 179,
+        "Title": "If not made notes, spend 2 or 3 days and make notes from Knowledge Gate.",
+        "Day": "27",
+        "Solution": "#",
+        "Url": "#"
+    },
+    {
+        "id": 180,
+        "Title": "Revise DBMS notes that you would have made during your semesters.",
+        "Day": "28",
+        "Solution": "#",
+        "Url": "#"
+    },
+    {
+        "id": 181,
+        "Title": "If not made notes, spend 2 or 3 days and make notes from Knowledge Gate.",
+        "Day": "28",
+        "Solution": "#",
+        "Url": "#"
+    },
+    {
+        "id": 182,
+        "Title": "Revise CN notes, that you would have made during your sem.",
+        "Day": "29",
+        "Solution": "#",
+        "Url": "#"
+    },
+    {
+        "id": 183,
+        "Title": "If not made notes, spend 2 or 3 days and make notes from Knowledge Gate.",
+        "Day": "29",
+        "Solution": "#",
+        "Url": "#"
+    },
+    {
+        "id": 184,
+        "Title": "Make a note of how will your represent your projects, and prepare all questions related to tech which you have used in your projects. Prepare a note which you can say for 3-10 minutes when he asks you that say something about the project. Hurrah!! You are ready for your placement after a month of hard work without a cheat day.",
+        "Day": "30",
+        "Solution": "#",
+        "Url": "#"
     }
 ]

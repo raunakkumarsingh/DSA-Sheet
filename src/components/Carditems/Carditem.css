@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .card-dark {
     background-color: #070611;
     margin: 5rem;
@@ -9,14 +10,13 @@
   transition: transform 0.8s;
   margin-top: 100rem;
 }
-
 .btn-dark {
     background-color:  blue;
     color: #121D28;
     width: 6rem;
     display: flex;
     justify-content: center;
-    /* border-radius: 0.5rem; */
+    border-radius: 0.5rem;
     font-weight: bold;
     border-color: #05ef63;
     transition: transform 1s;
@@ -40,14 +40,11 @@
     font-weight: bold;  
     font-family: 'Roboto', sans-serif; 
 }
-
-
 .card-light {
-    border-color: #070611;
     background-color: #c4eef5;
     color: #070611;
     margin: 5rem;
-    /* border-radius: 2rem; */
+    border-radius: 2rem;
     padding: 1rem;
   box-shadow: #14E294;
   transition: transform 0.8s;

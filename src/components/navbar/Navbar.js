@@ -15,8 +15,6 @@ export default function Navbar(props) {
    }
    const context=useContext(dataContext);
    const {username,getData}=context;
-   
-  //  
   return (
     <nav className={`navbar-${props.mode} navbar-expand-lg nav  `}  >
     <div className="d-flex container-fluid">
@@ -25,13 +23,12 @@ export default function Navbar(props) {
         <span className="navbar-toggler-icon"></span>
       </button> */}
       <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
           <p className={`navbar-brand-${props.mode}` } href="/"> <Link className={`nav-link-${props.mode}`} aria-current="page" to="/">
-           {username} 🤖
+           {username} 🤖 Home
             </Link></p>
           </li>
-          <li className='home'><Link to="/">Home</Link></li>
         </ul>
       {/* <div className="d-flex justify-content-center" > */}
       {/* <Link className="navbar-brand" to="#">Streak 🔥</Link> */}
