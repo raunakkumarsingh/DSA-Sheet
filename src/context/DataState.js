@@ -69,9 +69,16 @@ const DataState=(props)=> {
         })
         const json =await response.json()
         console.log(localStorage.getItem('token'));
+          const d={
+            f: (1) [0]
+          }
+
         localStorage.setItem('farajArray',JSON.stringify(json.faraj));
+        // localStorage.setItem('loveArray',JSON.stringify([0]));
+        // localStorage.setItem('striverArray',JSON.stringify([0]));
         setQues(json);
         setArray(json.faraj);
+        console.log(json)
         localStorage.setItem('username',json.name);
 
     }

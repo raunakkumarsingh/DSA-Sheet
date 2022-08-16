@@ -1,8 +1,30 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import './Home.css'
+import {useContext } from 'react';
+import dataContext from '../../context/datacontext';
+
 
 function Home(props) {
+
+  const context=useContext(dataContext);
+  const {getData,getDataDSA,getDataStriver,setAlert}=context;
+
+    const goToDSA=async()=>{
+     await getDataDSA();
+      setAlert(null)
+    }
+    const goToStriver=async()=>{
+      await getDataStriver();
+      setAlert(null)
+    }
+    const goToFaraj=async()=>{
+      // getData();
+     await setAlert(null)
+    }
+
+
+
     document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   return (
   
@@ -16,7 +38,7 @@ function Home(props) {
 2.Clearing the DSA round for the Interviews, as these are the questions generally asked in the companies like Amazon, Microsoft, Google, etc.
       </p>
       <div className='d-flex justify-content-end'>
-      <Link to="/450DSA"  className="btn-light btn-primary ">GO</Link>
+      <Link to="/450DSA" onClick={goToDSA}  className="btn-light btn-primary ">GO</Link>
       </div>
     </div>
   </div>
@@ -27,7 +49,7 @@ function Home(props) {
       This Sheet by Raj Vikramaditya A.K.A Striver has questions which are one of the most asked coding interview questions in companies like Amazon, Microsoft, Media.net, Flipkart, etc. & covers almost all of the concepts related to Data Structure & Algorithms.
       </p>
       <div className='d-flex justify-content-end'>
-      <Link to="/striver"  className="btn-light btn-primary ">GO</Link>
+      <Link to="/striver" onClick={goToStriver} className="btn-light btn-primary ">GO</Link>
       </div>
     </div>
   </div>
@@ -38,7 +60,7 @@ function Home(props) {
       Here is a collection of problems from Mohammad Faraz sheet using which people have cracked their dream jobs. These questions are commonly asked in product-based companies like Amazon, Microsoft, Google, etc
       </p>
       <div className='d-flex justify-content-end'>
-      <Link to="/faraj"  className="btn-light btn-primary ">GO</Link>
+      <Link to="/faraj" onClick={goToFaraj} className="btn-light btn-primary ">GO</Link>
       </div>
     </div>
   </div>

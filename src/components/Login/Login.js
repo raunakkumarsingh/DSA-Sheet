@@ -34,7 +34,7 @@ function Login(props) {
       // console.log(json);
       if(json.success){
         localStorage.setItem('token',json.token);
-        getData();
+       await getData();
         showAlert("success","Login Successfull 🥳🎉")
         history('/')
       }

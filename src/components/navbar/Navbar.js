@@ -1,10 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import './Navbar.css'
-import HomeIcon from '@mui/icons-material/Home';
-import { useContext,useEffect } from 'react';
 import { useNavigate } from 'react-router'
-import dataContext from '../../context/datacontext';
+
 export default function Navbar(props) {
    let history=useNavigate();
   const handleLogout=()=>{
@@ -13,8 +11,6 @@ export default function Navbar(props) {
     history("/login",{ replace: true });
     window.location.reload();
    }
-   const context=useContext(dataContext);
-  //  const {username,getData}=context;
   return (
     <nav className={`navbar-${props.mode} navbar-expand-lg nav `}  >
     <div className="d-flex container-fluid">

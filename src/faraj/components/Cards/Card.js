@@ -27,7 +27,6 @@ function Card(props) {
 
   if(!localStorage.getItem('token')){
         history('/login')
-
   }
  }
  
