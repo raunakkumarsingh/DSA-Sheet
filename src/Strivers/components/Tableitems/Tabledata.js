@@ -20,7 +20,7 @@ const ref=useRef(null);
   
   // console.log(ques);
   // console.log(quesArray);
-  let check = quesArray.includes(props.QID);
+  let check = JSON.parse(localStorage.getItem('striverArray')).includes(props.QID);
   // var exists = ques.some(o => o.questions === props.QID);
   // console.log(check);
   

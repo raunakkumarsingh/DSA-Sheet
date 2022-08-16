@@ -1,7 +1,6 @@
 import React from 'react'
 import Tableitem from '../Tableitems/Tableitem';
 import './Table.css'
-import Searchbar from '../Tableitems/Searchbar';
 import data from  '../data.json'
 import { useContext,useEffect, useState } from "react";
 import dataContext from '../../../context/datacontext';

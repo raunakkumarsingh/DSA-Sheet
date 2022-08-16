@@ -6,6 +6,12 @@
     background-color: white;
     border-radius: 3rem;
 }
+.input-group{
+    width: 85% !important;
+}
+.input-group{
+    z-index: 1;
+}
 .table-dark {
     background-color: #0E1C25;
     border-radius: 3rem;

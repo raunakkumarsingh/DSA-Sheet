@@ -14,9 +14,9 @@ export default function Navbar(props) {
     window.location.reload();
    }
    const context=useContext(dataContext);
-   const {username,getData}=context;
+  //  const {username,getData}=context;
   return (
-    <nav className={`navbar-${props.mode} navbar-expand-lg nav  `}  >
+    <nav className={`navbar-${props.mode} navbar-expand-lg nav `}  >
     <div className="d-flex container-fluid">
     
       {/* <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,8 +25,10 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-          <p className={`navbar-brand-${props.mode}` } href="/"> <Link className={`nav-link-${props.mode}`} aria-current="page" to="/">
-           {username} 🤖 Home
+          <p className={`navbar-brand-${props.mode}` } href="/"> <Link className={`nav-link-${props.mode} text-uppercase fw-bold fs-5`} aria-current="page" to="/">
+           {localStorage.getItem('username')} 
+            </Link> &nbsp; <Link className={`nav-link-${props.mode}`} aria-current="page" to="/">
+           Home 
             </Link></p>
           </li>
         </ul>

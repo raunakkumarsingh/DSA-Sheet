@@ -22,15 +22,18 @@ thead {
 }
 .table-light {
     background-color: red;
+    
 }
 .table-dark {
     background-color: #0E1C25;
+    
 }
 .tableheading-dark {
     color: aqua;
     font-size: 3rem;
     text-align: center;
     margin: 2rem;
+    
    
 }
 .tableheading-light {
@@ -49,6 +52,7 @@ thead {
     border-radius: 3rem;
     /* background-color: #070611; */
     padding: 1rem;
+
 }
 .questionlinks-light {
     margin-left: 6rem;
@@ -74,27 +78,6 @@ thead {
 .questionlinks-light {
     margin-left: 0.6rem;
     margin-right: 0.6rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 3rem;
-    background-color: #ffffff;
-    /* border-color: #ffffff; */
-    padding: 1rem;
-}
-}
-@media only screen and (min-width: 600px) {
-.questionlinks-dark {
-    margin-left: 2.3rem;
-    margin-right: 2.3rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 3rem;
-    /* background-color: #070611; */
-    padding: 1rem;
-}
-.questionlinks-light {
-    margin-left: 2.3rem;
-    margin-right: 2.3rem;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 3rem;
@@ -135,51 +118,3 @@ tr,th {
     margin-left: 7rem;
     font-family: 'Roboto Mono', monospace;
 }
-@media only screen and (max-width: 720px) {
-    .questionlinks {
-        margin-left: 0rem;
-        margin-right: 0rem;
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-        
-    }
-    .questions {
-        font-size: 1.2rem;
-        margin-left: 0rem;
-    }
-    
-    .tableheading-dark {
-        font-size: 2.5rem;
-    }
-    .tableheading-light {
-        font-size: 2.5rem;
-    }
-    tr,th {
-        padding: 0.2rem;
-        font-size: 1.3rem;  
-    }
-  }
-
-  @media only screen and (max-width: 720px) {
-    .questionlinks {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-    .questions {
-        font-size: 0.8rem;
-        margin-left: 0rem;
-    }
-    
-    .tableheading-dark {
-        font-size: 2rem;
-    }
-    .tableheading-light {
-        font-size: 2rem;
-    }
-    tr,th {
-        padding: 0.1rem;
-        font-size: 0.9rem;  
-    }
-  }

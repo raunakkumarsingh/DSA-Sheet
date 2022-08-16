@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 .input-group{
-    z-index: -1;
+    z-index: 1;
+}
+.input-group{
+    width: 85% !important;
+
 }
 .table-light {
     background-color: white;

@@ -13,7 +13,6 @@ const DataState=(props)=> {
     const [alert,setAlert]=useState(null)
     const [ques,setQues]=useState([0])
     const [quesArray,setArray]=useState([0])
-    const [username,setName] = useState(" ")
     // const checkbox=async()=>{
         // const host="https://rocky-island-88255.herokuapp.com";
         
@@ -70,9 +69,11 @@ const DataState=(props)=> {
         })
         const json =await response.json()
         console.log(localStorage.getItem('token'));
+        localStorage.setItem('farajArray',JSON.stringify(json.faraj));
         setQues(json);
         setArray(json.faraj);
-        setName(json.name);
+        localStorage.setItem('username',json.name);
+
     }
     //delete data
     }
@@ -118,9 +119,9 @@ const DataState=(props)=> {
         })
         const json =await response.json()
         console.log(localStorage.getItem('token'));
+        localStorage.setItem('loveArray',JSON.stringify(json.love));
         setQues(json);
         setArray(json.love);
-        setName(json.name);
     }
     //delete data
     }
@@ -165,9 +166,10 @@ const DataState=(props)=> {
         })
         const json =await response.json()
         console.log(localStorage.getItem('token'));
+        localStorage.setItem('striverArray',JSON.stringify(json.striver));
+        console.log(localStorage.getItem('striverArray'));
         setQues(json);
         setArray(json.striver);
-        setName(json.name);
     }
     //delete data
     }
@@ -185,7 +187,7 @@ const DataState=(props)=> {
     }
 
   return (
-   <DataContext.Provider value={{notes,quesArray,alert,showAlert,updateData,getData,deleteData,getNotes,ques,username,setName,getDataDSA,updateDataDSA,deleteDataDSA,getDataStriver,updateDataStriver,deleteDataStriver}}>
+   <DataContext.Provider value={{notes,quesArray,alert,showAlert,updateData,getData,deleteData,getNotes,ques,getDataDSA,updateDataDSA,deleteDataDSA,getDataStriver,updateDataStriver,deleteDataStriver}}>
          {props.children}
    </DataContext.Provider>
   )

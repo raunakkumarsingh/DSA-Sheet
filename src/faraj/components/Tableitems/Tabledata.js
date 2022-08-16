@@ -20,7 +20,7 @@ const ref=useRef(null);
   
   // console.log(ques);
   // console.log(quesArray);
-  let check = quesArray.includes(props.QID);
+  let check = JSON.parse(localStorage.getItem('farajArray')).includes(props.QID);
   // var exists = ques.some(o => o.questions === props.QID);
   // console.log(check);
   
@@ -55,7 +55,7 @@ const ref=useRef(null);
                 
                 setColor("green")
                 
-                updateData(ques._id,ques.email,props.QID)
+               updateData(ques._id,ques.email,props.QID)
                 showAlert("success","Question Completed Succesfully 🎉🎊")
                 setIsChecked(true);
       }
