@@ -10,11 +10,11 @@ export default function Tabledata (props) {
 const [state,setState]=useState("false")
 const [color,setColor]=useState("#0E1C25")
 
-const ref=useRef(null);
+// const ref=useRef(null);
 
   const context=useContext(dataContext);
-  const {ques,quesArray,updateData,deleteData,showAlert}=context;
-  
+  const {updateData,deleteData,showAlert}=context;
+  const ques=JSON.parse(localStorage.getItem("ques"))
   // console.log(ques.questions);
   // console.log(notes);
   
@@ -24,38 +24,57 @@ const ref=useRef(null);
   // var exists = ques.some(o => o.questions === props.QID);
   // console.log(check);
   
-  
+  const updateDATA=async()=>{
+          let localData=JSON.parse(localStorage.getItem("farajArray"))
+          localData.push(props.QID)
+          localStorage.setItem("farajArray",JSON.stringify(localData))
+  }
+  const deleteDATA=async()=>{
+    let localData=await JSON.parse(localStorage.getItem("farajArray"))
+            const len= localStorage.getItem("farajProgress");
+            // if(len-1!==0){
+              for(let i=0;i<len;i++){
+                if(localData[i]==props.QID){
+                  delete localData[i];
+                  break;
+                }
+              // }
+            }
+            
+    localStorage.setItem("farajArray",JSON.stringify(localData))
+  }
   
   useEffect(()=>{
     setIsChecked(check);
   },[check])
  
-          const onClickCheckbox= (e)=>{
-            e.preventDefault();
-            if(quesArray.includes(props.QID))
+          // const onClickCheckbox= (e)=>{
+          //   e.preventDefault();
+          //   if(JSON.parse(localStorage.getItem('farajArray')).includes(props.QID))
             
-            updateData(ques._id,ques.email,props.QID)
-          }
+          //   updateData(ques._id,ques.email,props.QID)
+          // }
             
             const toggle= async(e)=>{
              
               if(isChecked){
-                if(props.mode == "dark")
-                setColor("blue")
+                // if(props.mode === "dark")
+                // setColor("blue")
 
-                else{
-                  setColor("red")
-                }
-
-                deleteData(ques._id,ques.email,props.QID)
+                // else{
+                //   setColor("red")
+                // }
+                   console.log(props.QID)
+              await  deleteData(ques._id,ques.email,props.QID)
                 showAlert("deselect","Question Deselected 👾")
+               await deleteDATA()
                 setIsChecked(false);
               }
               else if(!isChecked)  {
                 
                 setColor("green")
-                
-               updateData(ques._id,ques.email,props.QID)
+               await updateData(ques._id,ques.email,props.QID)
+              await updateDATA()
                 showAlert("success","Question Completed Succesfully 🎉🎊")
                 setIsChecked(true);
       }

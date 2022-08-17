@@ -12,7 +12,7 @@ const DataState=(props)=> {
     const [notes,setNotes]=useState(note)
     const [alert,setAlert]=useState(null)
     const [ques,setQues]=useState([0])
-    const [quesArray,setArray]=useState([0])
+    // const [quesArray,setArray]=useState([0])
     // const checkbox=async()=>{
         // const host="https://rocky-island-88255.herokuapp.com";
         
@@ -69,31 +69,30 @@ const DataState=(props)=> {
         })
         const json =await response.json()
         console.log(localStorage.getItem('token'));
-          const d={
-            f: (1) [0]
-          }
 
         localStorage.setItem('farajArray',JSON.stringify(json.faraj));
-        // localStorage.setItem('loveArray',JSON.stringify([0]));
-        // localStorage.setItem('striverArray',JSON.stringify([0]));
+        localStorage.setItem('farajProgress',json.faraj.length)
+        localStorage.setItem('ques',JSON.stringify(json));
         setQues(json);
-        setArray(json.faraj);
+
+        // setArray(json.faraj);
         console.log(json)
         localStorage.setItem('username',json.name);
 
     }
     //delete data
     }
-    const deleteData=async(id,email,questions)=>{
+    const deleteData=async(id,email,faraj)=>{
         const response=await fetch(`https://rocky-island-88255.herokuapp.com/api/datafaraj/deletedata/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',
                 'auth-token': localStorage.getItem('token')
             },
-            body: JSON.stringify({email,questions})
+            body: JSON.stringify({email,faraj})
         })
-        // const json =await response.json()
+        const json =await response.json()
+        console.log(json)
         // setNotes(json);
     }
   //     CURD IN 450 DSA
@@ -127,8 +126,10 @@ const DataState=(props)=> {
         const json =await response.json()
         console.log(localStorage.getItem('token'));
         localStorage.setItem('loveArray',JSON.stringify(json.love));
+        localStorage.setItem('loveProgress',json.love.length)
+        localStorage.setItem('ques',JSON.stringify(json));
         setQues(json);
-        setArray(json.love);
+        // setArray(json.love);
     }
     //delete data
     }
@@ -141,7 +142,8 @@ const DataState=(props)=> {
             },
             body: JSON.stringify({email,love})
         })
-        // const json =await response.json()
+        const json =await response.json()
+        console.log(json)
         // setNotes(json);
     }
   //     CURD IN STRIVER SHEET
@@ -155,7 +157,8 @@ const DataState=(props)=> {
             body: JSON.stringify({email,striver})
         })
         const json =await response.json()
-        setNotes(json);
+        console.log(json)
+        // setNotes(json);
     }
 //get data
     const getDataStriver=async()=>{
@@ -174,9 +177,11 @@ const DataState=(props)=> {
         const json =await response.json()
         console.log(localStorage.getItem('token'));
         localStorage.setItem('striverArray',JSON.stringify(json.striver));
-        console.log(localStorage.getItem('striverArray'));
+        localStorage.setItem('striverProgress',json.striver.length)
+        localStorage.setItem('ques',JSON.stringify(json));
+        
         setQues(json);
-        setArray(json.striver);
+        // setArray(json.striver);
     }
     //delete data
     }
@@ -189,12 +194,13 @@ const DataState=(props)=> {
             },
             body: JSON.stringify({email,striver})
         })
-        // const json =await response.json()
+        const json =await response.json()
+        console.log(json)
         // setNotes(json);
     }
 
   return (
-   <DataContext.Provider value={{notes,quesArray,alert,showAlert,updateData,getData,deleteData,getNotes,ques,getDataDSA,updateDataDSA,deleteDataDSA,getDataStriver,updateDataStriver,deleteDataStriver}}>
+   <DataContext.Provider value={{notes,alert,showAlert,setAlert,updateData,getData,deleteData,getNotes,ques,getDataDSA,updateDataDSA,deleteDataDSA,getDataStriver,updateDataStriver,deleteDataStriver}}>
          {props.children}
    </DataContext.Provider>
   )

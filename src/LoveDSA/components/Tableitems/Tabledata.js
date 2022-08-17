@@ -9,11 +9,12 @@ export default function Tabledata (props) {
   const [isChecked, setIsChecked] = useState(false);
 const [state,setState]=useState("false")
 const [color,setColor]=useState("#0E1C25")
+const ques=JSON.parse(localStorage.getItem("ques"))
 
 const ref=useRef(null);
 
   const context=useContext(dataContext);
-  const {ques,quesArray,updateDataDSA,deleteDataDSA,showAlert}=context;
+  const {updateDataDSA,deleteDataDSA,showAlert}=context;
   
   // console.log(ques.questions);
   // console.log(notes);
@@ -30,37 +31,52 @@ const ref=useRef(null);
     setIsChecked(check);
   },[check])
  
-          const onClickCheckbox= (e)=>{
-            e.preventDefault();
-            if(quesArray.includes(props.QID))
-              //  value=value+1;
-            updateDataDSA(ques._id,ques.email,props.QID)
+  const updateDATA=async()=>{
+    let localData=JSON.parse(localStorage.getItem("loveArray"))
+    localData.push(props.QID)
+    localStorage.setItem("loveArray",JSON.stringify(localData))
+}
+const deleteDATA=async()=>{
+let localData=await JSON.parse(localStorage.getItem("loveArray"))
+      const len= localStorage.getItem("loveProgress");
+      // if(len-1!==0){
+        for(let i=0;i<len;i++){
+          if(localData[i]==props.QID){
+            delete localData[i];
+            break;
           }
-            
-            const toggle= async(e)=>{
-             
-              if(isChecked){
-                if(props.mode == "dark")
-                setColor("blue")
-
-                else{
-                  setColor("red")
-                }
-                    // value=value-1;
-                deleteDataDSA(ques._id,ques.email,props.QID)
-                showAlert("deselect","Question Deselected 👾")
-                setIsChecked(false);
-              }
-              else if(!isChecked)  {
-                
-                setColor("green")
-                // value=value+1;
-                updateDataDSA(ques._id,ques.email,props.QID)
-                showAlert("success","Question Completed Succesfully 🎉🎊")
-                setIsChecked(true);
+        // }
       }
       
-    }
+localStorage.setItem("loveArray",JSON.stringify(localData))
+}
+
+    // const onClickCheckbox= (e)=>{
+    //   e.preventDefault();
+    //   if(JSON.parse(localStorage.getItem('farajArray')).includes(props.QID))
+      
+    //   updateData(ques._id,ques.email,props.QID)
+    // }
+      
+      const toggle= async(e)=>{
+       
+        if(isChecked){
+             console.log(props.QID)
+        await  deleteDataDSA(ques._id,ques.email,props.QID)
+          showAlert("deselect","Question Deselected 👾")
+         await deleteDATA()
+          setIsChecked(false);
+        }
+        else if(!isChecked)  {
+          
+          setColor("green")
+         await updateDataDSA(ques._id,ques.email,props.QID)
+        await updateDATA()
+          showAlert("success","Question Completed Succesfully 🎉🎊")
+          setIsChecked(true);
+}
+
+}
     // console.log(props.mode)
     // console.log(isChecked)
   

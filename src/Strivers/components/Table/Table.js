@@ -23,9 +23,9 @@ export default  function Table(props) {
   const context=useContext(dataContext);
   const {ques,getDataStriver,showAlert}=context;
 
-  useEffect(()=>{
-      getDataStriver();
-    },[localStorage.getItem('token')]);
+  // useEffect(()=>{
+  //     getDataStriver();
+  //   },[localStorage.getItem('token')]);
     // console.log(ques);
 
 // Remove all warninng from the Console 

@@ -23,9 +23,9 @@ export default  function Table(props) {
   const context=useContext(dataContext);
   const {ques,getDataDSA,showAlert}=context;
 
-  useEffect(()=>{
-      getDataDSA();
-    },[localStorage.getItem('token')]);
+  // useEffect(()=>{
+  //     getDataDSA();
+  //   },[localStorage.getItem('token')]);
     // console.log(ques);
 
 // Remove all warninng from the Console 

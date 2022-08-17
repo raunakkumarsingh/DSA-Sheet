@@ -4,6 +4,7 @@ import data from '../data.json';
 import { useNavigate } from 'react-router';
 import './Card.css' 
 import DataState from '../../../context/DataState';
+import Progressbar from '../Progress/Progressbar';
 
 
 
@@ -33,7 +34,8 @@ function Card(props) {
   // console.log(props.mode);
   document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   return (
-
+    <>
+    <Progressbar/>
     <div className='container my-3 d-flex justify-content-between'>
       
     <div className='row'>
@@ -54,7 +56,7 @@ function Card(props) {
     </div>
 
     
-  
+    </>
   )
 }
 

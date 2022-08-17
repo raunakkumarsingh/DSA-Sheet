@@ -12,8 +12,9 @@ const [color,setColor]=useState("#0E1C25")
 
 const ref=useRef(null);
 
-  const context=useContext(dataContext);
-  const {ques,quesArray,updateDataStriver,deleteDataStriver,showAlert}=context;
+const context=useContext(dataContext);
+const {updateDataStriver,deleteDataStriver,showAlert}=context;
+const ques=JSON.parse(localStorage.getItem("ques"))
   
   // console.log(ques.questions);
   // console.log(notes);
@@ -30,37 +31,52 @@ const ref=useRef(null);
     setIsChecked(check);
   },[check])
  
-          const onClickCheckbox= (e)=>{
-            e.preventDefault();
-            if(quesArray.includes(props.QID))
-            
-            updateDataStriver(ques._id,ques.email,props.QID)
+  const updateDATA=async()=>{
+    let localData=JSON.parse(localStorage.getItem("striverArray"))
+    localData.push(props.QID)
+    localStorage.setItem("striverArray",JSON.stringify(localData))
+}
+const deleteDATA=async()=>{
+let localData=await JSON.parse(localStorage.getItem("striverArray"))
+      const len= localStorage.getItem("striverProgress");
+      // if(len-1!==0){
+        for(let i=0;i<len;i++){
+          if(localData[i]==props.QID){
+            delete localData[i];
+            break;
           }
-            
-            const toggle= async(e)=>{
-             
-              if(isChecked){
-                if(props.mode == "dark")
-                setColor("blue")
-
-                else{
-                  setColor("red")
-                }
-
-                deleteDataStriver(ques._id,ques.email,props.QID)
-                showAlert("deselect","Question Deselected 👾")
-                setIsChecked(false);
-              }
-              else if(!isChecked)  {
-                
-                setColor("green")
-                
-                updateDataStriver(ques._id,ques.email,props.QID)
-                showAlert("success","Question Completed Succesfully 🎉🎊")
-                setIsChecked(true);
+        // }
       }
       
-    }
+localStorage.setItem("striverArray",JSON.stringify(localData))
+}
+
+    // const onClickCheckbox= (e)=>{
+    //   e.preventDefault();
+    //   if(JSON.parse(localStorage.getItem('farajArray')).includes(props.QID))
+      
+    //   updateData(ques._id,ques.email,props.QID)
+    // }
+      
+      const toggle= async(e)=>{
+       
+        if(isChecked){
+             console.log(props.QID)
+        await  deleteDataStriver(ques._id,ques.email,props.QID)
+          showAlert("deselect","Question Deselected 👾")
+         await deleteDATA()
+          setIsChecked(false);
+        }
+        else if(!isChecked)  {
+          
+          setColor("green")
+         await updateDataStriver(ques._id,ques.email,props.QID)
+        await updateDATA()
+          showAlert("success","Question Completed Succesfully 🎉🎊")
+          setIsChecked(true);
+}
+
+}
     // console.log(props.mode)
     // console.log(isChecked)
   

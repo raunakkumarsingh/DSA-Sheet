@@ -17,15 +17,15 @@ export default  function Table(props) {
 
   },[])
   const context=useContext(dataContext);
-  const {ques,getData,showAlert}=context;
+  const {getData}=context;
 
-  useEffect(()=>{
-      getData();
-    },[localStorage.getItem('token')]);
-    console.log(ques);
+  // useEffect(()=>{
+  //     getData();
+  //   },[localStorage.getItem('token')]);
+    // console.log(ques);
 
 // Remove all warninng from the Console 
-    console.log = console.warn = console.error = () => {};
+    // console.log = console.warn = console.error = () => {};
 
   const [searchTerm,setSearchTerm] = useState('');
   document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
