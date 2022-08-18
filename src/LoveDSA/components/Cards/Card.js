@@ -34,7 +34,7 @@ function Card(props) {
   document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   return (
 <>
-{/* <Progressbar/> */}
+<Progressbar/>
     <div className='container my-3 d-flex justify-content-between'>
       
     <div className='row'>

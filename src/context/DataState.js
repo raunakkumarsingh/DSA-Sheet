@@ -23,7 +23,7 @@ const DataState=(props)=> {
                 })
                 setTimeout(()=>{
                     setAlert(null)
-        },3200)
+        },2200)
         }
 
 
@@ -70,10 +70,9 @@ const DataState=(props)=> {
         const json =await response.json()
         console.log(localStorage.getItem('token'));
 
-        localStorage.setItem('farajArray',JSON.stringify(json.faraj));
         localStorage.setItem('farajProgress',json.faraj.length)
+        localStorage.setItem('farajArray',JSON.stringify(json.faraj));
         localStorage.setItem('ques',JSON.stringify(json));
-        setQues(json);
 
         // setArray(json.faraj);
         console.log(json)
@@ -127,7 +126,7 @@ const DataState=(props)=> {
         console.log(localStorage.getItem('token'));
         localStorage.setItem('loveArray',JSON.stringify(json.love));
         localStorage.setItem('loveProgress',json.love.length)
-        localStorage.setItem('ques',JSON.stringify(json));
+        localStorage.setItem('quesDSA',JSON.stringify(json));
         setQues(json);
         // setArray(json.love);
     }
@@ -178,7 +177,7 @@ const DataState=(props)=> {
         console.log(localStorage.getItem('token'));
         localStorage.setItem('striverArray',JSON.stringify(json.striver));
         localStorage.setItem('striverProgress',json.striver.length)
-        localStorage.setItem('ques',JSON.stringify(json));
+        localStorage.setItem('quesStriver',JSON.stringify(json));
         
         setQues(json);
         // setArray(json.striver);

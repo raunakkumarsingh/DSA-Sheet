@@ -7,63 +7,60 @@ import { Link } from "react-router-dom";
 export default function Tabledata (props) {
   // console.log(dataContext)
   const [isChecked, setIsChecked] = useState(false);
-const [state,setState]=useState("false")
-const [color,setColor]=useState("#0E1C25")
+
 
 // const ref=useRef(null);
 
   const context=useContext(dataContext);
   const {updateData,deleteData,showAlert}=context;
   const ques=JSON.parse(localStorage.getItem("ques"))
-  // console.log(ques.questions);
-  // console.log(notes);
-  
-  // console.log(ques);
-  // console.log(quesArray);
+ 
   let check = JSON.parse(localStorage.getItem('farajArray')).includes(props.QID);
-  // var exists = ques.some(o => o.questions === props.QID);
-  // console.log(check);
-  
-  const updateDATA=async()=>{
-          let localData=JSON.parse(localStorage.getItem("farajArray"))
-          localData.push(props.QID)
-          localStorage.setItem("farajArray",JSON.stringify(localData))
-  }
-  const deleteDATA=async()=>{
-    let localData=await JSON.parse(localStorage.getItem("farajArray"))
-            const len= localStorage.getItem("farajProgress");
-            // if(len-1!==0){
-              for(let i=0;i<len;i++){
-                if(localData[i]==props.QID){
-                  delete localData[i];
-                  break;
-                }
-              // }
-            }
-            
-    localStorage.setItem("farajArray",JSON.stringify(localData))
-  }
-  
+ 
   useEffect(()=>{
     setIsChecked(check);
   },[check])
- 
-          // const onClickCheckbox= (e)=>{
-          //   e.preventDefault();
-          //   if(JSON.parse(localStorage.getItem('farajArray')).includes(props.QID))
+
+
+  const updateDATA=async()=>{
+    let localData=await JSON.parse(localStorage.getItem("farajArray"))
+    const len= localData.length;
+          if(localData[len-1]!==props.QID){
+            localData.push(props.QID)
+          }
+        localStorage.setItem("farajArray",JSON.stringify(localData))
+        localStorage.setItem("farajProgress",len+1);
+  }
+
+  
+  const deleteDATA=async()=>{
+    let localData=await JSON.parse(localStorage.getItem("farajArray"))
+          const len= localData.length;
+          if(localData[len-1]===props.id){
+            await  localData.splice(len-1,1);
+            localStorage.setItem("farajProgress",len-1);
+          }
+         else if(localData[len-2]===props.id){
+            await  localData.splice(len-2,1);
+            localStorage.setItem("farajProgress",len-1);
+          }
+          else{
+            for(let i=0;i<len;i++){
+              if(localData[i]==props.QID){
+               await  localData.splice(i,1);
+               localStorage.setItem("farajProgress",len-1);
+                break;
+              }
             
-          //   updateData(ques._id,ques.email,props.QID)
-          // }
+          }
+        }
+          
+    localStorage.setItem("farajArray",JSON.stringify(localData))
+    }
+  
             
             const toggle= async(e)=>{
-             
               if(isChecked){
-                // if(props.mode === "dark")
-                // setColor("blue")
-
-                // else{
-                //   setColor("red")
-                // }
                    console.log(props.QID)
               await  deleteData(ques._id,ques.email,props.QID)
                 showAlert("deselect","Question Deselected 👾")
@@ -71,8 +68,6 @@ const [color,setColor]=useState("#0E1C25")
                 setIsChecked(false);
               }
               else if(!isChecked)  {
-                
-                setColor("green")
                await updateData(ques._id,ques.email,props.QID)
               await updateDATA()
                 showAlert("success","Question Completed Succesfully 🎉🎊")

@@ -7,24 +7,16 @@ import { Link } from "react-router-dom";
 export default function Tabledata (props) {
   // console.log(dataContext)
   const [isChecked, setIsChecked] = useState(false);
-const [state,setState]=useState("false")
-const [color,setColor]=useState("#0E1C25")
-const ques=JSON.parse(localStorage.getItem("ques"))
+
+const ques=JSON.parse(localStorage.getItem("quesDSA"))
 
 const ref=useRef(null);
 
   const context=useContext(dataContext);
   const {updateDataDSA,deleteDataDSA,showAlert}=context;
-  
-  // console.log(ques.questions);
-  // console.log(notes);
-  
-  // console.log(ques);
-  // console.log(quesArray);
+
   let check = JSON.parse(localStorage.getItem('loveArray')).includes(props.QID);
-  // var exists = ques.some(o => o.questions === props.QID);
-  // console.log(check);
-  // let value=ques.props.Title;
+
   
   
   useEffect(()=>{
@@ -35,29 +27,33 @@ const ref=useRef(null);
     let localData=JSON.parse(localStorage.getItem("loveArray"))
     localData.push(props.QID)
     localStorage.setItem("loveArray",JSON.stringify(localData))
+    localStorage.setItem("loveProgress",localStorage.getItem("loveProgress")+1);
 }
 const deleteDATA=async()=>{
 let localData=await JSON.parse(localStorage.getItem("loveArray"))
       const len= localStorage.getItem("loveProgress");
-      // if(len-1!==0){
+      if(localData[len-1]===props.id){
+        await  localData.splice(len-1,1);
+        localStorage.setItem("loveProgress",len-1);
+      }
+     else if(localData[len-2]===props.id){
+        await  localData.splice(len-2,1);
+        localStorage.setItem("loveProgress",len-1);
+      }
+      else{
         for(let i=0;i<len;i++){
           if(localData[i]==props.QID){
-            delete localData[i];
+           await  localData.splice(i,1);
+           localStorage.setItem("loveProgress",len-1);
             break;
           }
-        // }
+        
       }
+    }
+      
       
 localStorage.setItem("loveArray",JSON.stringify(localData))
 }
-
-    // const onClickCheckbox= (e)=>{
-    //   e.preventDefault();
-    //   if(JSON.parse(localStorage.getItem('farajArray')).includes(props.QID))
-      
-    //   updateData(ques._id,ques.email,props.QID)
-    // }
-      
       const toggle= async(e)=>{
        
         if(isChecked){
@@ -68,8 +64,6 @@ localStorage.setItem("loveArray",JSON.stringify(localData))
           setIsChecked(false);
         }
         else if(!isChecked)  {
-          
-          setColor("green")
          await updateDataDSA(ques._id,ques.email,props.QID)
         await updateDATA()
           showAlert("success","Question Completed Succesfully 🎉🎊")
@@ -77,9 +71,7 @@ localStorage.setItem("loveArray",JSON.stringify(localData))
 }
 
 }
-    // console.log(props.mode)
-    // console.log(isChecked)
-  
+
     return (
       <>
     <tr className={`table-${props.mode}-${isChecked}`}  >

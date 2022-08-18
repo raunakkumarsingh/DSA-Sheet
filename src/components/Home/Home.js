@@ -1,25 +1,30 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import './Home.css'
 import {useContext } from 'react';
 import dataContext from '../../context/datacontext';
+
 
 
 function Home(props) {
 
   const context=useContext(dataContext);
   const {getData,getDataDSA,getDataStriver,setAlert}=context;
-
+   const history=useNavigate();
+   
     const goToDSA=async()=>{
      await getDataDSA();
       setAlert(null)
+      history("/450DSA");
     }
     const goToStriver=async()=>{
       await getDataStriver();
       setAlert(null)
+      history("/striver")
     }
     const goToFaraj=async()=>{
       // getData();
+      // history("/faraj")
      await setAlert(null)
     }
 
@@ -38,7 +43,7 @@ function Home(props) {
 2.Clearing the DSA round for the Interviews, as these are the questions generally asked in the companies like Amazon, Microsoft, Google, etc.
       </p>
       <div className='d-flex justify-content-end'>
-      <Link to="/450DSA" onClick={goToDSA}  className="btn-light btn-primary ">GO</Link>
+      <a onClick={goToDSA}  className="btn-light btn-primary ">GO</a>
       </div>
     </div>
   </div>
@@ -49,7 +54,7 @@ function Home(props) {
       This Sheet by Raj Vikramaditya A.K.A Striver has questions which are one of the most asked coding interview questions in companies like Amazon, Microsoft, Media.net, Flipkart, etc. & covers almost all of the concepts related to Data Structure & Algorithms.
       </p>
       <div className='d-flex justify-content-end'>
-      <Link to="/striver" onClick={goToStriver} className="btn-light btn-primary ">GO</Link>
+      <a onClick={goToStriver} className="btn-light btn-primary ">GO</a>
       </div>
     </div>
   </div>

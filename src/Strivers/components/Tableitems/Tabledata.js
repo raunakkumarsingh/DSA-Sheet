@@ -10,11 +10,11 @@ export default function Tabledata (props) {
 const [state,setState]=useState("false")
 const [color,setColor]=useState("#0E1C25")
 
-const ref=useRef(null);
+
 
 const context=useContext(dataContext);
 const {updateDataStriver,deleteDataStriver,showAlert}=context;
-const ques=JSON.parse(localStorage.getItem("ques"))
+const ques=JSON.parse(localStorage.getItem("quesStriver"))
   
   // console.log(ques.questions);
   // console.log(notes);
@@ -35,21 +35,34 @@ const ques=JSON.parse(localStorage.getItem("ques"))
     let localData=JSON.parse(localStorage.getItem("striverArray"))
     localData.push(props.QID)
     localStorage.setItem("striverArray",JSON.stringify(localData))
+    localStorage.setItem("striverProgress",localStorage.getItem("striverProgress")+1);
 }
 const deleteDATA=async()=>{
-let localData=await JSON.parse(localStorage.getItem("striverArray"))
-      const len= localStorage.getItem("striverProgress");
-      // if(len-1!==0){
-        for(let i=0;i<len;i++){
-          if(localData[i]==props.QID){
-            delete localData[i];
-            break;
-          }
-        // }
+  let localData=await JSON.parse(localStorage.getItem("striverArray"))
+        const len= localStorage.getItem("striverProgress");
+        
+        if(localData[len-1]===props.id){
+          await  localData.splice(len-1,1);
+          localStorage.setItem("striverProgress",len-1);
+        }
+       else if(localData[len-2]===props.id){
+          await  localData.splice(len-2,1);
+          localStorage.setItem("striverProgress",len-1);
+        }
+        else{
+          for(let i=0;i<len;i++){
+            if(localData[i]==props.QID){
+             await  localData.splice(i,1);
+             localStorage.setItem("striverProgress",len-1);
+              break;
+            }
+          
+        }
       }
-      
-localStorage.setItem("striverArray",JSON.stringify(localData))
-}
+        
+        
+  localStorage.setItem("striverArray",JSON.stringify(localData))
+  }
 
     // const onClickCheckbox= (e)=>{
     //   e.preventDefault();
@@ -59,7 +72,7 @@ localStorage.setItem("striverArray",JSON.stringify(localData))
     // }
       
       const toggle= async(e)=>{
-       
+          
         if(isChecked){
              console.log(props.QID)
         await  deleteDataStriver(ques._id,ques.email,props.QID)

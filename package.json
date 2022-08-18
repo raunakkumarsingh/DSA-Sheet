@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.2.3",
+    "@createnextapp/async-local-storage": "^1.0.1",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.2",
     "@testing-library/jest-dom": "^5.16.4",

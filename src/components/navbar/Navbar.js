@@ -21,7 +21,7 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-          <p className={`navbar-brand-${props.mode}` } href="/"> <Link className={`nav-link-${props.mode} text-uppercase fw-bold fs-5`} aria-current="page" to="/">
+          <p className={`navbar-brand-${props.mode} head` } href="/"> <Link className={`nav-link-${props.mode} text-uppercase fw-bold fs-5`} aria-current="page" to="/">
            {localStorage.getItem('username')} 
             </Link> &nbsp; <Link className={`nav-link-${props.mode}`} aria-current="page" to="/">
            Home 
@@ -31,16 +31,16 @@ export default function Navbar(props) {
       {/* <div className="d-flex justify-content-center" > */}
       {/* <Link className="navbar-brand" to="#">Streak 🔥</Link> */}
       {/* </div> */}
-    {!localStorage.getItem('token')  ?  <form className=" d-flex">
-        <ul className='d-flex justify-content-end'>
+    {!localStorage.getItem('token')  ?  
+        <ul className='d-flex justify-content-end my-2'>
            <li>
-        <Link className="btn btn-outline-success mx-2" to="/login" type="submit">Login</Link>
+        <button className="btn btn-outline-success mx-2" to="/login" type="submit">Login</button>
            </li>
           <li>
-        <Link className="btn btn-outline-success mx-2" to="/signup" type="submit">Signup</Link>
+        <button className="btn btn-outline-success mx-2" to="/signup" type="submit">Signup</button>
           </li>
         </ul>
-  </form>:<ul><li><button onClick={handleLogout} className='btn btn-outline-success my-2' to="/login" type='submit'>logout</button></li></ul>
+    :<ul><li><button  onClick={handleLogout} className='btn btn-outline-success my-2' to="/login" type='submit'>logout</button></li></ul>
 }
       </div>
     </div>

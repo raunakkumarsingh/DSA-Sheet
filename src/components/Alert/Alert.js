@@ -18,9 +18,9 @@ function Alert() {
         return lower.charAt(0).toUpperCase() + lower.slice(1);
     }
     return (
-        <div className='.animealert' >
+       <div className='position-sticky' style={{width: '100%',height:"70px",top:"70px"}} >
       {
-        alert && <div style={{height: '20px'}}>
+        alert && <div style={{height: '100%'}}>
          <div className={`alert alert-${alert.type} alert-dismissible fade show`} role="alert">
            <strong>{capitalize(alert.type)=="Success"?"Success":"Error"}</strong>: {alert.msg} 
         </div>
