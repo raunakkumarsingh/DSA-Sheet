@@ -22,7 +22,9 @@ function Alert() {
       {
         alert && <div style={{height: '100%'}}>
          <div className={`alert alert-${alert.type} alert-dismissible fade show`} role="alert">
-           <strong>{capitalize(alert.type)=="Success"?"Success":"Error"}</strong>: {alert.msg} 
+         <strong>{capitalize(alert.type)==="Success"?"Success":""}</strong> <strong>{capitalize(alert.type)==="Deselect"?"Deselect":""}</strong> <strong>{capitalize(alert.type)==="Danger"?"Error":""}</strong>: {alert.msg} 
+        
+          
         </div>
         </div>
       }

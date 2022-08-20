@@ -99,11 +99,11 @@ return (
     <Route exact path="/450DSA/Matrix" element={<Tablel key="23" mode={mode} title="Matrix"/>}/>
     <Route exact path="/450DSA/String" element={<Tablel key="24" mode={mode} title="String"/>}/>
     <Route exact path="/450DSA/Search%20&%20Sort" element={<Tablel key="25" mode={mode} title="Search & Sort"/>}/>
-    <Route exact path="/450DSA/Linked%20List" element={<Tablel key="26" mode={mode} title="Linked List"/>}/>
+    <Route exact path="/450DSA/LinkedList" element={<Tablel key="26" mode={mode} title="LinkedList"/>}/>
     <Route exact path="/450DSA/Binary%20Trees" element={<Tablel key="27" mode={mode} title="Binary Trees" />}/>
     <Route exact path="/450DSA/BST" element={<Tablel key="28" mode={mode} title="BST" />}/>
     <Route exact path="/450DSA/Greedy" element={<Tablel key="29" mode={mode} title="Greedy"/>}/>
-    <Route exact path="/450DSA/Backtracking" element={<Tablel key="30" mode={mode} title="Backtracking" />}/>
+    <Route exact path="/450DSA/BackTracking" element={<Tablel key="30" mode={mode} title="BackTracking" />}/>
     <Route exact path="/450DSA/Stacks%20&%20Queues" element={<Tablel key="31" mode={mode} title="Stacks & Queues"/>}/>
     <Route exact path="/450DSA/Heap" element={<Tablel key="32" mode={mode} title="Heap"/>}/>
     <Route exact path="/450DSA/Graph" element={<Tablel key="33" mode={mode} title="Graph"/>}/>

@@ -535,217 +535,217 @@
   },
   {
       "id": 90,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Find first and last positions of an element in a sorted array",
       "Url": "https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x/0"
   },
   {
       "id": 91,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Find a Fixed Point (Value equal to index) in a given array",
       "Url": "https://practice.geeksforgeeks.org/problems/value-equal-to-index-value1330/1"
   },
   {
       "id": 92,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Search in a rotated sorted array",
       "Url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
   },
   {
       "id": 93,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "square root of an integer",
       "Url": "https://practice.geeksforgeeks.org/problems/count-squares3649/1"
   },
   {
       "id": 94,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Maximum and minimum of an array using minimum number of comparisons",
       "Url": "https://practice.geeksforgeeks.org/problems/middle-of-three2926/1"
   },
   {
       "id": 95,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Optimum location of point to minimize total distance",
       "Url": "https://www.geeksforgeeks.org/optimum-location-point-minimize-total-distance/"
   },
   {
       "id": 96,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Find the repeating and the missing",
       "Url": "https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1"
   },
   {
       "id": 97,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "find majority element",
       "Url": "https://practice.geeksforgeeks.org/problems/majority-element/0"
   },
   {
       "id": 98,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Searching in an array where adjacent differ by at most k",
       "Url": "https://www.geeksforgeeks.org/searching-array-adjacent-differ-k/"
   },
   {
       "id": 99,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "find a pair with a given difference",
       "Url": "https://practice.geeksforgeeks.org/problems/find-pair-given-difference/0"
   },
   {
       "id": 100,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "find four elements that sum to a given value",
       "Url": "https://practice.geeksforgeeks.org/problems/find-all-four-sum-numbers/0"
   },
   {
       "id": 101,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "maximum sum such that no 2 elements are adjacent",
       "Url": "https://practice.geeksforgeeks.org/problems/stickler-theif/0"
   },
   {
       "id": 102,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Count triplet with sum smaller than a given value",
       "Url": "https://practice.geeksforgeeks.org/problems/count-triplets-with-sum-smaller-than-x5549/1"
   },
   {
       "id": 103,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "merge 2 sorted arrays",
       "Url": "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1"
   },
   {
       "id": 104,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "print all subarrays with 0 sum",
       "Url": "https://practice.geeksforgeeks.org/problems/zero-sum-subarrays/0"
   },
   {
       "id": 105,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Product array Puzzle",
       "Url": "https://practice.geeksforgeeks.org/problems/product-array-puzzle/0"
   },
   {
       "id": 106,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Sort array according to count of set bits",
       "Url": "https://practice.geeksforgeeks.org/problems/sort-by-set-bit-count/0"
   },
   {
       "id": 107,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "minimum no. of swaps required to sort the array",
       "Url": "https://practice.geeksforgeeks.org/problems/minimum-swaps/1"
   },
   {
       "id": 108,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Bishu and Soldiers",
       "Url": "https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/bishu-and-soldiers/"
   },
   {
       "id": 109,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Rasta and Kheshtak",
       "Url": "https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/rasta-and-kheshtak/"
   },
   {
       "id": 110,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Kth smallest number again",
       "Url": "https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/kth-smallest-number-again-2/"
   },
   {
       "id": 111,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Find pivot element in a sorted array",
       "Url": "http://theoryofprogramming.com/2017/12/16/find-pivot-element-sorted-rotated-array/"
   },
   {
       "id": 112,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "K-th Element of Two Sorted Arrays",
       "Url": "https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array/0"
   },
   {
       "id": 113,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Aggressive cows",
       "Url": "https://www.spoj.com/problems/AGGRCOW/"
   },
   {
       "id": 114,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Book Allocation Problem",
       "Url": "https://practice.geeksforgeeks.org/problems/allocate-minimum-number-of-pages/0"
   },
   {
       "id": 115,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "EKOSPOJ:",
       "Url": "https://www.spoj.com/problems/EKO/"
   },
   {
       "id": 116,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Job Scheduling Algo",
       "Url": "https://www.geeksforgeeks.org/weighted-job-scheduling-log-n-time/"
   },
   {
       "id": 117,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Missing Number in AP",
       "Url": "https://practice.geeksforgeeks.org/problems/arithmetic-number/0"
   },
   {
       "id": 118,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Smallest number with atleastn trailing zeroes infactorial",
       "Url": "https://practice.geeksforgeeks.org/problems/smallest-factorial-number5929/1"
   },
   {
       "id": 119,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Painters Partition Problem:",
       "Url": "https://practice.geeksforgeeks.org/problems/allocate-minimum-number-of-pages/0"
   },
   {
       "id": 120,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "ROTI-Prata SPOJ",
       "Url": "https://www.spoj.com/problems/PRATA/"
   },
   {
       "id": 121,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "DoubleHelix SPOJ",
       "Url": "https://www.spoj.com/problems/ANARC05B/"
   },
   {
       "id": 122,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Subset Sums",
       "Url": "https://www.spoj.com/problems/SUBSUMS/"
   },
   {
       "id": 123,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Findthe inversion count",
       "Url": "https://practice.geeksforgeeks.org/problems/inversion-of-array/0"
   },
   {
       "id": 124,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Implement Merge-sort in-place",
       "Url": "https://www.geeksforgeeks.org/in-place-merge-sort/"
   },
   {
       "id": 125,
-      "Title": "Searching & Sorting",
+      "Title": "Search & Sort",
       "Name": "Partitioning and Sorting Arrays with Many Repeated Entries",
       "Url": "https://www.baeldung.com/java-sorting-arrays-with-repeated-entries"
   },
@@ -1177,133 +1177,133 @@
   },
   {
       "id": 197,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Fina a value in a BST",
       "Url": "https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/"
   },
   {
       "id": 198,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Deletion of a node in a BST",
       "Url": "https://leetcode.com/problems/delete-node-in-a-bst/"
   },
   {
       "id": 199,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Find min and max value in a BST",
       "Url": "https://practice.geeksforgeeks.org/problems/minimum-element-in-bst/1"
   },
   {
       "id": 200,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Find inorder successor and inorder predecessor in a BST",
       "Url": "https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1"
   },
   {
       "id": 201,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Check if a tree is a BST or not ",
       "Url": "https://practice.geeksforgeeks.org/problems/check-for-bst/1"
   },
   {
       "id": 202,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Populate Inorder successor of all nodes",
       "Url": "https://practice.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1"
   },
   {
       "id": 203,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Find LCA  of 2 nodes in a BST",
       "Url": "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1"
   },
   {
       "id": 204,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Construct BST from preorder traversal",
       "Url": "https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversa/"
   },
   {
       "id": 205,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Convert Binary tree into BST",
       "Url": "https://practice.geeksforgeeks.org/problems/binary-tree-to-bst/1"
   },
   {
       "id": 206,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Convert a normal BST into a Balanced BST",
       "Url": "https://www.geeksforgeeks.org/convert-normal-bst-balanced-bst/"
   },
   {
       "id": 207,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Merge two BST [ V.V.V>IMP ]",
       "Url": "https://www.geeksforgeeks.org/merge-two-balanced-binary-search-trees/"
   },
   {
       "id": 208,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Find Kth largest element in a BST",
       "Url": "https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1"
   },
   {
       "id": 209,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Find Kth smallest element in a BST",
       "Url": "https://practice.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1"
   },
   {
       "id": 210,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Count pairs from 2 BST whose sum is equal to given value \"X\"",
       "Url": "https://practice.geeksforgeeks.org/problems/brothers-from-different-root/1"
   },
   {
       "id": 211,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Find the median of BST in O(n) time and O(1) space",
       "Url": "https://www.geeksforgeeks.org/find-median-bst-time-o1-space/"
   },
   {
       "id": 212,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Count BST ndoes that lie in a given range",
       "Url": "https://practice.geeksforgeeks.org/problems/count-bst-nodes-that-lie-in-a-given-range/1"
   },
   {
       "id": 213,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Replace every element with the least greater element on its right",
       "Url": "https://www.geeksforgeeks.org/replace-every-element-with-the-least-greater-element-on-its-right/"
   },
   {
       "id": 214,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Given \"n\" appointments, find the conflicting appointments",
       "Url": "https://www.geeksforgeeks.org/given-n-appointments-find-conflicting-appointments/"
   },
   {
       "id": 215,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Check preorder is valid or not",
       "Url": "https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0"
   },
   {
       "id": 216,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Check whether BST contains Dead end",
       "Url": "https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1"
   },
   {
       "id": 217,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Largest BST in a Binary Tree [ V.V.V.V.V IMP ]",
       "Url": "https://practice.geeksforgeeks.org/problems/largest-bst/1"
   },
   {
       "id": 218,
-      "Title": "Binary Search Trees",
+      "Title": "BST",
       "Name": "Flatten BST to sorted list",
       "Url": "https://www.geeksforgeeks.org/flatten-bst-to-sorted-list-increasing-order/"
   },

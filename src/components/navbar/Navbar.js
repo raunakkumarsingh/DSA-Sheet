@@ -34,10 +34,10 @@ export default function Navbar(props) {
     {!localStorage.getItem('token')  ?  
         <ul className='d-flex justify-content-end my-2'>
            <li>
-        <button className="btn btn-outline-success mx-2" to="/login" type="submit">Login</button>
+        <Link className="btn btn-outline-success mx-2" to="/login" type="submit">Login</Link>
            </li>
           <li>
-        <button className="btn btn-outline-success mx-2" to="/signup" type="submit">Signup</button>
+        <Link className="btn btn-outline-success mx-2" to="/signup" type="submit">Signup</Link>
           </li>
         </ul>
     :<ul><li><button  onClick={handleLogout} className='btn btn-outline-success my-2' to="/login" type='submit'>logout</button></li></ul>

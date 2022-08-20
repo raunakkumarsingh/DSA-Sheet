@@ -78,7 +78,6 @@ export default  function Table(props) {
   </div></div>
   <div >
  <Tableitem searc={searchTerm} mode={props.mode}    title={props.title}  />
-    
     </div>
     </>
   )

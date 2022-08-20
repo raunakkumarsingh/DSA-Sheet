@@ -30,7 +30,7 @@ li {
 
 .navbar-brand-dark {
     /* margin: 1rem; */
-    color: #5BC6E6;
+    color: aqua;
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
 }
@@ -50,7 +50,7 @@ li {
     color: #85909D;
 }
 .nav-link-dark {
-    color: #34BCD4;
+    color: aqua;
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
 }

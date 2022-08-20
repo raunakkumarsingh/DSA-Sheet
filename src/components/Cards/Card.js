@@ -42,8 +42,6 @@ function Card(props) {
          <Carditem title={element.Title} mode={props.mode} loginControl={loginControl}  TotalQuestion={element.Totalquestion} EasyQuestion={element.EasyQuestion} MediumQuestion={element.MediumQuestion} hardQuestion={element.hardQuestion}/>
           </DataState>
         
-
-        
       </div>
         })
       }
