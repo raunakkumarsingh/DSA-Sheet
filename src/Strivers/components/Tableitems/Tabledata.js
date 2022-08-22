@@ -32,10 +32,13 @@ const [loader,setLoader]=useState(false);
   },[check])
  
   const updateDATA=async()=>{
-    let localData=JSON.parse(localStorage.getItem("striverArray"))
-    localData.push(props.QID)
-    localStorage.setItem("striverArray",JSON.stringify(localData))
-    localStorage.setItem("striverProgress",localStorage.getItem("striverProgress")+1);
+    let localData=await JSON.parse(localStorage.getItem("striverArray"))
+    const len= localData.length;
+          if(localData[len-1]!==props.QID){
+            localData.push(props.QID)
+          }
+        localStorage.setItem("striverArray",JSON.stringify(localData))
+        localStorage.setItem("striverProgress",len+1);
 }
 const deleteDATA=async()=>{
   let localData=await JSON.parse(localStorage.getItem("striverArray"))

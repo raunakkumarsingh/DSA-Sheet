@@ -27,11 +27,16 @@ export default function Tabledata (props) {
  
   const updateDATA=async()=>{
     
-    let localData=JSON.parse(localStorage.getItem("loveArray"))
-    localData.push(props.QID)
-    localStorage.setItem("loveArray",JSON.stringify(localData))
-    localStorage.setItem("loveProgress",localStorage.getItem("loveProgress")+1);
+    let localData=await JSON.parse(localStorage.getItem("loveArray"))
+    const len= localData.length;
+          if(localData[len-1]!==props.QID){
+            localData.push(props.QID)
+          }
+        localStorage.setItem("loveArray",JSON.stringify(localData))
+        localStorage.setItem("loveProgress",len+1);
 }
+
+
 const deleteDATA=async()=>{
 let localData=await JSON.parse(localStorage.getItem("loveArray"))
       const len= localStorage.getItem("loveProgress");
