@@ -8,15 +8,17 @@ function Signup(props) {
 
   const context=useContext(dataContext);
   const {showAlert}=context;
+  const [loader,setLoader]=useState(false);
  
     let history=useNavigate();
       const[credentials,setCredentials]=useState({name:"",email:"",password:"",cpassword:""});
       
       const onChange=(e)=>{
-        setCredentials({...credentials,[e.target.name]:e.target.value})
+       setCredentials({...credentials,[e.target.name]:e.target.value})
       }
 
       const handleSubmit=async(e)=>{
+        setLoader(true);
         e.preventDefault();
         if(credentials.password!=credentials.cpassword){
           showAlert("danger","Confirm Password & Entered Password should be same")
@@ -37,10 +39,12 @@ function Signup(props) {
         // console.log(json);
         
         if(json.success){
+          setLoader(false);
           history('/login');
           showAlert("success","Signup Successfull 🥳🎉")
         }
         else{
+        setLoader(false);
           showAlert("danger",json.error[0].msg || json.error)
         }
       }
@@ -64,11 +68,9 @@ function Signup(props) {
     <label htmlFor="exampleInputPassword1" className="form-label">Confirm Password</label>
     <input type="password" className="form-control" name='cpassword' id="exampleInputPassword2"  onChange={onChange}/>
   </div>
-  <div className="mb-3 form-check">
-    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-    <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" className="btn btn-primary">Sign Up</button>
+ 
+  <button type="submit" className="btn" >SignUp &nbsp;
+  <span class="spinner-border spinner-border-sm my-1" role="status" aria-hidden="true" style={{display:loader?"box":"none"}}></span></button>
 </form>
   </div>
 </div>

@@ -3,13 +3,13 @@ import { useState,useContext } from 'react';
 import './Login.css'
 import { useNavigate } from 'react-router';
 import dataContext from '../../context/datacontext';
-// import { useCookies } from 'react-cookie';
 
 
 function Login(props) {
   
   const context=useContext(dataContext);
   const {getData,showAlert}=context;
+  const [loader,setLoader]=useState(false);
 
   let history=useNavigate();
   const[credentials,setCredentials]=useState({lemail:"",lpassword:""})
@@ -20,6 +20,7 @@ function Login(props) {
   }
   
   const  handleSubmit=async(e)=>{
+    setLoader(true);
     e.preventDefault();
     const response = await fetch("https://rocky-island-88255.herokuapp.com/api/auth/login",{
             method:'POST',
@@ -29,9 +30,8 @@ function Login(props) {
        body: JSON.stringify({email:credentials.lemail,password:credentials.lpassword})
       })
       
-      
       const json= await response.json();
-      // console.log(json);
+      setLoader(false);
       if(json.success){
         localStorage.setItem('token',json.token);
        await getData();
@@ -39,17 +39,13 @@ function Login(props) {
         history('/')
       }
       else{
-        showAlert("danger",json.error)
-        
+        showAlert("danger",json.error)   
     }
-
-   
-       
   }
   document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
   return (
+    
     <div className="container " id="log" style={{height:"100%"}}>
- 
     <div className={`logincard-${props.mode} d-flex justify-content-center aling-item-center`}>
   <div className="card-body">
   <form onSubmit={handleSubmit}>
@@ -62,16 +58,13 @@ function Login(props) {
     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
     <input type="password" className="form-control" name="lpassword" onChange={onChange} id="exampleInputPassword1"/>
   </div>
-  {/* <div className="mb-3 form-check">
-    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-    <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-  </div> */}
-  <button type="submit" className="btn btn-primary">Login</button>
+  <button type="submit" className="btn btn-primary" >Login &nbsp;
+  <span class="spinner-border spinner-border-sm my-1" role="status" aria-hidden="true" style={{display:loader?"flex":"none"}}></span></button>
 </form>
   </div>
-
  </div>
  </div>
+ 
   )
 }
 

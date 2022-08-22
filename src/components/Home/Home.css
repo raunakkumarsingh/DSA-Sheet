@@ -20,6 +20,9 @@
   transition: transform 0.8s;
   margin-top: 100rem;
 }
+.spinner-border{
+    color: black;
+}
 
 .btn-dark {
     background-color:  blue;
@@ -31,6 +34,7 @@
     font-weight: bold;
     border-color: #05ef63;
     transition: transform 1s;
+
 }
 .btn-dark:hover {
     /* background-color: #06E3E2; */

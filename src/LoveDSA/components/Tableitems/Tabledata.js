@@ -8,13 +8,15 @@ export default function Tabledata (props) {
   // console.log(dataContext)
   const [isChecked, setIsChecked] = useState(false);
 
-const ques=JSON.parse(localStorage.getItem("quesDSA"))
-
-const ref=useRef(null);
-
+  
+  const ref=useRef(null);
+  
+  
+  
   const context=useContext(dataContext);
   const {updateDataDSA,deleteDataDSA,showAlert}=context;
-
+  const ques=JSON.parse(localStorage.getItem("quesDSA"))
+  const [loader,setLoader]=useState(false);
   let check = JSON.parse(localStorage.getItem('loveArray')).includes(props.QID);
 
   
@@ -24,6 +26,7 @@ const ref=useRef(null);
   },[check])
  
   const updateDATA=async()=>{
+    
     let localData=JSON.parse(localStorage.getItem("loveArray"))
     localData.push(props.QID)
     localStorage.setItem("loveArray",JSON.stringify(localData))
@@ -50,22 +53,24 @@ let localData=await JSON.parse(localStorage.getItem("loveArray"))
         
       }
     }
-      
-      
 localStorage.setItem("loveArray",JSON.stringify(localData))
+
 }
       const toggle= async(e)=>{
        
         if(isChecked){
-             console.log(props.QID)
+         setLoader(true)
         await  deleteDataDSA(ques._id,ques.email,props.QID)
-          showAlert("deselect","Question Deselected 👾")
-         await deleteDATA()
+        await deleteDATA()
+        setLoader(false);
+        showAlert("deselect","Question Deselected 👾")
           setIsChecked(false);
         }
         else if(!isChecked)  {
+          setLoader(true)
          await updateDataDSA(ques._id,ques.email,props.QID)
         await updateDATA()
+        setLoader(false);
           showAlert("success","Question Completed Succesfully 🎉🎊")
           setIsChecked(true);
 }
@@ -75,7 +80,8 @@ localStorage.setItem("loveArray",JSON.stringify(localData))
     return (
       <>
     <tr className={`table-${props.mode}-${isChecked}`}  >
-      <th scope="row"><input className="donebox" name={props.QID} onChange={toggle}    type="checkbox"  checked={isChecked}></input></th>
+      <th scope="row">{loader?<span class="spinner-border spinner-border-sm my-1 text-primary" role="status" aria-hidden="true"></span>:<input className="donebox" name={props.QID} onChange={toggle}    type="checkbox"  checked={isChecked}></input>
+      }</th>
       <th  className={`questionname data-${props.mode}-${isChecked}`} >{props.QID}</th>
       <th><a target="_blank" href={props.Url}  className={`questionname data-${props.mode}-${isChecked}`} >{props.question}</a></th>
     </tr>

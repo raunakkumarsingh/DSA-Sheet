@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 export default function Tabledata (props) {
   // console.log(dataContext)
   const [isChecked, setIsChecked] = useState(false);
-const [state,setState]=useState("false")
-const [color,setColor]=useState("#0E1C25")
+
 
 
 
 const context=useContext(dataContext);
 const {updateDataStriver,deleteDataStriver,showAlert}=context;
 const ques=JSON.parse(localStorage.getItem("quesStriver"))
+const [loader,setLoader]=useState(false);
   
   // console.log(ques.questions);
   // console.log(notes);
@@ -74,17 +74,18 @@ const deleteDATA=async()=>{
       const toggle= async(e)=>{
           
         if(isChecked){
-             console.log(props.QID)
+          setLoader(true)
         await  deleteDataStriver(ques._id,ques.email,props.QID)
+        await deleteDATA()
+        setLoader(false)
           showAlert("deselect","Question Deselected 👾")
-         await deleteDATA()
           setIsChecked(false);
         }
         else if(!isChecked)  {
-          
-          setColor("green")
+          setLoader(true)
          await updateDataStriver(ques._id,ques.email,props.QID)
         await updateDATA()
+        setLoader(false)
           showAlert("success","Question Completed Succesfully 🎉🎊")
           setIsChecked(true);
 }
@@ -96,7 +97,8 @@ const deleteDATA=async()=>{
     return (
       <>
     <tr className={`table-${props.mode}-${isChecked}`}  >
-      <th scope="row"><input className="donebox" name={props.QID} onChange={toggle}    type="checkbox"  checked={isChecked}></input></th>
+    <th scope="row">{loader?<span class="spinner-border spinner-border-sm my-1 text-primary" role="status" aria-hidden="true"></span>:<input className="donebox" name={props.QID} onChange={toggle}    type="checkbox"  checked={isChecked}></input>
+      }</th>
       <th  className={`questionname data-${props.mode}-${isChecked}`} >{props.QID}</th>
       <th><a target="_blank" href={props.Url}  className={`questionname data-${props.mode}-${isChecked}`} >{props.question}</a></th>
       <th><a target="_blank" href={props.Solution}  className={`questionname data-${props.mode}-${isChecked}`} >{props.Solution=="#" ? "":"Solution"}</a></th>

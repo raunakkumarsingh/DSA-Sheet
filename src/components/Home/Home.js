@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import './Home.css'
-import {useContext } from 'react';
+import {useContext,useState } from 'react';
 import dataContext from '../../context/datacontext';
 
 
@@ -11,21 +11,42 @@ function Home(props) {
   const context=useContext(dataContext);
   const {getData,getDataDSA,getDataStriver,setAlert}=context;
    const history=useNavigate();
+   const [loaderDSA,setLoaderDSA]=useState(false);
+   const [loaderStriver,setLoaderStriver]=useState(false);
+   const [loaderFaraj,setLoaderFaraj]=useState(false);
    
     const goToDSA=async()=>{
+            setLoaderDSA(true)
+      if(!localStorage.getItem('token')){
+        history("/login")
+      }
+      else{
      await getDataDSA();
       setAlert(null)
       history("/450DSA");
+      }
     }
     const goToStriver=async()=>{
+      setLoaderStriver(true)
+      if(!localStorage.getItem('token')){
+        history("/login")
+      }
+      else{
       await getDataStriver();
       setAlert(null)
       history("/striver")
+      }
     }
     const goToFaraj=async()=>{
-      // getData();
-      // history("/faraj")
-     await setAlert(null)
+      setLoaderFaraj(true)
+      if(!localStorage.getItem('token')){
+        history("/login")
+      }
+      else{
+    await  getData();
+      history("/faraj")
+      setAlert(null)
+      }
     }
 
 
@@ -42,8 +63,9 @@ function Home(props) {
       This DSA sheet by Love Babbar contains 450 coding questions which will help you in: 1.Understanding each and every concept of DSA.
 2.Clearing the DSA round for the Interviews, as these are the questions generally asked in the companies like Amazon, Microsoft, Google, etc.
       </p>
-      <div className='d-flex justify-content-end'>
-      <a onClick={goToDSA}  className="btn-light btn-primary ">GO</a>
+      <div className='d-flex justify-content-end'> 
+      <button onClick={goToDSA}  className="btn-light btn-primary ">GO &nbsp;
+      <span class="spinner-border spinner-border-sm my-1 text-black" role="status" aria-hidden="true" style={{display:loaderDSA?"flex":"none"}}></span></button>
       </div>
     </div>
   </div>
@@ -54,7 +76,8 @@ function Home(props) {
       This Sheet by Raj Vikramaditya A.K.A Striver has questions which are one of the most asked coding interview questions in companies like Amazon, Microsoft, Media.net, Flipkart, etc. & covers almost all of the concepts related to Data Structure & Algorithms.
       </p>
       <div className='d-flex justify-content-end'>
-      <a onClick={goToStriver} className="btn-light btn-primary ">GO</a>
+      <button onClick={goToStriver} className="btn-light btn-primary ">GO &nbsp;
+      <span class="spinner-border spinner-border-sm my-1 text-black" role="status" aria-hidden="true" style={{display:loaderStriver?"flex":"none"}}></span></button>
       </div>
     </div>
   </div>
@@ -65,7 +88,8 @@ function Home(props) {
       Here is a collection of problems from Mohammad Faraz sheet using which people have cracked their dream jobs. These questions are commonly asked in product-based companies like Amazon, Microsoft, Google, etc
       </p>
       <div className='d-flex justify-content-end'>
-      <Link to="/faraj" onClick={goToFaraj} className="btn-light btn-primary ">GO</Link>
+      <button onClick={goToFaraj} className="btn-light btn-primary  ">GO &nbsp;
+      <span class="spinner-border spinner-border-sm my-1 text-black " role="status" aria-hidden="true" style={{display:loaderFaraj?"flex":"none"}}></span></button>
       </div>
     </div>
   </div>
