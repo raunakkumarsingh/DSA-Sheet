@@ -1,0 +1,1034 @@
+[
+ {
+   "ID": 1,
+   "Code": "CF66-D2-B",
+   "Name": "Petya and Countryside",
+   "Url": "https://www.youtube.com/watch?v=XRgCL-gVU7M&feature=youtu.be"
+ },
+ {
+   "ID": 2,
+   "Code": "CF680-D2-B",
+   "Name": "Bear and Finding Criminals",
+   "Url": ""
+ },
+ {
+   "ID": 3,
+   "Code": "CF16-D2-B",
+   "Name": "Burglar and Matches",
+   "Url": "https://www.youtube.com/watch?v=eDg_yuWBS8o&feature=youtu.be"
+ },
+ {
+   "ID": 4,
+   "Code": "CF463-D2-B",
+   "Name": "Caisa and Pylons",
+   "Url": "https://www.youtube.com/watch?v=c6X5U5HATAA"
+ },
+ {
+   "ID": 5,
+   "Code": "CF102-D2-B",
+   "Name": "Sum of Digits",
+   "Url": "https://www.youtube.com/watch?v=_qdIm9Yj9_U"
+ },
+ {
+   "ID": 6,
+   "Code": "CF47-D2-B",
+   "Name": "Coins",
+   "Url": "https://www.youtube.com/watch?v=lvK0ZlpWeEY&feature=youtu.be"
+ },
+ {
+   "ID": 7,
+   "Code": "CF227-D2-B",
+   "Name": "Effective Approach",
+   "Url": "https://www.youtube.com/watch?v=76gg4S0A2nk"
+ },
+ {
+   "ID": 8,
+   "Code": "CF78-D2-B",
+   "Name": "Easter Eggs",
+   "Url": "https://www.youtube.com/watch?v=rJN_rI2xiV4"
+ },
+ {
+   "ID": 9,
+   "Code": "CF746-D2-B",
+   "Name": "Decoding",
+   "Url": "https://www.youtube.com/watch?v=FI5HvI9SQtA"
+ },
+ {
+   "ID": 10,
+   "Code": "UVA 374",
+   "Name": "Big Mod",
+   "Url": ""
+ },
+ {
+   "ID": 11,
+   "Code": "UVA 369",
+   "Name": "Combinations",
+   "Url": ""
+ },
+ {
+   "ID": 12,
+   "Code": "UVA 412",
+   "Name": "Pi",
+   "Url": "https://www.youtube.com/watch?v=NmumgTB7B9c&feature=youtu.be"
+ },
+ {
+   "ID": 13,
+   "Code": "UVA 713",
+   "Name": "Adding Reversed Numbers",
+   "Url": "Don't use big integer class. Write simple array computations"
+ },
+ {
+   "ID": 14,
+   "Code": "TIMUS 1607",
+   "Name": "Taxi",
+   "Url": "Can you get AC first submission?"
+ },
+ {
+   "ID": 15,
+   "Code": "LIVEARCHIVE 2557",
+   "Name": "The Drunk Jailer",
+   "Url": "https://raw.githubusercontent.com/NadaAlaa/CompetitiveProgramming/master/LiveArchive/2557.cpp"
+ },
+ {
+   "ID": 16,
+   "Code": "CF492-D2-B",
+   "Name": "Vanya and Lanterns",
+   "Url": "https://www.youtube.com/watch?v=i4fMKTt8e84"
+ },
+ {
+   "ID": 17,
+   "Code": "CF433-D2-B",
+   "Name": "Kuriyama Mirai's Stones",
+   "Url": ""
+ },
+ {
+   "ID": 18,
+   "Code": "CF363-D2-B",
+   "Name": "Fence",
+   "Url": "https://www.youtube.com/watch?v=uwbfFMVMYBg&feature=youtu.be"
+ },
+ {
+   "ID": 19,
+   "Code": "CF6-D2-B",
+   "Name": "President's Office",
+   "Url": "https://www.youtube.com/watch?v=FTM7HQahAc8&feature=youtu.be"
+ },
+ {
+   "ID": 20,
+   "Code": "CF688-D2-B",
+   "Name": "Lovely Palindromes",
+   "Url": "https://www.youtube.com/watch?v=sy_g77hnbaA"
+ },
+ {
+   "ID": 21,
+   "Code": "CF451-D2-B",
+   "Name": "Sort the Array",
+   "Url": "https://www.youtube.com/watch?v=I_WHkB7Aeeo"
+ },
+ {
+   "ID": 22,
+   "Code": "CF810-D2-B",
+   "Name": "Summer sell-off",
+   "Url": "https://www.youtube.com/watch?v=cFqla_dXSBs"
+ },
+ {
+   "ID": 23,
+   "Code": "CF79-D12-B",
+   "Name": "Colorful Field",
+   "Url": "https://www.youtube.com/watch?v=QIANdSy3nQg"
+ },
+ {
+   "ID": 24,
+   "Code": "CF88-D2-B",
+   "Name": "Keyboard",
+   "Url": "https://www.youtube.com/watch?v=IlM9o1-xgE4&feature=youtu.be"
+ },
+ {
+   "ID": 25,
+   "Code": "CF766-D2-B",
+   "Name": "Mahmoud and a Triangle",
+   "Url": "https://www.youtube.com/watch?v=dCChUGZjaS4"
+ },
+ {
+   "ID": 26,
+   "Code": "SPOJ TOE1",
+   "Name": "Tic-Tac-Toe ( I )",
+   "Url": "https://www.youtube.com/watch?v=VM2c3csK3Ps"
+ },
+ {
+   "ID": 27,
+   "Code": "SPOJ TOE2",
+   "Name": "Tic-Tac-Toe ( II )",
+   "Url": "https://www.youtube.com/watch?v=LleR_xaCfMY&feature=youtu.be"
+ },
+ {
+   "ID": 28,
+   "Code": "UVA 439",
+   "Name": "Knight Moves",
+   "Url": "https://www.youtube.com/watch?v=_S7BCbISrdo&feature=youtu.be"
+ },
+ {
+   "ID": 29,
+   "Code": "CF242-D2-C",
+   "Name": "King's Path",
+   "Url": "https://www.youtube.com/watch?v=KmxeOFQ_4Rw"
+ },
+ {
+   "ID": 30,
+   "Code": "TIMUS 1638",
+   "Name": "Bookworm",
+   "Url": "http://xoptutorials.com/index.php/2017/01/01/timus1638/"
+ },
+ {
+   "ID": 31,
+   "Code": "CF129-D2-B",
+   "Name": "Students and Shoelaces",
+   "Url": "https://www.youtube.com/watch?v=si51JINxbpk&feature=youtu.be"
+ },
+ {
+   "ID": 32,
+   "Code": "CF476-D2-B",
+   "Name": "Dreamoon and WiFi",
+   "Url": "https://www.youtube.com/watch?v=uzA2fH9Ol7I&feature=youtu.be"
+ },
+ {
+   "ID": 33,
+   "Code": "CF469-D2-B",
+   "Name": "Chat Online",
+   "Url": "https://www.youtube.com/watch?v=7ns-xfWB-8g"
+ },
+ {
+   "ID": 34,
+   "Code": "CF215-D2-B",
+   "Name": "Olympic Medal",
+   "Url": "https://www.youtube.com/watch?v=9PMRkDH1SAY&t=4s"
+ },
+ {
+   "ID": 35,
+   "Code": "CF714-D2-B",
+   "Name": "Filya and Homework",
+   "Url": "https://www.youtube.com/watch?v=aDDoryh3x_g"
+ },
+ {
+   "ID": 36,
+   "Code": "CF400-D2-B",
+   "Name": "Inna and New Matrix of Candies",
+   "Url": "https://www.youtube.com/watch?v=ZWL57YYKwUM&t=1s"
+ },
+ {
+   "ID": 37,
+   "Code": "CF152-D2-B",
+   "Name": "Steps",
+   "Url": "https://www.youtube.com/watch?v=PNB_OSbdCpQ&feature=youtu.be"
+ },
+ {
+   "ID": 38,
+   "Code": "CF186-D2-B",
+   "Name": "Growing Mushrooms",
+   "Url": "https://www.youtube.com/watch?v=WdzdNdsaku4"
+ },
+ {
+   "ID": 39,
+   "Code": "CF148-D2-B",
+   "Name": "Escape",
+   "Url": "https://www.youtube.com/watch?v=IVVN9u6PGJM&feature=youtu.be#_=_"
+ },
+ {
+   "ID": 40,
+   "Code": "CF699-D2-C",
+   "Name": "Vacations",
+   "Url": ""
+ },
+ {
+   "ID": 41,
+   "Code": "CF545-D2-C",
+   "Name": "Woodcutters",
+   "Url": ""
+ },
+ {
+   "ID": 42,
+   "Code": "CF225-D2-C",
+   "Name": "Barcode",
+   "Url": "https://www.youtube.com/watch?v=O7Tja1S5IYQ"
+ },
+ {
+   "ID": 43,
+   "Code": "UVA 11094",
+   "Name": "Continents",
+   "Url": "https://www.youtube.com/watch?v=vLuFqaQ40RI"
+ },
+ {
+   "ID": 44,
+   "Code": "UVA 10865",
+   "Name": "Brownie Points",
+   "Url": "https://www.youtube.com/watch?v=VZ7kCc80C6o&feature=youtu.be"
+ },
+ {
+   "ID": 45,
+   "Code": "TIMUS 1054",
+   "Name": "Hanoi Tower",
+   "Url": "https://github.com/MeGaCrazy/CompetitiveProgramming/blob/9ebf16b4239c8f58c694f2ae22c8f07d1fa70864/Timus/TIMUS_1054.cpp"
+ },
+ {
+   "ID": 46,
+   "Code": "CF262-D2-B",
+   "Name": "Roma and Changing Signs",
+   "Url": "https://www.youtube.com/watch?v=6Ic_MPWfhEg"
+ },
+ {
+   "ID": 47,
+   "Code": "CF385-D2-B",
+   "Name": "Bear and Strings",
+   "Url": "https://www.youtube.com/watch?v=hTUYMzcMuvA"
+ },
+ {
+   "ID": 48,
+   "Code": "CF376-D2-B",
+   "Name": "I.O.U.",
+   "Url": "https://www.youtube.com/watch?v=d962qNWSvas&feature=youtu.be"
+ },
+ {
+   "ID": 49,
+   "Code": "CF352-D2-B",
+   "Name": "Jeff and Periods",
+   "Url": "https://www.youtube.com/watch?v=7xgzxrYuwUc"
+ },
+ {
+   "ID": 50,
+   "Code": "CF144-D2-B",
+   "Name": "Meeting",
+   "Url": "https://www.youtube.com/watch?v=9fpKWAPudyo&feature=youtu.be"
+ },
+ {
+   "ID": 51,
+   "Code": "CF617-D2-B",
+   "Name": "Chocolate",
+   "Url": "https://www.youtube.com/watch?v=APkfGgJJVCc"
+ },
+ {
+   "ID": 52,
+   "Code": "CF236-D2-B",
+   "Name": "Easy Number Challenge",
+   "Url": "https://www.youtube.com/watch?v=Tv2JpMqQWYg"
+ },
+ {
+   "ID": 53,
+   "Code": "CF514-D2-B",
+   "Name": "Han Solo and Lazer Gun",
+   "Url": "https://www.youtube.com/watch?v=YKDpTulKcLY&feature=youtu.be"
+ },
+ {
+   "ID": 54,
+   "Code": "CF253-D2-B",
+   "Name": "Physics Practical",
+   "Url": "https://www.youtube.com/watch?v=ZR0IxC_xoFk"
+ },
+ {
+   "ID": 55,
+   "Code": "CF520-D2-B",
+   "Name": "Two Buttons",
+   "Url": "https://www.youtube.com/watch?v=tMsOxSRU4Sk"
+ },
+ {
+   "ID": 56,
+   "Code": "UVA 378",
+   "Name": "Intersecting Lines",
+   "Url": ""
+ },
+ {
+   "ID": 57,
+   "Code": "UVA 10077",
+   "Name": "The Stern-Brocot Number",
+   "Url": ""
+ },
+ {
+   "ID": 58,
+   "Code": "CF505-D2-B",
+   "Name": "Mr. Kitayuta's Colorful Graph",
+   "Url": "https://www.youtube.com/watch?v=4516VTXcDJM&feature=youtu.be"
+ },
+ {
+   "ID": 59,
+   "Code": "CF445-D2-B",
+   "Name": "DZY Loves Chemistry",
+   "Url": "https://www.youtube.com/watch?v=-VBxPnLk3_c&feature=youtu.be"
+ },
+ {
+   "ID": 60,
+   "Code": "CF584-D2-B",
+   "Name": "Kolya and Tanya",
+   "Url": "https://www.youtube.com/watch?v=-Dh_FyJiJ9Q"
+ },
+ {
+   "ID": 61,
+   "Code": "CF448-D2-B",
+   "Name": "Suffix Structures",
+   "Url": "https://www.youtube.com/watch?v=-J0VaYdgbRc"
+ },
+ {
+   "ID": 62,
+   "Code": "CF716-D2-B",
+   "Name": "Complete the Word",
+   "Url": "https://www.youtube.com/watch?v=lu6BhwVMNhw"
+ },
+ {
+   "ID": 63,
+   "Code": "CF544-D2-B",
+   "Name": "Sea and Islands",
+   "Url": "https://www.youtube.com/watch?v=7MC9PFQTlxs"
+ },
+ {
+   "ID": 64,
+   "Code": "CF141-D2-B",
+   "Name": "Hopscotch",
+   "Url": "https://www.youtube.com/watch?v=edI2c3Myaek&feature=youtu.be"
+ },
+ {
+   "ID": 65,
+   "Code": "CF369-D2-B",
+   "Name": "Valera and Contest",
+   "Url": "https://www.youtube.com/watch?v=1CHX-WYiQvA"
+ },
+ {
+   "ID": 66,
+   "Code": "CF791-D2-B",
+   "Name": "Bear and Friendship Condition",
+   "Url": "https://www.youtube.com/watch?v=3tVJoeUE0Ag&feature=youtu.be"
+ },
+ {
+   "ID": 67,
+   "Code": "CF550-D2-B",
+   "Name": "Preparing Olympiad",
+   "Url": "https://www.youtube.com/watch?v=o5fKByvQguE"
+ },
+ {
+   "ID": 68,
+   "Code": "UVA 10147",
+   "Name": "Highways",
+   "Url": "https://www.youtube.com/watch?v=yNkLz4OVXtI"
+ },
+ {
+   "ID": 69,
+   "Code": "UVA 10600",
+   "Name": "ACM contest and Blackout",
+   "Url": "https://www.youtube.com/watch?v=kO_XbOt1drc"
+ },
+ {
+   "ID": 70,
+   "Code": "UVA 11503",
+   "Name": "Virtual Friends",
+   "Url": ""
+ },
+ {
+   "ID": 71,
+   "Code": "UVA 10369",
+   "Name": "Arctic Network",
+   "Url": ""
+ },
+ {
+   "ID": 72,
+   "Code": "UVA 122",
+   "Name": "Trees on the level",
+   "Url": "https://www.youtube.com/watch?v=b6D-7cqN2jM"
+ },
+ {
+   "ID": 73,
+   "Code": "TIMUS 1100",
+   "Name": "Final Standings",
+   "Url": "https://github.com/marioyc/Online-Judge-Solutions/blob/master/Timus%20Online%20Judge/1100%20-%20Final%20Standings.cpp"
+ },
+ {
+   "ID": 74,
+   "Code": "TIMUS 1349",
+   "Name": "Farm",
+   "Url": "http://xoptutorials.com/index.php/2017/01/01/timus1349/"
+ },
+ {
+   "ID": 75,
+   "Code": "CF415-D2-B",
+   "Name": "Mashmokh and Tokens",
+   "Url": "https://www.youtube.com/watch?v=ZNxSTHmpLGc&feature=youtu.be"
+ },
+ {
+   "ID": 76,
+   "Code": "CF602-D2-B",
+   "Name": "Approximating a Constant Range",
+   "Url": "https://www.youtube.com/watch?v=g93nX3rLVuk#_=_"
+ },
+ {
+   "ID": 77,
+   "Code": "CF614-D2-B",
+   "Name": "Gena's Code",
+   "Url": "https://www.youtube.com/watch?v=LigGvEEwnDQ"
+ },
+ {
+   "ID": 78,
+   "Code": "Video Solution - Eng Mohamed Khaled ",
+   "Name": "OR in Matrix",
+   "Url": "https://www.youtube.com/watch?v=iPIcF469yRw"
+ },
+ {
+   "ID": 79,
+   "Code": "CF510-D2-B",
+   "Name": "Fox And Two Dots",
+   "Url": "https://www.youtube.com/watch?v=LHIZzMjnG0k&feature=youtu.be"
+ },
+ {
+   "ID": 80,
+   "Code": "CF337-D2-B",
+   "Name": "Routine Problem",
+   "Url": "https://www.youtube.com/watch?v=NaB4pnNbXEY"
+ },
+ {
+   "ID": 81,
+   "Code": "CF493-D2-B",
+   "Name": "Vasya and Wrestling",
+   "Url": "https://www.youtube.com/watch?v=oAOERsp49B8"
+ },
+ {
+   "ID": 82,
+   "Code": "CF608-D2-B",
+   "Name": "Hamming Distance Sum",
+   "Url": "https://www.youtube.com/watch?v=pE3ksAAcqEI"
+ },
+ {
+   "ID": 83,
+   "Code": "CF621-D2-B",
+   "Name": "Wet Shark and Bishops",
+   "Url": "https://www.youtube.com/watch?v=zKne2u4DuIs&feature=youtu.be"
+ },
+ {
+   "ID": 84,
+   "Code": "CF580-D2-B",
+   "Name": "Kefa and Company",
+   "Url": "https://www.youtube.com/watch?v=kUXDNSkFECM"
+ },
+ {
+   "ID": 85,
+   "Code": "CF535-D2-B",
+   "Name": "Tavas and SaDDas",
+   "Url": "https://www.youtube.com/watch?v=NPVp5BntYZ4"
+ },
+ {
+   "ID": 86,
+   "Code": "CF1009-D12-B",
+   "Name": "Minimum Ternary String",
+   "Url": "https://www.youtube.com/watch?v=PId-mUSek5s&feature=youtu.be"
+ },
+ {
+   "ID": 87,
+   "Code": "CF282-D2-B",
+   "Name": "Painting Eggs",
+   "Url": ""
+ },
+ {
+   "ID": 88,
+   "Code": "CF435-D2-B",
+   "Name": "Pasha Maximizes",
+   "Url": "https://www.youtube.com/watch?v=hDsuoSTdytw&feature=youtu.be"
+ },
+ {
+   "ID": 89,
+   "Code": "CF276-D2-B",
+   "Name": "Little Girl and Game",
+   "Url": "https://www.youtube.com/watch?v=WrpG_n0SrbY&feature=youtu.be"
+ },
+ {
+   "ID": 90,
+   "Code": "CF525-D2-B",
+   "Name": "Pasha and String",
+   "Url": "https://www.youtube.com/watch?v=NPVp5BntYZ4"
+ },
+ {
+   "ID": 91,
+   "Code": "CF416-D2-C",
+   "Name": "Booking System",
+   "Url": ""
+ },
+ {
+   "ID": 92,
+   "Code": "CF492-D2-C",
+   "Name": "Vanya and Exams",
+   "Url": ""
+ },
+ {
+   "ID": 93,
+   "Code": "UVA 105",
+   "Name": "The Skyline Problem",
+   "Url": ""
+ },
+ {
+   "ID": 94,
+   "Code": "UVA 10276",
+   "Name": "Hanoi Tower Troubles !",
+   "Url": "https://www.youtube.com/watch?v=ygWfse3bBLI&feature=youtu.be"
+ },
+ {
+   "ID": 95,
+   "Code": "UVA 784",
+   "Name": "Maze Exploration",
+   "Url": "https://www.youtube.com/watch?v=khOAL6TflhE&feature=youtu.be"
+ },
+ {
+   "ID": 96,
+   "Code": "UVA 1174",
+   "Name": "IP-TV",
+   "Url": ""
+ },
+ {
+   "ID": 97,
+   "Code": "CF439-D2-B",
+   "Name": "Devu, the Dumb Guy",
+   "Url": "https://www.youtube.com/watch?v=KoGeW-vs7VY"
+ },
+ {
+   "ID": 98,
+   "Code": "CF796-D2-B",
+   "Name": "Find The Bone",
+   "Url": "https://www.youtube.com/watch?v=sLBLgccZ3CM"
+ },
+ {
+   "ID": 99,
+   "Code": "CF26-D12-B",
+   "Name": "Regular Bracket Sequence",
+   "Url": "https://www.youtube.com/watch?v=bz1ZEbzCFfU"
+ },
+ {
+   "ID": 100,
+   "Code": "CF465-D2-B",
+   "Name": "Inbox (100500)",
+   "Url": ""
+ },
+ {
+   "ID": 101,
+   "Code": "CF672-D2-B",
+   "Name": "Different is Good",
+   "Url": ""
+ },
+ {
+   "ID": 102,
+   "Code": "CF137-D2-B",
+   "Name": "Permutation",
+   "Url": ""
+ },
+ {
+   "ID": 103,
+   "Code": "CF259-D2-B",
+   "Name": "Little Elephant and Magic Square",
+   "Url": ""
+ },
+ {
+   "ID": 104,
+   "Code": "CF218-D2-B",
+   "Name": "Airport",
+   "Url": ""
+ },
+ {
+   "ID": 105,
+   "Code": "CF732-D2-B",
+   "Name": "Cormen --- The Best Friend Of a Man",
+   "Url": ""
+ },
+ {
+   "ID": 106,
+   "Code": "CF427-D2-B",
+   "Name": "Prison Transfer",
+   "Url": ""
+ },
+ {
+   "ID": 107,
+   "Code": "CF519-D2-B",
+   "Name": "A and B and Compilation Errors",
+   "Url": ""
+ },
+ {
+   "ID": 108,
+   "Code": "CF43-D2-B",
+   "Name": "Letter",
+   "Url": ""
+ },
+ {
+   "ID": 109,
+   "Code": "CF670-D2-B",
+   "Name": "Game of Robots",
+   "Url": ""
+ },
+ {
+   "ID": 110,
+   "Code": "CF90-D2-B",
+   "Name": "African Crossword",
+   "Url": ""
+ },
+ {
+   "ID": 111,
+   "Code": "CF284-D2-B",
+   "Name": "Cows and Poker Game",
+   "Url": ""
+ },
+ {
+   "ID": 112,
+   "Code": "CF285-D2-B",
+   "Name": "Find Marble",
+   "Url": ""
+ },
+ {
+   "ID": 113,
+   "Code": "CF706-D2-B",
+   "Name": "Interesting drink",
+   "Url": ""
+ },
+ {
+   "ID": 114,
+   "Code": "CF424-D2-B",
+   "Name": "Megacity",
+   "Url": ""
+ },
+ {
+   "ID": 115,
+   "Code": "CF651-D2-B",
+   "Name": "Beautiful Paintings",
+   "Url": ""
+ },
+ {
+   "ID": 116,
+   "Code": "CF313-D2-B",
+   "Name": "Ilya and Queries",
+   "Url": ""
+ },
+ {
+   "ID": 117,
+   "Code": "CF255-D2-B",
+   "Name": "Code Parsing",
+   "Url": ""
+ },
+ {
+   "ID": 118,
+   "Code": "CF327-D2-B",
+   "Name": "Hungry Sequence",
+   "Url": ""
+ },
+ {
+   "ID": 119,
+   "Code": "CF743-D2-B",
+   "Name": "Chloe and the sequence",
+   "Url": ""
+ },
+ {
+   "ID": 120,
+   "Code": "CF581-D2-B",
+   "Name": "Luxurious Houses",
+   "Url": ""
+ },
+ {
+   "ID": 121,
+   "Code": "CF63-D2-B",
+   "Name": "Settlers' Training",
+   "Url": ""
+ },
+ {
+   "ID": 122,
+   "Code": "CF629-D2-B",
+   "Name": "Far Relative’s Problem",
+   "Url": ""
+ },
+ {
+   "ID": 123,
+   "Code": "CF596-D2-B",
+   "Name": "Wilbur and Array",
+   "Url": ""
+ },
+ {
+   "ID": 124,
+   "Code": "CF723-D2-B",
+   "Name": "Text Document Analysis",
+   "Url": ""
+ },
+ {
+   "ID": 125,
+   "Code": "CF431-D2-B",
+   "Name": "Shower Line",
+   "Url": ""
+ },
+ {
+   "ID": 126,
+   "Code": "CF501-D2-B",
+   "Name": "Misha and Changing Handles",
+   "Url": ""
+ },
+ {
+   "ID": 127,
+   "Code": "CF667-D2-B",
+   "Name": "Coat of Anticubism",
+   "Url": ""
+ },
+ {
+   "ID": 128,
+   "Code": "CF136-D2-B",
+   "Name": "Ternary Logic",
+   "Url": ""
+ },
+ {
+   "ID": 129,
+   "Code": "CF189-D2-B",
+   "Name": "Counting Rhombi",
+   "Url": ""
+ },
+ {
+   "ID": 130,
+   "Code": "CF459-D2-B",
+   "Name": "Pashmak and Flowers",
+   "Url": ""
+ },
+ {
+   "ID": 131,
+   "Code": "CF592-D2-B",
+   "Name": "The Monster and the Squirrel",
+   "Url": ""
+ },
+ {
+   "ID": 132,
+   "Code": "CF365-D2-B",
+   "Name": "The Fibonacci Segment",
+   "Url": ""
+ },
+ {
+   "ID": 133,
+   "Code": "CF705-D2-B",
+   "Name": "Spider Man",
+   "Url": ""
+ },
+ {
+   "ID": 134,
+   "Code": "CF686-D2-B",
+   "Name": "Little Robber Girl's Zoo",
+   "Url": ""
+ },
+ {
+   "ID": 135,
+   "Code": "CF133-D2-B",
+   "Name": "Unary",
+   "Url": ""
+ },
+ {
+   "ID": 136,
+   "Code": "CF127-D2-B",
+   "Name": "Canvas Frames",
+   "Url": ""
+ },
+ {
+   "ID": 137,
+   "Code": "CF554-D2-B",
+   "Name": "Ohana Cleans Up",
+   "Url": ""
+ },
+ {
+   "ID": 138,
+   "Code": "CF408-D2-B",
+   "Name": "Garland",
+   "Url": ""
+ },
+ {
+   "ID": 139,
+   "Code": "CF362-D2-B",
+   "Name": "Petya and Staircases",
+   "Url": ""
+ },
+ {
+   "ID": 140,
+   "Code": "CF545-D2-B",
+   "Name": "Equidistant String",
+   "Url": ""
+ },
+ {
+   "ID": 141,
+   "Code": "CF677-D2-B",
+   "Name": "Vanya and Food Processor",
+   "Url": ""
+ },
+ {
+   "ID": 142,
+   "Code": "CF304-D2-B",
+   "Name": "Calendar",
+   "Url": ""
+ },
+ {
+   "ID": 143,
+   "Code": "CF507-D2-B",
+   "Name": "Amr and Pins",
+   "Url": ""
+ },
+ {
+   "ID": 144,
+   "Code": "CF289-D2-B",
+   "Name": "Polo the Penguin and Matrix",
+   "Url": ""
+ },
+ {
+   "ID": 145,
+   "Code": "CF387-D2-B",
+   "Name": "George and Round",
+   "Url": ""
+ },
+ {
+   "ID": 146,
+   "Code": "CF740-D2-B",
+   "Name": "Alyona and flowers",
+   "Url": ""
+ },
+ {
+   "ID": 147,
+   "Code": "CF735-D2-B",
+   "Name": "Urbanization",
+   "Url": ""
+ },
+ {
+   "ID": 148,
+   "Code": "CF104-D2-B",
+   "Name": "Testing Pants for Sadness",
+   "Url": ""
+ },
+ {
+   "ID": 149,
+   "Code": "CF701-D2-B",
+   "Name": "Cells Not Under Attack",
+   "Url": ""
+ },
+ {
+   "ID": 150,
+   "Code": "CF552-D2-B",
+   "Name": "Vanya and Books",
+   "Url": ""
+ },
+ {
+   "ID": 151,
+   "Code": "CF474-D2-B",
+   "Name": "Worms",
+   "Url": ""
+ },
+ {
+   "ID": 152,
+   "Code": "CF59-D2-B",
+   "Name": "Fortune Telling",
+   "Url": ""
+ },
+ {
+   "ID": 153,
+   "Code": "CF192-D2-B",
+   "Name": "Walking in the Rain",
+   "Url": ""
+ },
+ {
+   "ID": 154,
+   "Code": "CF366-D2-B",
+   "Name": "Dima and To-do List",
+   "Url": ""
+ },
+ {
+   "ID": 155,
+   "Code": "CF298-D2-B",
+   "Name": "Sail",
+   "Url": ""
+ },
+ {
+   "ID": 156,
+   "Code": "CF389-D2-B",
+   "Name": "Fox and Cross",
+   "Url": ""
+ },
+ {
+   "ID": 157,
+   "Code": "CF591-D2-B",
+   "Name": "Rebranding",
+   "Url": ""
+ },
+ {
+   "ID": 158,
+   "Code": "CF246-D2-B",
+   "Name": "Increase and Decrease",
+   "Url": ""
+ },
+ {
+   "ID": 159,
+   "Code": "CF682-D2-B",
+   "Name": "Alyona and Mex",
+   "Url": ""
+ },
+ {
+   "ID": 160,
+   "Code": "CF58-D2-B",
+   "Name": "Coins",
+   "Url": ""
+ },
+ {
+   "ID": 161,
+   "Code": "CF567-D2-B",
+   "Name": "Berland National Library",
+   "Url": ""
+ },
+ {
+   "ID": 162,
+   "Code": "CF416-D2-B",
+   "Name": "Art Union",
+   "Url": ""
+ },
+ {
+   "ID": 163,
+   "Code": "CF489-D2-B",
+   "Name": "BerSU Ball",
+   "Url": ""
+ },
+ {
+   "ID": 164,
+   "Code": "CF478-D2-B",
+   "Name": "Random Teams",
+   "Url": ""
+ },
+ {
+   "ID": 165,
+   "Code": "CF94-D2-B",
+   "Name": "Friends",
+   "Url": ""
+ },
+ {
+   "ID": 166,
+   "Code": "CF625-D2-B",
+   "Name": "War of the Corporations",
+   "Url": ""
+ },
+ {
+   "ID": 167,
+   "Code": "CF330-D2-B",
+   "Name": "Road Construction",
+   "Url": ""
+ },
+ {
+   "ID": 168,
+   "Code": "CF92-D2-B",
+   "Name": "Binary Number",
+   "Url": ""
+ },
+ {
+   "ID": 169,
+   "Code": "CF4-D2-B",
+   "Name": "Before an Exam",
+   "Url": ""
+ },
+ {
+   "ID": 170,
+   "Code": "CF9-D2-B",
+   "Name": "Running Student",
+   "Url": ""
+ },
+ {
+   "ID": 171,
+   "Code": "CF508-D2-B",
+   "Name": "Anton and currency you all know",
+   "Url": ""
+ },
+ {
+   "ID": 172,
+   "Code": "CF151-D2-B",
+   "Name": "Phone Numbers",
+   "Url": ""
+ }
+]
