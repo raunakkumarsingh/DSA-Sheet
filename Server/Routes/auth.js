@@ -11,9 +11,9 @@ const {body, validationResult}=require('express-validator')
 const secureKey="#R4UN4K#J4SM1N#"
 
     router.post('/createuser',[
-        body("name","Enter Valid Name").isLength({min:2}),
-        body("email","Enter Valid Email").isEmail(),
-        body("password","Enter minimum 5 character long password").isLength({min:5})
+        body("name","Enter Valid Name").isLength({min:5}),
+        body("email","Enter valid Email").isEmail(),
+        body("password","Enter minimum 5 character").isLength({min:5})
 
     ], async(req,res)=>{
          
@@ -28,7 +28,7 @@ const secureKey="#R4UN4K#J4SM1N#"
             let user= await User.findOne({email:req.body.email})
             //    console.log(user);
             if(user){
-                return res.status(400).json({error:"Already have an account With this Email !!"})
+                return res.status(400).json({error:"Already have an account With this Email Procced to Login"})
             }
             const saltRounds = 10;
             const salt = bcrypt.genSaltSync(saltRounds);
@@ -119,7 +119,7 @@ const secureKey="#R4UN4K#J4SM1N#"
 
             if(!user){
                 success=false;
-              return  res.status(400).json({error:"No Person with this Email found"})
+              return  res.status(400).json({error:"invalid  Credential"})
             }
            const checkpass=bcrypt.compareSync(password, user.password); // true
 
@@ -132,7 +132,7 @@ const secureKey="#R4UN4K#J4SM1N#"
        const token= jwt.sign(data, secureKey);
            if(!checkpass){
             success=false;
-            return  res.status(400).json({error:"Incorrect Password"})
+            return  res.status(400).json({error:"invalid  Credential"})
           }
           success=true;
         //   res.cookie('token', token, { httpOnly: true });
@@ -142,7 +142,7 @@ const secureKey="#R4UN4K#J4SM1N#"
             
            } catch (error) {
             console.error(error.message)
-           return res.status(400).json({error:"No such account with this Email ID exists. First Create an Account using Sign Up"})
+           return res.status(400).json({error:"Login not Success Please Enter Correct credentials"})
            }
 
     })

@@ -26,7 +26,7 @@ function Signup(props) {
         //  console.log(credentials.password);
         }
         else{
-        const response = await fetch("https://rocky-island-88255.herokuapp.com/api/auth/createuser",{
+        const response = await fetch("https://impossible-turtleneck-moth.cyclic.app/api/auth/createuser",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
