@@ -8,7 +8,7 @@ import dataContext from '../../context/datacontext';
 function Login(props) {
   
   const context=useContext(dataContext);
-  const {getData,showAlert}=context;
+  const {getData,showAlert,getDataStriver,getDataDSA}=context;
   const [loader,setLoader]=useState(false);
 
   let history=useNavigate();
@@ -22,7 +22,7 @@ function Login(props) {
   const  handleSubmit=async(e)=>{
     setLoader(true);
     e.preventDefault();
-    const response = await fetch("https://impossible-turtleneck-moth.cyclic.app/api/auth/login",{
+    const response = await fetch("https://fine-cyan-eagle-gown.cyclic.app/api/auth/login",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -35,6 +35,8 @@ function Login(props) {
       if(json.success){
         localStorage.setItem('token',json.token);
        await getData();
+       await getDataStriver();
+       await getDataDSA();
         showAlert("success","Login Successfull 🥳🎉")
         history('/')
       }
@@ -58,8 +60,9 @@ function Login(props) {
     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
     <input type="password" className="form-control" name="lpassword" onChange={onChange} id="exampleInputPassword1"/>
   </div>
+  <p><a href='forget'>Forget Password?</a></p>
   <button type="submit" className="btn btn-primary" >Login &nbsp;
-  <span class="spinner-border spinner-border-sm my-1" role="status" aria-hidden="true" style={{display:loader?"flex":"none"}}></span></button>
+  <span className="spinner-border spinner-border-sm my-1" role="status" aria-hidden="true" style={{display:loader?"flex":"none"}}></span></button>
 </form>
   </div>
  </div>

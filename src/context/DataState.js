@@ -14,7 +14,7 @@ const DataState=(props)=> {
     const [ques,setQues]=useState([0])
     // const [quesArray,setArray]=useState([0])
     // const checkbox=async()=>{
-        // const host="https://impossible-turtleneck-moth.cyclic.app";
+        // const host="https://fine-cyan-eagle-gown.cyclic.app";
         
         const showAlert=async (type,msg)=>{
                 setAlert({
@@ -28,7 +28,7 @@ const DataState=(props)=> {
 
 
         const getNotes=async()=>{
-            const response=await fetch('https://impossible-turtleneck-moth.cyclic.app',{
+            const response=await fetch('https://fine-cyan-eagle-gown.cyclic.app',{
                 method:'GET',
                 headers:{
                 'Content-Type':'application/json',
@@ -42,7 +42,7 @@ const DataState=(props)=> {
     
   //     CURD IN FARAJ SHEET
     const updateData=async(id,email,faraj)=>{
-        const response=await fetch(`https://impossible-turtleneck-moth.cyclic.app/api/datafaraj/updatedata/${id}`,{
+        const response=await fetch(`https://fine-cyan-eagle-gown.cyclic.app/api/datafaraj/updatedata/${id}`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
@@ -59,7 +59,7 @@ const DataState=(props)=> {
        
            }
            else{
-        const response=await fetch('https://impossible-turtleneck-moth.cyclic.app/api/datafaraj/getdata',{
+        const response=await fetch('https://fine-cyan-eagle-gown.cyclic.app/api/datafaraj/getdata',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -68,21 +68,21 @@ const DataState=(props)=> {
             body: JSON.stringify()
         })
         const json =await response.json()
-        console.log(localStorage.getItem('token'));
+        // console.log(localStorage.getItem('token'));
 
         localStorage.setItem('farajProgress',json.faraj.length)
         localStorage.setItem('farajArray',JSON.stringify(json.faraj));
         localStorage.setItem('ques',JSON.stringify(json));
 
         // setArray(json.faraj);
-        console.log(json)
+        // console.log(json)
         localStorage.setItem('username',json.name);
 
     }
     //delete data
     }
     const deleteData=async(id,email,faraj)=>{
-        const response=await fetch(`https://impossible-turtleneck-moth.cyclic.app/api/datafaraj/deletedata/${id}`,{
+        const response=await fetch(`https://fine-cyan-eagle-gown.cyclic.app/api/datafaraj/deletedata/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',
@@ -91,12 +91,12 @@ const DataState=(props)=> {
             body: JSON.stringify({email,faraj})
         })
         const json =await response.json()
-        console.log(json)
+        // console.log(json)
         // setNotes(json);
     }
   //     CURD IN 450 DSA
     const updateDataDSA=async(id,email,love,_Title,value)=>{
-        const response=await fetch(`https://impossible-turtleneck-moth.cyclic.app/api/dataDSA/updatedata/${id}`,{
+        const response=await fetch(`https://fine-cyan-eagle-gown.cyclic.app/api/dataDSA/updatedata/${id}`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
@@ -106,7 +106,7 @@ const DataState=(props)=> {
         })
         const json =await response.json()
         setNotes(json);
-        console.log(value)
+        // console.log(value)
     }
 //get data
     const getDataDSA=async()=>{
@@ -114,7 +114,7 @@ const DataState=(props)=> {
        
            }
            else{
-        const response=await fetch('https://impossible-turtleneck-moth.cyclic.app/api/dataDSA/getdata',{
+        const response=await fetch('https://fine-cyan-eagle-gown.cyclic.app/api/dataDSA/getdata',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -123,7 +123,7 @@ const DataState=(props)=> {
             body: JSON.stringify()
         })
         const json =await response.json()
-        console.log(localStorage.getItem('token'));
+        // console.log(localStorage.getItem('token'));
         localStorage.setItem('loveArray',JSON.stringify(json.love));
         localStorage.setItem('loveProgress',json.love.length)
         localStorage.setItem('quesDSA',JSON.stringify(json));
@@ -133,7 +133,7 @@ const DataState=(props)=> {
     //delete data
     }
     const deleteDataDSA=async(id,email,love,value)=>{
-        const response=await fetch(`https://impossible-turtleneck-moth.cyclic.app/api/dataDSA/deletedata/${id}`,{
+        const response=await fetch(`https://fine-cyan-eagle-gown.cyclic.app/api/dataDSA/deletedata/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',
@@ -142,12 +142,12 @@ const DataState=(props)=> {
             body: JSON.stringify({email,love})
         })
         const json =await response.json()
-        console.log(json)
+        // console.log(json)
         // setNotes(json);
     }
   //     CURD IN STRIVER SHEET
     const updateDataStriver=async(id,email,striver)=>{
-        const response=await fetch(`https://impossible-turtleneck-moth.cyclic.app/api/datastriver/updatedata/${id}`,{
+        const response=await fetch(`https://fine-cyan-eagle-gown.cyclic.app/api/datastriver/updatedata/${id}`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
@@ -156,7 +156,7 @@ const DataState=(props)=> {
             body: JSON.stringify({email,striver})
         })
         const json =await response.json()
-        console.log(json)
+        // console.log(json)
         // setNotes(json);
     }
 //get data
@@ -165,7 +165,7 @@ const DataState=(props)=> {
        
            }
            else{
-        const response=await fetch('https://impossible-turtleneck-moth.cyclic.app/api/datastriver/getdata',{
+        const response=await fetch('https://fine-cyan-eagle-gown.cyclic.app/api/datastriver/getdata',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -174,7 +174,7 @@ const DataState=(props)=> {
             body: JSON.stringify()
         })
         const json =await response.json()
-        console.log(localStorage.getItem('token'));
+        // console.log(localStorage.getItem('token'));
         localStorage.setItem('striverArray',JSON.stringify(json.striver));
         localStorage.setItem('striverProgress',json.striver.length)
         localStorage.setItem('quesStriver',JSON.stringify(json));
@@ -185,7 +185,7 @@ const DataState=(props)=> {
     //delete data
     }
     const deleteDataStriver=async(id,email,striver)=>{
-        const response=await fetch(`https://impossible-turtleneck-moth.cyclic.app/api/datastriver/deletedata/${id}`,{
+        const response=await fetch(`https://fine-cyan-eagle-gown.cyclic.app/api/datastriver/deletedata/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',
@@ -194,7 +194,7 @@ const DataState=(props)=> {
             body: JSON.stringify({email,striver})
         })
         const json =await response.json()
-        console.log(json)
+        // console.log(json)
         // setNotes(json);
     }
 

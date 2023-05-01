@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node index.js"
+    "start": "node index.js"
   },
   "author": "Raunak & jasmin",
   "license": "ISC",
@@ -18,10 +18,10 @@
     "express-validator": "^6.14.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.0",
+    "nodemailer": "^6.9.1",
     "nodemon": "^2.0.18"
   },
   "engines": {
     "node": "16.15.1"
   }
-
 }

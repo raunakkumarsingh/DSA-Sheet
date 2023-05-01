@@ -6,9 +6,11 @@ const ActivityStriver = require('../Models/activityModelStriver')
 const router=express.Router()
 var jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
+require('dotenv').config();
 const {body, validationResult}=require('express-validator')
 
-const secureKey="#R4UN4K#J4SM1N#"
+const secureKey=process.env.secureKey;
+
 
     router.post('/createuser',[
         body("name","Enter Valid Name").isLength({min:5}),
@@ -143,6 +145,52 @@ const secureKey="#R4UN4K#J4SM1N#"
            } catch (error) {
             console.error(error.message)
            return res.status(400).json({error:"Login not Success Please Enter Correct credentials"})
+           }
+
+    })
+
+
+    // Forget Password
+    router.post('/forget',[
+        body("Email","Enter correct email").isEmail(),
+        body("password","Enter Correct Confirm Password").isLength({min:8}),
+        body("confirmPassword","Enter Correct Password").isLength({min:8})
+    ],async(req, res)=>{
+              
+           const errors=validationResult(req);
+           const {email,password,confirmPassword}=req.body;
+
+           try {
+
+               let success=false;
+            if(!errors.isEmpty){
+                success=false;
+               return res.status(400).json({error:errors.array()})
+            }
+            let user = await User.findOne({email:email})
+            if(!user){
+                success=false;
+              return  res.status(400).json({error:"User not found Please try again"})
+            }
+            console.log(user)
+          if(password!=confirmPassword){
+            return  res.status(400).json({error:"password and confirm password doesn't match "})
+          }
+          const saltRounds = 10;
+          const salt = bcrypt.genSaltSync(saltRounds);
+          const secpass = bcrypt.hashSync(req.body.password, salt);
+          user= await User.findByIdAndUpdate({_id:user.id},{
+             $set:{password:secpass}
+          },{new:true})
+         
+       
+          success=true;
+               res.json({success})
+             
+            
+           } catch (error) {
+            console.error(error.message)
+           return res.status(400).json({error:"Password Forget Error please request again"})
            }
 
     })

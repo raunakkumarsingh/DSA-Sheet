@@ -21,9 +21,9 @@ function Home(props) {
         history("/login")
       }
       else{
-     await getDataDSA();
+        history("/450DSA");
+    //  await getDataDSA();
       setAlert(null)
-      history("/450DSA");
       }
     }
     const goToStriver=async()=>{
@@ -32,9 +32,9 @@ function Home(props) {
         history("/login")
       }
       else{
-      await getDataStriver();
+        history("/striver")
+      // await getDataStriver();
       setAlert(null)
-      history("/striver")
       }
     }
     const goToFaraj=async()=>{
@@ -43,9 +43,9 @@ function Home(props) {
         history("/login")
       }
       else{
-    await  getData();
-      history("/faraj")
-      setAlert(null)
+        history("/faraj")
+    // await  getData();
+    setAlert(null)
       }
     }
 
@@ -65,7 +65,7 @@ function Home(props) {
       </p>
       <div className='d-flex justify-content-end'> 
       <button onClick={goToDSA}  className="btn-light btn-primary ">GO &nbsp;
-      <span class="spinner-border spinner-border-sm my-1 text-black" role="status" aria-hidden="true" style={{display:loaderDSA?"flex":"none"}}></span></button>
+      <span className="spinner-border spinner-border-sm my-1 text-black" role="status" aria-hidden="true" style={{display:loaderDSA?"flex":"none"}}></span></button>
       </div>
     </div>
   </div>
@@ -77,7 +77,7 @@ function Home(props) {
       </p>
       <div className='d-flex justify-content-end'>
       <button onClick={goToStriver} className="btn-light btn-primary ">GO &nbsp;
-      <span class="spinner-border spinner-border-sm my-1 text-black" role="status" aria-hidden="true" style={{display:loaderStriver?"flex":"none"}}></span></button>
+      <span className="spinner-border spinner-border-sm my-1 text-black" role="status" aria-hidden="true" style={{display:loaderStriver?"flex":"none"}}></span></button>
       </div>
     </div>
   </div>
@@ -89,7 +89,7 @@ function Home(props) {
       </p>
       <div className='d-flex justify-content-end'>
       <button onClick={goToFaraj} className="btn-light btn-primary  ">GO &nbsp;
-      <span class="spinner-border spinner-border-sm my-1 text-black " role="status" aria-hidden="true" style={{display:loaderFaraj?"flex":"none"}}></span></button>
+      <span className="spinner-border spinner-border-sm my-1 text-black " role="status" aria-hidden="true" style={{display:loaderFaraj?"flex":"none"}}></span></button>
       </div>
     </div>
   </div>

@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Mode from './components/Mode/Mode';
 import Login from './components/Login/Login';
+import Forget from './components/ForgetPassword/Forget'
 import Signup from './components/Signup/Signup';
 import Alert from './components/Alert/Alert';
 import About from './components/About/About'
@@ -148,6 +149,7 @@ return (
 
 
         <Route exact path="/login" element={<Login mode={mode}/>}/>
+        <Route exact path="/forget" element={<Forget mode={mode}/>}/>
         <Route exact path="/signup" element={<Signup mode={mode}/>}/>
     </Routes>
       

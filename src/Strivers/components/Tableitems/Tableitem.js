@@ -6,11 +6,11 @@ import quest from '../question.json'
   
   export default function Table(props) {
       document.body.style=props.mode==="light"?"background:white":"background:#0E1C25";
-      console.log(props.title)
+      // console.log(props.title)
       // console.log(props.type)
       // console.log(props.searc)
       let que=quest.filter((auto)=>  auto.Day==props.title && auto.Title.includes(props.searc));
-     console.log(que)
+    //  console.log(que)
       return (
     <>
     <div className={`table-${props.mode} `}>

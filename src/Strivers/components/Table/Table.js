@@ -37,7 +37,7 @@ export default  function Table(props) {
   // console.log(data);
   // let parseddata = data.filter((auto)=> auto.Day.includes(props.title));
   // console.log(parseddata);
-  console.log(props.title);
+  // console.log(props.title);
   // let lparsed=parseddata;
   
 

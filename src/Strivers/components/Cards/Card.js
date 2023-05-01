@@ -7,18 +7,9 @@ import DataState from '../../../context/DataState';
 import Progressbar from '../Progress/Progressbar';
 
 
-
-
-
-
-// let parsedData=await data.json();
 function Card(props) {
 
-  console.log("hello")
-  
-  
-
-
+ 
   let history=useNavigate();
 
 
@@ -44,9 +35,6 @@ function Card(props) {
           <DataState>
          <Carditem days={element.Day} mode={props.mode} loginControl={loginControl}  Question={element.questions} />
           </DataState>
-        
-
-        
       </div>
         })
       }

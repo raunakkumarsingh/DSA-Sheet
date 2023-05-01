@@ -26,7 +26,7 @@ function Signup(props) {
         //  console.log(credentials.password);
         }
         else{
-        const response = await fetch("https://impossible-turtleneck-moth.cyclic.app/api/auth/createuser",{
+        const response = await fetch("https://fine-cyan-eagle-gown.cyclic.app/api/auth/createuser",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -42,6 +42,21 @@ function Signup(props) {
           setLoader(false);
           history('/login');
           showAlert("success","Signup Successfull 🥳🎉")
+          const response = await fetch("https://fine-cyan-eagle-gown.cyclic.app/api/mail/send/message",{
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json'
+            },
+       body: JSON.stringify(
+        {
+          email:`${credentials.email}`,
+          from:'DSA-SHEET',
+          subject:"Welcome to DSA-SHEET",
+          text:"update details",
+          html:`<H3> Hii ${credentials.name} </H3><Br><center><h4>Welcome DSA-SHEET</h4></center> <br> <p>Hello and welcome to our DSA-SHEET website! We are thrilled that you have chosen to visit us and we hope you'll find the information and resources here helpful in your pursuit of knowledge and mastery of these fundamental topics.</p> <br> <p>As you know, Data Structures and Algorithms are critical concepts in computer science and programming. They form the backbone of many software systems and are essential for solving complex problems efficiently. Our website is designed to provide you with a comprehensive and accessible DSA question to all  these unique concepts </p><br> <p>We are passionate about helping people learn and grow, and we are committed to providing you with the highest quality resources and support. If you ever have any questions or feedback, we encourage you to reach out to us. Our team is always here to help. </p><br><p>Thank you for choosing our DSA-SHEET website. We look forward to helping you achieve your goals!
+          </p>`
+        })
+      })
         }
         else{
         setLoader(false);
@@ -70,7 +85,7 @@ function Signup(props) {
   </div>
  
   <button type="submit" className="btn" >SignUp &nbsp;
-  <span class="spinner-border spinner-border-sm my-1" role="status" aria-hidden="true" style={{display:loader?"box":"none"}}></span></button>
+  <span className="spinner-border spinner-border-sm my-1" role="status" aria-hidden="true" style={{display:loader?"box":"none"}}></span></button>
 </form>
   </div>
 </div>

@@ -85,7 +85,7 @@ export default function Tabledata (props) {
     return (
       <>
     <tr className={`table-${props.mode}-${isChecked}`}  >
-    <th scope="row">{loader?<span class="spinner-border spinner-border-sm my-1 text-primary" role="status" aria-hidden="true"></span>:<input className="donebox" name={props.QID} onChange={toggle}    type="checkbox"  checked={isChecked}></input>
+    <th scope="row">{loader?<span className="spinner-border spinner-border-sm my-1 text-primary" role="status" aria-hidden="true"></span>:<input className="donebox" name={props.QID} onChange={toggle}    type="checkbox"  checked={isChecked}></input>
       }</th>
       <th  className={`questionname data-${props.mode}-${isChecked}`} >{props.QID}</th>
       <th><a target="_blank" href={props.Url}  className={`questionname data-${props.mode}-${isChecked}`} >{props.question}</a></th>
