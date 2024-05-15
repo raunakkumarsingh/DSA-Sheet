@@ -22,7 +22,7 @@ function Login(props) {
   const  handleSubmit=async(e)=>{
     setLoader(true);
     e.preventDefault();
-    const response = await fetch("https://fine-cyan-eagle-gown.cyclic.app/api/auth/login",{
+    const response = await fetch("https://dsa-server-pd22.onrender.com/api/auth/login",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
