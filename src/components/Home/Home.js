@@ -73,7 +73,7 @@ function Home(props) {
     <div className="card-body">
       <h5 className={`card-${props.mode}-title`}>Striver SDE Sheet</h5>
       <p className={`cardcontent-${props.mode}`} style={{marginBottom: "2.7rem"}}>
-      This Sheet by Raj Vikramaditya A.K.A Striver has questions which are one of the most asked coding interview questions in companies like Amazon, Microsoft, Media.net, Flipkart, etc. & covers almost all of the concepts related to Data Structure & Algorithms.
+      This DSA Sheet by Raj Vikramaditya A.K.A Striver has questions which are one of the most asked coding interview questions in companies like Amazon, Microsoft, Media.net, Flipkart, etc. & covers almost all of the concepts related to Data Structure & Algorithms.
       </p>
       <div className='d-flex justify-content-end'>
       <button onClick={goToStriver} className="btn-light btn-primary ">GO &nbsp;
@@ -85,7 +85,7 @@ function Home(props) {
     <div className="card-body">
       <h5 className={`card-${props.mode}-title`}>Faraz Sheet</h5>
       <p className={`cardcontent-${props.mode}`} style={{marginBottom: "4rem"}}>
-      Here is a collection of problems from Mohammad Faraz sheet using which people have cracked their dream jobs. These questions are commonly asked in product-based companies like Amazon, Microsoft, Google, etc
+      Here is a collection of problems from Mohammad Faraz DSA sheet using which people have cracked their dream jobs. These questions are commonly asked in product-based companies like Amazon, Microsoft, Google, etc
       </p>
       <div className='d-flex justify-content-end'>
       <button onClick={goToFaraj} className="btn-light btn-primary  ">GO &nbsp;

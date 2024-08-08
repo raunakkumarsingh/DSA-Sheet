@@ -14,7 +14,7 @@ const DataState=(props)=> {
     const [ques,setQues]=useState([0])
     // const [quesArray,setArray]=useState([0])
     // const checkbox=async()=>{
-        // const host="https://dsa-server-pd22.onrender.com";
+        // const host="https://7d03-3-93-173-141.ngrok-free.app";
         
         const showAlert=async (type,msg)=>{
                 setAlert({
@@ -28,7 +28,7 @@ const DataState=(props)=> {
 
 
         const getNotes=async()=>{
-            const response=await fetch('https://dsa-server-pd22.onrender.com',{
+            const response=await fetch('https://7d03-3-93-173-141.ngrok-free.app',{
                 method:'GET',
                 headers:{
                 'Content-Type':'application/json',
@@ -42,7 +42,7 @@ const DataState=(props)=> {
     
   //     CURD IN FARAJ SHEET
     const updateData=async(id,email,faraj)=>{
-        const response=await fetch(`https://dsa-server-pd22.onrender.com/api/datafaraj/updatedata/${id}`,{
+        const response=await fetch(`https://7d03-3-93-173-141.ngrok-free.app/api/datafaraj/updatedata/${id}`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
@@ -59,7 +59,7 @@ const DataState=(props)=> {
        
            }
            else{
-        const response=await fetch('https://dsa-server-pd22.onrender.com/api/datafaraj/getdata',{
+        const response=await fetch('https://7d03-3-93-173-141.ngrok-free.app/api/datafaraj/getdata',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -82,7 +82,7 @@ const DataState=(props)=> {
     //delete data
     }
     const deleteData=async(id,email,faraj)=>{
-        const response=await fetch(`https://dsa-server-pd22.onrender.com/api/datafaraj/deletedata/${id}`,{
+        const response=await fetch(`https://7d03-3-93-173-141.ngrok-free.app/api/datafaraj/deletedata/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',
@@ -96,7 +96,7 @@ const DataState=(props)=> {
     }
   //     CURD IN 450 DSA
     const updateDataDSA=async(id,email,love,_Title,value)=>{
-        const response=await fetch(`https://dsa-server-pd22.onrender.com/api/dataDSA/updatedata/${id}`,{
+        const response=await fetch(`https://7d03-3-93-173-141.ngrok-free.app/api/dataDSA/updatedata/${id}`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
@@ -114,7 +114,7 @@ const DataState=(props)=> {
        
            }
            else{
-        const response=await fetch('https://dsa-server-pd22.onrender.com/api/dataDSA/getdata',{
+        const response=await fetch('https://7d03-3-93-173-141.ngrok-free.app/api/dataDSA/getdata',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -133,7 +133,7 @@ const DataState=(props)=> {
     //delete data
     }
     const deleteDataDSA=async(id,email,love,value)=>{
-        const response=await fetch(`https://dsa-server-pd22.onrender.com/api/dataDSA/deletedata/${id}`,{
+        const response=await fetch(`https://7d03-3-93-173-141.ngrok-free.app/api/dataDSA/deletedata/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',
@@ -147,7 +147,7 @@ const DataState=(props)=> {
     }
   //     CURD IN STRIVER SHEET
     const updateDataStriver=async(id,email,striver)=>{
-        const response=await fetch(`https://dsa-server-pd22.onrender.com/api/datastriver/updatedata/${id}`,{
+        const response=await fetch(`https://7d03-3-93-173-141.ngrok-free.app/api/datastriver/updatedata/${id}`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
@@ -165,7 +165,7 @@ const DataState=(props)=> {
        
            }
            else{
-        const response=await fetch('https://dsa-server-pd22.onrender.com/api/datastriver/getdata',{
+        const response=await fetch('https://7d03-3-93-173-141.ngrok-free.app/api/datastriver/getdata',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
@@ -185,7 +185,7 @@ const DataState=(props)=> {
     //delete data
     }
     const deleteDataStriver=async(id,email,striver)=>{
-        const response=await fetch(`https://dsa-server-pd22.onrender.com/api/datastriver/deletedata/${id}`,{
+        const response=await fetch(`https://7d03-3-93-173-141.ngrok-free.app/api/datastriver/deletedata/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',

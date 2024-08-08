@@ -26,7 +26,7 @@ function Signup(props) {
         //  console.log(credentials.password);
         }
         else{
-        const response = await fetch("https://dsa-server-pd22.onrender.com/api/auth/createuser",{
+        const response = await fetch("https://7d03-3-93-173-141.ngrok-free.app/api/auth/createuser",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -42,7 +42,7 @@ function Signup(props) {
           setLoader(false);
           history('/login');
           showAlert("success","Signup Successfull 🥳🎉")
-          const response = await fetch("https://dsa-server-pd22.onrender.com/api/mail/send/message",{
+          const response = await fetch("https://7d03-3-93-173-141.ngrok-free.app/api/mail/send/message",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'

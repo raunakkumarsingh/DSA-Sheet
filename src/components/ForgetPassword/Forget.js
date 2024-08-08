@@ -32,7 +32,7 @@ function Forget(props) {
   const  handleSubmit=async(e)=>{
     e.preventDefault();
     setLoader(true);
-    const response = await fetch("https://dsa-server-pd22.onrender.com/api/auth/forget",{
+    const response = await fetch("https://7d03-3-93-173-141.ngrok-free.app/api/auth/forget",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -58,7 +58,7 @@ function Forget(props) {
     setLoader(true);
 
        if(!otp){
- const response = await fetch("https://dsa-server-pd22.onrender.com/api/mail/send/otp",{
+ const response = await fetch("https://7d03-3-93-173-141.ngrok-free.app/api/mail/send/otp",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
