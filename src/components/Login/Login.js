@@ -22,7 +22,7 @@ function Login(props) {
   const  handleSubmit=async(e)=>{
     setLoader(true);
     e.preventDefault();
-    const response = await fetch("https://7d03-3-93-173-141.ngrok-free.app/api/auth/login",{
+    const response = await fetch("https://c2f6-3-93-173-141.ngrok-free.app/api/auth/login",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
