@@ -82,16 +82,22 @@
     transform: scale(1.05);
     box-shadow: rgb(11, 234, 182) 0px 10px 20px, rgb(3, 254, 183) 0px 6px 6px;
 }
+.container1{
+    margin-top: 10vh;
+ }
 @media only screen and (min-width: 720px) {
     .container1{
        margin-left: 6rem;
        margin-right: 6rem;
+
     }
     }
     @media only screen and (max-width: 600px) {
     .container1{
        margin-left: 1rem;
        margin-right: 1rem;
+       margin-top: 6vh;
+
     }
 
     }

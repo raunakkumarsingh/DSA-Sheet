@@ -1,27 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+/* Alert.css */
 
-.alert {
-    width: 100%;
-    font-family: 'Roboto Mono', monospace;
-    
-    /* margin-top: 1rem; */
-    /* margin-bottom: 1rem; */
+.alert-container {
+    position: fixed; 
+    top: 1.3vh; 
+    left: 25vw;
+    transform: translate(-50%, -50%); 
+    z-index: 1050;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-strong {
-    font-weight: bold;
+.alert-content {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 1;
 }
-.alert-deselect {
-    background-color: #0424D9;
-    color: white;
+
+.slide-down {
+    transform: translateY(20px);
+    opacity: 1;
 }
+
+.slide-up {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
 .alert-success {
-    background-color: #3dee8a;
-    color: #085F63;
+    background-color: #d4edda;
+    color: #155724;
 }
-.alert-danger {
-    color: white;
-    background-color: #F50F32;
-    font-weight: bold;
 
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-deselect {
+    background-color: #fff3cd;
+    color: #856404;
 }

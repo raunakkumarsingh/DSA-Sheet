@@ -1,8 +1,5 @@
 import React from 'react'
 import './Mode.css'
-import dataContext from '../../context/datacontext';
-import { useContext } from 'react';
-
 
 export default function Mode(props) {
   return (

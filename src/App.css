@@ -1,8 +1,359 @@
+/* App Component */
 .App {
   text-align: center;
   background-color: rgb(5, 5, 56);
 }
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.input-group {
+  width: 85% !important;
+  z-index: 1;
+}
+.input-group-lg>.btn, .input-group-lg>.form-control, .input-group-lg>.form-select, .input-group-lg>.input-group-text {
+  padding: .5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: .5rem;
+}
+
+thead {
+  margin: 2rem;
+  border-radius: 2rem;
+}
+
+th, tr {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 2px solid black;
+}
+
+/* Light Mode */
+.headings-light {
+  color: black;
+  margin: 1rem;
+  border-radius: 2rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.table-light {
+  background-color: white;
+  border-radius: 3rem;
+}
+
+.tableheading-light {
+  color: black;
+  background-color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 2rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.rows-light {
+  color: white;
+}
+
+.difficulty-light {
+  color: #070611;
+  margin-top: 2.7rem;
+  margin-left: 7rem;
+}
+
+.data-light-true {
+  color: black;
+}
+
+.data-light-false {
+  color: #0e0c13;
+}
+
+.table-light-true {
+  background-color: #05ef63;
+}
+
+.table-light-false {
+  background-color: white;
+}
+
+.questionlinks-light {
+  margin: 1rem 6rem 1.5rem;
+  border-radius: 3rem;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.card-light {
+  border-color: #c4eef5;
+  background-color: #c4eef5;
+  color: #070611;
+  margin: 5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: #14E294;
+  transition: transform 0.8s;
+}
+
+.card-light:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(11, 234, 182) 0px 10px 20px, rgb(3, 254, 183) 0px 6px 6px;
+}
+
+.card-light-title {
+  color: blue;
+  font-weight: bold;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card-light-text {
+  color: #070611;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-light {
+  background-color: #4dbce4;
+  height: 1.8rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0c1e30;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border-color: #000000;
+  transition: transform 1s;
+  text-decoration: none;
+}
+
+.btn-light:hover {
+  width: 6rem;
+  transition: 0.7s;
+  color: #121D28;
+}
+
+/* Dark Mode */
+.headings-dark {
+  color: aqua;
+  margin: 1rem;
+  border-radius: 2rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.table-dark {
+  background-color: #0E1C25;
+  border-radius: 3rem;
+}
+
+.tableheading-dark {
+  color: aqua;
+  font-size: 1.rem;
+  text-align: center;
+  margin: 2rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.rows-dark {
+  color: white;
+}
+
+.difficulty-dark {
+  color: aqua;
+  margin-top: 2.7rem;
+  margin-left: 7rem;
+}
+
+.data-dark-true {
+  color: black;
+}
+
+.data-dark-false {
+  color: #D5D2DD;
+}
+
+.table-dark-true {
+  background-color: #05ef63;
+}
+
+.table-dark-false {
+  background-color: black;
+}
+
+.questionlinks-dark {
+  margin: 1rem 6rem 1.5rem;
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+.card-dark {
+  background-color: #070611;
+  margin: 5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  border-radius: 50px;
+background: #070611;
+box-shadow:  20px 20px 60px #06050e,
+             -20px -20px 60px #080714;
+  transition: transform 0.8s;
+}
+
+.card-dark:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(40, 216, 232, 0.922) 0px 14px 28px, rgba(59, 248, 188, 0.996) 0px 10px 10px;
+}
+
+.card-dark-title {
+  color: #06E3E2;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card-dark-text {
+  color: white;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-dark {
+  background-color: blue;
+  color: #121D28;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border-color: #05ef63;
+  transition: transform 1s;
+}
+
+.btn-dark:hover {
+  width: 6rem;
+  transition: 0.7s;
+  color: #121D28;
+}
+
+/* Question Name */
+.questionname {
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Cards Grid */
+.cards {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70rem, 70rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .questionlinks-dark, .questionlinks-light {
+      margin: 1rem 6rem 1.5rem;
+      border-radius: 3rem;
+      padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .questionlinks {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+
+  .questions {
+      font-size: 1rem;
+      margin-left: 0;
+  }
+
+  .tableheading-dark, .tableheading-light {
+      font-size: 2.5rem;
+  }
+
+  th, tr {
+      padding: 0.2rem;
+      font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .questionlinks-dark, .questionlinks-light {
+      margin: 0.6rem;
+      padding: 1rem;
+  }
+
+  .questions {
+      font-size: 0.8rem;
+  }
+
+  .tableheading-dark, .tableheading-light {
+      font-size: 2rem;
+  }
+
+  th, tr {
+      padding: 0.1rem;
+      font-size: 0.9rem;
+  }
+}
+
+/* Done Checkbox */
+.donebox {
+  text-align: right;
+  height: 1rem;
+  width: 1rem;
+}
 
 
+.card-dark {
+  background-color: #070611;
+  margin: 5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  border-radius: 50px;
+  background: #070611;
+  box-shadow: 20px 20px 60px #06050e, -20px -20px 60px #080714;
+  transition: transform 0.8s;
+}
 
+.card-dark:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(40, 216, 232, 0.922) 0px 14px 28px, rgba(59, 248, 188, 0.996) 0px 10px 10px;
+}
+
+.card-dark-title {
+  color: #06E3E2;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card-dark-text {
+  color: white;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.progress {
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.progress-bar {
+  background-color: #28a745;
+}

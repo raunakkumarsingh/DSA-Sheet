@@ -1,208 +1,145 @@
-// import React from 'react'
-import  DataContext from "./datacontext"
-import { useEffect, useState, } from "react"
+import DataContext from "./datacontext";
+import { useState, useEffect } from "react";
 
+const DataState = (props) => {
+    const [notes, setNotes] = useState([]);
+    const [alert, setAlert] = useState(null);
+    const [ques, setQues] = useState([0]);
 
+    const showAlert = (type, msg) => {
+        setAlert({ type, msg });
+        setTimeout(() => {
+            setAlert(null);
+        }, 2200);
+    };
 
+    const fetchAPI = async (url, method = 'GET', body = null) => {
+        const headers = {
+            'Content-Type': 'application/json',
+            'auth-token': localStorage.getItem('token'),
+        };
+        const response = await fetch(url, {
+            method,
+            headers,
+            body: body ? JSON.stringify(body) : null,
+        });
+        return response.json();
+    };
 
-const DataState=(props)=> {
-    
-    const note=[]
-    
-    const [notes,setNotes]=useState(note)
-    const [alert,setAlert]=useState(null)
-    const [ques,setQues]=useState([0])
-    // const [quesArray,setArray]=useState([0])
-    // const checkbox=async()=>{
-        // const host="https://c2f6-3-93-173-141.ngrok-free.app";
-        
-        const showAlert=async (type,msg)=>{
-                setAlert({
-                    type:type,
-                    msg:msg
-                })
-                setTimeout(()=>{
-                    setAlert(null)
-        },2200)
+    const getNotes = async () => {
+        const json = await fetchAPI('https://c2f6-3-93-173-141.ngrok-free.app');
+        setNotes(json);
+    };
+
+    const updateData = async (id, email, faraj) => {
+        const json = await fetchAPI(
+            `https://c2f6-3-93-173-141.ngrok-free.app/api/datafaraj/updatedata/${id}`,
+            'POST',
+            { email, faraj }
+        );
+        setNotes(json);
+    };
+
+    const getData = async () => {
+        if (localStorage.getItem('token')) {
+            const json = await fetchAPI(
+                'https://c2f6-3-93-173-141.ngrok-free.app/api/datafaraj/getdata'
+            );
+            localStorage.setItem('farajProgress', json.faraj.length);
+            localStorage.setItem('farajArray', JSON.stringify(json.faraj));
+            localStorage.setItem('ques', JSON.stringify(json));
+            localStorage.setItem('username', json.name);
         }
+    };
 
+    const deleteData = async (id, email, faraj) => {
+        await fetchAPI(
+            `https://c2f6-3-93-173-141.ngrok-free.app/api/datafaraj/deletedata/${id}`,
+            'DELETE',
+            { email, faraj }
+        );
+    };
 
-        const getNotes=async()=>{
-            const response=await fetch('https://c2f6-3-93-173-141.ngrok-free.app',{
-                method:'GET',
-                headers:{
-                'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
-            },
-            body: JSON.stringify()
-        })
-        const json =await response.json();
-        setNotes(json)
-    }
-    
-  //     CURD IN FARAJ SHEET
-    const updateData=async(id,email,faraj)=>{
-        const response=await fetch(`https://c2f6-3-93-173-141.ngrok-free.app/api/datafaraj/updatedata/${id}`,{
-            method:'POST',
-            headers:{
-                'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
-            },
-            body: JSON.stringify({email,faraj})
-        })
-        const json =await response.json()
+    const updateDataDSA = async (id, email, love, _Title, value) => {
+        const json = await fetchAPI(
+            `https://c2f6-3-93-173-141.ngrok-free.app/api/dataDSA/updatedata/${id}`,
+            'POST',
+            { email, love, _Title: value }
+        );
         setNotes(json);
-    }
-//get data
-    const getData=async()=>{
-           if(!localStorage.getItem('token')){
-       
-           }
-           else{
-        const response=await fetch('https://c2f6-3-93-173-141.ngrok-free.app/api/datafaraj/getdata',{
-            method:'GET',
-            headers:{
-                'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
-            },
-            body: JSON.stringify()
-        })
-        const json =await response.json()
-        // console.log(localStorage.getItem('token'));
+    };
 
-        localStorage.setItem('farajProgress',json.faraj.length)
-        localStorage.setItem('farajArray',JSON.stringify(json.faraj));
-        localStorage.setItem('ques',JSON.stringify(json));
+    const getDataDSA = async () => {
+        if (localStorage.getItem('token')) {
+            const json = await fetchAPI(
+                'https://c2f6-3-93-173-141.ngrok-free.app/api/dataDSA/getdata'
+            );
+            localStorage.setItem('loveArray', JSON.stringify(json.love));
+            localStorage.setItem('loveProgress', json.love.length);
+            localStorage.setItem('quesDSA', JSON.stringify(json));
+            setQues(json);
+        }
+    };
 
-        // setArray(json.faraj);
-        // console.log(json)
-        localStorage.setItem('username',json.name);
+    const deleteDataDSA = async (id, email, love) => {
+        await fetchAPI(
+            `https://c2f6-3-93-173-141.ngrok-free.app/api/dataDSA/deletedata/${id}`,
+            'DELETE',
+            { email, love }
+        );
+    };
 
-    }
-    //delete data
-    }
-    const deleteData=async(id,email,faraj)=>{
-        const response=await fetch(`https://c2f6-3-93-173-141.ngrok-free.app/api/datafaraj/deletedata/${id}`,{
-            method:'DELETE',
-            headers:{
-                'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
-            },
-            body: JSON.stringify({email,faraj})
-        })
-        const json =await response.json()
-        // console.log(json)
-        // setNotes(json);
-    }
-  //     CURD IN 450 DSA
-    const updateDataDSA=async(id,email,love,_Title,value)=>{
-        const response=await fetch(`https://c2f6-3-93-173-141.ngrok-free.app/api/dataDSA/updatedata/${id}`,{
-            method:'POST',
-            headers:{
-                'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
-            },
-            body: JSON.stringify({email,love,_Title:value})
-        })
-        const json =await response.json()
-        setNotes(json);
-        // console.log(value)
-    }
-//get data
-    const getDataDSA=async()=>{
-           if(!localStorage.getItem('token')){
-       
-           }
-           else{
-        const response=await fetch('https://c2f6-3-93-173-141.ngrok-free.app/api/dataDSA/getdata',{
-            method:'GET',
-            headers:{
-                'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
-            },
-            body: JSON.stringify()
-        })
-        const json =await response.json()
-        // console.log(localStorage.getItem('token'));
-        localStorage.setItem('loveArray',JSON.stringify(json.love));
-        localStorage.setItem('loveProgress',json.love.length)
-        localStorage.setItem('quesDSA',JSON.stringify(json));
-        setQues(json);
-        // setArray(json.love);
-    }
-    //delete data
-    }
-    const deleteDataDSA=async(id,email,love,value)=>{
-        const response=await fetch(`https://c2f6-3-93-173-141.ngrok-free.app/api/dataDSA/deletedata/${id}`,{
-            method:'DELETE',
-            headers:{
-                'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
-            },
-            body: JSON.stringify({email,love})
-        })
-        const json =await response.json()
-        // console.log(json)
-        // setNotes(json);
-    }
-  //     CURD IN STRIVER SHEET
-    const updateDataStriver=async(id,email,striver)=>{
-        const response=await fetch(`https://c2f6-3-93-173-141.ngrok-free.app/api/datastriver/updatedata/${id}`,{
-            method:'POST',
-            headers:{
-                'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
-            },
-            body: JSON.stringify({email,striver})
-        })
-        const json =await response.json()
-        // console.log(json)
-        // setNotes(json);
-    }
-//get data
-    const getDataStriver=async()=>{
-           if(!localStorage.getItem('token')){
-       
-           }
-           else{
-        const response=await fetch('https://c2f6-3-93-173-141.ngrok-free.app/api/datastriver/getdata',{
-            method:'GET',
-            headers:{
-                'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
-            },
-            body: JSON.stringify()
-        })
-        const json =await response.json()
-        // console.log(localStorage.getItem('token'));
-        localStorage.setItem('striverArray',JSON.stringify(json.striver));
-        localStorage.setItem('striverProgress',json.striver.length)
-        localStorage.setItem('quesStriver',JSON.stringify(json));
-        
-        setQues(json);
-        // setArray(json.striver);
-    }
-    //delete data
-    }
-    const deleteDataStriver=async(id,email,striver)=>{
-        const response=await fetch(`https://c2f6-3-93-173-141.ngrok-free.app/api/datastriver/deletedata/${id}`,{
-            method:'DELETE',
-            headers:{
-                'Content-Type':'application/json',
-                'auth-token': localStorage.getItem('token')
-            },
-            body: JSON.stringify({email,striver})
-        })
-        const json =await response.json()
-        // console.log(json)
-        // setNotes(json);
-    }
+    const updateDataStriver = async (id, email, striver) => {
+        await fetchAPI(
+            `https://c2f6-3-93-173-141.ngrok-free.app/api/datastriver/updatedata/${id}`,
+            'POST',
+            { email, striver }
+        );
+    };
 
-  return (
-   <DataContext.Provider value={{notes,alert,showAlert,setAlert,updateData,getData,deleteData,getNotes,ques,getDataDSA,updateDataDSA,deleteDataDSA,getDataStriver,updateDataStriver,deleteDataStriver}}>
-         {props.children}
-   </DataContext.Provider>
-  )
-}
+    const getDataStriver = async () => {
+        if (localStorage.getItem('token')) {
+            const json = await fetchAPI(
+                'https://c2f6-3-93-173-141.ngrok-free.app/api/datastriver/getdata'
+            );
+            localStorage.setItem('striverArray', JSON.stringify(json.striver));
+            localStorage.setItem('striverProgress', json.striver.length);
+            localStorage.setItem('quesStriver', JSON.stringify(json));
+            setQues(json);
+        }
+    };
 
-export default DataState
+    const deleteDataStriver = async (id, email, striver) => {
+        await fetchAPI(
+            `https://c2f6-3-93-173-141.ngrok-free.app/api/datastriver/deletedata/${id}`,
+            'DELETE',
+            { email, striver }
+        );
+    };
+
+    return (
+        <DataContext.Provider
+            value={{
+                notes,
+                alert,
+                showAlert,
+                setAlert,
+                updateData,
+                getData,
+                deleteData,
+                getNotes,
+                ques,
+                getDataDSA,
+                updateDataDSA,
+                deleteDataDSA,
+                getDataStriver,
+                updateDataStriver,
+                deleteDataStriver,
+            }}
+        >
+            {props.children}
+        </DataContext.Provider>
+    );
+};
+
+export default DataState;

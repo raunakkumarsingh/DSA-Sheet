@@ -1,36 +1,49 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react';
 import dataContext from '../../context/datacontext';
-import { useContext } from 'react';
-import '../Alert/Alert.css'
+import './Alert.css';
 
 function Alert() {
-    const context=useContext(dataContext);
-    const {alert}=context;
+    const { alert } = useContext(dataContext);
+    const [show, setShow] = useState(false);
 
-    
-      
+    useEffect(() => {
+        if (alert) {
+            setShow(true);
+            const timer = setTimeout(() => {
+                setShow(false);
+            }, 3000); // Alert will hide after 3 seconds
 
-    // easing: 'spring(1, 80, 10, 0)'
-// console.log(alert)
+            return () => clearTimeout(timer);
+        }
+    }, [alert]);
 
-    const capitalize = (word)=>{
-        const lower = word.toLowerCase();
-        return lower.charAt(0).toUpperCase() + lower.slice(1);
-    }
+    const capitalize = (word) => {
+        if (!word) return '';
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    };
+
+    const getAlertMessage = (type) => {
+        switch (capitalize(type)) {
+            case "Success":
+                return "Success";
+            case "Deselect":
+                return "Deselect";
+            case "Danger":
+                return "Error";
+            default:
+                return "";
+        }
+    };
+
     return (
-       <div className='position-sticky' style={{width: '100%',height:"70px",top:"70px"}} >
-      {
-        alert && <div style={{height: '100%'}}>
-         <div className={`alert alert-${alert.type} alert-dismissible fade show`} role="alert">
-         <strong>{capitalize(alert.type)==="Success"?"Success":""}</strong> <strong>{capitalize(alert.type)==="Deselect"?"Deselect":""}</strong> <strong>{capitalize(alert.type)==="Danger"?"Error":""}</strong>: {alert.msg} 
-        
-          
+        <div className={`alert-container ${show ? 'slide-down' : 'slide-up'}`}>
+            {alert && (
+                <div className={`alert-content alert-${alert.type}`} role="alert">
+                    <strong>{getAlertMessage(alert.type)}</strong>: {alert.msg}
+                </div>
+            )}
         </div>
-        </div>
-      }
-        </div>
-    
-        )
-    }
+    );
+}
 
-export default Alert
+export default Alert;
