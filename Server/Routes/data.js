@@ -4,11 +4,9 @@ const ActivityDSA = require('../Models/activityModelDSA')
 const ActivityFaraj = require('../Models/activityModelSFaraj')
 const ActivityStriver = require('../Models/activityModelStriver')
 const fetchuser = require('../Middleware/fetch')
-const { findByIdAndUpdateDSA } = require('../Models/activityModelDSA')
-const { findByIdAndUpdateFaraj } = require('../Models/activityModelSFaraj')
-const { findByIdAndUpdateStriver } = require('../Models/activityModelStriver')
-const router = express.Router()
 
+const router = express.Router()
+ 
 // add question to  FARAJ array
 router.post('/updatedata/faraj/:id',fetchuser, async (req,res) => {
 try{

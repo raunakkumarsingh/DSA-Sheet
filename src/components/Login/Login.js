@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router';
 import dataContext from '../../context/datacontext';
 
 function Login({ mode }) {
-  const { getData, showAlert, getDataStriver, getDataDSA } = useContext(dataContext);
+  const { getData, showAlert, getDataStriver, getDataDSA,getCodingIDs} = useContext(dataContext);
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const [loader, setLoader] = useState(false);
   
@@ -19,7 +19,7 @@ function Login({ mode }) {
     e.preventDefault();
     setLoader(true);
 
-    const response = await fetch("https://c2f6-3-93-173-141.ngrok-free.app/api/auth/login", {
+    const response = await fetch(`${process.env.REACT_APP_API_KEY}/api/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ function Login({ mode }) {
 
     if (json.success) {
       localStorage.setItem('token', json.token);
-      await Promise.all([getData(), getDataStriver(), getDataDSA()]);
+      await Promise.all([getData(), getDataStriver(), getDataDSA(),getCodingIDs()]);
       showAlert("success", "Login Successful 🥳🎉");
       navigate('/');
     } else {

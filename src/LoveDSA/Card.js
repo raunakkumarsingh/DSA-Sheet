@@ -26,12 +26,7 @@ function Card(props) {
   document.body.style = props.mode === "light" ? "background:white" : "background:#0E1C25";
   return (
     <>
-      <Progressbar 
-    sheetName="450 DSA" 
-    totalQuestions={450} 
-    completedQuestions={localStorage.getItem("loveProgress")} 
-    mode={props.mode} 
-/>
+      <Progressbar sheetName="450 DSA" totalQuestions={450} completedQuestions={localStorage.getItem("loveProgress")} mode={props.mode} />
       <div className='container my-3 d-flex justify-content-between'>
 
         <div className='row'>
@@ -40,7 +35,7 @@ function Card(props) {
               <DataState>
                 <div className={`card-${props.mode} my-2 mx-1`} id='cards' style={{ width: "18rem" }}>
                   <div className="card-body">
-                    <h5 className={`card-${props.mode}-title`}>{element.Title}</h5>
+                    <h1 className={`card-${props.mode}-title smallh1`}>{element.Title}</h1>
                     <div className='d-flex justify-content-end'>
                       <Link to={`/450DSA/${element.Title}`} onClick={loginControl} className="btn-light btn-primary ">GO</Link>
                     </div>

@@ -11,7 +11,7 @@ import Signup from './components/Signup/Signup';
 import Alert from './components/Alert/Alert';
 import Home from './components/Home/Home';
 import NoteState from './context/DataState';
-import Dashboard from './components/Dashboard/Dashboard';
+import Dashboard from './Dashboard/Dashboard';
 
 // Faraj Sheet Imports
 import Cardf from './faraj/Card';
@@ -41,9 +41,9 @@ function App() {
         
         <Routes>
           {/* Home Route */}
-          <Route exact path='/' element={<Home mode={mode} />} />
-          <Route exact path='/dashboard' element={<Dashboard />} />
-
+          <Route exact path='/' element={<Dashboard mode={mode} />} />
+          <Route exact path='/sheet' element={<Home mode={mode} />} />
+          <Route exact path='/dashboard' element={<Dashboard mode={mode} />} />
           {/* Faraj Sheet Routes */}
           <Route exact path='/faraj' element={<Cardf mode={mode} />} />
           <Route exact path="/faraj/Array" element={<Tablef mode={mode} title="Array" />} />

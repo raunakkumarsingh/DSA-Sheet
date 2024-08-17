@@ -32,7 +32,7 @@ function Card({ mode }) {
                         <div className='col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center' key={element.Day}>
                             <div className={`card-${mode} my-2 mx-1`} style={{ width: "18rem" }}>
                                 <div className="card-body">
-                                    <h5 className={`card-${mode}-title`}>Day-{element.Day}</h5>
+                                    <h1 className={`card-${mode}-title smallh1`}>Day-{element.Day}</h1>
                                     <p className={`card-${mode}-text`}>Total Questions - {element.questions}</p>
                                     <div className='d-flex justify-content-end'>
                                         <Link 

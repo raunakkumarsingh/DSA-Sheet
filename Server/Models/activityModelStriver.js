@@ -12,7 +12,7 @@ const activitySchema = new Schema({
    },
    email: {
     type: String,
-    required: true
+    required: true 
    },
    
    striver: [{type: Number}]

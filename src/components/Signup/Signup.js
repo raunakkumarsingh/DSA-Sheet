@@ -26,7 +26,7 @@ function Signup({ mode }) {
     }
 
     try {
-      const response = await fetch("https://c2f6-3-93-173-141.ngrok-free.app/api/auth/createuser", {
+      const response = await fetch(`${process.env.REACT_APP_API_KEY}/api/auth/createuser`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ function Signup({ mode }) {
   };
 
   const sendWelcomeEmail = async () => {
-    await fetch("https://c2f6-3-93-173-141.ngrok-free.app/api/mail/send/message", {
+    await fetch(`${process.env.REACT_APP_API_KEY}/api/mail/send/message`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

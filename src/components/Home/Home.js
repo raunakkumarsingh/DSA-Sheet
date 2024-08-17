@@ -68,7 +68,7 @@ function Home({ mode }) {
                     style={{ width: '18rem' }}
                 >
                     <div className='card-body'>
-                        <h5 className={`card-${mode}-title`}>{title}</h5>
+                        <h1 className={`card-${mode}-title smallh1`}>{title}</h1>
                         <p className={`cardcontent-${mode}`} style={{ marginBottom }}>
                             {description}
                         </p>

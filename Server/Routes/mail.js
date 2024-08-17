@@ -1,105 +1,89 @@
-const express=require('express');
-const config=require('../Middleware/config')
-const { JsonWebTokenError } = require('jsonwebtoken');
-const fetchuser=require('../Middleware/fetch')
-const nodemailer=require('nodemailer');
-const User=require('../Models/usermodel')
-var jwt = require('jsonwebtoken')
-var bcrypt=require('bcrypt')
+const express = require('express');
+const config = require('../Middleware/config');
+const fetchuser = require('../Middleware/fetch');
+const nodemailer = require('nodemailer');
+const User = require('../Models/usermodel');
+const bcrypt = require('bcrypt');
 
+const router = express.Router();
 
-const router=express.Router()
-
-
-router.post('/send/welcome',async(req,res)=>{
-    try{
-        let user=await User.findOne({email:req.body.email})
-        if(!user){
-            res.status(400).json({error:"No such user with this email ID exists."})
+// Send welcome email
+router.post('/send/welcome', async (req, res) => {
+    try {
+        const user = await User.findOne({ email: req.body.email });
+        if (!user) {
+            return res.status(400).json({ error: "No such user with this email ID exists." });
         }
 
-       
         let transporter = nodemailer.createTransport(config);
         let info = await transporter.sendMail({
-            from: '"Welcome to DSA SHEET" <dsasheet.notification@gmail.com>', // sender address
-            to: `${req.body.email}`, // list of receivers of receivers
-            subject: "Welcome to DSA-SHEET", // Subject line
-            text: "Hello world?", // plain text body
-            html: "<b>Hello world hello?</b>", // html body
-          });
-          console.log(info);
-          res.send({send:"success",accepted:info.accepted});
+            from: '"Welcome to DSA SHEET" <dsasheet.notification@gmail.com>',
+            to: req.body.email,
+            subject: "Welcome to DSA-SHEET",
+            text: "Hello world?",
+            html: "<b>Hello world, welcome to DSA Sheet!</b>",
+        });
 
-
-      
-    }
-    catch{
+        console.log(info);
+        res.json({ send: "success", accepted: info.accepted });
+    } catch (error) {
         console.error(error.message);
-        res.status(400).json({error:"Mail not send"});
+        res.status(500).json({ error: "Mail not sent" });
     }
-})
+});
 
-router.post('/send/message',async(req,res)=>{
-    try{
-        let user=await User.findOne({email:req.body.email})
-        if(!user){
-            res.status(400).json({error:"No such user with this email ID exists."})
+// Send custom message
+router.post('/send/message', async (req, res) => {
+    try {
+        const user = await User.findOne({ email: req.body.email });
+        if (!user) {
+            return res.status(400).json({ error: "No such user with this email ID exists." });
         }
 
-       
         let transporter = nodemailer.createTransport(config);
         let info = await transporter.sendMail({
-            from: `${req.body.from} <dsasheet.notification@gmail.com>`, // sender address
-            to: `${req.body.email}`, // list of receivers of receivers
-            subject: `${req.body.subject}`, // Subject line
-            text: `${req.body.text}`, // plain text body
-            html: `${req.body.html}`, // html body
-          });
-          console.log(info);
-          res.send({send:"success",accepted:info.accepted});
+            from: `"${req.body.from}" <dsasheet.notification@gmail.com>`,
+            to: req.body.email,
+            subject: req.body.subject,
+            text: req.body.text,
+            html: req.body.html,
+        });
 
-
-      
-    }
-    catch{
+        console.log(info);
+        res.json({ send: "success", accepted: info.accepted });
+    } catch (error) {
         console.error(error.message);
-        res.status(400).json({error:"Mail not send"});
+        res.status(500).json({ error: "Mail not sent" });
     }
-})
+});
 
-router.post('/send/otp',async(req,res)=>{
-    try{
-        let user=await User.findOne({email:req.body.email})
-        if(!user){
-            res.status(400).json({error:"No such user with this email ID exists."})
+// Send OTP
+router.post('/send/otp', async (req, res) => {
+    try {
+        const user = await User.findOne({ email: req.body.email });
+        if (!user) {
+            return res.status(400).json({ error: "No such user with this email ID exists." });
         }
-        var minm = 10000;var maxm = 99999;
-        var otp= Math.floor(Math.random() * (maxm - minm + 1)) + minm;
-        // console.log(otp)
-        const saltRounds = 10;
-        const salt = bcrypt.genSaltSync(saltRounds);
-        const secpass = bcrypt.hashSync(`${otp}`, salt);
-        // console.log(secpass)
 
-       
+        const otp = Math.floor(10000 + Math.random() * 90000);
+        const salt = bcrypt.genSaltSync(10);
+        const hashedOtp = bcrypt.hashSync(otp.toString(), salt);
+
         let transporter = nodemailer.createTransport(config);
         let info = await transporter.sendMail({
-            from: '"DSA-SHEET" <dsasheet.notification@gmail.com>', // sender address
-            to: `${req.body.email}`, // list of receivers
-            subject: "OTP", // Subject line
-            text: "Hello world?", // plain text body
-            html: `<h2>DSA-Sheet Verification</h2><br><h3>Your OTP is ${otp}</h3>`, // html body
-          });
-          console.log(info);
-          console.log(otp);
-          res.send({send:"success",Otp:secpass});
+            from: '"DSA-SHEET" <dsasheet.notification@gmail.com>',
+            to: req.body.email,
+            subject: "OTP",
+            html: `<h2>DSA-Sheet Verification</h2><br><h3>Your OTP is ${otp}</h3>`,
+        });
 
-
-      
-    }
-    catch(error){
+        console.log(info);
+        console.log(otp);
+        res.json({ send: "success", Otp: hashedOtp });
+    } catch (error) {
         console.error(error.message);
-        res.status(400).json({error:"Otp not send Please send again"});
+        res.status(500).json({ error: "OTP not sent. Please try again." });
     }
-})
+});
+
 module.exports = router;

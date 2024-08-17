@@ -28,7 +28,7 @@ function Forget({ mode }) {
     e.preventDefault();
     setLoader(true);
 
-    const response = await fetch("https://c2f6-3-93-173-141.ngrok-free.app/api/auth/forget", {
+    const response = await fetch(`${process.env.REACT_APP_API_KEY}/api/auth/forget`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ function Forget({ mode }) {
     setLoader(true);
 
     if (!otpSent) {
-      const response = await fetch("https://c2f6-3-93-173-141.ngrok-free.app/api/mail/send/otp", {
+      const response = await fetch(`${process.env.REACT_APP_API_KEY}/api/mail/send/otp`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
