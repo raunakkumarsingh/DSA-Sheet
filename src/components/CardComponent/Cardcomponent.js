@@ -4,9 +4,12 @@ import achivement from "../CardComponent/achivement.png";
 import { Chart } from "react-google-charts";
 import { color } from '@chakra-ui/react';
 import { Margin, Padding } from '@mui/icons-material';
+import { ReactComponent as DeleteIcon } from './delete.svg';
+import { Link } from 'react-router-dom';
 
 
-function CardComponent({ name, title, rating, maxRating, activeDays, totalSolved, easy, medium, hard,tag,overall_coding_score,college_rank ,mode}) {
+
+function CardComponent({ name, title, rating, maxRating, activeDays, totalSolved, easy, medium, hard,tag,overall_coding_score,college_rank ,mode, handleDelete}) {
 
   const data = [
     ["questions", "no of questions"],
@@ -48,31 +51,38 @@ function CardComponent({ name, title, rating, maxRating, activeDays, totalSolved
     <div className={`card-component ${name}`}>
       <div className="card-component__row">
         <div className="card-component__body">
-          <h3 className="card-component__title">{title}</h3>
+       
+          <h3 className="card-component__title">{title} <a onClick={(e) => handleDelete(e, title)} className='delete' ><DeleteIcon/></a> </h3>
           <p className={`card-component__text-${mode}`}>Questions Solved: {totalSolved}</p>
+
 
           {title === "GFG" && (
       <>
         <p className={`card-component__text-${mode}`}>Coding score:{overall_coding_score}</p>
         <p className={`card-component__text-${mode}`}>College rank:{college_rank}</p>
+       
       </>
     )}
     {title === "Leetcode" && (
       <>
          <p className={`card-component__text-${mode}`}>Contests: {activeDays}</p>
         <p className={`card-component__text-${mode}`}>Rating: {rating}</p>
+  
       </>
     )}
     {title === "Codeforces" && (
       <>
          <p className={`card-component__text-${mode}`}>Contests: {activeDays}</p>
         <p className={`card-component__text-${mode}`}>{tag}</p>
-      </>
+       
+        </>
     )}
     {title === "Codechef" && (
       <>
          <p className={`card-component__text-${mode}`}>Contests: {activeDays}</p>
         <p className={`card-component__text-${mode}`}>Stars: {tag}</p>
+      
+        
       </>
     )}
         </div>
@@ -90,7 +100,7 @@ function CardComponent({ name, title, rating, maxRating, activeDays, totalSolved
             </div>
           </div>
         ) : (
-          <div className={`card-component__image-section`}>
+          <div className={`card-component__image-section img-section`}>
             <p className={`card-component__subtitle-${mode}`}>Contest Rating</p>
             <img
               src={achivement}

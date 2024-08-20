@@ -25,6 +25,10 @@ import Tablel from './LoveDSA/Table';
 import Cards from './Strivers/Card';
 import Tables from './Strivers/Table';
 
+// CP sheet Imports
+import Cardc from './CPsheet/Card';
+import Tablec from './CPsheet/Table';
+
 function App() {
   const [mode, setMode] = useState("dark");
 
@@ -38,7 +42,7 @@ function App() {
         <Navbar mode={mode} />
         <Alert mode={mode} />
         <Mode mode={mode} changeMode={changeMode} />
-        
+
         <Routes>
           {/* Home Route */}
           <Route exact path='/' element={<Dashboard mode={mode} />} />
@@ -118,6 +122,18 @@ function App() {
           <Route exact path="/striver/day28" element={<Tables mode={mode} title="28" />} />
           <Route exact path="/striver/day29" element={<Tables mode={mode} title="29" />} />
           <Route exact path="/striver/day30" element={<Tables mode={mode} title="30" />} />
+
+          <Route exact path='/cpsheet' element={<Cardc mode={mode} />} />
+          <Route exact path="/cpsheet/800" element={<Tablec mode={mode} title="800" />} />
+          <Route exact path="/cpsheet/900" element={<Tablec mode={mode} title="900" />} />
+          <Route exact path="/cpsheet/1000" element={<Tablec mode={mode} title="1000" />} />
+          <Route exact path="/cpsheet/1100" element={<Tablec mode={mode} title="1100" />} />
+          <Route exact path="/cpsheet/1200" element={<Tablec mode={mode} title="1200" />} />
+          <Route exact path="/cpsheet/1300" element={<Tablec mode={mode} title="1300" />} />
+          <Route exact path="/cpsheet/1400" element={<Tablec mode={mode} title="1400" />} />
+          <Route exact path="/cpsheet/1500" element={<Tablec mode={mode} title="1500" />} />
+          <Route exact path="/cpsheet/1600" element={<Tablec mode={mode} title="1600" />} />
+
 
           {/* Authentication Routes */}
           <Route exact path="/login" element={<Login mode={mode} />} />

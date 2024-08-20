@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router';
 import dataContext from '../../context/datacontext';
 
 function Login({ mode }) {
-  const { getData, showAlert, getDataStriver, getDataDSA,getCodingIDs} = useContext(dataContext);
+  const { getData, showAlert, getDataStriver, getDataDSA,getCodingIDs,getDataCp,dataInitilized} = useContext(dataContext);
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const [loader, setLoader] = useState(false);
   
@@ -32,13 +32,24 @@ function Login({ mode }) {
 
     if (json.success) {
       localStorage.setItem('token', json.token);
-      await Promise.all([getData(), getDataStriver(), getDataDSA(),getCodingIDs()]);
+      await Promise.all([getData(), getDataStriver(), getDataDSA(),getCodingIDs(),getDataCp()]);
       showAlert("success", "Login Successful 🥳🎉");
       navigate('/');
     } else {
       showAlert("danger", json.error);
     }
   };
+
+  const handleClick = (e) => {
+    e.preventDefault(); 
+    localStorage.setItem('token', "hello");
+    window.alert("You are currently logged in as a guest. All your data is stored locally on your device. To save your progress and data on our server, please log in or create an account.");
+    dataInitilized()
+
+    showAlert("success", "Guest Login Successful 🥳🎉");
+    navigate('/');
+
+};
 
   document.body.style.background = mode === "light" ? "white" : "#0E1C25";
 
@@ -70,12 +81,17 @@ function Login({ mode }) {
               />
             </div>
             <p><a href='/forget'>Forget Password?</a></p>
-            <button type="submit" className="btn btn-primary">
+            <div className='btnn'>
+            <button type="submit" className="btn btn-primary mx-2">
               Login &nbsp;
               {loader && (
                 <span className="spinner-border spinner-border-sm my-1" role="status" aria-hidden="true"></span>
               )}
             </button>
+            <div onClick={handleClick} className="btn btn-primary">
+              Guest
+            </div>
+            </div>
           </form>
         </div>
       </div>

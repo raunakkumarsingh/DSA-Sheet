@@ -148,3 +148,7 @@ body {
 #log{
     height:100% !important;
 }
+
+.btnn{
+  display: flex;
+}

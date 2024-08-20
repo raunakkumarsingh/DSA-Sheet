@@ -14,6 +14,7 @@ function Home({ mode }) {
             navigate('/login');
         } else {
             navigate(path);
+            if(localStorage.getItem('token')!=="hello")
             if (fetchData) await fetchData();
             setAlert(null);
         }
@@ -56,6 +57,26 @@ function Home({ mode }) {
             fetchData: getData,
             marginBottom: '4rem',
         },
+        {
+            title: 'CP Sheet',
+            description: `Here is a collection of problems from Mohammad Faraz DSA sheet using 
+                which people have cracked their dream jobs. These questions are commonly asked 
+                in product-based companies like Amazon, Microsoft, Google, etc.`,
+            loaderKey: 'cpsheet',
+            path: '/cpsheet',
+            fetchData: getData,
+            marginBottom: '4rem',
+        },
+        // {
+        //     title: 'Striver AtoZ Sheet',
+        //     description: `Here is a collection of problems from Mohammad Faraz DSA sheet using 
+        //         which people have cracked their dream jobs. These questions are commonly asked 
+        //         in product-based companies like Amazon, Microsoft, Google, etc.`,
+        //     loaderKey: 'cpsheet',
+        //     path: '/stiveratoz',
+        //     fetchData: getData,
+        //     marginBottom: '4rem',
+        // },
     ];
 
     return (

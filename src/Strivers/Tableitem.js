@@ -53,7 +53,7 @@ function TableRow(props) {
       localData.push(props.QID);
     }
     localStorage.setItem("striverArray", JSON.stringify(localData));
-    localStorage.setItem("striverProgress", len + 1);
+    localStorage.setItem('striverProgress', JSON.parse(localStorage.getItem('striverProgress'))+1);
   };
 
   const deleteDATA = async () => {
@@ -62,25 +62,24 @@ function TableRow(props) {
 
     if (localData[len - 1] === props.id) {
       await localData.splice(len - 1, 1);
-      localStorage.setItem("striverProgress", len - 1);
     } else if (localData[len - 2] === props.id) {
       await localData.splice(len - 2, 1);
-      localStorage.setItem("striverProgress", len - 1);
     } else {
       for (let i = 0; i < len; i++) {
         if (localData[i] === props.QID) {
           await localData.splice(i, 1);
-          localStorage.setItem("striverProgress", len - 1);
           break;
         }
       }
     }
+    localStorage.setItem('striverProgress', JSON.parse(localStorage.getItem('striverProgress'))-1);
     localStorage.setItem("striverArray", JSON.stringify(localData));
   };
 
   const toggle = async (e) => {
     if (isChecked) {
       setLoader(true);
+      if(localStorage.getItem('token')!=="hello")
       await deleteDataStriver(ques._id, ques.email, props.QID);
       setIsChecked(false);
       showAlert("deselect", "Question Deselected 👾");
@@ -88,6 +87,7 @@ function TableRow(props) {
       await deleteDATA();
     } else if (!isChecked) {
       setLoader(true);
+      if(localStorage.getItem('token')!=="hello")
       await updateDataStriver(ques._id, ques.email, props.QID);
       setLoader(false);
       showAlert("success", "Question Completed Successfully 🎉🎊");

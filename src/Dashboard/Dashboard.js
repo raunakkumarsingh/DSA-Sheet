@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext, useEffect,useRef } from 'react';
 import dataContext from '../context/datacontext';
 import CardComponent from '../components/CardComponent/Cardcomponent';
 import { Link } from 'react-router-dom';
@@ -30,15 +30,17 @@ function ProgressBar({ totalQuestions, completedQuestions }) {
                     fontWeight: 'bold',
                 }}
             >
-                {completedQuestions}/{totalQuestions} 
+                {completedQuestions}/{totalQuestions}
             </span>
         </div>
     );
 }
 
 
-function Dashboard({mode}) {
+function Dashboard({ mode }) {
+    const [loader, setLoader] = useState({ leetcode: false, codechef: false, codeforces: false,gfg: false });
     const {
+        showAlert,
         updateCodingIDs,
         getLeetcode,
         getGfg,
@@ -48,9 +50,11 @@ function Dashboard({mode}) {
         codechefSubmitted,
         gfgSubmitted,
         codeforcesSubmitted,
-        setLeetcodeSubmitted,setCodechefSubmitted,setCodeforcesSubmitted,setGfgSubmitted
+        setLeetcodeSubmitted, setCodechefSubmitted, setCodeforcesSubmitted, setGfgSubmitted,
+        updateCardDetails
     } = useContext(dataContext);
 
+    
     const [userIDs, setUserIDs] = useState({
         leetcodeID: leetcodeSubmitted?.username || "",
         codeforcesID: codeforcesSubmitted?.username || "",
@@ -58,7 +62,17 @@ function Dashboard({mode}) {
         gfgID: gfgSubmitted?.username || ""
     });
 
-    useEffect(() => {JSON.parse(localStorage.getItem('leetcodeSubmitted'))
+      const firstRender = useRef(true);
+
+      useEffect(() => {
+        if (firstRender.current) {
+            updateCardDetails(userIDs);
+          firstRender.current = false;
+        } 
+    
+      }, []); 
+
+    useEffect(() => {
         const leetcode = JSON.parse(localStorage.getItem('leetcodeSubmitted'));
         const codeforces = JSON.parse(localStorage.getItem('codeforcesSubmitted'));
         const codechef = JSON.parse(localStorage.getItem('codechefSubmitted'));
@@ -75,8 +89,9 @@ function Dashboard({mode}) {
         setUserIDs({ ...userIDs, [name]: value });
     };
 
-    const handleSubmit = async (event, platform) => {
+    const handleSubmit = async (event, platform,loaderKey) => {
         event.preventDefault();
+        setLoader(prevLoader => ({ ...prevLoader, [platform]: true }));
         const id = userIDs[`${platform}ID`];
         if (!id.trim()) return;
 
@@ -96,10 +111,37 @@ function Dashboard({mode}) {
             default:
                 return;
         }
+        setLoader(prevLoader => ({ ...prevLoader, [platform]: false }));
+
+    };
+    const handleDelete = async (event, platform) => {
+        event.preventDefault();
+        console.log("platform: ", platform)
+      
+        switch (platform) {
+            case "Leetcode":
+                setLeetcodeSubmitted(null);
+                localStorage.removeItem('leetcodeSubmitted');
+                break;
+            case "Codeforces":
+                setCodeforcesSubmitted(null);
+                localStorage.removeItem('codechefSubmitted');
+                break;
+            case "Codechef":
+                setCodechefSubmitted(null)
+                localStorage.removeItem('codechefSubmitted');
+                break;
+            case "GFG":
+                setGfgSubmitted(null);
+                localStorage.removeItem('gfgSubmitted')
+                break;
+            default:
+                return;
+        }
 
     };
     useEffect(() => {
-        if(leetcodeSubmitted==null && codechefSubmitted==null && codeforcesSubmitted==null && gfgSubmitted==null){
+        if (leetcodeSubmitted == null && codechefSubmitted == null && codeforcesSubmitted == null && gfgSubmitted == null) {
             return;
         }
         const codingIDs = {
@@ -116,14 +158,14 @@ function Dashboard({mode}) {
                 gfgID: { username: userIDs.gfgID, details: gfgSubmitted },
             }),
         };
-    
-        // console.log("codingIDS", codingIDs);
+
         updateCodingIDs(codingIDs).then((data) => {
-            // console.log("userid data:", data);
+  
         });
     }, [leetcodeSubmitted, codeforcesSubmitted, codechefSubmitted, gfgSubmitted]);
-    
-    //  console.log(codeche)
+
+  
+
     const totalQuestions =
         (leetcodeSubmitted?.totalQuestions || 0) +
         (codeforcesSubmitted?.totalQuestions || 0) +
@@ -151,35 +193,44 @@ function Dashboard({mode}) {
 
             {/* Progress Bars Section */}
             <div className={`item-${mode} item-1 mx-3 d-flex flex-column flex-md-row align-items-center justify-content-around flex-wrap`}>
-                <div className='item-1 mx-2 progressbar d-flex flex-column align-items-center'>
+                <div className='card-item-1 mx-2 progressbar d-flex flex-column align-items-center'>
                     <h1 className='smallh1 input-Heading'>LoveDSA Sheet</h1>
                     <ProgressBar
                         totalQuestions={450}
                         completedQuestions={localStorage.getItem("loveProgress") || 0}
                     />
                 </div>
-                <div className='item-2 mx-2 progressbar d-flex flex-column align-items-center'>
+                <div className='card-item-2 mx-2 progressbar d-flex flex-column align-items-center'>
                     <h1 className='smallh1 input-Heading'>Striver Sheet</h1>
                     <ProgressBar
                         totalQuestions={184}
                         completedQuestions={localStorage.getItem("striverProgress") || 0}
                     />
                 </div>
-                <div className='item-3 mx-2 progressbar d-flex flex-column align-items-center'>
+                <div className='card-item-3 mx-2 progressbar d-flex flex-column align-items-center'>
+                    <h1 className='smallh1 input-Heading'>CP Sheet</h1>
+                    <ProgressBar
+                        totalQuestions={279}
+                        completedQuestions={localStorage.getItem('cpProgress')|| 0}
+                    />
+                </div>
+                <div className='card-item-3 mx-2 progressbar d-flex flex-column align-items-center'>
                     <h1 className='smallh1 input-Heading'>Faraz Sheet</h1>
                     <ProgressBar
                         totalQuestions={324}
-                        completedQuestions={localStorage.getItem("farazProgress") || 0}
+                        completedQuestions={localStorage.getItem("farajProgress")||0 }
                     />
                 </div>
-                <div className='item-4'>
-                    <Link to="/sheet" className='btn btn1 notransition'>Go to DSASHEET</Link>
+                <div className='card-item-4'>
+                    <Link to="/sheet"  type="submit"
+                            className="btn btn-primary w-100 p-3"
+                            style={{ fontSize: "1rem" }}>Go to DSASHEET</Link>
                 </div>
             </div>
 
             {/* Leetcode Section */}
             {leetcodeSubmitted == null ? (
-                <div className={`input-card-${mode} item-3 item-3 d-flex flex-column align-items-center justify-content-center p-4 shadow-sm rounded bg-white`}>
+                <div className={`input-card-${mode} item-3 d-flex flex-column align-items-center justify-content-center p-4 shadow-sm rounded bg-white`}>
                     <h2 className={`mb-4 text-center input-Heading-${mode}`}>Enter your Leetcode ID</h2>
                     <form className="w-100" onSubmit={(e) => handleSubmit(e, "leetcode")}>
                         <input
@@ -188,7 +239,7 @@ function Dashboard({mode}) {
                             name="leetcodeID"
                             onChange={handleChange}
                             placeholder="Leetcode ID"
-                            className={`form-control mb-3 p-3 border rounded input-field`}
+                            className={`input-field-${mode} form-control mb-3 p-3 border rounded `}
                             style={{ fontSize: "1rem" }}
                         />
                         <button
@@ -196,17 +247,23 @@ function Dashboard({mode}) {
                             className="btn btn-primary w-100 p-3"
                             style={{ fontSize: "1rem" }}
                         >
-                            Submit
+                            Submit &nbsp;
+                                <span
+                                    className='spinner-border spinner-border-sm my-1 text-black'
+                                    role='status'
+                                    aria-hidden='true'
+                                    style={{ display: loader["leetcode"] ? 'flex' : 'none' }}
+                                ></span>
                         </button>
                     </form>
                 </div>
             ) : (
-                <CardComponent name={`item-${mode} item-3`} title="Leetcode" rating={leetcodeSubmitted.rating} maxRating={leetcodeSubmitted.maxRating} activeDays={leetcodeSubmitted.totalContests} totalSolved={leetcodeSubmitted.totalQuestions} easy={leetcodeSubmitted.easy} medium={leetcodeSubmitted.medium} hard={leetcodeSubmitted.hard} mode={mode} />
+                <CardComponent name={`item-${mode} item-3`} title="Leetcode" rating={leetcodeSubmitted.rating} maxRating={leetcodeSubmitted.maxRating} activeDays={leetcodeSubmitted.totalContests} totalSolved={leetcodeSubmitted.totalQuestions} easy={leetcodeSubmitted.easy} medium={leetcodeSubmitted.medium} hard={leetcodeSubmitted.hard} mode={mode} handleDelete={handleDelete} />
             )}
 
             {/* Codeforces Section */}
             {codeforcesSubmitted == null ? (
-                <div className={`input-card-${mode} item-4 item-3 d-flex flex-column align-items-center justify-content-center p-4 shadow-sm rounded bg-white`}>
+                <div className={`input-card-${mode} item-4  d-flex flex-column align-items-center justify-content-center p-4 shadow-sm rounded bg-white`}>
                     <h2 className={`mb-4 text-center input-Heading-${mode}`}>Enter your Codeforces ID</h2>
                     <form className="w-100" onSubmit={(e) => handleSubmit(e, "codeforces")}>
                         <input
@@ -215,7 +272,7 @@ function Dashboard({mode}) {
                             name="codeforcesID"
                             onChange={handleChange}
                             placeholder="Codeforces ID"
-                            className={`form-control mb-3 p-3 border rounded input-field`}
+                            className={`form-control mb-3 p-3 border rounded input-field-${mode}`}
                             style={{ fontSize: "1rem" }}
                         />
                         <button
@@ -223,27 +280,33 @@ function Dashboard({mode}) {
                             className="btn btn-primary w-100 p-3"
                             style={{ fontSize: "1rem" }}
                         >
-                            Submit
+                            Submit &nbsp;
+                                <span
+                                    className='spinner-border spinner-border-sm my-1 text-black'
+                                    role='status'
+                                    aria-hidden='true'
+                                    style={{ display: loader["codeforces"] ? 'flex' : 'none' }}
+                                ></span>
                         </button>
                     </form>
                 </div>
             ) : (
                 <CardComponent name={`item-${mode} item-4`} title="Codeforces" rating={codeforcesSubmitted.rating} maxRating={codeforcesSubmitted.maxRating} activeDays={codeforcesSubmitted.totalContests} totalSolved={codeforcesSubmitted.totalQuestions
-                } tag={codeforcesSubmitted.tag} mode={mode}/>
+                } tag={codeforcesSubmitted.tag} mode={mode} handleDelete={handleDelete} />
             )}
 
             {/* Codechef Section */}
             {codechefSubmitted == null ? (
-                <div className={`input-card-${mode} item-5 item-3 d-flex flex-column align-items-center justify-content-center p-4 shadow-sm rounded bg-white`}>
+                <div className={`input-card-${mode} item-5  d-flex flex-column align-items-center justify-content-center p-4 shadow-sm rounded bg-white`}>
                     <h2 className={`mb-4 text-center input-Heading-${mode}`}>Enter your Codechef ID</h2>
                     <form className="w-100" onSubmit={(e) => handleSubmit(e, "codechef")}>
                         <input
                             type="text"
-                            value={userIDs.codechefID} 
+                            value={userIDs.codechefID}
                             name="codechefID"
                             onChange={handleChange}
                             placeholder="Codechef ID"
-                            className={`form-control mb-3 p-3 border rounded input-field`}
+                            className={`form-control mb-3 p-3 border rounded input-field-${mode}`}
                             style={{ fontSize: "1rem" }}
                         />
                         <button
@@ -251,18 +314,24 @@ function Dashboard({mode}) {
                             className="btn btn-primary w-100 p-3"
                             style={{ fontSize: "1rem" }}
                         >
-                            Submit
+                            Submit &nbsp;
+                                <span
+                                    className='spinner-border spinner-border-sm my-1 text-black'
+                                    role='status'
+                                    aria-hidden='true'
+                                    style={{ display: loader["codechef"] ? 'flex' : 'none' }}
+                                ></span>
                         </button>
                     </form>
                 </div>
             ) : (
                 <CardComponent name={`item-${mode} item-5`} title="Codechef" rating={codechefSubmitted.rating} maxRating={codechefSubmitted.maxRating} activeDays={codechefSubmitted.no_of_contest} totalSolved={codechefSubmitted.problems_solved
-                } tag={codechefSubmitted.tag} mode={mode}/>
+                } tag={codechefSubmitted.tag} mode={mode} handleDelete={handleDelete} />
             )}
 
             {/* GFG Section */}
             {!gfgSubmitted ? (
-                <div className={`input-card-${mode} item-6 item-3 d-flex flex-column align-items-center justify-content-center p-4 shadow-sm rounded bg-white`}>
+                <div className={`input-card-${mode} item-6  d-flex flex-column align-items-center justify-content-center p-4 shadow-sm rounded bg-white`}>
                     <h2 className={`mb-4 text-center input-Heading-${mode}`}>Enter your GFG ID</h2>
                     <form className="w-100" onSubmit={(e) => handleSubmit(e, "gfg")}>
                         <input
@@ -271,7 +340,7 @@ function Dashboard({mode}) {
                             name="gfgID"
                             onChange={handleChange}
                             placeholder="GFG ID"
-                            className={`form-control mb-3 p-3 border rounded input-field`}
+                            className={`form-control mb-3 p-3 border rounded input-field-${mode}`}
                             style={{ fontSize: "1rem" }}
                         />
                         <button
@@ -279,12 +348,18 @@ function Dashboard({mode}) {
                             className="btn btn-primary w-100 p-3"
                             style={{ fontSize: "1rem" }}
                         >
-                            Submit
+                            Submit &nbsp;
+                                <span
+                                    className='spinner-border spinner-border-sm my-1 text-black'
+                                    role='status'
+                                    aria-hidden='true'
+                                    style={{ display: loader["gfg"] ? 'flex' : 'none' }}
+                                ></span>
                         </button>
                     </form>
                 </div>
             ) : (
-                <CardComponent name={`item-${mode} item-6`} title="GFG" rating={gfgSubmitted.overall_coding_score} activeDays={0} totalSolved={gfgSubmitted.total_problems_solved} easy={gfgSubmitted.easy_problems_solved+gfgSubmitted.basic_problems_solved} medium={gfgSubmitted.medium_problems_solved +gfgSubmitted.school_problems_solved} hard={gfgSubmitted.hard_problems_solved} college_rank={gfgSubmitted.college_rank} overall_coding_score={gfgSubmitted.overall_coding_score} mode={mode}/>
+                <CardComponent name={`item-${mode} item-6`} title="GFG" rating={gfgSubmitted.overall_coding_score} activeDays={0} totalSolved={gfgSubmitted.total_problems_solved} easy={gfgSubmitted.easy_problems_solved + gfgSubmitted.basic_problems_solved} medium={gfgSubmitted.medium_problems_solved + gfgSubmitted.school_problems_solved} hard={gfgSubmitted.hard_problems_solved} college_rank={gfgSubmitted.college_rank} overall_coding_score={gfgSubmitted.overall_coding_score} mode={mode} handleDelete={handleDelete} />
             )}
         </div>
     );

@@ -46,8 +46,7 @@ export default function Table({ mode, title, searc }) {
       localData.push(QID);
     }
     localStorage.setItem("farajArray", JSON.stringify(localData));
-    localStorage.setItem('farajProgress', JSON.parse(localStorage.getItem('farajProgress'))+1);
-    // localStorage.setItem("farajProgress", localData.length);
+    localStorage.setItem("farajProgress", localData.length);
   };
 
   const deleteDATA = async (QID) => {
@@ -57,20 +56,17 @@ export default function Table({ mode, title, searc }) {
       localData.splice(index, 1);
     }
     localStorage.setItem("farajArray", JSON.stringify(localData));
-    localStorage.setItem('farajProgress', JSON.parse(localStorage.getItem('farajProgress'))-1);
-    // localStorage.setItem("farajProgress", localData.length);
+    localStorage.setItem("farajProgress", localData.length);
   };
-  
+
   const toggle = async (QID) => {
     setLoader((prevLoader) => ({ ...prevLoader, [QID]: true }));
     if (checkedItems[QID]) {
-      if(localStorage.getItem('token')!=="hello")
       await deleteData(ques._id, ques.email, QID);
       await deleteDATA(QID);
       showAlert("deselect", "Question Deselected 👾");
       setCheckedItems((prevChecked) => ({ ...prevChecked, [QID]: false }));
     } else {
-      if(localStorage.getItem('token')!=="hello")
       await updateData(ques._id, ques.email, QID);
       await updateDATA(QID);
       showAlert("success", "Question Completed Successfully 🎉🎊");

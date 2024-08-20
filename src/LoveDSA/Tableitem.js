@@ -46,7 +46,8 @@ function Tabledata({ mode, QID, Url, question }) {
   const context = useContext(dataContext);
   const { updateDataDSA, deleteDataDSA, showAlert } = context;
   const ques = JSON.parse(localStorage.getItem("quesDSA"));
-  const loveArray = JSON.parse(localStorage.getItem('loveArray')) || [];
+  const loveArray = JSON.parse(localStorage.getItem('loveArray'));
+  // console.log("loveArray",loveArray);
 
   useEffect(() => {
     setIsChecked(loveArray.includes(QID));
@@ -56,7 +57,8 @@ function Tabledata({ mode, QID, Url, question }) {
     if (!loveArray.includes(QID)) {
       loveArray.push(QID);
       localStorage.setItem("loveArray", JSON.stringify(loveArray));
-      localStorage.setItem("loveProgress", loveArray.length);
+      // localStorage.setItem("loveProgress", loveArray.length);
+      localStorage.setItem('loveProgress', JSON.parse(localStorage.getItem('loveProgress'))+1);
     }
   };
 
@@ -65,17 +67,20 @@ function Tabledata({ mode, QID, Url, question }) {
     if (index !== -1) {
       loveArray.splice(index, 1);
       localStorage.setItem("loveArray", JSON.stringify(loveArray));
-      localStorage.setItem("loveProgress", loveArray.length);
+      // localStorage.setItem("loveProgress", loveArray.length);
+      localStorage.setItem('loveProgress', JSON.parse(localStorage.getItem('loveProgress'))-1);
     }
   };
 
   const toggle = async () => {
     setLoader(true);
     if (isChecked) {
+      if(localStorage.getItem('token')!=="hello")
       await deleteDataDSA(ques._id, ques.email, QID);
       await deleteDATA();
       showAlert("deselect", "Question Deselected 👾");
     } else {
+      if(localStorage.getItem('token')!=="hello")
       await updateDataDSA(ques._id, ques.email, QID);
       await updateDATA();
       showAlert("success", "Question Completed Successfully 🎉🎊");

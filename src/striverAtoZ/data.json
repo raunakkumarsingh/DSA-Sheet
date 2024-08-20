@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "Title": "Learn the basics",
+    "Totalquestion": 31
+  },
+  {
+    "id": 2,
+    "Title": "Learn Important Sorting Techniques",
+    "Totalquestion": 7
+  },
+  {
+    "id": 3,
+    "Title": "Solve Problems on Arrays [Easy -> Medium -> Hard]",
+    "Totalquestion": 40
+  },
+  {
+    "id": 4,
+    "Title": "Binary Search [1D, 2D Arrays, Search Space]",
+    "Totalquestion": 32
+  },
+  {
+    "id": 5,
+    "Title": "Strings [Basic and Medium]",
+    "Totalquestion": 15
+  },
+  {
+    "id": 6,
+    "Title": "Learn LinkedList [Single LL, Double LL, Medium, Hard Problems]",
+    "Totalquestion": 31
+  },
+  {
+    "id": 7,
+    "Title": "Recursion [PatternWise]",
+    "Totalquestion": 25
+  },
+  {
+    "id": 8,
+    "Title": "Bit Manipulation [Concepts & Problems]",
+    "Totalquestion": 18
+  },
+  {
+    "id": 9,
+    "Title": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+    "Totalquestion": 30
+  },
+  {
+    "id": 10,
+    "Title": "Sliding Window & Two Pointer Combined Problems",
+    "Totalquestion": 12
+  },
+  {
+    "id": 11,
+    "Title": "Heaps [Learning, Medium, Hard Problems]",
+    "Totalquestion": 17
+  },
+  {
+    "id": 12,
+    "Title": "Greedy Algorithms [Easy, Medium/Hard]",
+    "Totalquestion": 16
+  },
+  {
+    "id": 13,
+    "Title": "Binary Trees [Traversals, Medium and Hard Problems]",
+    "Totalquestion": 39
+  },
+  {
+    "id": 14,
+    "Title": "Binary Search Trees [Concept and Problems]",
+    "Totalquestion": 16
+  },
+  {
+    "id": 15,
+    "Title": "Graphs [Concepts & Problems]",
+    "Totalquestion": 54
+  },
+  {
+    "id": 16,
+    "Title": "Dynamic Programming [Patterns and Problems]",
+    "Totalquestion": 56
+  },
+  {
+    "id": 17,
+    "Title": "Tries",
+    "Totalquestion": 7
+  },
+  {
+    "id": 18,
+    "Title": "Strings",
+    "Totalquestion": 9
+  }
+]

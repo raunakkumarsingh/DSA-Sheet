@@ -16,6 +16,7 @@ app.use('/api/codingids',require('./Routes/codingids'))
 app.use('/api/dataDSA',require('./Routes/dataDSA'))
 app.use('/api/datafaraj',require('./Routes/datafaraj'))
 app.use('/api/datastriver',require('./Routes/datastriver'))
+app.use('/api/cpsheet',require('./Routes/cpsheet'))
 
 app.use('/api/leetcode', require('./Routes/CodingRoutes/leetcode'))
 app.use('/api/codechef', require('./Routes/CodingRoutes/codechef'))

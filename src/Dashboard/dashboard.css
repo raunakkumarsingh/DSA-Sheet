@@ -66,14 +66,14 @@
     font-size:large;
 }
 .input-field-dark{
-    background-color: #0b141e;
+    background-color: #0b141e !important;
 }
 .input-Heading-light{
     color: #000000;
     font-size:large;
 }
 .input-field-light{
-    background-color: #ddedff;
+    background-color: #ddedff !important;
 }
 
 /* Desktop Layout */
@@ -109,7 +109,13 @@
 
 /* Tablet Layout */
 @media (max-width: 989px) {
-    .dashboard-container {
+    .dashboard-container-dark {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 20px;
+        height: auto;
+    }
+    .dashboard-container-light {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
         gap: 20px;

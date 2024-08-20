@@ -137,7 +137,7 @@ th, tr {
   border-radius: 0.5rem;
   font-weight: bold;
   border-color: #000000;
-  transition: transform 1s;
+  /* transition: transform 1s; */
   text-decoration: none;
 }
 
@@ -237,7 +237,7 @@ box-shadow:  20px 20px 60px #06050e,
   border-radius: 0.5rem;
   font-weight: bold;
   border-color: #05ef63;
-  transition: transform 1s;
+  /* transition: transform 1s; */
 }
 
 .btn-dark:hover {

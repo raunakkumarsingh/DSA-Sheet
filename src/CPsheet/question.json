@@ -1,0 +1,1695 @@
+{
+    "800": [
+        {
+            "id": 1,
+            "question": "Halloumi Boxes",
+            "URL": "https://codeforces.com/problemset/problem/1903/A",
+            "solution_URL": "https://example.com/solutions/halloumi-boxes"
+        },
+        {
+            "id": 2,
+            "question": "Line Trip",
+            "URL": "https://codeforces.com/problemset/problem/1901/A",
+            "solution_URL": "https://example.com/solutions/line-trip"
+        },
+        {
+            "id": 3,
+            "question": "Cover in Water",
+            "URL": "https://codeforces.com/problemset/problem/1900/A",
+            "solution_URL": "https://example.com/solutions/cover-in-water"
+        },
+        {
+            "id": 4,
+            "question": "Game with Integers",
+            "URL": "https://codeforces.com/problemset/problem/1899/A",
+            "solution_URL": "https://example.com/solutions/game-with-integers"
+        },
+        {
+            "id": 5,
+            "question": "Jagged Swaps",
+            "URL": "https://codeforces.com/problemset/problem/1896/A",
+            "solution_URL": "https://example.com/solutions/jagged-swaps"
+        },
+        {
+            "id": 6,
+            "question": "Doremy's Paint 3",
+            "URL": "https://codeforces.com/problemset/problem/1890/A",
+            "solution_URL": "https://example.com/solutions/doremys-paint-3"
+        },
+        {
+            "id": 7,
+            "question": "Don't Try to Count",
+            "URL": "https://codeforces.com/problemset/problem/1881/A",
+            "solution_URL": "https://example.com/solutions/dont-try-to-count"
+        },
+        {
+            "id": 8,
+            "question": "How Much Does Daytona Cost?",
+            "URL": "https://codeforces.com/problemset/problem/1878/A",
+            "solution_URL": "https://example.com/solutions/how-much-does-daytona-cost"
+        },
+        {
+            "id": 9,
+            "question": "Goals of Victory",
+            "URL": "https://codeforces.com/problemset/problem/1877/A",
+            "solution_URL": "https://example.com/solutions/goals-of-victory"
+        },
+        {
+            "id": 10,
+            "question": "Target Practice",
+            "URL": "https://codeforces.com/problemset/problem/1873/C",
+            "solution_URL": "https://example.com/solutions/target-practice"
+        },
+        {
+            "id": 11,
+            "question": "Ambitious Kid",
+            "URL": "https://codeforces.com/problemset/problem/1866/A",
+            "solution_URL": "https://example.com/solutions/ambitious-kid"
+        },
+        {
+            "id": 12,
+            "question": "Sequence Game",
+            "URL": "https://codeforces.com/problemset/problem/1862/B",
+            "solution_URL": "https://example.com/solutions/sequence-game"
+        },
+        {
+            "id": 13,
+            "question": "United We Stand",
+            "URL": "https://codeforces.com/problemset/problem/1859/A",
+            "solution_URL": "https://example.com/solutions/united-we-stand"
+        },
+        {
+            "id": 14,
+            "question": "Buttons",
+            "URL": "https://codeforces.com/problemset/problem/1858/A",
+            "solution_URL": "https://example.com/solutions/buttons"
+        },
+        {
+            "id": 15,
+            "question": "Array Coloring",
+            "URL": "https://codeforces.com/problemset/problem/1857/A",
+            "solution_URL": "https://example.com/solutions/array-coloring"
+        },
+        {
+            "id": 16,
+            "question": "Desorting",
+            "URL": "https://codeforces.com/problemset/problem/1853/A",
+            "solution_URL": "https://example.com/solutions/desorting"
+        },
+        {
+            "id": 17,
+            "question": "Forbidden Integer",
+            "URL": "https://codeforces.com/problemset/problem/1845/A",
+            "solution_URL": "https://example.com/solutions/forbidden-integer"
+        },
+        {
+            "id": 18,
+            "question": "Grasshopper on a Line",
+            "URL": "https://codeforces.com/problemset/problem/1837/A",
+            "solution_URL": "https://example.com/solutions/grasshopper-on-a-line"
+        },
+        {
+            "id": 19,
+            "question": "Unit Array",
+            "URL": "https://codeforces.com/problemset/problem/1834/A",
+            "solution_URL": "https://example.com/solutions/unit-array"
+        },
+        {
+            "id": 20,
+            "question": "Twin Permutations",
+            "URL": "https://codeforces.com/problemset/problem/1831/A",
+            "solution_URL": "https://example.com/solutions/twin-permutations"
+        },
+        {
+            "id": 21,
+            "question": "Blank Space",
+            "URL": "https://codeforces.com/problemset/problem/1829/B",
+            "solution_URL": "https://example.com/solutions/blank-space"
+        },
+        {
+            "id": 22,
+            "question": "Coins",
+            "URL": "https://codeforces.com/problemset/problem/1814/A",
+            "solution_URL": "https://example.com/solutions/coins"
+        },
+        {
+            "id": 23,
+            "question": "Walking Master",
+            "URL": "https://codeforces.com/problemset/problem/1806/A",
+            "solution_URL": "https://example.com/solutions/walking-master"
+        },
+        {
+            "id": 24,
+            "question": "We Need the Zero",
+            "URL": "https://codeforces.com/problemset/problem/1805/A",
+            "solution_URL": "https://example.com/solutions/we-need-the-zero"
+        },
+        {
+            "id": 25,
+            "question": "Prepend and Append",
+            "URL": "https://codeforces.com/problemset/problem/1791/C",
+            "solution_URL": "https://example.com/solutions/prepend-and-append"
+        },
+        {
+            "id": 26,
+            "question": "Serval and Mocha's Array",
+            "URL": "https://codeforces.com/problemset/problem/1789/A",
+            "solution_URL": "https://example.com/solutions/serval-and-mochas-array"
+        },
+        {
+            "id": 27,
+            "question": "One and Two",
+            "URL": "https://codeforces.com/problemset/problem/1788/A",
+            "solution_URL": "https://example.com/solutions/one-and-two"
+        },
+        {
+            "id": 28,
+            "question": "Make it Beautiful",
+            "URL": "https://codeforces.com/problemset/problem/1783/A",
+            "solution_URL": "https://example.com/solutions/make-it-beautiful"
+        },
+        {
+            "id": 29,
+            "question": "Everybody Likes Good Arrays!",
+            "URL": " everybody-likes-good-arrays",
+            "solution_URL": "https://example.com/solutions/everybody-likes-good-arrays"
+        },
+        {
+            "id": 30,
+            "question": "Extremely Round",
+            "URL": "https://codeforces.com/problemset/problem/1766/A",
+            "solution_URL": "https://example.com/solutions/extremely-round"
+        },
+        {
+            "id": 31,
+            "question": "Two Permutations",
+            "URL": "https://codeforces.com/problemset/problem/1761/A",
+            "solution_URL": "https://example.com/solutions/two-permutations"
+        }
+    ],
+    "900": [
+        {
+            "id": 1,
+            "question": "Forked!",
+            "URL": "https://codeforces.com/problemset/problem/1904/A",
+            "solution_URL": "https://example.com/solutions/forked"
+        },
+        {
+            "id": 2,
+            "question": "Chemistry",
+            "URL": "https://codeforces.com/problemset/problem/1883/B",
+            "solution_URL": "https://example.com/solutions/chemistry"
+        },
+        {
+            "id": 3,
+            "question": "Vasilije in Cacak",
+            "URL": "https://codeforces.com/problemset/problem/1878/C",
+            "solution_URL": "https://example.com/solutions/vasilije-in-cacak"
+        },
+        {
+            "id": 4,
+            "question": "Jellyfish and Undertale",
+            "URL": "https://codeforces.com/problemset/problem/1875/A",
+            "solution_URL": "https://example.com/solutions/jellyfish-and-undertale"
+        },
+        {
+            "id": 5,
+            "question": "Make It Zero",
+            "URL": "https://codeforces.com/problemset/problem/1869/A",
+            "solution_URL": "https://example.com/solutions/make-it-zero"
+        },
+        {
+            "id": 6,
+            "question": "Longest Divisors Interval",
+            "URL": "https://codeforces.com/problemset/problem/1855/B",
+            "solution_URL": "https://example.com/solutions/longest-divisors-interval"
+        },
+        {
+            "id": 7,
+            "question": "Balanced Round",
+            "URL": "https://codeforces.com/problemset/problem/1850/D",
+            "solution_URL": "https://example.com/solutions/balanced-round"
+        },
+        {
+            "id": 8,
+            "question": "Comparison String",
+            "URL": "https://codeforces.com/problemset/problem/1837/B",
+            "solution_URL": "https://example.com/solutions/comparison-string"
+        },
+        {
+            "id": 9,
+            "question": "Permutation Swap",
+            "URL": "https://codeforces.com/problemset/problem/1828/B",
+            "solution_URL": "https://example.com/solutions/permutation-swap"
+        },
+        {
+            "id": 10,
+            "question": "Odd Queries",
+            "URL": "https://codeforces.com/problemset/problem/1807/D",
+            "solution_URL": "https://example.com/solutions/odd-queries"
+        },
+        {
+            "id": 11,
+            "question": "Not Dividing",
+            "URL": "https://codeforces.com/problemset/problem/1794/B",
+            "solution_URL": "https://example.com/solutions/not-dividing"
+        },
+        {
+            "id": 12,
+            "question": "Mainak and Array",
+            "URL": "https://codeforces.com/problemset/problem/1726/A",
+            "solution_URL": "https://example.com/solutions/mainak-and-array"
+        },
+        {
+            "id": 13,
+            "question": "NIT Destroys the Universe",
+            "URL": "https://codeforces.com/problemset/problem/1696/B",
+            "solution_URL": "https://example.com/solutions/nit-destroys-the-universe"
+        },
+        {
+            "id": 14,
+            "question": "AvtoBus",
+            "URL": "https://codeforces.com/problemset/problem/1679/A",
+            "solution_URL": "https://example.com/solutions/avtobus"
+        },
+        {
+            "id": 15,
+            "question": "Make It Increasing",
+            "URL": "https://codeforces.com/problemset/problem/1675/B",
+            "solution_URL": "https://example.com/solutions/make-it-increasing"
+        },
+        {
+            "id": 16,
+            "question": "Deletive Editing",
+            "URL": "https://codeforces.com/problemset/problem/1666/D",
+            "solution_URL": "https://example.com/solutions/deletive-editing"
+        },
+        {
+            "id": 17,
+            "question": "Array Cloning Technique",
+            "URL": "https://codeforces.com/problemset/problem/1665/B",
+            "solution_URL": "https://example.com/solutions/array-cloning-technique"
+        },
+        {
+            "id": 18,
+            "question": "Make AP",
+            "URL": "https://codeforces.com/problemset/problem/1624/B",
+            "solution_URL": "https://example.com/solutions/make-ap"
+        },
+        {
+            "id": 19,
+            "question": "Odd Grasshopper",
+            "URL": "https://codeforces.com/problemset/problem/1607/B",
+            "solution_URL": "https://example.com/solutions/odd-grasshopper"
+        },
+        {
+            "id": 20,
+            "question": "https://codeforces.com/problemset/problem/1606/A",
+            "URL": " ab-balance",
+            "solution_URL": "https://example.com/solutions/ab-balance"
+        },
+        {
+            "id": 21,
+            "question": "Make it Divisible by 25",
+            "URL": "https://codeforces.com/problemset/problem/1593/B",
+            "solution_URL": "https://example.com/solutions/make-it-divisible-by-25"
+        },
+        {
+            "id": 22,
+            "question": "Luntik and Subsequences",
+            "URL": "https://codeforces.com/problemset/problem/1582/B",
+            "solution_URL": "https://example.com/solutions/luntik-and-subsequences"
+        },
+        {
+            "id": 23,
+            "question": "Mocha and Math",
+            "URL": "https://codeforces.com/problemset/problem/1559/A",
+            "solution_URL": "https://example.com/solutions/mocha-and-math"
+        },
+        {
+            "id": 24,
+            "question": "Exciting Bets",
+            "URL": "https://codeforces.com/problemset/problem/1543/A",
+            "solution_URL": "https://example.com/solutions/exciting-bets"
+        },
+        {
+            "id": 25,
+            "question": "Bad Boy",
+            "URL": "https://codeforces.com/problemset/problem/1537/B",
+            "solution_URL": "https://example.com/solutions/bad-boy"
+        },
+        {
+            "id": 26,
+            "question": "Odd Divisor",
+            "URL": "https://codeforces.com/problemset/problem/1475/A",
+            "solution_URL": "https://example.com/solutions/odd-divisor"
+        },
+        {
+            "id": 27,
+            "question": "Strange Partition",
+            "URL": "https://codeforces.com/problemset/problem/1471/A",
+            "solution_URL": "https://example.com/solutions/strange-partition"
+        },
+        {
+            "id": 28,
+            "question": "Sum of Medians",
+            "URL": "https://codeforces.com/problemset/problem/1440/B",
+            "solution_URL": "https://example.com/solutions/sum-of-medians"
+        },
+        {
+            "id": 29,
+            "question": "Three Indices",
+            "URL": "https://codeforces.com/problemset/problem/1380/A",
+            "solution_URL": "https://example.com/solutions/three-indices"
+        },
+        {
+            "id": 30,
+            "question": "01 Game",
+            "URL": "https://codeforces.com/problemset/problem/1373/B",
+            "solution_URL": "https://example.com/solutions/01-game"
+        },
+        {
+            "id": 31,
+            "question": "Multiply by 2, divide by 6",
+            "URL": "https://codeforces.com/problemset/problem/1374/B",
+            "solution_URL": "https://example.com/solutions/multiply-by-2-divide-by-6"
+        }
+    ],
+    "1000": [
+        {
+            "id": 1,
+            "question": "Swap and Delete",
+            "URL": "https://codeforces.com/problemset/problem/1913/B",
+            "solution_URL": "https://example.com/solutions/swap-and-delete"
+        },
+        {
+            "id": 2,
+            "question": "Raspberries",
+            "URL": "https://codeforces.com/problemset/problem/1883/C",
+            "solution_URL": "https://example.com/solutions/raspberries"
+        },
+        {
+            "id": 3,
+            "question": "Helmets in Night Light",
+            "URL": "https://codeforces.com/problemset/problem/1876/A",
+            "solution_URL": "https://example.com/solutions/helmets-in-night-light"
+        },
+        {
+            "id": 4,
+            "question": "Olya and Game with Arrays",
+            "URL": "https://codeforces.com/problemset/problem/1859/B",
+            "solution_URL": "https://example.com/solutions/olya-and-game-with-arrays"
+        },
+        {
+            "id": 5,
+            "question": "Monsters",
+            "URL": "https://codeforces.com/problemset/problem/1849/B",
+            "solution_URL": "https://example.com/solutions/monsters"
+        },
+        {
+            "id": 6,
+            "question": "Ski Resort",
+            "URL": "https://codeforces.com/problemset/problem/1840/C",
+            "solution_URL": "https://example.com/solutions/ski-resort"
+        },
+        {
+            "id": 7,
+            "question": "Array merging",
+            "URL": "https://codeforces.com/problemset/problem/1831/B",
+            "solution_URL": "https://example.com/solutions/array-merging"
+        },
+        {
+            "id": 8,
+            "question": "Distinct Split",
+            "URL": "https://codeforces.com/problemset/problem/1791/D",
+            "solution_URL": "https://example.com/solutions/distinct-split"
+        },
+        {
+            "id": 9,
+            "question": "Minimum LCM",
+            "URL": "https://codeforces.com/problemset/problem/1765/M",
+            "solution_URL": "https://example.com/solutions/minimum-lcm"
+        },
+        {
+            "id": 10,
+            "question": "Traffic Light",
+            "URL": "https://codeforces.com/problemset/problem/1744/C",
+            "solution_URL": "https://example.com/solutions/traffic-light"
+        },
+        {
+            "id": 11,
+            "question": "Basketball Together",
+            "URL": "https://codeforces.com/problemset/problem/1725/B",
+            "solution_URL": "https://example.com/solutions/basketball-together"
+        },
+        {
+            "id": 12,
+            "question": "Beautiful Array",
+            "URL": "https://codeforces.com/problemset/problem/1715/B",
+            "solution_URL": "https://example.com/solutions/beautiful-array"
+        },
+        {
+            "id": 13,
+            "question": "Luke is a Foodie",
+            "URL": "https://codeforces.com/problemset/problem/1704/B",
+            "solution_URL": "https://example.com/solutions/luke-is-a-foodie"
+        },
+        {
+            "id": 14,
+            "question": "Shoe Shuffling",
+            "URL": "https://codeforces.com/problemset/problem/1691/B",
+            "solution_URL": "https://example.com/solutions/shoe-shuffling"
+        },
+        {
+            "id": 15,
+            "question": "Black and White Stripe",
+            "URL": "https://codeforces.com/problemset/problem/1690/D",
+            "solution_URL": "https://example.com/solutions/black-and-white-stripe"
+        },
+        {
+            "id": 16,
+            "question": "Red Versus Blue",
+            "URL": "https://codeforces.com/problemset/problem/1659/A",
+            "solution_URL": "https://example.com/solutions/red-versus-blue"
+        },
+        {
+            "id": 17,
+            "question": "Roof Construction",
+            "URL": "https://codeforces.com/problemset/problem/1632/B",
+            "solution_URL": "https://example.com/solutions/roof-construction"
+        },
+        {
+            "id": 18,
+            "question": "Triangles on a Rectangle",
+            "URL": " triangles-on-a-rectangle",
+            "solution_URL": "https://example.com/solutions/triangles-on-a-rectangle"
+        },
+        {
+            "id": 19,
+            "question": "Divan and a New Project",
+            "URL": "https://codeforces.com/problemset/problem/1614/B",
+            "solution_URL": "https://example.com/solutions/divan-and-a-new-project"
+        },
+        {
+            "id": 20,
+            "question": "MEXor Mixup",
+            "URL": "https://codeforces.com/problemset/problem/1567/B",
+            "solution_URL": "https://example.com/solutions/mexor-mixup"
+        },
+        {
+            "id": 21,
+            "question": "Double-ended Strings",
+            "URL": "https://codeforces.com/problemset/problem/1506/C",
+            "solution_URL": "https://example.com/solutions/double-ended-strings"
+        },
+        {
+            "id": 22,
+            "question": "Add and Divide",
+            "URL": "https://codeforces.com/problemset/problem/1485/A",
+            "solution_URL": "https://example.com/solutions/add-and-divide"
+        },
+        {
+            "id": 23,
+            "question": "Different Divisors",
+            "URL": "https://codeforces.com/problemset/problem/1474/B",
+            "solution_URL": "https://example.com/solutions/different-divisors"
+        },
+        {
+            "id": 24,
+            "question": "Numbers Box",
+            "URL": "https://codeforces.com/problemset/problem/1447/B",
+            "solution_URL": "https://example.com/solutions/numbers-box"
+        },
+        {
+            "id": 25,
+            "question": "Valerii Against Everyone",
+            "URL": "https://codeforces.com/problemset/problem/1438/B",
+            "solution_URL": "https://example.com/solutions/valerii-against-everyone"
+        },
+        {
+            "id": 26,
+            "question": "Buying Torches",
+            "URL": "https://codeforces.com/problemset/problem/1418/A",
+            "solution_URL": "https://example.com/solutions/buying-torches"
+        },
+        {
+            "id": 27,
+            "question": "Fair Numbers",
+            "URL": "https://codeforces.com/problemset/problem/1411/B",
+            "solution_URL": "https://example.com/solutions/fair-numbers"
+        },
+        {
+            "id": 28,
+            "question": "Move Brackets",
+            "URL": "https://codeforces.com/problemset/problem/1374/C",
+            "solution_URL": "https://example.com/solutions/move-brackets"
+        },
+        {
+            "id": 29,
+            "question": "Johnny and Ancient Computer",
+            "URL": "https://codeforces.com/problemset/problem/1362/A",
+            "solution_URL": "https://example.com/solutions/johnny-and-ancient-computer"
+        },
+        {
+            "id": 30,
+            "question": "Bogosort",
+            "URL": "https://codeforces.com/problemset/problem/1312/B",
+            "solution_URL": "https://example.com/solutions/bogosort"
+        },
+        {
+            "id": 31,
+            "question": "Reverse a Substring",
+            "URL": "https://codeforces.com/problemset/problem/1155/A",
+            "solution_URL": "https://example.com/solutions/reverse-a-substring"
+        }
+    ],
+    "1100": [
+        {
+            "id": 1,
+            "question": "Erase First or Second Letter",
+            "URL": "https://codeforces.com/problemset/problem/1917/B",
+            "solution_URL": "https://example.com/solutions/erase-first-or-second-letter"
+        },
+        {
+            "id": 2,
+            "question": "Quests",
+            "URL": "https://codeforces.com/problemset/problem/1914/C",
+            "solution_URL": "https://example.com/solutions/quests"
+        },
+        {
+            "id": 3,
+            "question": "Collecting Game",
+            "URL": "https://codeforces.com/problemset/problem/1904/B",
+            "solution_URL": "https://example.com/solutions/collecting-game"
+        },
+        {
+            "id": 4,
+            "question": "Yarik and Array",
+            "URL": "https://codeforces.com/problemset/problem/1899/C",
+            "solution_URL": "https://example.com/solutions/yarik-and-array"
+        },
+        {
+            "id": 5,
+            "question": "250 Thousand Tons of TNT",
+            "URL": "https://codeforces.com/problemset/problem/1899/B",
+            "solution_URL": "https://example.com/solutions/250-thousand-tons-of-tnt"
+        },
+        {
+            "id": 6,
+            "question": "Deja Vu",
+            "URL": "https://codeforces.com/problemset/problem/1891/B",
+            "solution_URL": "https://example.com/solutions/deja-vu"
+        },
+        {
+            "id": 7,
+            "question": "Building an Aquarium",
+            "URL": "https://codeforces.com/problemset/problem/1873/E",
+            "solution_URL": "https://example.com/solutions/building-an-aquarium"
+        },
+        {
+            "id": 8,
+            "question": "https://codeforces.com/problemset/problem/1869/B",
+            "URL": " 2d-traveling",
+            "solution_URL": "https://example.com/solutions/2d-traveling"
+        },
+        {
+            "id": 9,
+            "question": "Cardboard for Pictures",
+            "URL": "https://codeforces.com/problemset/problem/1850/E",
+            "solution_URL": "https://example.com/solutions/cardboard-for-pictures"
+        },
+        {
+            "id": 10,
+            "question": "Tenzing and Books",
+            "URL": "https://codeforces.com/problemset/problem/1842/B",
+            "solution_URL": "https://example.com/solutions/tenzing-and-books"
+        },
+        {
+            "id": 11,
+            "question": "Maximum Sum",
+            "URL": "https://codeforces.com/problemset/problem/1832/B",
+            "solution_URL": "https://example.com/solutions/maximum-sum"
+        },
+        {
+            "id": 12,
+            "question": "Counting Orders",
+            "URL": "https://codeforces.com/problemset/problem/1827/A",
+            "solution_URL": "https://example.com/solutions/counting-orders"
+        },
+        {
+            "id": 13,
+            "question": "Lunatic Never Content",
+            "URL": "https://codeforces.com/problemset/problem/1826/B",
+            "solution_URL": "https://example.com/solutions/lunatic-never-content"
+        },
+        {
+            "id": 14,
+            "question": "Sort the Subarray",
+            "URL": "https://codeforces.com/problemset/problem/1821/B",
+            "solution_URL": "https://example.com/solutions/sort-the-subarray"
+        },
+        {
+            "id": 15,
+            "question": "JoJo's Incredible Adventures",
+            "URL": "https://codeforces.com/problemset/problem/1820/B",
+            "solution_URL": "https://example.com/solutions/jojos-incredible-adventures"
+        },
+        {
+            "id": 16,
+            "question": "Subsequence Addition (Hard Version)",
+            "URL": "https://codeforces.com/problemset/problem/1807/G2",
+            "solution_URL": "https://example.com/solutions/subsequence-addition-hard-version"
+        },
+        {
+            "id": 17,
+            "question": "Li Hua and Pattern",
+            "URL": "https://codeforces.com/problemset/problem/1797/B",
+            "solution_URL": "https://example.com/solutions/li-hua-and-pattern"
+        },
+        {
+            "id": 18,
+            "question": "Teleporters (Easy Version)",
+            "URL": "https://codeforces.com/problemset/problem/1791/G1",
+            "solution_URL": "https://example.com/solutions/teleporters-easy-version"
+        },
+        {
+            "id": 19,
+            "question": "Negatives and Positives",
+            "URL": "https://codeforces.com/problemset/problem/1791/E",
+            "solution_URL": "https://example.com/solutions/negatives-and-positives"
+        },
+        {
+            "id": 20,
+            "question": "GCD Partition",
+            "URL": "https://codeforces.com/problemset/problem/1780/B",
+            "solution_URL": "https://example.com/solutions/gcd-partition"
+        },
+        {
+            "id": 21,
+            "question": "Coprime",
+            "URL": "https://codeforces.com/problemset/problem/1742/D",
+            "solution_URL": "https://example.com/solutions/copri..."
+        },
+        {
+            "id": 22,
+            "question": "Kill Demodogs",
+            "URL": "https://codeforces.com/problemset/problem/1731/B",
+            "solution_URL": "https://example.com/solutions/kill-demodogs"
+        },
+        {
+            "id": 23,
+            "question": "Difference of GCDs",
+            "URL": "https://codeforces.com/problemset/problem/1708/B",
+            "solution_URL": "https://example.com/solutions/difference-of-gcds"
+        },
+        {
+            "id": 24,
+            "question": "AND Sorting",
+            "URL": "https://codeforces.com/problemset/problem/1682/B",
+            "solution_URL": "https://example.com/solutions/and-sorting"
+        },
+        {
+            "id": 25,
+            "question": "A Perfectly Balanced String?",
+            "URL": "https://codeforces.com/problemset/problem/1673/B",
+            "solution_URL": "https://example.com/solutions/a-perfectly-balanced-string"
+        },
+        {
+            "id": 26,
+            "question": "Eating Candies",
+            "URL": "https://codeforces.com/problemset/problem/1669/F",
+            "solution_URL": "https://example.com/solutions/eating-candies"
+        },
+        {
+            "id": 27,
+            "question": "Subtract Operation",
+            "URL": "https://codeforces.com/problemset/problem/1656/B",
+            "solution_URL": "https://example.com/solutions/subtract-operation"
+        },
+        {
+            "id": 28,
+            "question": "Fun with Even Subarrays",
+            "URL": "https://codeforces.com/problemset/problem/1631/B",
+            "solution_URL": "https://example.com/solutions/fun-with-even-subarrays"
+        },
+        {
+            "id": 29,
+            "question": "Paint the Array",
+            "URL": "https://codeforces.com/problemset/problem/1618/C",
+            "solution_URL": "https://example.com/solutions/paint-the-array"
+        },
+        {
+            "id": 30,
+            "question": "Kalindrome Array",
+            "URL": "https://codeforces.com/problemset/problem/1610/B",
+            "solution_URL": "https://example.com/solutions/kalindrome-array"
+        },
+        {
+            "id": 31,
+            "question": "Yet Another Card Deck",
+            "URL": "https://codeforces.com/problemset/problem/1511/C",
+            "solution_URL": "https://example.com/solutions/yet-another-card-deck"
+        }
+    ],
+    "1200": [
+        {
+            "id": 1,
+            "question": "Three Activities",
+            "URL": "https://codeforces.com/problemset/problem/1914/D",
+            "solution_URL": "https://example.com/solutions/three-activities"
+        },
+        {
+            "id": 2,
+            "question": "Make Almost Equal With Mod",
+            "URL": "https://codeforces.com/problemset/problem/1909/B",
+            "solution_URL": "https://example.com/solutions/make-almost-equal-with-mod"
+        },
+        {
+            "id": 3,
+            "question": "Plus Minus Permutation",
+            "URL": "https://codeforces.com/problemset/problem/1872/D",
+            "solution_URL": "https://example.com/solutions/plus-minus-permutation"
+        },
+        {
+            "id": 4,
+            "question": "Assembly via Minimums",
+            "URL": "https://codeforces.com/problemset/problem/1857/C",
+            "solution_URL": "https://example.com/solutions/assembly-via-minimums"
+        },
+        {
+            "id": 5,
+            "question": "Vika and the Bridge",
+            "URL": "https://codeforces.com/problemset/problem/1848/B",
+            "solution_URL": "https://example.com/solutions/vika-and-the-bridge"
+        },
+        {
+            "id": 6,
+            "question": "Contrast Value",
+            "URL": "https://codeforces.com/problemset/problem/1832/C",
+            "solution_URL": "https://example.com/solutions/contrast-value"
+        },
+        {
+            "id": 7,
+            "question": "Playing in a Casino",
+            "URL": "https://codeforces.com/problemset/problem/1808/B",
+            "solution_URL": "https://example.com/solutions/playing-in-a-casino"
+        },
+        {
+            "id": 8,
+            "question": "Dora and Search",
+            "URL": "https://codeforces.com/problemset/problem/1793/C",
+            "solution_URL": "https://example.com/solutions/dora-and-search"
+        },
+        {
+            "id": 9,
+            "question": "Matryoshkas",
+            "URL": "https://codeforces.com/problemset/problem/1790/D",
+            "solution_URL": "https://example.com/solutions/matryoshkas"
+        },
+        {
+            "id": 10,
+            "question": "Scuza",
+            "URL": "https://codeforces.com/problemset/problem/1742/E",
+            "solution_URL": "https://example.com/solutions/scuza"
+        },
+        {
+            "id": 11,
+            "question": "Removing Smallest Multiples",
+            "URL": "https://codeforces.com/problemset/problem/1734/C",
+            "solution_URL": "https://example.com/solutions/removing-smallest-multiples"
+        },
+        {
+            "id": 12,
+            "question": "Friends and the Restaurant",
+            "URL": "https://codeforces.com/problemset/problem/1729/D",
+            "solution_URL": "https://example.com/solutions/friends-and-the-restaurant"
+        },
+        {
+            "id": 13,
+            "question": "Virus",
+            "URL": "https://codeforces.com/problemset/problem/1704/C",
+            "solution_URL": "https://example.com/solutions/virus"
+        },
+        {
+            "id": 14,
+            "question": "Mirror Grid",
+            "URL": "https://codeforces.com/problemset/problem/1703/E",
+            "solution_URL": "https://example.com/solutions/mirror-grid"
+        },
+        {
+            "id": 15,
+            "question": "Binary Deque",
+            "URL": "https://codeforces.com/problemset/problem/1692/E",
+            "solution_URL": "https://example.com/solutions/binary-deque"
+        },
+        {
+            "id": 16,
+            "question": "Stone Age Problem",
+            "URL": "https://codeforces.com/problemset/problem/1679/B",
+            "solution_URL": "https://example.com/solutions/stone-age-problem"
+        },
+        {
+            "id": 17,
+            "question": "Dolce Vita",
+            "URL": "https://codeforces.com/problemset/problem/1671/C",
+            "solution_URL": "https://example.com/solutions/dolce-vita"
+        },
+        {
+            "id": 18,
+            "question": "Differential Sorting",
+            "URL": "https://codeforces.com/problemset/problem/1635/C",
+            "solution_URL": "https://example.com/solutions/differential-sorting"
+        },
+        {
+            "id": 19,
+            "question": "Make Them Equal",
+            "URL": "https://codeforces.com/problemset/problem/1594/C",
+            "solution_URL": "https://example.com/solutions/make-them-equal"
+        },
+        {
+            "id": 20,
+            "question": "Grandma Capa Knits a Scarf",
+            "URL": "https://codeforces.com/problemset/problem/1582/C",
+            "solution_URL": "https://example.com/solutions/grandma-capa-knits-a-scarf"
+        },
+        {
+            "id": 21,
+            "question": "Pleasant Pairs",
+            "URL": "https://codeforces.com/problemset/problem/1541/B",
+            "solution_URL": "https://example.com/solutions/pleasant-pairs"
+        },
+        {
+            "id": 22,
+            "question": "Stable Groups",
+            "URL": "https://codeforces.com/problemset/problem/1539/C",
+            "solution_URL": "https://example.com/solutions/stable-groups"
+        },
+        {
+            "id": 23,
+            "question": "Prinzessin der Verurteilung",
+            "URL": "https://codeforces.com/problemset/problem/1536/B",
+            "solution_URL": "https://example.com/solutions/prinzessin-der-verurteilung"
+        },
+        {
+            "id": 24,
+            "question": "Palindrome Game (easy version)",
+            "URL": "https://codeforces.com/problemset/problem/1527/B1",
+            "solution_URL": "https://example.com/solutions/palindrome-game-easy-version"
+        },
+        {
+            "id": 25,
+            "question": "Same Differences",
+            "URL": "https://codeforces.com/problemset/problem/1520/D",
+            "solution_URL": "https://example.com/solutions/same-differences"
+        },
+        {
+            "id": 26,
+            "question": "AND 0 Sum Big",
+            "URL": "https://codeforces.com/problemset/problem/1514/B",
+            "solution_URL": "https://example.com/solutions/and-0-sum-big"
+        },
+        {
+            "id": 27,
+            "question": "Flip the Bits",
+            "URL": "https://codeforces.com/problemset/problem/1504/B",
+            "solution_URL": "https://example.com/solutions/flip-the-bits"
+        },
+        {
+            "id": 28,
+            "question": "M-Arrays",
+            "URL": "https://codeforces.com/problemset/problem/1497/B",
+            "solution_URL": "https://example.com/solutions/m-arrays"
+        },
+        {
+            "id": 29,
+            "question": "Cat cycle",
+            "URL": "https://codeforces.com/problemset/problem/1487/B",
+            "solution_URL": "https://example.com/solutions/cat-cycle"
+        },
+        {
+            "id": 30,
+            "question": "Districts Connection",
+            "URL": "https://codeforces.com/problemset/problem/1433/D",
+            "solution_URL": "https://example.com/solutions/districts-connection"
+        },
+        {
+            "id": 31,
+            "question": "Rock and Lever",
+            "URL": "https://codeforces.com/problemset/problem/1420/B",
+            "solution_URL": "https://example.com/solutions/rock-and-lever"
+        }
+    ],
+    "1300": [
+        {
+          "id": 1,
+          "question": "Divisible Pairs",
+          "URL": "https://codeforces.com/problemset/problem/1931/D",
+          "solution_URL": "https://example.com/solutions/divisible-pairs"
+        },
+        {
+          "id": 2,
+          "question": "Find the Different Ones!",
+          "URL": "https://codeforces.com/problemset/problem/1927/D",
+          "solution_URL": "https://example.com/solutions/find-the-different-ones"
+        },
+        {
+          "id": 3,
+          "question": "Romantic Glasses",
+          "URL": "https://codeforces.com/problemset/problem/1915/E",
+          "solution_URL": "https://example.com/solutions/romantic-glasses"
+        },
+        {
+          "id": 4,
+          "question": "Divide and Equalize",
+          "URL": "https://codeforces.com/problemset/problem/1881/D",
+          "solution_URL": "https://example.com/solutions/divide-and-equalize"
+        },
+        {
+          "id": 5,
+          "question": "Make it Alternating",
+          "URL": "https://codeforces.com/problemset/problem/1879/C",
+          "solution_URL": "https://example.com/solutions/make-it-alternating"
+        },
+        {
+          "id": 6,
+          "question": "Strong Vertices",
+          "URL": "https://codeforces.com/problemset/problem/1857/D",
+          "solution_URL": "https://example.com/solutions/strong-vertices"
+        },
+        {
+          "id": 7,
+          "question": "Rudolf and Snowflakes (simple version)",
+          "URL": "https://codeforces.com/problemset/problem/1846/E1",
+          "solution_URL": "https://example.com/solutions/rudolf-and-snowflakes-simple"
+        },
+        {
+          "id": 8,
+          "question": "Scoring Subsequences",
+          "URL": "https://codeforces.com/problemset/problem/1794/C",
+          "solution_URL": "https://example.com/solutions/scoring-subsequences"
+        },
+        {
+          "id": 9,
+          "question": "Gardener and the Array",
+          "URL": "https://codeforces.com/problemset/problem/1775/B",
+          "solution_URL": "https://example.com/solutions/gardener-and-the-array"
+        },
+        {
+          "id": 10,
+          "question": "Yet Another Problem About Pairs Satisfying an Inequality",
+          "URL": "https://codeforces.com/problemset/problem/1703/F",
+          "solution_URL": "https://example.com/solutions/yet-another-problem-about-pairs"
+        },
+        {
+          "id": 11,
+          "question": "White-Black Balanced Subtrees",
+          "URL": "https://codeforces.com/problemset/problem/1676/G",
+          "solution_URL": "https://example.com/solutions/white-black-balanced-subtrees"
+        },
+        {
+          "id": 12,
+          "question": "Maximal AND",
+          "URL": "https://codeforces.com/problemset/problem/1669/H",
+          "solution_URL": "https://example.com/solutions/maximal-and"
+        },
+        {
+          "id": 13,
+          "question": "Chat Ban",
+          "URL": "https://codeforces.com/problemset/problem/1612/C",
+          "solution_URL": "https://example.com/solutions/chat-ban"
+        },
+        {
+          "id": 14,
+          "question": "Array Elimination",
+          "URL": "https://codeforces.com/problemset/problem/1601/A",
+          "solution_URL": "https://example.com/solutions/array-elimination"
+        },
+        {
+          "id": 15,
+          "question": "Deep Down Below",
+          "URL": "https://codeforces.com/problemset/problem/1561/C",
+          "solution_URL": "https://example.com/solutions/deep-down-below"
+        },
+        {
+          "id": 16,
+          "question": "Box Fitting",
+          "URL": "https://codeforces.com/problemset/problem/1498/B",
+          "solution_URL": "https://example.com/solutions/box-fitting"
+        },
+        {
+          "id": 17,
+          "question": "Strange Birthday Party",
+          "URL": "https://codeforces.com/problemset/problem/1470/A",
+          "solution_URL": "https://example.com/solutions/strange-birthday-party"
+        },
+        {
+          "id": 18,
+          "question": "Move and Turn",
+          "URL": "https://codeforces.com/problemset/problem/1459/B",
+          "solution_URL": "https://example.com/solutions/move-and-turn"
+        },
+        {
+          "id": 19,
+          "question": "Omkar and Last Class of Math",
+          "URL": "https://codeforces.com/problemset/problem/1372/B",
+          "solution_URL": "https://example.com/solutions/omkar-and-last-class-of-math"
+        },
+        {
+          "id": 20,
+          "question": "Shuffle",
+          "URL": "https://codeforces.com/problemset/problem/1366/B",
+          "solution_URL": "https://example.com/solutions/shuffle"
+        },
+        {
+          "id": 21,
+          "question": "Most socially-distanced subsequence",
+          "URL": "https://codeforces.com/problemset/problem/1364/B",
+          "solution_URL": "https://example.com/solutions/most-socially-distanced-subsequence"
+        },
+        {
+          "id": 22,
+          "question": "Buying Shovels",
+          "URL": "https://codeforces.com/problemset/problem/1360/D",
+          "solution_URL": "https://example.com/solutions/buying-shovels"
+        },
+        {
+          "id": 23,
+          "question": "Product of three numbers",
+          "URL": "https://codeforces.com/problemset/problem/1294/C",
+          "solution_URL": "https://example.com/solutions/product-of-three-numbers"
+        },
+        {
+          "id": 24,
+          "question": "Just Eat It!",
+          "URL": "https://codeforces.com/problemset/problem/1285/B",
+          "solution_URL": "https://example.com/solutions/just-eat-it"
+        },
+        {
+          "id": 25,
+          "question": "Balanced Tunnel",
+          "URL": "https://codeforces.com/problemset/problem/1237/B",
+          "solution_URL": "https://example.com/solutions/balanced-tunnel"
+        },
+        {
+          "id": 26,
+          "question": "WOW Factor",
+          "URL": "https://codeforces.com/problemset/problem/1178/B",
+          "solution_URL": "https://example.com/solutions/wow-factor"
+        },
+        {
+          "id": 27,
+          "question": "Alyona and a Narrow Fridge",
+          "URL": "https://codeforces.com/problemset/problem/1119/B",
+          "solution_URL": "https://example.com/solutions/alyona-and-a-narrow-fridge"
+        },
+        {
+          "id": 28,
+          "question": "Good Array",
+          "URL": "https://codeforces.com/problemset/problem/1077/C",
+          "solution_URL": "https://example.com/solutions/good-array"
+        },
+        {
+          "id": 29,
+          "question": "Mahmoud and Ehab and the bipartiteness",
+          "URL": " mahmoud-and-ehab-and-the-bipartiteness",
+          "solution_URL": "https://example.com/solutions/mahmoud-and-ehab-and-the-bipartiteness"
+        },
+        {
+          "id": 30,
+          "question": "Average Sleep Time",
+          "URL": "https://codeforces.com/problemset/problem/862/B",
+          "solution_URL": "https://example.com/solutions/average-sleep-time"
+        },
+        {
+          "id": 31,
+          "question": "Simple Strings",
+          "URL": "https://codeforces.com/problemset/problem/665/C",
+          "solution_URL": "https://example.com/solutions/simple-strings"
+        }
+      ],
+      "1400": [
+    {
+      "id": 1,
+      "question": "Anna and the Valentine's Day Gift",
+      "URL": "https://codeforces.com/problemset/problem/1931/E",
+      "solution_URL": "https://example.com/solutions/anna-and-the-valentines-day-gift"
+    },
+    {
+      "id": 2,
+      "question": "Grouping Increases",
+      "URL": "https://codeforces.com/problemset/problem/1919/C",
+      "solution_URL": "https://example.com/solutions/grouping-increases"
+    },
+    {
+      "id": 3,
+      "question": "Jumping Through Segments",
+      "URL": "https://codeforces.com/problemset/problem/1907/D",
+      "solution_URL": "https://example.com/solutions/jumping-through-segments"
+    },
+    {
+      "id": 4,
+      "question": "Array Game",
+      "URL": "https://codeforces.com/problemset/problem/1904/C",
+      "solution_URL": "https://example.com/solutions/array-game"
+    },
+    {
+      "id": 5,
+      "question": "Dances (Easy version)",
+      "URL": "https://codeforces.com/problemset/problem/1883/G1",
+      "solution_URL": "https://example.com/solutions/dances-easy-version"
+    },
+    {
+      "id": 6,
+      "question": "https://codeforces.com/problemset/problem/1878/E",
+      "URL": " iva-pav",
+      "solution_URL": "https://example.com/solutions/iva-pav"
+    },
+    {
+      "id": 7,
+      "question": "Bracket Coloring",
+      "URL": "https://codeforces.com/problemset/problem/1837/D",
+      "solution_URL": "https://example.com/solutions/bracket-coloring"
+    },
+    {
+      "id": 8,
+      "question": "Copil Copac Draws Trees",
+      "URL": "https://codeforces.com/problemset/problem/1830/A",
+      "solution_URL": "https://example.com/solutions/copil-copac-draws-trees"
+    },
+    {
+      "id": 9,
+      "question": "Hossam and Friends",
+      "URL": "https://codeforces.com/problemset/problem/1771/B",
+      "solution_URL": "https://example.com/solutions/hossam-and-friends"
+    },
+    {
+      "id": 10,
+      "question": "Make It Round",
+      "URL": "https://codeforces.com/problemset/problem/1759/D",
+      "solution_URL": "https://example.com/solutions/make-it-round"
+    },
+    {
+      "id": 11,
+      "question": "Add Modulo 10",
+      "URL": "https://codeforces.com/problemset/problem/1714/E",
+      "solution_URL": "https://example.com/solutions/add-modulo-10"
+    },
+    {
+      "id": 12,
+      "question": "Schedule Management",
+      "URL": "https://codeforces.com/problemset/problem/1701/C",
+      "solution_URL": "https://example.com/solutions/schedule-management"
+    },
+    {
+      "id": 13,
+      "question": "2^Sort",
+      "URL": "https://codeforces.com/problemset/problem/1692/G",
+      "solution_URL": "https://example.com/solutions/2-sort"
+    },
+    {
+      "id": 14,
+      "question": "Weird Sum",
+      "URL": "https://codeforces.com/problemset/problem/1648/A",
+      "solution_URL": "https://example.com/solutions/weird-sum"
+    },
+    {
+      "id": 15,
+      "question": "Fortune Telling",
+      "URL": "https://codeforces.com/problemset/problem/1634/B",
+      "solution_URL": "https://example.com/solutions/fortune-telling"
+    },
+    {
+      "id": 16,
+      "question": "Arranging The Sheep",
+      "URL": "https://codeforces.com/problemset/problem/1520/E",
+      "solution_URL": "https://example.com/solutions/arranging-the-sheep"
+    },
+    {
+      "id": 17,
+      "question": "Berland Regional",
+      "URL": "https://codeforces.com/problemset/problem/1519/C",
+      "solution_URL": "https://example.com/solutions/berland-regional"
+    },
+    {
+      "id": 18,
+      "question": "AND Sequences",
+      "URL": "https://codeforces.com/problemset/problem/1513/B",
+      "solution_URL": "https://example.com/solutions/and-sequences"
+    },
+    {
+      "id": 19,
+      "question": "Ball in Berland",
+      "URL": "https://codeforces.com/problemset/problem/1475/C",
+      "solution_URL": "https://example.com/solutions/ball-in-berland"
+    },
+    {
+      "id": 20,
+      "question": "Zero Remainder Array",
+      "URL": "https://codeforces.com/problemset/problem/1374/D",
+      "solution_URL": "https://example.com/solutions/zero-remainder-array"
+    },
+    {
+      "id": 21,
+      "question": "Johnny and Another Rating Drop",
+      "URL": "https://codeforces.com/problemset/problem/1362/C",
+      "solution_URL": "https://example.com/solutions/johnny-and-another-rating-drop"
+    },
+    {
+      "id": 22,
+      "question": "Orac and Models",
+      "URL": "https://codeforces.com/problemset/problem/1350/B",
+      "solution_URL": "https://example.com/solutions/orac-and-models"
+    },
+    {
+      "id": 23,
+      "question": "Journey Planning",
+      "URL": "https://codeforces.com/problemset/problem/1320/A",
+      "solution_URL": "https://example.com/solutions/journey-planning"
+    },
+    {
+      "id": 24,
+      "question": "The Number of Products",
+      "URL": "https://codeforces.com/problemset/problem/1215/B",
+      "solution_URL": "https://example.com/solutions/the-number-of-products"
+    },
+    {
+      "id": 25,
+      "question": "Basketball Exercise",
+      "URL": "https://codeforces.com/problemset/problem/1195/C",
+      "solution_URL": "https://example.com/solutions/basketball-exercise"
+    },
+    {
+      "id": 26,
+      "question": "Candy Box (easy version)",
+      "URL": "https://codeforces.com/problemset/problem/1183/D",
+      "solution_URL": "https://example.com/solutions/candy-box-easy-version"
+    },
+    {
+      "id": 27,
+      "question": "News Distribution",
+      "URL": "https://codeforces.com/problemset/problem/1167/C",
+      "solution_URL": "https://example.com/solutions/news-distribution"
+    },
+    {
+      "id": 28,
+      "question": "Lost Numbers",
+      "URL": "https://codeforces.com/problemset/problem/1167/B",
+      "solution_URL": "https://example.com/solutions/lost-numbers"
+    },
+    {
+      "id": 29,
+      "question": "Queen",
+      "URL": "https://codeforces.com/problemset/problem/1143/C",
+      "solution_URL": "https://example.com/solutions/queen"
+    },
+    {
+      "id": 30,
+      "question": "Tape",
+      "URL": "https://codeforces.com/problemset/problem/1110/B",
+      "solution_URL": "https://example.com/solutions/tape"
+    },
+    {
+      "id": 31,
+      "question": "Mashmokh and ACM",
+      "URL": "https://codeforces.com/problemset/problem/414/B",
+      "solution_URL": "https://example.com/solutions/mashmokh-and-acm"
+    }
+  ],
+  "1500": [
+    {
+      "id": 1,
+      "question": "Greetings",
+      "URL": "https://codeforces.com/problemset/problem/1915/F",
+      "solution_URL": "https://example.com/solutions/greetings"
+    },
+    {
+      "id": 2,
+      "question": "Smilo and Monsters",
+      "URL": "https://codeforces.com/problemset/problem/1891/C",
+      "solution_URL": "https://example.com/solutions/smilo-and-monsters"
+    },
+    {
+      "id": 3,
+      "question": "Block Sequence",
+      "URL": "https://codeforces.com/problemset/problem/1881/E",
+      "solution_URL": "https://example.com/solutions/block-sequence"
+    },
+    {
+      "id": 4,
+      "question": "Data Structures Fan",
+      "URL": "https://codeforces.com/problemset/problem/1872/E",
+      "solution_URL": "https://example.com/solutions/data-structures-fan"
+    },
+    {
+      "id": 5,
+      "question": "Tea Tasting",
+      "URL": "https://codeforces.com/problemset/problem/1795/C",
+      "solution_URL": "https://example.com/solutions/tea-tasting"
+    },
+    {
+      "id": 6,
+      "question": "Controllers",
+      "URL": "https://codeforces.com/problemset/problem/1776/L",
+      "solution_URL": "https://example.com/solutions/controllers"
+    },
+    {
+      "id": 7,
+      "question": "Palindrome Basis",
+      "URL": "https://codeforces.com/problemset/problem/1673/C",
+      "solution_URL": "https://example.com/solutions/palindrome-basis"
+    },
+    {
+      "id": 8,
+      "question": "Line Empire",
+      "URL": "https://codeforces.com/problemset/problem/1659/C",
+      "solution_URL": "https://example.com/solutions/line-empire"
+    },
+    {
+      "id": 9,
+      "question": "Factorials and Powers of Two",
+      "URL": "https://codeforces.com/problemset/problem/1646/C",
+      "solution_URL": "https://example.com/solutions/factorials-and-powers-of-two"
+    },
+    {
+      "id": 10,
+      "question": "AGAGA XOOORRR",
+      "URL": "https://codeforces.com/problemset/problem/1516/B",
+      "solution_URL": "https://example.com/solutions/agaga-xooorrr"
+    },
+    {
+      "id": 11,
+      "question": "Eastern Exhibition",
+      "URL": "https://codeforces.com/problemset/problem/1486/B",
+      "solution_URL": "https://example.com/solutions/eastern-exhibition"
+    },
+    {
+      "id": 12,
+      "question": "13th Labour of Heracles",
+      "URL": "https://codeforces.com/problemset/problem/1466/D",
+      "solution_URL": "https://example.com/solutions/13th-labour-of-heracles"
+    },
+    {
+      "id": 13,
+      "question": "Mortal Kombat Tower",
+      "URL": "https://codeforces.com/problemset/problem/1418/C",
+      "solution_URL": "https://example.com/solutions/mortal-kombat-tower"
+    },
+    {
+      "id": 14,
+      "question": "k-Amazing Numbers",
+      "URL": "https://codeforces.com/problemset/problem/1416/A",
+      "solution_URL": "https://example.com/solutions/k-amazing-numbers"
+    },
+    {
+      "id": 15,
+      "question": "Balanced Bitstring",
+      "URL": "https://codeforces.com/problemset/problem/1404/A",
+      "solution_URL": "https://example.com/solutions/balanced-bitstring"
+    },
+    {
+      "id": 16,
+      "question": "Powered Addition",
+      "URL": "https://codeforces.com/problemset/problem/1338/A",
+      "solution_URL": "https://example.com/solutions/powered-addition"
+    },
+    {
+      "id": 17,
+      "question": "K-Complete Word",
+      "URL": "https://codeforces.com/problemset/problem/1332/C",
+      "solution_URL": "https://example.com/solutions/k-complete-word"
+    },
+    {
+      "id": 18,
+      "question": "Ehab and Path-etic MEXs",
+      "URL": "https://codeforces.com/problemset/problem/1325/C",
+      "solution_URL": "https://example.com/solutions/ehab-and-path-etic-mexs"
+    },
+    {
+      "id": 19,
+      "question": "Count Subrectangles",
+      "URL": "https://codeforces.com/problemset/problem/1323/B",
+      "solution_URL": "https://example.com/solutions/count-subrectangles"
+    },
+    {
+      "id": 20,
+      "question": "Zero Array",
+      "URL": "https://codeforces.com/problemset/problem/1201/B",
+      "solution_URL": "https://example.com/solutions/zero-array"
+    },
+    {
+      "id": 21,
+      "question": "Edgy Trees",
+      "URL": "https://codeforces.com/problemset/problem/1139/C",
+      "solution_URL": "https://example.com/solutions/edgy-trees"
+    },
+    {
+      "id": 22,
+      "question": "Zero Quantity Maximization",
+      "URL": "https://codeforces.com/problemset/problem/1133/D",
+      "solution_URL": "https://example.com/solutions/zero-quantity-maximization"
+    },
+    {
+      "id": 23,
+      "question": "Lunar New Year and a Wander",
+      "URL": "https://codeforces.com/problemset/problem/1106/D",
+      "solution_URL": "https://example.com/solutions/lunar-new-year-and-a-wander"
+    },
+    {
+      "id": 24,
+      "question": "Division and Union",
+      "URL": "https://codeforces.com/problemset/problem/1101/C",
+      "solution_URL": "https://example.com/solutions/division-and-union"
+    },
+    {
+      "id": 25,
+      "question": "The Fair Nut and String",
+      "URL": "https://codeforces.com/problemset/problem/1084/C",
+      "solution_URL": "https://example.com/solutions/the-fair-nut-and-string"
+    },
+    {
+      "id": 26,
+      "question": "Cut 'em all!",
+      "URL": "https://codeforces.com/problemset/problem/982/C",
+      "solution_URL": "https://example.com/solutions/cut-em-all"
+    },
+    {
+      "id": 27,
+      "question": "Nested Segments",
+      "URL": "https://codeforces.com/problemset/problem/976/C",
+      "solution_URL": "https://example.com/solutions/nested-segments"
+    },
+    {
+      "id": 28,
+      "question": "Minimize the error",
+      "URL": "https://codeforces.com/problemset/problem/960/B",
+      "solution_URL": "https://example.com/solutions/minimize-the-error"
+    },
+    {
+      "id": 29,
+      "question": "Pride",
+      "URL": "https://codeforces.com/problemset/problem/891/A",
+      "solution_URL": "https://example.com/solutions/pride"
+    },
+    {
+      "id": 30,
+      "question": "Two TVs",
+      "URL": "https://codeforces.com/problemset/problem/845/C",
+      "solution_URL": "https://example.com/solutions/two-tvs"
+    },
+    {
+      "id": 31,
+      "question": "Little Girl and Maximum Sum",
+      "URL": "https://codeforces.com/problemset/problem/276/C",
+      "solution_URL": "https://example.com/solutions/little-girl-and-maximum-sum"
+    }
+  ],
+  "1600": [
+    {
+      "id": 1,
+      "question": "Partitioning the Array",
+      "URL": "https://codeforces.com/problemset/problem/1920/C",
+      "solution_URL": "https://example.com/solutions/partitioning-the-array"
+    },
+    {
+      "id": 2,
+      "question": "Good Triples",
+      "URL": "https://codeforces.com/problemset/problem/1907/E",
+      "solution_URL": "https://example.com/solutions/good-triples"
+    },
+    {
+      "id": 3,
+      "question": "Decreasing String",
+      "URL": "https://codeforces.com/problemset/problem/1886/C",
+      "solution_URL": "https://example.com/solutions/decreasing-string"
+    },
+    {
+      "id": 4,
+      "question": "To Become Max",
+      "URL": "https://codeforces.com/problemset/problem/1856/C",
+      "solution_URL": "https://example.com/solutions/to-become-max"
+    },
+    {
+      "id": 5,
+      "question": "Tracking Segments",
+      "URL": "https://codeforces.com/problemset/problem/1843/E",
+      "solution_URL": "https://example.com/solutions/tracking-segments"
+    },
+    {
+      "id": 6,
+      "question": "Round Dance",
+      "URL": "https://codeforces.com/problemset/problem/1833/E",
+      "solution_URL": "https://example.com/solutions/round-dance"
+    },
+    {
+      "id": 7,
+      "question": "Hits Different",
+      "URL": "https://codeforces.com/problemset/problem/1829/G",
+      "solution_URL": "https://example.com/solutions/hits-different"
+    },
+    {
+      "id": 8,
+      "question": "Shocking Arrangement",
+      "URL": "https://codeforces.com/problemset/problem/1798/D",
+      "solution_URL": "https://example.com/solutions/shocking-arrangement"
+    },
+    {
+      "id": 9,
+      "question": "Triangle Coloring",
+      "URL": "https://codeforces.com/problemset/problem/1795/D",
+      "solution_URL": "https://example.com/solutions/triangle-coloring"
+    },
+    {
+      "id": 10,
+      "question": "Equal Frequencies",
+      "URL": "https://codeforces.com/problemset/problem/1781/C",
+      "solution_URL": "https://example.com/solutions/equal-frequencies"
+    },
+    {
+      "id": 11,
+      "question": "Flexible String",
+      "URL": "https://codeforces.com/problemset/problem/1778/C",
+      "solution_URL": "https://example.com/solutions/flexible-string"
+    },
+    {
+      "id": 12,
+      "question": "Interesting Sequence",
+      "URL": "https://codeforces.com/problemset/problem/1775/C",
+      "solution_URL": "https://example.com/solutions/interesting-sequence"
+    },
+    {
+      "id": 13,
+      "question": "Sending a Sequence Over the Network",
+      "URL": "https://codeforces.com/problemset/problem/1741/E",
+      "solution_URL": "https://example.com/solutions/sending-a-sequence-over-the-network"
+    },
+    {
+      "id": 14,
+      "question": "Meeting on the Line",
+      "URL": "https://codeforces.com/problemset/problem/1730/B",
+      "solution_URL": "https://example.com/solutions/meeting-on-the-line"
+    },
+    {
+      "id": 15,
+      "question": "Split Into Two Sets",
+      "URL": "https://codeforces.com/problemset/problem/1702/E",
+      "solution_URL": "https://example.com/solutions/split-into-two-sets"
+    },
+    {
+      "id": 16,
+      "question": "Fixed Point Guessing",
+      "URL": "https://codeforces.com/problemset/problem/1698/D",
+      "solution_URL": "https://example.com/solutions/fixed-point-guessing"
+    },
+    {
+      "id": 17,
+      "question": "Maximum Product Strikes Back",
+      "URL": "https://codeforces.com/problemset/problem/1660/D",
+      "solution_URL": "https://example.com/solutions/maximum-product-strikes-back"
+    },
+    {
+      "id": 18,
+      "question": "Make them Equal",
+      "URL": "https://codeforces.com/problemset/problem/1633/D",
+      "solution_URL": "https://example.com/solutions/make-them-equal"
+    },
+    {
+      "id": 19,
+      "question": "Keshi Is Throwing a Party",
+      "URL": "https://codeforces.com/problemset/problem/1610/C",
+      "solution_URL": "https://example.com/solutions/keshi-is-throwing-a-party"
+    },
+    {
+      "id": 20,
+      "question": "Say No to Palindromes",
+      "URL": "https://codeforces.com/problemset/problem/1555/D",
+      "solution_URL": "https://example.com/solutions/say-no-to-palindromes"
+    },
+    {
+      "id": 21,
+      "question": "Erase and Extend (Easy Version)",
+      "URL": "https://codeforces.com/problemset/problem/1537/E1",
+      "solution_URL": "https://example.com/solutions/erase-and-extend-easy-version"
+    },
+    {
+      "id": 22,
+      "question": "Parsa's Humongous Tree",
+      "URL": "https://codeforces.com/problemset/problem/1528/A",
+      "solution_URL": "https://example.com/solutions/parsas-humongous-tree"
+    },
+    {
+      "id": 23,
+      "question": "Planar Reflections",
+      "URL": "https://codeforces.com/problemset/problem/1498/C",
+      "solution_URL": "https://example.com/solutions/planar-reflections"
+    },
+    {
+      "id": 24,
+      "question": "Advertising Agency",
+      "URL": " advertising-agencyhttps://codeforces.com/problemset/problem/1475/E",
+      "solution_URL": "https://example.com/solutions/advertising-agency"
+    },
+    {
+      "id": 25,
+      "question": "Row GCD",
+      "URL": "https://codeforces.com/problemset/problem/1458/A",
+      "solution_URL": "https://example.com/solutions/row-gcd"
+    },
+    {
+      "id": 26,
+      "question": "Chocolate Bunny",
+      "URL": "https://codeforces.com/problemset/problem/1407/C",
+      "solution_URL": "https://example.com/solutions/chocolate-bunny"
+    },
+    {
+      "id": 27,
+      "question": "Good Subarrays",
+      "URL": "https://codeforces.com/problemset/problem/1398/C",
+      "solution_URL": "https://example.com/solutions/good-subarrays"
+    },
+    {
+      "id": 28,
+      "question": "Array Walk",
+      "URL": "https://codeforces.com/problemset/problem/1389/B",
+      "solution_URL": "https://example.com/solutions/array-walk"
+    },
+    {
+      "id": 29,
+      "question": "Orac and LCM",
+      "URL": "https://codeforces.com/problemset/problem/1349/A",
+      "solution_URL": "https://example.com/solutions/orac-and-lcm"
+    },
+    {
+      "id": 30,
+      "question": "Linova and Kingdom",
+      "URL": "https://codeforces.com/problemset/problem/1336/A",
+      "solution_URL": "https://example.com/solutions/linova-and-kingdom"
+    },
+    {
+      "id": 31,
+      "question": "Kuroni and Impossible Calculation",
+      "URL": "https://codeforces.com/problemset/problem/1305/C",
+      "solution_URL": "https://example.com/solutions/kuroni-and-impossible-calculation"
+    }
+  ]
+ 
+}
