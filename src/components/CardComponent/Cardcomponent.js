@@ -48,7 +48,7 @@ function CardComponent({ name, title, rating, maxRating, activeDays, totalSolved
     }
   };
   return (
-    <div className={`card-component ${name}`}>
+    <div className={`card-component ${name} mx-auto my-auto`}>
       <div className="card-component__row">
         <div className="card-component__body">
        

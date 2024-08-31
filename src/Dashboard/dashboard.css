@@ -2,7 +2,7 @@
 .dashboard{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(13, 1fr);
     gap: 20px;
     height: 100vh;
     padding: 10px;
@@ -19,6 +19,7 @@
     background-color: #070611;
     color: #9bb9c5;
     display: flex;
+    height: auto;
     /* align-items: center; */
     font-size: 24px;
     border-radius: 50px;
@@ -78,32 +79,32 @@
 
 /* Desktop Layout */
 .item-1 {
-    grid-row: 1 / 8; /* Spans all rows */
+    grid-row: 1 / 13; /* Spans all rows */
     grid-column: 1 / 2; /* Takes the entire first column */
 }
 
 .item-2 {
-    grid-row: 1 / 2; /* Top row, second column */
+    grid-row: 1 / 3; /* Top row, second column */
     grid-column: 2 / 6;
 }
 
 .item-3 {
-    grid-row: 2 / 5; /* Middle row, first half */
+    grid-row: 2 / 9; /* Middle row, first half */
     grid-column: 2 / 4;
 }
 
 .item-4 {
-    grid-row: 2 / 5; /* Middle row, second half */
+    grid-row: 2/ 9; /* Middle row, second half */
     grid-column: 4 / 6;
 }
 
 .item-5 {
-    grid-row: 5 / 8; /* Bottom row, first half */
+    grid-row: 8 / 13; /* Bottom row, first half */
     grid-column: 2 / 4;
 }
 
 .item-6 {
-    grid-row: 5 / 8; /* Bottom row, second half */
+    grid-row: 8 / 13; /* Bottom row, second half */
     grid-column: 4 / 6;
 }
 

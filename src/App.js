@@ -38,6 +38,7 @@ function App() {
 
   useEffect(()=>{
     document.body.style.zoom = '100%';
+    document.body.style.background = mode === "light" ? "white" : "#0E1C25";
   },[])
 
   return (
