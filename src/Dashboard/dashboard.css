@@ -1,20 +1,16 @@
 /* General Dashboard Layout */
-.dashboard-container-dark {
+.dashboard{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(7, 1fr);
     gap: 20px;
-    height: 93vh;
+    height: 100vh;
     padding: 10px;
+}
+.dashboard-container-dark {
     background-color: #0e1c25;
 }
 .dashboard-container-light {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    gap: 20px;
-    height: 93vh;
-    padding: 10px;
     background-color: #ffffff;
 }
 
@@ -51,14 +47,17 @@
 }
 
 .btn1 {
-    width: 13vw;
-    height: 8vh;
+    width: 13%;
+    height: 5%;
 }
 
 .input-card-dark{
+    border-radius: 50px !important; 
+    
     background-color: #070611 !important;
 }
 .input-card-light{
+    border-radius: 50px !important; 
     background-color: #c4eef5 !important;
 }
 .input-Heading-dark{
@@ -66,6 +65,7 @@
     font-size:large;
 }
 .input-field-dark{
+    color: #ffffff !important;
     background-color: #0b141e !important;
 }
 .input-Heading-light{
@@ -142,8 +142,8 @@
     }
 
     .btn1 {
-        width: 40vh;
-        height: 6vh;
+        width: 40%;
+        height: 6%;
         margin: 0 auto;
 
     }

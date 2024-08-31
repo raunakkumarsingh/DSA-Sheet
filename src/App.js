@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 // General Imports
 import Navbar from './components/navbar/Navbar';
@@ -36,6 +36,10 @@ function App() {
     setMode(prevMode => prevMode === "dark" ? "light" : "dark");
   };
 
+  useEffect(()=>{
+    document.body.style.zoom = '100%';
+  },[])
+
   return (
     <NoteState>
       <Router>
@@ -49,28 +53,28 @@ function App() {
           <Route exact path='/sheet' element={<Home mode={mode} />} />
           <Route exact path='/dashboard' element={<Dashboard mode={mode} />} />
           {/* Faraj Sheet Routes */}
-          <Route exact path='/faraj' element={<Cardf mode={mode} />} />
-          <Route exact path="/faraj/Array" element={<Tablef mode={mode} title="Array" />} />
-          <Route exact path="/faraj/Segment%20Tree" element={<Tablef mode={mode} title="Segment Tree" />} />
-          <Route exact path="/faraj/Math" element={<Tablef mode={mode} title="Math" />} />
-          <Route exact path="/faraj/DFS" element={<Tablef mode={mode} title="DFS" />} />
-          <Route exact path="/faraj/Dynamic%20Programming" element={<Tablef mode={mode} title="Dynamic Programming" />} />
-          <Route exact path="/faraj/BackTracking" element={<Tablef mode={mode} title="BackTracking" />} />
-          <Route exact path="/faraj/Hash%20Table" element={<Tablef mode={mode} title="Hash Table" />} />
-          <Route exact path="/faraj/Binary%20Search" element={<Tablef mode={mode} title="Binary Search" />} />
-          <Route exact path="/faraj/Two%20Pointer" element={<Tablef mode={mode} title="Two Pointer" />} />
-          <Route exact path="/faraj/Stack" element={<Tablef mode={mode} title="Stack" />} />
-          <Route exact path="/faraj/Design" element={<Tablef mode={mode} title="Design" />} />
-          <Route exact path="/faraj/data" element={<Tablef mode={mode} title="Data" />} />
-          <Route exact path="/faraj/Bit%20Manipulation" element={<Tablef mode={mode} title="Bit Manipulation" />} />
-          <Route exact path="/faraj/Linked%20List" element={<Tablef mode={mode} title="Linked List" />} />
-          <Route exact path="/faraj/Heap" element={<Tablef mode={mode} title="Heap" />} />
-          <Route exact path="/faraj/String" element={<Tablef mode={mode} title="String" />} />
-          <Route exact path="/faraj/Tree" element={<Tablef mode={mode} title="Tree" />} />
-          <Route exact path="/faraj/Trie" element={<Tablef mode={mode} title="Trie" />} />
-          <Route exact path="/faraj/BFS" element={<Tablef mode={mode} title="BFS" />} />
-          <Route exact path="/faraj/Graph" element={<Tablef mode={mode} title="Graph" />} />
-          <Route exact path="/faraj/Sliding%20Window" element={<Tablef mode={mode} title="Sliding Window" />} />
+          <Route exact path='/fraz' element={<Cardf mode={mode} />} />
+          <Route exact path="/fraz/Array" element={<Tablef mode={mode} title="Array" />} />
+          <Route exact path="/fraz/Segment%20Tree" element={<Tablef mode={mode} title="Segment Tree" />} />
+          <Route exact path="/fraz/Math" element={<Tablef mode={mode} title="Math" />} />
+          <Route exact path="/fraz/DFS" element={<Tablef mode={mode} title="DFS" />} />
+          <Route exact path="/fraz/Dynamic%20Programming" element={<Tablef mode={mode} title="Dynamic Programming" />} />
+          <Route exact path="/fraz/BackTracking" element={<Tablef mode={mode} title="BackTracking" />} />
+          <Route exact path="/fraz/Hash%20Table" element={<Tablef mode={mode} title="Hash Table" />} />
+          <Route exact path="/fraz/Binary%20Search" element={<Tablef mode={mode} title="Binary Search" />} />
+          <Route exact path="/fraz/Two%20Pointer" element={<Tablef mode={mode} title="Two Pointer" />} />
+          <Route exact path="/fraz/Stack" element={<Tablef mode={mode} title="Stack" />} />
+          <Route exact path="/fraz/Design" element={<Tablef mode={mode} title="Design" />} />
+          <Route exact path="/fraz/data" element={<Tablef mode={mode} title="Data" />} />
+          <Route exact path="/fraz/Bit%20Manipulation" element={<Tablef mode={mode} title="Bit Manipulation" />} />
+          <Route exact path="/fraz/Linked%20List" element={<Tablef mode={mode} title="Linked List" />} />
+          <Route exact path="/fraz/Heap" element={<Tablef mode={mode} title="Heap" />} />
+          <Route exact path="/fraz/String" element={<Tablef mode={mode} title="String" />} />
+          <Route exact path="/fraz/Tree" element={<Tablef mode={mode} title="Tree" />} />
+          <Route exact path="/fraz/Trie" element={<Tablef mode={mode} title="Trie" />} />
+          <Route exact path="/fraz/BFS" element={<Tablef mode={mode} title="BFS" />} />
+          <Route exact path="/fraz/Graph" element={<Tablef mode={mode} title="Graph" />} />
+          <Route exact path="/fraz/Sliding%20Window" element={<Tablef mode={mode} title="Sliding Window" />} />
 
           {/* LoveDSA Routes */}
           <Route exact path='/450DSA' element={<Cardl mode={mode} />} />

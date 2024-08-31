@@ -304,8 +304,8 @@
         },
         {
             "id": 20,
-            "question": "https://codeforces.com/problemset/problem/1606/A",
-            "URL": " ab-balance",
+            "question": "AB-balance",
+            "URL": "https://codeforces.com/problemset/problem/1606/A",
             "solution_URL": "https://example.com/solutions/ab-balance"
         },
         {
@@ -608,8 +608,8 @@
         },
         {
             "id": 8,
-            "question": "https://codeforces.com/problemset/problem/1869/B",
-            "URL": " 2d-traveling",
+            "question": "2d-traveling",
+            "URL": "https://codeforces.com/problemset/problem/1869/B",
             "solution_URL": "https://example.com/solutions/2d-traveling"
         },
         {
@@ -1160,8 +1160,8 @@
     },
     {
       "id": 6,
-      "question": "https://codeforces.com/problemset/problem/1878/E",
-      "URL": " iva-pav",
+      "question": "iva-pav",
+      "URL": "https://codeforces.com/problemset/problem/1878/E",
       "solution_URL": "https://example.com/solutions/iva-pav"
     },
     {

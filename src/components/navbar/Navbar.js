@@ -21,10 +21,11 @@ export default function Navbar({ mode }) {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <p className={`navbar-brand-${mode} head`}>
-                <Link className={`nav-link-${mode} text-uppercase fw-bold fs-5`} to="/">
+                <Link className={`nav-link-${mode} text-uppercase fw-bold fs-5 mx-2`} to="/">
                   {username || 'User'}
                 </Link>
               </p>
+           
             </li>
           </ul>
           <ul className="d-flex justify-content-end my-2">

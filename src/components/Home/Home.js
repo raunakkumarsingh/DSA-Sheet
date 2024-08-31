@@ -6,7 +6,7 @@ import DataContext from '../../context/datacontext';
 function Home({ mode }) {
     const { getData, getDataDSA, getDataStriver, setAlert } = useContext(DataContext);
     const navigate = useNavigate();
-    const [loader, setLoader] = useState({ DSA: false, Striver: false, Faraj: false });
+    const [loader, setLoader] = useState({ DSA: false, Striver: false, Fraz: false,cpsheet: false });
 
     const handleNavigation = async (path, loaderKey, fetchData) => {
         setLoader(prevLoader => ({ ...prevLoader, [loaderKey]: true }));
@@ -48,20 +48,19 @@ function Home({ mode }) {
             marginBottom: '2.7rem',
         },
         {
-            title: 'Faraz Sheet',
-            description: `Here is a collection of problems from Mohammad Faraz DSA sheet using 
+            title: 'fraz Sheet',
+            description: `Here is a collection of problems from Mohammad fraz DSA sheet using 
                 which people have cracked their dream jobs. These questions are commonly asked 
                 in product-based companies like Amazon, Microsoft, Google, etc.`,
-            loaderKey: 'Faraj',
-            path: '/faraj',
+            loaderKey: 'Fraz',
+            path: '/fraz',
             fetchData: getData,
             marginBottom: '4rem',
         },
         {
             title: 'CP Sheet',
-            description: `Here is a collection of problems from Mohammad Faraz DSA sheet using 
-                which people have cracked their dream jobs. These questions are commonly asked 
-                in product-based companies like Amazon, Microsoft, Google, etc.`,
+            description: `Ranking Wise Questions from Codeforces problems by priyansh agarwal  CP sheet using 
+                which people have cracked their dream jobs. These questions Helps in to improve codeforces ranking and problem solving skills.`,
             loaderKey: 'cpsheet',
             path: '/cpsheet',
             fetchData: getData,
@@ -69,7 +68,7 @@ function Home({ mode }) {
         },
         // {
         //     title: 'Striver AtoZ Sheet',
-        //     description: `Here is a collection of problems from Mohammad Faraz DSA sheet using 
+        //     description: `Here is a collection of problems from Mohammad fraz DSA sheet using 
         //         which people have cracked their dream jobs. These questions are commonly asked 
         //         in product-based companies like Amazon, Microsoft, Google, etc.`,
         //     loaderKey: 'cpsheet',

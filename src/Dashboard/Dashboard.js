@@ -1,11 +1,12 @@
 import React, { useState, useContext, useEffect,useRef } from 'react';
 import dataContext from '../context/datacontext';
 import CardComponent from '../components/CardComponent/Cardcomponent';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import "./dashboard.css";
 
 function ProgressBar({ totalQuestions, completedQuestions }) {
     const percent = totalQuestions ? (completedQuestions / totalQuestions) * 100 : 0;
+    
 
     return (
         <div
@@ -38,6 +39,7 @@ function ProgressBar({ totalQuestions, completedQuestions }) {
 
 
 function Dashboard({ mode }) {
+    const navigate=useNavigate();
     const [loader, setLoader] = useState({ leetcode: false, codechef: false, codeforces: false,gfg: false });
     const {
         showAlert,
@@ -73,6 +75,7 @@ function Dashboard({ mode }) {
       }, []); 
 
     useEffect(() => {
+        document.body.style.zoom = '100%';
         const leetcode = JSON.parse(localStorage.getItem('leetcodeSubmitted'));
         const codeforces = JSON.parse(localStorage.getItem('codeforcesSubmitted'));
         const codechef = JSON.parse(localStorage.getItem('codechefSubmitted'));
@@ -179,7 +182,7 @@ function Dashboard({ mode }) {
         0;
 
     return (
-        <div className={`dashboard-container-${mode}`}>
+        <div className={`dashboard-container-${mode} dashboard`}>
             <div className={`item-${mode} item-2 d-flex flex-column flex-md-row justify-content-between align-items-center`}>
                 <div className='d-flex flex-column align-items-center mx-2 text-center p-3'>
                     <p>Total Questions</p>
@@ -194,33 +197,33 @@ function Dashboard({ mode }) {
             {/* Progress Bars Section */}
             <div className={`item-${mode} item-1 mx-3 d-flex flex-column flex-md-row align-items-center justify-content-around flex-wrap`}>
                 <div className='card-item-1 mx-2 progressbar d-flex flex-column align-items-center'>
-                    <h1 className='smallh1 input-Heading'>LoveDSA Sheet</h1>
+                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/450DSA")}>LoveDSA Sheet</h1>
                     <ProgressBar
                         totalQuestions={450}
                         completedQuestions={localStorage.getItem("loveProgress") || 0}
                     />
                 </div>
                 <div className='card-item-2 mx-2 progressbar d-flex flex-column align-items-center'>
-                    <h1 className='smallh1 input-Heading'>Striver Sheet</h1>
+                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/striver")}>Striver Sheet</h1>
                     <ProgressBar
                         totalQuestions={184}
                         completedQuestions={localStorage.getItem("striverProgress") || 0}
                     />
                 </div>
                 <div className='card-item-3 mx-2 progressbar d-flex flex-column align-items-center'>
-                    <h1 className='smallh1 input-Heading'>CP Sheet</h1>
+                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/cpsheet")}>CP Sheet</h1>
                     <ProgressBar
                         totalQuestions={279}
                         completedQuestions={localStorage.getItem('cpProgress')|| 0}
                     />
                 </div>
                 <div className='card-item-3 mx-2 progressbar d-flex flex-column align-items-center'>
-                    <h1 className='smallh1 input-Heading'>Faraz Sheet</h1>
+                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/fraz")}>Fraz Sheet</h1>
                     <ProgressBar
                         totalQuestions={324}
                         completedQuestions={localStorage.getItem("farajProgress")||0 }
                     />
-                </div>
+                </div> 
                 <div className='card-item-4'>
                     <Link to="/sheet"  type="submit"
                             className="btn btn-primary w-100 p-3"
