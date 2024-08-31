@@ -109,7 +109,7 @@
 }
 
 /* Tablet Layout */
-@media (max-width: 989px) {
+@media (max-width: 1180px) {
     .dashboard-container-dark {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
@@ -128,10 +128,16 @@
         grid-row: auto;
         height: max-content;
         order: 2;
+        padding: 30px;
+        padding-top: 30px;
+        
     }
+
     .item-2 {
         order: 1; /* Display item-2 first */
     }
+
+  
     .progressbar {
         width: 60vw;
         padding: 20px;
@@ -147,6 +153,9 @@
         height: 6%;
         margin: 0 auto;
 
+    }
+    .card-item-4{
+        width: 50%;
     }
 }
 

@@ -224,6 +224,7 @@ function Dashboard({ mode }) {
                         completedQuestions={localStorage.getItem("farajProgress")||0 }
                     />
                 </div> 
+                
                 <div className='card-item-4'>
                     <Link to="/sheet"  type="submit"
                             className="btn btn-primary w-100 p-3"
