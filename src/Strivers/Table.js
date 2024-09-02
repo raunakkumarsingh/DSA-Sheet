@@ -19,7 +19,7 @@ export default  function Table(props) {
  
   return (
     <>
-     <h1 className={`tableheading-${props.mode} Mt-5`}>Rating {props.title}</h1>
+     <h1 className={`tableheading-${props.mode} Mt-5`}>Day-{props.title}</h1>
      <div className='d-flex  justify-content-center' >  <div className=" input-group  d-flex justify-content-center"  >
     <span className="input-group-text" id="inputGroup-sizing-lg">Search</span>
     <input   type="text" className="input form-control" onChange={e=>setSearchTerm(e.target.value)} aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>

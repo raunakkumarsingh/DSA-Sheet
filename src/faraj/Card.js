@@ -17,7 +17,7 @@ function Card({ mode }) {
 
   return (
     <>
-       <Progressbar sheetName="Faraj Sheet" totalQuestions={324} completedQuestions={localStorage.getItem("farajProgress")} mode={mode} />
+       <Progressbar sheetName="Fraz Sheet" totalQuestions={324} completedQuestions={localStorage.getItem("farajProgress")} mode={mode} />
       <div className="container my-3">
         <div className="row">
           {data.map((element) => (
@@ -28,7 +28,7 @@ function Card({ mode }) {
                     <h1 className={`card-${mode}-title smallh1`}>{element.Title}</h1>
                     <p className={`card-${mode}-text`}>Total Questions: {element.Totalquestion}</p>
                     <div className="d-flex justify-content-end">
-                      <Link to={`/faraj/${element.Title}`} onClick={loginControl} className="btn-light btn-primary">
+                      <Link to={`/fraz/${element.Title}`} onClick={loginControl} className="btn-light btn-primary">
                         GO
                       </Link>
                     </div>
