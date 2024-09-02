@@ -197,28 +197,28 @@ function Dashboard({ mode }) {
             {/* Progress Bars Section */}
             <div className={`item-${mode} item-1 mx-3 d-flex flex-column flex-md-row align-items-center justify-content-around flex-wrap`}>
                 <div className='card-item-1 mx-2 progressbar d-flex flex-column align-items-center'>
-                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/450DSA")}>LoveDSA Sheet</h1>
+                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/450DSA")}>LoveDSA&nbsp;Sheet</h1>
                     <ProgressBar
                         totalQuestions={450}
                         completedQuestions={localStorage.getItem("loveProgress") || 0}
                     />
                 </div>
                 <div className='card-item-2 mx-2 progressbar d-flex flex-column align-items-center'>
-                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/striver")}>Striver Sheet</h1>
+                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/striver")}>Striver&nbsp;Sheet</h1>
                     <ProgressBar
                         totalQuestions={184}
                         completedQuestions={localStorage.getItem("striverProgress") || 0}
                     />
                 </div>
                 <div className='card-item-3 mx-2 progressbar d-flex flex-column align-items-center'>
-                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/cpsheet")}>CP Sheet</h1>
+                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/cpsheet")}>CP&nbsp;Sheet</h1>
                     <ProgressBar
                         totalQuestions={279}
                         completedQuestions={localStorage.getItem('cpProgress')|| 0}
                     />
                 </div>
                 <div className='card-item-3 mx-2 progressbar d-flex flex-column align-items-center'>
-                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/fraz")}>Fraz Sheet</h1>
+                    <h1 className='smallh1 input-Heading' onClick={() => navigate("/fraz")}>Fraz&nbsp;Sheet</h1>
                     <ProgressBar
                         totalQuestions={324}
                         completedQuestions={localStorage.getItem("farajProgress")||0 }

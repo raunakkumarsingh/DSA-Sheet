@@ -89,12 +89,12 @@
 }
 
 .item-3 {
-    grid-row: 2 / 9; /* Middle row, first half */
+    grid-row: 3 / 8; /* Middle row, first half */
     grid-column: 2 / 4;
 }
 
 .item-4 {
-    grid-row: 2/ 9; /* Middle row, second half */
+    grid-row: 3/ 8; /* Middle row, second half */
     grid-column: 4 / 6;
 }
 
