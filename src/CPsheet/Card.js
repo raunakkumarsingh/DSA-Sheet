@@ -6,14 +6,14 @@ import data from './data.json';
 function Card({ mode }) {
     const navigate = useNavigate();
     const [cardColor,setCardColor]=useState({
-        800:false,
-        1000:false,
-        1100:false,
-        1200:false,
-        1300:false,
-        1400:false,
-        1500:false,
-        1600:false
+        800:1,
+        1000:1,
+        1100:1,
+        1200:1,
+        1300:1,
+        1400:1,
+        1500:1,
+        1600:1
     });
 
 
@@ -26,23 +26,25 @@ function Card({ mode }) {
     useEffect(()=>{
         if(localStorage.getItem('ratingData')){
            const storedData = JSON.parse(localStorage.getItem('ratingData'));
-          
-               setCardColor({
-                   800:storedData[800].length,
-                   1000:storedData[1000].length,
-                   1100:storedData[1100].length,
-                   1200:storedData[1200].length,
-                   1300:storedData[1300].length,
-                   1400:storedData[1400].length,    
-                   1500:storedData[1500].length,
-                   1600:storedData[1600].length
-               })
-            
+        //    console.log(storedData.error);
+          if(!storedData.error!=="Data not found"){
+            setCardColor({
+                800: storedData[800]?.length ,
+                900: storedData[900]?.length,
+                1000: storedData[1000]?.length,
+                1100: storedData[1100]?.length,
+                1200: storedData[1200]?.length,
+                1300: storedData[1300]?.length,
+                1400: storedData[1400]?.length,    
+                1500: storedData[1500]?.length,
+                1600: storedData[1600]?.length
+            });
+          }
            
-               console.log(storedData[800].length==32);
+            //    console.log(storedData[800].length==32);
+            // console.log(cardColor);
         }       
-    },[localStorage.getItem('ratingData')])
-    console.log(cardColor);
+    },[localStorage.getItem('cpProgress')])
     // Set background color based on mode
     useEffect(() => {
         document.body.style.background = mode === "light" ? "white" : "#0E1C25";
@@ -59,7 +61,7 @@ function Card({ mode }) {
             <div className='container my-3 d-flex justify-content-between'>
                 <div className='row'>
                     {data.map((element) => (
-                        <div className='col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center' key={element.Day}>
+                        <div className='col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center' key={element.Rating}>
                             <div className={`card-${cardColor[element.Rating]==32 ? 'green':mode} my-2 mx-1`} style={{ width: "18rem" }}>
                                 <div className="card-body">
                                     <h1 className={`card-${cardColor[element.Rating]==32 ? 'green':mode}-title smallh1`}>Rating-{element.Rating}</h1>

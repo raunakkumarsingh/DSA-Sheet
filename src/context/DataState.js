@@ -32,16 +32,17 @@ const DataState = (props) => {
     };
 
     const dataInitilized = () => {
-        localStorage.setItem('ratingData', JSON.stringify({"800": [0],
-            "900": [0],"1000": [0],"1100": [0],"1200": [0],"1300": [0],
-            "1400": [0],"1500": [0],"1600": [0],
+        localStorage.setItem('ratingData', JSON.stringify({
+            "800": [0],
+            "900": [0], "1000": [0], "1100": [0], "1200": [0], "1300": [0],
+            "1400": [0], "1500": [0], "1600": [0],
             "email": "",
             "__v": 0
         }));
         localStorage.setItem('cpProgress', 0);
-        
-        localStorage.setItem('loveArray',JSON.stringify([0]))
-        localStorage.setItem("quesDSA",JSON.stringify({
+
+        localStorage.setItem('loveArray', JSON.stringify([0]))
+        localStorage.setItem("quesDSA", JSON.stringify({
             "name": "",
             "email": "",
             "love": [0],
@@ -50,17 +51,17 @@ const DataState = (props) => {
         localStorage.setItem('loveProgress', 0);
 
         localStorage.setItem('striverArray', JSON.stringify([0]));
-            localStorage.setItem('striverProgress', 0);
-            localStorage.setItem('quesStriver', JSON.stringify({
-                "_id": "66b67271f1b11c38672e3b2f",
-                "user": "66b67270f1b11c38672e3b29",
-                "name": "",
-                "email": "",
-                "striver": [
-                    0
-                ],
-                "__v": 0
-            }));
+        localStorage.setItem('striverProgress', 0);
+        localStorage.setItem('quesStriver', JSON.stringify({
+            "_id": "66b67271f1b11c38672e3b2f",
+            "user": "66b67270f1b11c38672e3b29",
+            "name": "",
+            "email": "",
+            "striver": [
+                0
+            ],
+            "__v": 0
+        }));
 
     }
 
@@ -81,7 +82,7 @@ const DataState = (props) => {
     const getData = async () => {
         if (localStorage.getItem('token')) {
             const data = await fetchAPI(`${process.env.REACT_APP_API_KEY}/api/datafaraj/getdata`);
-            localStorage.setItem('farajProgress', data.faraj.length-1);
+            localStorage.setItem('farajProgress', data.faraj.length - 1);
             localStorage.setItem('farajArray', JSON.stringify(data.faraj));
             localStorage.setItem('ques', JSON.stringify(data));
             localStorage.setItem('username', data.name);
@@ -110,13 +111,24 @@ const DataState = (props) => {
             console.log("cp", data);
             localStorage.setItem('ratingData', JSON.stringify(data));
             let totalQuestions = 0;
-
-for (let rating in data) {
-        if((rating==="__v" || rating ==="user" || rating ==="_id")) continue;
-        totalQuestions += data[rating].length-1;
-    }
-
+            if(!data.error){
+            for (let rating in data) {
+                if ((rating === "__v" || rating === "user" || rating === "_id" || rating === "error"|| rating === "email")) continue;
+                totalQuestions += data[rating].length - 1;
+            }
+        
+        }
+            else{
+                localStorage.setItem('ratingData', JSON.stringify({
+                    "800": [0],
+                    "900": [0], "1000": [0], "1100": [0], "1200": [0], "1300": [0],
+                    "1400": [0], "1500": [0], "1600": [0],
+                    "email": "",
+                    "__v": 0
+                }));
+            }
             localStorage.setItem('cpProgress', totalQuestions);
+
             console.log(totalQuestions)
 
         }
@@ -142,9 +154,9 @@ for (let rating in data) {
     const getDataDSA = async () => {
         if (localStorage.getItem('token')) {
             const data = await fetchAPI(`${process.env.REACT_APP_API_KEY}/api/dataDSA/getdata`);
-            
+
             localStorage.setItem('loveArray', JSON.stringify(data.love));
-            localStorage.setItem('loveProgress', data.love.length-1);
+            localStorage.setItem('loveProgress', data.love.length - 1);
             localStorage.setItem('quesDSA', JSON.stringify(data));
             setQues(data);
         }
@@ -170,7 +182,7 @@ for (let rating in data) {
         if (localStorage.getItem('token')) {
             const data = await fetchAPI(`${process.env.REACT_APP_API_KEY}/api/datastriver/getdata`);
             localStorage.setItem('striverArray', JSON.stringify(data.striver));
-            localStorage.setItem('striverProgress', data.striver.length-1);
+            localStorage.setItem('striverProgress', data.striver.length - 1);
             localStorage.setItem('quesStriver', JSON.stringify(data));
             setQues(data);
         }
@@ -285,24 +297,24 @@ for (let rating in data) {
     const updateCardDetails = async () => {
         // console.log("update card details", leetcodeSubmitted);
         // console.log("update card details1", JSON.parse(localStorage.getItem('leetcodeSubmitted')));
-    
+
         const leetcode = JSON.parse(localStorage.getItem('leetcodeSubmitted'));
         const codeforces = JSON.parse(localStorage.getItem('codeforcesSubmitted'));
         const codechef = JSON.parse(localStorage.getItem('codechefSubmitted'));
         const gfg = JSON.parse(localStorage.getItem('gfgSubmitted'));
-    
+
         if (leetcode) {
             const data1 = await fetchAPI(`${process.env.REACT_APP_API_KEY}/api/leetcode/${leetcode.username}`);
             console.log("data11", data1.data);
             console.log("data12", leetcode);
-    
+
             if (data1.success && JSON.stringify(data1.data) !== localStorage.getItem('leetcodeSubmitted')) {
                 console.log("Leetcode data updated");
                 setLeetcodeSubmitted(data1.data);
                 localStorage.setItem('leetcodeSubmitted', JSON.stringify(data1.data));
             }
         }
-    
+
         if (codechef) {
             const data2 = await fetchAPI(`${process.env.REACT_APP_API_KEY}/api/codechef/${codechef.username}`);
             if (data2.success && JSON.stringify(data2.data) !== localStorage.getItem('codechefSubmitted')) {
@@ -310,7 +322,7 @@ for (let rating in data) {
                 localStorage.setItem('codechefSubmitted', JSON.stringify(data2.data));
             }
         }
-    
+
         if (codeforces) {
             const data3 = await fetchAPI(`${process.env.REACT_APP_API_KEY}/api/codeforces/${codeforces.username}`);
             if (data3.success && JSON.stringify(data3.data) !== localStorage.getItem('codeforcesSubmitted')) {
@@ -318,7 +330,7 @@ for (let rating in data) {
                 localStorage.setItem('codeforcesSubmitted', JSON.stringify(data3.data));
             }
         }
-    
+
         if (gfg) {
             const data4 = await fetchAPI(`${process.env.REACT_APP_API_KEY}/api/gfg/${gfg.username}`);
             if (data4.success && JSON.stringify(data4.data) !== localStorage.getItem('gfgSubmitted')) {
@@ -326,7 +338,7 @@ for (let rating in data) {
                 localStorage.setItem('gfgSubmitted', JSON.stringify(data4.data));
             }
         }
-    
+
         // console.log("Data update completed");
     };
 
@@ -362,6 +374,7 @@ for (let rating in data) {
                 getDataCp,
                 deleteDataCp,
                 dataInitilized
+
             }}
         >
             {props.children}

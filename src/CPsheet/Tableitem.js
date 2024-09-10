@@ -38,7 +38,7 @@ function TableRow(props) {
   const [isChecked, setIsChecked] = useState(false);
   const [loader, setLoader] = useState(false);
   const context = useContext(dataContext);
-  const { updateDataCp, deleteDataCp, showAlert } = context;
+  const { updateDataCp, deleteDataCp, showAlert,getDataCp} = context;
   const ques = JSON.parse(localStorage.getItem('ratingData'));
 
   const isQIDInLocalStorage = (rating, QID) => {
@@ -60,6 +60,8 @@ function TableRow(props) {
 
   const updateDATA = async () => {
     const storedDataJSON = localStorage.getItem('ratingData');
+    // console.log("storedDataJSON.error ##",storedDataJSON)
+    
     const storedData = JSON.parse(storedDataJSON);
     if (!storedData) return;
     if (storedData[props.Rating]) {
@@ -72,6 +74,8 @@ function TableRow(props) {
     localStorage.setItem('cpProgress', JSON.parse(localStorage.getItem('cpProgress'))+1);
     console.log(localStorage.getItem('cpProgress'));
     localStorage.setItem('ratingData', JSON.stringify(storedData));
+    if(!storedDataJSON){
+      getDataCp();}
   };
   
   const deleteDATA = async () => {
